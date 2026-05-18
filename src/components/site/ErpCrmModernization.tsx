@@ -20,7 +20,7 @@ const items = [
   },
   {
     image: erpUx,
-    video: "/videos/fbe_a_b_a_f_f_c_mp_.mp4",
+    video: "/videos/Can_you_animate_this_into_a_.mp4",
     title: "Intelligent UX layers",
     desc: "Create intuitive, user-friendly interfaces that adapt to user behavior and enhance productivity across all touchpoints.",
     cta: "Explore UX Layers",
@@ -36,6 +36,7 @@ const items = [
   },
   {
     image: erpPerformance,
+    video: "/videos/mp_ (1) (1).mp4",
     title: "Performance optimization",
     desc: "Enhance system performance and responsiveness to ensure your ERP/CRM platforms run at peak efficiency.",
     cta: "Explore Performance",
