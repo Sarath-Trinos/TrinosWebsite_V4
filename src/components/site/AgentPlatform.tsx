@@ -28,6 +28,7 @@ const tiles: Tile[] = [
     description:
       "Multi-step autonomous agents that plan, call tools, and take action. Safeguards and human-in-the-loop baked in.",
     image: grace,
+    video: "/videos/b_a_eb_ea_f_d_e_c_mp_.mp4",
   },
   {
     icon: Database,
@@ -45,6 +46,7 @@ const tiles: Tile[] = [
     description:
       "Design and ship a production-ready Minimum Viable Product fast—clean UX, reliable backend, and AI features where they matter most.",
     image: johnny,
+    video: "/videos/vmp_.mp4",
   },
   {
     icon: MessagesSquare,
@@ -53,6 +55,7 @@ const tiles: Tile[] = [
     description:
       "Real-time natural conversations with speech-to-text and TTS. Domain-aware assistants for support, sales, and internal ops.",
     image: manish,
+    video: "/videos/Can_you_animate_this_into_a_ (1).mp4",
   },
   {
     icon: Eye,

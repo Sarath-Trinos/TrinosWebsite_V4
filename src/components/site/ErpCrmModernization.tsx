@@ -28,7 +28,7 @@ const items = [
   },
   {
     image: erpWorkflow,
-    video: "/videos/mp_ (2).mp4",
+    video: "/videos/f_mp_.mp4",
     title: "Workflow automation",
     desc: "Streamline business processes with intelligent automation that reduces manual work and eliminates bottlenecks.",
     cta: "Explore Automation",

@@ -9,7 +9,7 @@ const values = [
     title: "Innovation",
     description: "We bring cutting-edge AI to real business challenges.",
     image:
-      "/about us /3d-rendering-robot-looking-opportunity-top-staircases.jpg",
+      "/about us /Gemini_Generated_Image_7f0jcg7f0jcg7f0j.png",
     cardBg: "bg-[#EFE6FF]",
     tagText: "text-[#6D28D9]",
     linkText: "text-[#6D28D9]",
@@ -20,7 +20,7 @@ const values = [
     title: "Integrity",
     description: "Security, transparency, and trust define every engagement.",
     image:
-      "/about us /woman-hand-holding-virtual-global-internet-connection-metaverse-business-global-internet-connection-application-technology-digital-marketing-financial-banking-digital-link-tech-big-data.jpg",
+      "/about us /Gemini_Generated_Image_vwxiflvwxiflvwxi.png",
     cardBg: "bg-[#FFE9CC]",
     tagText: "text-[#9A4B00]",
     linkText: "text-[#9A4B00]",
@@ -31,7 +31,7 @@ const values = [
     title: "Excellence",
     description: "We deliver engineering precision and world-class quality.",
     image:
-      "/about us /closeup-human-eye-with-cityscape-reflected-pupil-representing-world-through-one39s-vision.jpg",
+      "/about us /Gemini_Generated_Image_1v2fy61v2fy61v2f.png",
     cardBg: "bg-[#D6F4E4]",
     tagText: "text-[#0F7A41]",
     linkText: "text-[#0F7A41]",

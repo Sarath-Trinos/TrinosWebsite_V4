@@ -10,28 +10,28 @@ const cards = [
   {
     icon: CloudUpload,
     title: "Cloud Migration",
-    image: "/home/Gemini_Generated_Image_6q24666q24666q24.png",
+    image: "/home/magnific__talk__91259.jpeg",
     description:
       "Seamlessly transition your infrastructure to the cloud with minimal downtime and maximum efficiency.",
   },
   {
     icon: Layers,
     title: "Cloud Architecture Design",
-    image: "/home/Gemini_Generated_Image_rcwzyhrcwzyhrcwz.png",
+    image: "/home/magnific__talk__31260.jpeg",
     description:
       "Design scalable, secure, and cost-effective cloud architectures tailored to your business needs.",
   },
   {
     icon: Gauge,
     title: "Resource Optimization",
-    image: "/home/Gemini_Generated_Image_udhuumudhuumudhu.png",
+    image: "/home/magnific_3007480450.jpeg",
     description:
       "Optimize cloud resources to reduce costs while improving performance and scalability.",
   },
   {
     icon: Server,
     title: "Managed Cloud Services",
-    image: "/home/Gemini_Generated_Image_xisb22xisb22xisb.png",
+    image: "/home/magnific_fill-the-empty-parts_3006956021.jpeg",
     description:
       "24/7 monitoring, maintenance, and support to ensure your cloud infrastructure runs smoothly.",
   },
