@@ -4,7 +4,6 @@ import AgentPlatform from "@/components/site/AgentPlatform";
 import ErpCrmModernization from "@/components/site/ErpCrmModernization";
 import HealthcareAI from "@/components/site/HealthcareAI";
 import EnterpriseProof from "@/components/site/EnterpriseProof";
-import CustomerStories from "@/components/site/CustomerStories";
 import WhyChooseTrinos from "@/components/site/WhyChooseTrinos";
 import CTASection from "@/components/site/CTASection";
 import Footer from "@/components/site/Footer";
@@ -18,7 +17,6 @@ export default function Home() {
       <ErpCrmModernization />
       <HealthcareAI />
       <EnterpriseProof />
-      <CustomerStories />
       <WhyChooseTrinos />
       <CTASection variant="purple" />
       <Footer />
