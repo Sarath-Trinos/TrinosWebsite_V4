@@ -59,7 +59,7 @@ const OurValues = () => (
           ({ number, tag, title, description, image, cardBg, tagText, linkText }) => (
             <div
               key={title}
-              className={`${cardBg} relative rounded-3xl pt-8 md:pt-10 pb-6 px-6 flex flex-col transition-shadow hover:shadow-card`}
+              className={`${cardBg} group relative rounded-3xl pt-8 md:pt-10 pb-6 px-6 flex flex-col transition-shadow hover:shadow-card`}
             >
               <span
                 className={`absolute top-6 right-6 font-display font-bold text-5xl ${tagText} opacity-25`}
@@ -97,7 +97,7 @@ const OurValues = () => (
                   alt={title}
                   width={800}
                   height={500}
-                  className="w-full h-44 sm:h-48 md:h-56 object-cover"
+                  className="w-full h-44 sm:h-48 md:h-56 object-cover transition-transform duration-500 ease-out group-hover:scale-110"
                 />
               </div>
             </div>

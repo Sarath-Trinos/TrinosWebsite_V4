@@ -30,8 +30,21 @@ const WhyChooseTrinos = () => {
   const sectionRef = useRef<HTMLElement | null>(null);
   // visibleCount: 0 = nothing yet, 1 = pillar 1 only, ..., 4 = all four
   const [visibleCount, setVisibleCount] = useState(0);
+  const [isDesktop, setIsDesktop] = useState(false);
 
   useEffect(() => {
+    const mq = window.matchMedia("(min-width: 1024px)");
+    const onChange = () => setIsDesktop(mq.matches);
+    onChange();
+    mq.addEventListener("change", onChange);
+    return () => mq.removeEventListener("change", onChange);
+  }, []);
+
+  useEffect(() => {
+    if (!isDesktop) {
+      setVisibleCount(pillars.length);
+      return;
+    }
     const el = sectionRef.current;
     if (!el) return;
 
@@ -74,7 +87,7 @@ const WhyChooseTrinos = () => {
       window.removeEventListener("scroll", update);
       window.removeEventListener("resize", update);
     };
-  }, []);
+  }, [isDesktop]);
 
   const connectorPct =
     visibleCount <= 0
@@ -87,17 +100,17 @@ const WhyChooseTrinos = () => {
     <section
       ref={sectionRef}
       id="why-choose-trinos"
-      className="relative bg-surface-soft"
-      style={{ height: `${pillars.length * 35 + 60}vh` }}
+      className="relative bg-surface-soft py-16 sm:py-20 lg:py-0"
+      style={isDesktop ? { height: `${pillars.length * 35 + 60}vh` } : undefined}
     >
-      <div className="sticky top-0 h-screen flex items-center overflow-hidden">
+      <div className="lg:sticky lg:top-0 lg:h-screen flex items-center lg:overflow-hidden">
         <div className="container-px max-w-[1400px] mx-auto w-full">
-          <div className="max-w-2xl mb-16">
-            <h2 className="font-display font-normal text-4xl md:text-5xl text-balance leading-tight text-foreground">
+          <div className="max-w-2xl mb-10 sm:mb-12 lg:mb-16">
+            <h2 className="font-display font-normal text-3xl sm:text-4xl md:text-5xl text-balance leading-tight text-foreground">
               Why{" "}
               <span className="text-brand-gradient">Trinos</span>
             </h2>
-            <p className="mt-4 text-lg text-muted-foreground">
+            <p className="mt-4 text-base sm:text-lg text-muted-foreground">
               Why choose Trinos
             </p>
           </div>
@@ -111,9 +124,9 @@ const WhyChooseTrinos = () => {
               style={{ width: `${connectorPct}%` }}
             />
 
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 lg:gap-8">
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10 sm:gap-12 lg:gap-8">
               {pillars.map((p, i) => {
-                const isVisible = i < visibleCount;
+                const isVisible = !isDesktop || i < visibleCount;
                 return (
                   <div
                     key={p.title}
@@ -124,7 +137,7 @@ const WhyChooseTrinos = () => {
                   >
                     <div
                       className={cn(
-                        "w-14 h-14 rounded-full grid place-items-center font-mono text-sm font-bold transition-all duration-500",
+                        "w-12 h-12 sm:w-14 sm:h-14 rounded-full grid place-items-center font-mono text-sm font-bold transition-all duration-500",
                         isVisible
                           ? "bg-foreground text-on-surface-dark shadow-glow"
                           : "bg-foreground/80 text-on-surface-dark"
@@ -133,10 +146,10 @@ const WhyChooseTrinos = () => {
                       {String(i + 1).padStart(2, "0")}
                     </div>
 
-                    <h3 className="mt-8 font-display font-bold text-2xl text-foreground">
+                    <h3 className="mt-6 sm:mt-8 font-display font-bold text-xl sm:text-2xl text-foreground">
                       {p.title}
                     </h3>
-                    <p className="mt-4 text-muted-foreground leading-relaxed">
+                    <p className="mt-3 sm:mt-4 text-sm sm:text-base text-muted-foreground leading-relaxed">
                       {p.description}
                     </p>
                   </div>
