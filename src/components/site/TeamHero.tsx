@@ -7,12 +7,13 @@ const TeamHero = () => {
       <div className="h-[5rem]" aria-hidden="true" />
       <div className="relative pt-16 lg:pt-24 pb-24">
         <video
-          className="absolute inset-0 w-full h-full object-cover"
+          className="absolute inset-0 w-full h-full object-cover bg-black"
           src="/team/mp_.mp4"
           autoPlay
           muted
           loop
           playsInline
+          preload="auto"
           aria-hidden="true"
         />
         <div className="absolute inset-0 bg-black/60" />

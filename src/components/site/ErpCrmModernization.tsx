@@ -75,7 +75,7 @@ function CardVideo({ src }: { src: string }) {
       preload="auto"
       disablePictureInPicture
       disableRemotePlayback
-      className="absolute inset-0 w-full h-full object-cover"
+      className="absolute inset-0 w-full h-full object-cover bg-surface-dark"
     />
   );
 }

@@ -32,7 +32,7 @@ const ProductsHero = () => {
       <div className="relative pt-16 lg:pt-24 pb-24">
         <video
           ref={videoRef}
-          className="absolute inset-0 w-full h-full object-cover object-[center_32%]"
+          className="absolute inset-0 w-full h-full object-cover object-[center_32%] bg-black"
           src="/videos/product_hero.mp4"
           autoPlay
           muted

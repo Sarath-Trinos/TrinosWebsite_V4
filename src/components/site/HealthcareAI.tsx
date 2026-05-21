@@ -56,7 +56,7 @@ const HealthcareAI = () => {
         />
 
         <div className="grid grid-cols-1 md:grid-cols-5 gap-6 md:items-stretch">
-          <div className="md:col-span-2 tile bg-card overflow-hidden relative aspect-[4/5] md:aspect-[3/4] lg:aspect-[4/5]">
+          <div className="md:col-span-2 tile bg-surface-dark overflow-hidden relative aspect-[4/5] md:aspect-[3/4] lg:aspect-[4/5]">
             {cards.map((card, i) => (
               <Image
                 key={card.title}
@@ -69,6 +69,8 @@ const HealthcareAI = () => {
                   i === activeIndex ? "opacity-100" : "opacity-0"
                 )}
                 priority={i === 0}
+                fetchPriority={i === 0 ? "high" : "auto"}
+                loading={i === 0 ? "eager" : "lazy"}
               />
             ))}
             <div className="absolute inset-x-0 bottom-0 p-7 bg-gradient-to-t from-foreground/90 via-foreground/50 to-transparent text-on-surface-dark">

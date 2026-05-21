@@ -140,7 +140,7 @@ const AgentPlatform = () => {
             ref={imageWrapperRef}
             className="md:col-span-5 lg:col-span-4 flex md:h-full items-stretch justify-center md:justify-start"
           >
-            <div className="relative w-full max-w-[300px] sm:max-w-sm md:max-w-full md:h-full md:aspect-auto lg:aspect-[4/5] overflow-hidden rounded-3xl aspect-[4/5]">
+            <div className="relative w-full max-w-[300px] sm:max-w-sm md:max-w-full md:h-full md:aspect-auto lg:aspect-[4/5] overflow-hidden rounded-3xl aspect-[4/5] bg-surface-dark">
               {tiles.map((tile, i) => {
                 const isActive = i === activeIndex;
                 return (
@@ -165,7 +165,8 @@ const AgentPlatform = () => {
                           loop
                           muted
                           playsInline
-                          className="absolute inset-0 w-full h-full object-cover object-center"
+                          preload="auto"
+                          className="absolute inset-0 w-full h-full object-cover object-center bg-surface-dark"
                         />
                       ) : (
                         <Image
@@ -176,6 +177,7 @@ const AgentPlatform = () => {
                           sizes="(min-width: 1024px) 26vw, 90vw"
                           className="object-cover"
                           priority={i === 0}
+                          fetchPriority={i === 0 ? "high" : "auto"}
                         />
                       )}
                       <div className="absolute inset-x-0 bottom-0 z-10 bg-gradient-to-t from-black/85 via-black/55 to-transparent p-5 md:p-6">

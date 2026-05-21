@@ -32,7 +32,7 @@ const AboutHero = () => {
       <div className="relative pt-16 lg:pt-24 pb-24">
         <video
           ref={videoRef}
-          className="absolute inset-0 w-full h-full object-cover"
+          className="absolute inset-0 w-full h-full object-cover bg-black"
           src="/about%20us%20/b_f_cb_d_ca_ef_f_b_a_b_c_b_b_f_e_mp_.mp4"
           autoPlay
           muted

@@ -32,7 +32,7 @@ const ServicesHero = () => {
       <div className="relative pt-16 lg:pt-24 pb-24">
         <video
           ref={videoRef}
-          className="absolute inset-0 w-full h-full object-cover"
+          className="absolute inset-0 w-full h-full object-cover bg-black"
           src="/videos/mp_ (3).mp4"
           autoPlay
           muted
