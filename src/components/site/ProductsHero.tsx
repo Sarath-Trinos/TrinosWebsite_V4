@@ -67,7 +67,7 @@ const ProductsHero = () => {
                 <ArrowRight className="w-4 h-4 transition-transform group-hover:translate-x-1" />
               </a>
               <a
-                href="#demo"
+                href="/contact"
                 className="inline-flex items-center gap-2 font-semibold px-6 py-3.5 rounded-full border border-white/40 text-white hover:border-white hover:bg-white/10 transition-colors"
               >
                 Request a demo

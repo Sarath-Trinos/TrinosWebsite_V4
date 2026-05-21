@@ -60,7 +60,7 @@ const AboutHero = () => {
 
             <div className="mt-9 flex flex-wrap items-center gap-4">
               <a
-                href="#demo"
+                href="/contact"
                 className="group inline-flex items-center gap-2 bg-gradient-cta text-primary-foreground font-semibold px-7 py-3.5 rounded-full shadow-glow hover:shadow-card transition-all"
               >
                 Get in touch

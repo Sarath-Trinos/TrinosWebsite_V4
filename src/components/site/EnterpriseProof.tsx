@@ -17,7 +17,7 @@ const EnterpriseProof = () => (
             mandates. Trinos brings AI-first engineering, security by design, and deep enterprise
             expertise together to ship transformation that actually reaches production.
           </p>
-          <a href="#contact" className="inline-flex items-center gap-2 mt-8 bg-gradient-cta text-primary-foreground font-semibold px-6 sm:px-7 py-3 sm:py-3.5 rounded-full shadow-glow text-sm sm:text-base">
+          <a href="/contact" className="inline-flex items-center gap-2 mt-8 bg-gradient-cta text-primary-foreground font-semibold px-6 sm:px-7 py-3 sm:py-3.5 rounded-full shadow-glow text-sm sm:text-base">
             Talk to our experts <ArrowRight className="w-4 h-4" />
           </a>
         </div>

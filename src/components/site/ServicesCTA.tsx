@@ -15,7 +15,7 @@ const ServicesCTA = () => (
           </p>
           <div className="mt-10 flex flex-wrap items-center justify-center gap-4">
             <a
-              href="#demo"
+              href="/contact"
               className="inline-flex items-center gap-2 bg-[#0369A1] text-white hover:bg-[#0C4A6E] font-semibold px-7 py-3.5 rounded-full shadow-card transition-all"
             >
               Contact Us <ArrowRight className="w-4 h-4" />

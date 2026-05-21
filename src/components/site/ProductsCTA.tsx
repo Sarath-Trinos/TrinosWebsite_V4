@@ -15,7 +15,7 @@ const ProductsCTA = () => (
           </p>
           <div className="mt-10 flex flex-wrap items-center justify-center gap-4">
             <a
-              href="#demo"
+              href="/contact"
               className="inline-flex items-center gap-2 bg-[#854D0E] text-white hover:bg-[#5C3A06] font-semibold px-7 py-3.5 rounded-full shadow-card transition-all"
             >
               Get in touch <ArrowRight className="w-4 h-4" />
