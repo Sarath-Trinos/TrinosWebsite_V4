@@ -3,6 +3,7 @@
 import { useCallback, useEffect, useRef, useState } from "react";
 import { Bot, Database, Rocket, MessagesSquare, Eye, Workflow } from "lucide-react";
 import Image from "next/image";
+import { type as t } from "@/lib/typography";
 import type { StaticImageData } from "next/image";
 import SectionHeader from "./SectionHeader";
 import grace from "@/assets/agent-grace.jpg";
@@ -178,10 +179,10 @@ const AgentPlatform = () => {
                         />
                       )}
                       <div className="absolute inset-x-0 bottom-0 z-10 bg-gradient-to-t from-black/85 via-black/55 to-transparent p-5 md:p-6">
-                        <h3 className="font-display font-bold text-xl md:text-2xl text-white">
+                        <h3 className={`${t.cardHeadline} text-white`}>
                           {tile.headline}
                         </h3>
-                        <p className="mt-2 text-sm md:text-[15px] text-white/85 leading-snug">
+                        <p className={`mt-2 ${t.bodyCaption} text-white/85`}>
                           {tile.description}
                         </p>
                       </div>

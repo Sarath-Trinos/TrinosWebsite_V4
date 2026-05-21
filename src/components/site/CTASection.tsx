@@ -1,4 +1,5 @@
 import { ArrowRight } from "lucide-react";
+import { type as t } from "@/lib/typography";
 
 type Variant = "purple" | "green" | "orange" | "pink" | "blue";
 
@@ -52,10 +53,10 @@ const CTASection = ({ variant = "purple" }: { variant?: Variant }) => {
           <div className="absolute -top-32 -left-32 w-[400px] h-[400px] rounded-full bg-white/40 blur-3xl" />
           <div className="absolute -bottom-32 -right-32 w-[400px] h-[400px] rounded-full bg-white/40 blur-3xl" />
           <div className="relative">
-            <h2 className={`font-display font-normal text-3xl sm:text-4xl md:text-5xl text-balance ${v.title}`}>
+            <h2 className={`${t.sectionHeadline} ${v.title}`}>
               Ready to build intelligent, secure, and scalable solutions?
             </h2>
-            <p className={`mt-5 text-lg md:text-xl max-w-2xl mx-auto text-balance ${v.subtitle}`}>
+            <p className={`mt-5 ${t.subheadline} max-w-2xl mx-auto ${v.subtitle}`}>
               Let's transform your business together.
             </p>
             <div className="mt-10 flex flex-wrap items-center justify-center gap-4">

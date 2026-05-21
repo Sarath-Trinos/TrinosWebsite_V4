@@ -1,5 +1,6 @@
 import Image from "next/image";
 import { Cloud, Cpu, ShieldCheck, BarChart3, Code2, Database } from "lucide-react";
+import { type as t } from "@/lib/typography";
 import aboutImg from "@/assets/aboutus.png";
 
 const floatingIcons = [
@@ -77,20 +78,20 @@ const WhoWeAre = () => (
         </div>
 
         <div className="lg:pt-16">
-          <h2 className="font-display font-normal text-3xl sm:text-4xl md:text-5xl text-balance leading-tight">
+          <h2 className={t.sectionHeadline}>
             <span className="text-black">Who</span>{" "}
             <span className="text-brand-gradient-reverse">we are</span>
           </h2>
-          <p className="mt-3 max-w-2xl font-display font-normal text-lg md:text-xl text-balance leading-snug text-muted-foreground">
+          <p className={`mt-3 max-w-2xl ${t.subheadlineNormal} text-muted-foreground`}>
             A next-generation technology partner.
           </p>
-          <p className="mt-6 text-lg text-muted-foreground text-balance">
+          <p className={`mt-6 ${t.bodyLg} text-muted-foreground`}>
             Trinos Technologies is committed to supporting enterprises in achieving secure,
             efficient, and accelerated digital transformation. We create intelligent technology
             ecosystems that enhance operational efficiency, drive digital excellence, and deliver
             long-term business value.
           </p>
-          <p className="mt-4 text-lg text-muted-foreground text-balance">
+          <p className={`mt-4 ${t.bodyLg} text-muted-foreground`}>
             Our journey — from humble beginnings to industry-leading innovation — is defined by
             passion, craftsmanship, and a commitment to lasting impact.
           </p>

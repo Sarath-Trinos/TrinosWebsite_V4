@@ -1,4 +1,5 @@
 import { cn } from "@/lib/utils";
+import { type as t } from "@/lib/typography";
 
 type DotTone = "purple" | "blue" | "orange" | "red";
 
@@ -87,10 +88,10 @@ function BentoCardInner({
           {label}
         </span>
       </div>
-      <h3 className="font-display text-xl font-bold leading-snug text-on-surface-dark md:text-2xl">
+      <h3 className={`${t.cardHeadline} text-on-surface-dark`}>
         {title}
       </h3>
-      <p className="mt-3 text-sm leading-relaxed text-white/70 md:text-[15px]">{body}</p>
+      <p className={`mt-3 ${t.bodyCaption} text-white/70`}>{body}</p>
     </div>
   );
 }
@@ -99,14 +100,14 @@ const ServicesCapabilities = () => (
   <section id="capabilities" className="bg-[#F9F9F7] py-24">
     <div className="container-px mx-auto max-w-[1400px]">
       <div className="mb-14 max-w-3xl md:mb-16">
-        <h2 className="font-display text-balance text-4xl font-normal leading-tight md:text-5xl">
+        <h2 className={t.sectionHeadlineLg}>
           <span className="text-black">Our</span>{" "}
           <span className="text-brand-gradient-reverse">capabilities</span>
         </h2>
-        <p className="mt-3 max-w-2xl text-balance font-display font-semibold text-lg md:text-xl leading-snug text-black">
+        <p className={`mt-3 max-w-2xl ${t.subheadlineSemibold} text-black`}>
           Our capabilities include.
         </p>
-        <p className="mt-4 text-lg text-muted-foreground text-balance">
+        <p className={`mt-4 ${t.bodyLg} text-muted-foreground`}>
           A full-stack AI practice — from foundational models to production-grade automation —
           designed to fit how your enterprise actually operates.
         </p>

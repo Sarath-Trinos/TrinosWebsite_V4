@@ -1,3 +1,4 @@
+import { type as t } from "@/lib/typography";
 import {
   HeartPulse,
   Banknote,
@@ -94,7 +95,7 @@ const IndustriesGrid = () => (
   <section id="industries" className="py-24 bg-surface-soft">
     <div className="container-px max-w-[1400px] mx-auto">
       <SectionHeader
-        titleClassName="font-display font-normal text-4xl md:text-5xl text-balance leading-tight"
+        titleClassName={t.sectionHeadlineLg}
         title={
           <>
             <span className="text-black">Industries</span>{" "}
@@ -119,7 +120,7 @@ const IndustriesGrid = () => (
               <ArrowUpRight className="w-5 h-5 text-muted-foreground transition-all group-hover:text-primary group-hover:-translate-y-0.5 group-hover:translate-x-0.5" />
             </div>
             <div>
-              <h3 className="font-display font-bold text-xl text-foreground leading-snug text-balance">
+              <h3 className={`${t.cardHeadline} text-foreground`}>
                 {title}
               </h3>
               <p className="mt-3 text-sm text-muted-foreground leading-relaxed text-balance">

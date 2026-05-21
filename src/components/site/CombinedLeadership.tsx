@@ -1,4 +1,5 @@
 import { ArrowRight } from "lucide-react";
+import { type as t } from "@/lib/typography";
 
 const stats = [
   { value: "50+", label: "Years of combined leadership" },
@@ -11,14 +12,14 @@ const CombinedLeadership = () => (
     <div className="container-px max-w-[1400px] mx-auto">
       <div className="text-center max-w-3xl mx-auto">
         <span className="chip mb-5">Combined leadership</span>
-        <h2 className="font-display font-normal text-4xl md:text-5xl text-balance leading-tight">
+        <h2 className={t.sectionHeadlineLg}>
           Over 50 years of{" "}
           <span className="text-brand-gradient-reverse">
             transformative expertise
           </span>
           .
         </h2>
-        <p className="mt-6 text-lg text-muted-foreground text-balance">
+        <p className={`mt-6 ${t.bodyLg} text-muted-foreground`}>
           We bring over 50 years of combined leadership experience in AI-first enterprise
           technology. Built on proven delivery and trusted client partnerships, we offer deep
           expertise in advanced AI systems, platform modernization, and secure cloud
@@ -32,7 +33,7 @@ const CombinedLeadership = () => (
             key={label}
             className="tile bg-card p-8 text-center"
           >
-            <div className="font-display font-bold text-5xl text-brand-gradient-reverse">
+            <div className={`${t.statLg} text-brand-gradient-reverse`}>
               {value}
             </div>
             <p className="mt-3 text-sm text-muted-foreground">{label}</p>

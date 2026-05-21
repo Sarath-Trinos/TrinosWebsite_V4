@@ -1,4 +1,5 @@
 import Image from "next/image";
+import { type as t } from "@/lib/typography";
 
 type Founder = {
   name: string;
@@ -65,13 +66,13 @@ const TeamLeadership = () => (
           </div>
 
           <div className="md:col-span-8">
-            <h2 className="font-display font-normal text-3xl md:text-4xl text-balance leading-tight text-brand-gradient-reverse">
+            <h2 className={`${t.sectionHeadlineMd} text-brand-gradient-reverse`}>
               {founder.name}
             </h2>
-            <p className="mt-2 text-base font-semibold text-foreground">{founder.role}</p>
+            <p className={`mt-2 ${t.role} text-foreground`}>{founder.role}</p>
             <div className="mt-5 space-y-3">
               {founder.bio.map((paragraph, i) => (
-                <p key={i} className="text-sm md:text-base text-muted-foreground leading-relaxed">
+                <p key={i} className={`${t.bodySm} text-muted-foreground`}>
                   {paragraph}
                 </p>
               ))}

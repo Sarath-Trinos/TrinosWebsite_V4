@@ -1,6 +1,7 @@
 "use client";
 
 import { useState } from "react";
+import { type as t } from "@/lib/typography";
 import { Loader2, Mail, MapPin, Phone, Send } from "lucide-react";
 import { toast } from "sonner";
 
@@ -79,7 +80,7 @@ const ContactSection = () => {
     <section className="py-16 md:py-20 bg-background">
       <div className="container-px max-w-[1400px] mx-auto grid grid-cols-1 md:grid-cols-2 gap-10 md:gap-12 lg:gap-16">
         <div>
-          <h2 className="font-display font-normal text-3xl sm:text-4xl md:text-5xl text-balance text-foreground">
+          <h2 className={`${t.sectionHeadline} text-foreground`}>
             Send us a message
           </h2>
 
@@ -208,7 +209,7 @@ const ContactSection = () => {
         </div>
 
         <div>
-          <h2 className="font-display font-normal text-3xl sm:text-4xl md:text-5xl text-balance text-foreground">
+          <h2 className={`${t.sectionHeadline} text-foreground`}>
             Get in touch
           </h2>
           <p className="mt-5 text-muted-foreground max-w-md">

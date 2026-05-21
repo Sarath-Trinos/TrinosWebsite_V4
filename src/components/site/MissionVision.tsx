@@ -1,4 +1,5 @@
 import Image from "next/image";
+import { type as t } from "@/lib/typography";
 
 const items = [
   {
@@ -38,11 +39,11 @@ const MissionVision = () => (
           </div>
 
           <div className="flex flex-col gap-5 p-8 md:p-12 lg:p-16">
-            <h3 className="text-xl md:text-2xl font-display font-medium leading-snug text-balance text-black">
+            <h3 className={`${t.cardHeadlineMedium} text-black`}>
               <span>{prefix}</span>{" "}
               <span className="capitalize">{highlight}</span>
             </h3>
-            <p className="text-base md:text-lg leading-relaxed text-muted-foreground max-w-xl">
+            <p className={`${t.bodyResponsive} text-muted-foreground max-w-xl`}>
               {text}
             </p>
           </div>

@@ -1,4 +1,5 @@
 import { ArrowRight } from "lucide-react";
+import { type as t } from "@/lib/typography";
 
 const ProductsCTA = () => (
   <section id="build-with-us" className="py-24">
@@ -7,10 +8,10 @@ const ProductsCTA = () => (
         <div className="absolute -top-32 -left-32 w-[400px] h-[400px] rounded-full bg-white/40 blur-3xl" />
         <div className="absolute -bottom-32 -right-32 w-[400px] h-[400px] rounded-full bg-white/40 blur-3xl" />
         <div className="relative">
-          <h2 className="font-display font-normal text-3xl sm:text-4xl md:text-5xl text-balance text-[#5C3A06]">
+          <h2 className={`${t.sectionHeadline} text-[#5C3A06]`}>
             Building a product like these?
           </h2>
-          <p className="mt-5 text-lg md:text-xl text-[#5C3A06]/80 max-w-2xl mx-auto text-balance">
+          <p className={`mt-5 ${t.subheadline} text-[#5C3A06]/80 max-w-2xl mx-auto`}>
             Let's talk. We partner with teams to design and ship AI products from MVP to scale.
           </p>
           <div className="mt-10 flex flex-wrap items-center justify-center gap-4">

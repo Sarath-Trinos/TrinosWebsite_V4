@@ -1,5 +1,6 @@
 import type { ReactNode } from "react";
 import { ArrowRight } from "lucide-react";
+import { type as typography } from "@/lib/typography";
 import { cn } from "@/lib/utils";
 
 interface Props {
@@ -63,7 +64,7 @@ const SectionHeader = ({
           className={cn(
             titleClassName ??
               cn(
-                "font-display text-4xl md:text-5xl text-balance",
+                typography.sectionHeadlineLg,
                 headlineWeightClass,
                 tone === "default" && "text-foreground",
                 tone === "dark" && "text-on-surface-dark",
@@ -75,7 +76,8 @@ const SectionHeader = ({
         {subtitle ? (
           <p
             className={cn(
-              "mt-3 max-w-2xl text-balance font-display text-lg md:text-xl leading-snug",
+              "mt-3 max-w-2xl",
+              typography.subheadline,
               subtitleClassName ??
                 cn(
                   "font-semibold",
@@ -90,7 +92,8 @@ const SectionHeader = ({
         {description && (
           <p
             className={cn(
-              "mt-4 max-w-2xl text-lg text-balance",
+              "mt-4 max-w-2xl",
+              typography.bodyLg,
               tone === "dark" ? "text-white/70" : "text-muted-foreground",
             )}
           >

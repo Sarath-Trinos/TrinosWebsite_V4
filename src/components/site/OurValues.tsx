@@ -1,5 +1,6 @@
 import Image from "next/image";
 import { ArrowRight } from "lucide-react";
+import { type as t } from "@/lib/typography";
 import SectionHeader from "./SectionHeader";
 
 const values = [
@@ -42,7 +43,7 @@ const OurValues = () => (
   <section className="bg-background py-24">
     <div className="container-px max-w-[1400px] mx-auto">
       <SectionHeader
-        titleClassName="font-display font-normal text-4xl md:text-5xl text-balance leading-tight"
+        titleClassName={t.sectionHeadlineLg}
         subtitleClassName="font-normal text-muted-foreground"
         title={
           <>
@@ -62,7 +63,7 @@ const OurValues = () => (
               className={`${cardBg} group relative rounded-3xl pt-8 md:pt-10 pb-6 px-6 flex flex-col transition-shadow hover:shadow-card`}
             >
               <span
-                className={`absolute top-6 right-6 font-display font-bold text-5xl ${tagText} opacity-25`}
+                className={`absolute top-6 right-6 ${t.statLg} ${tagText} opacity-25`}
               >
                 {number}
               </span>
@@ -74,11 +75,11 @@ const OurValues = () => (
                   {tag}
                 </span>
 
-                <h3 className="mt-8 font-display font-bold text-2xl text-foreground">
+                <h3 className={`mt-8 ${t.cardHeadlineMd} text-foreground`}>
                   {title}
                 </h3>
 
-                <p className="mt-5 text-base md:text-lg text-foreground/70 leading-relaxed">
+                <p className={`mt-5 ${t.bodyResponsive} text-foreground/70`}>
                   {description}
                 </p>
 

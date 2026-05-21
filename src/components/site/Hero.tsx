@@ -2,6 +2,7 @@
 
 import { useEffect, useRef } from "react";
 import { ArrowRight } from "lucide-react";
+import { type as t } from "@/lib/typography";
 
 const Hero = () => {
   const sectionRef = useRef<HTMLElement | null>(null);
@@ -49,7 +50,7 @@ const Hero = () => {
 
       <div className="container-px max-w-[1400px] mx-auto relative z-10 w-full">
         <div className="max-w-4xl animate-fade-up text-white">
-          <h1 className="font-display text-3xl sm:text-4xl md:text-5xl lg:text-6xl leading-[1.1] sm:leading-[1.05]">
+          <h1 className={t.heroHeadlineHome}>
             Transforming Enterprises with{" "}
             <span className="hidden sm:inline">
               <br />
@@ -60,7 +61,7 @@ const Hero = () => {
             </span>
             Technology
           </h1>
-          <p className="mt-6 text-lg md:text-xl text-white/85 max-w-xl text-balance">
+          <p className={`mt-6 ${t.subheadline} text-white/85 max-w-xl`}>
             We empower organizations to accelerate innovation through advanced AI systems, robust Cyber Security, Cloud Modernization, and Enterprise-grade Software Engineering.
           </p>
 

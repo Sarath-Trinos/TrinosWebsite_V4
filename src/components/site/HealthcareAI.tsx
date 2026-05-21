@@ -3,6 +3,7 @@
 import { CloudUpload, Gauge, Layers, Server } from "lucide-react";
 import Image from "next/image";
 import { useState } from "react";
+import { type as t } from "@/lib/typography";
 import SectionHeader from "./SectionHeader";
 import { cn } from "@/lib/utils";
 
@@ -71,10 +72,10 @@ const HealthcareAI = () => {
               />
             ))}
             <div className="absolute inset-x-0 bottom-0 p-7 bg-gradient-to-t from-foreground/90 via-foreground/50 to-transparent text-on-surface-dark">
-              <h3 className="font-display font-bold text-2xl mb-2">
+              <h3 className={`${t.cardHeadlineMd} mb-2`}>
                 {cards[activeIndex].title}
               </h3>
-              <p className="text-sm md:text-base text-white/85 leading-relaxed">
+              <p className={`${t.bodySm} text-white/85`}>
                 {cards[activeIndex].description}
               </p>
             </div>
@@ -106,7 +107,7 @@ const HealthcareAI = () => {
                   >
                     <it.icon className="w-6 h-6" />
                   </div>
-                  <h3 className="font-display font-bold text-xl flex-1">{it.title}</h3>
+                  <h3 className={`${t.cardHeadline} flex-1`}>{it.title}</h3>
                 </button>
               );
             })}

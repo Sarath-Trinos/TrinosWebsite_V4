@@ -57,6 +57,27 @@
 
     /* Motion */
     --ease-out: cubic-bezier(0.22, 1, 0.36, 1);
+
+    /* Typography scale (1rem = 16px) — single source of truth */
+    --text-body-sm: 0.875rem;      /* 14px */
+    --text-body: 1rem;             /* 16px */
+    --text-body-md: 0.9375rem;     /* 15px */
+    --text-body-lg: 1.125rem;      /* 18px */
+    --text-subheadline: 1.125rem;  /* 18px */
+    --text-subheadline-md: 1.25rem; /* 20px */
+    --text-subheadline-lg: 1.5rem; /* 24px */
+    --text-card: 1.125rem;         /* 18px */
+    --text-card-md: 1.25rem;       /* 20px */
+    --text-card-lg: 1.5rem;        /* 24px */
+    --text-section: 1.875rem;      /* 30px */
+    --text-section-md: 2.25rem;    /* 36px */
+    --text-section-lg: 3rem;       /* 48px */
+    --text-hero: 2.25rem;          /* 36px */
+    --text-hero-md: 3rem;          /* 48px */
+    --text-hero-lg: 3.75rem;       /* 60px */
+    --text-stat: 2.25rem;          /* 36px */
+    --text-stat-lg: 3rem;          /* 48px */
+    --text-display: 3rem;          /* 48px */
   }
 }
 
@@ -85,6 +106,131 @@
 }
 
 @layer components {
+  /* ── Typography tokens (use via src/lib/typography.ts `type.*`) ── */
+
+  /* Page hero h1 — 36 → 48 → 60px */
+  .type-hero-headline {
+    @apply font-display text-4xl sm:text-5xl md:text-6xl leading-[1.05] text-balance;
+  }
+
+  /* Home hero h1 — extra small breakpoint */
+  .type-hero-headline-home {
+    @apply font-display text-3xl sm:text-4xl md:text-5xl lg:text-6xl leading-[1.1] sm:leading-[1.05] text-balance;
+  }
+
+  /* Section h2 — 30 → 36 → 48px */
+  .type-section-headline {
+    @apply font-display font-normal text-3xl sm:text-4xl md:text-5xl text-balance leading-tight;
+  }
+
+  /* Section h2 large — 36 → 48px */
+  .type-section-headline-lg {
+    @apply font-display font-normal text-4xl md:text-5xl text-balance leading-tight;
+  }
+
+  /* Section h2 medium — 30 → 36px */
+  .type-section-headline-md {
+    @apply font-display font-normal text-3xl md:text-4xl text-balance leading-tight;
+  }
+
+  /* Card / feature h3 — 20 → 24px */
+  .type-card-headline {
+    @apply font-display font-bold text-xl leading-snug sm:text-2xl;
+  }
+
+  /* Card h3 — 24px fixed */
+  .type-card-headline-md {
+    @apply font-display font-bold text-2xl leading-snug text-balance;
+  }
+
+  /* Card h3 small — 18 → 20px */
+  .type-card-headline-sm {
+    @apply font-display font-bold text-lg leading-snug sm:text-xl;
+  }
+
+  /* Card h3 semibold — 20px */
+  .type-card-headline-semibold {
+    @apply font-display font-semibold text-xl leading-snug text-balance;
+  }
+
+  /* Mission / vision style h3 */
+  .type-card-headline-medium {
+    @apply font-display font-medium text-xl md:text-2xl leading-snug text-balance;
+  }
+
+  /* Prominent feature block h3 — 24 → 36px */
+  .type-feature-headline {
+    @apply font-display font-bold text-2xl md:text-4xl leading-tight;
+  }
+
+  /* Stat / metric number — 36 → 48px */
+  .type-stat {
+    @apply font-display font-bold text-4xl sm:text-5xl;
+  }
+
+  /* Large stat — 48px */
+  .type-stat-lg {
+    @apply font-display font-bold text-5xl;
+  }
+
+  /* Hero & section subheadline — 18 → 20px */
+  .type-subheadline {
+    @apply font-display text-lg md:text-xl leading-snug text-balance;
+  }
+
+  .type-subheadline-semibold {
+    @apply font-display text-lg md:text-xl leading-snug text-balance font-semibold;
+  }
+
+  .type-subheadline-normal {
+    @apply font-display text-lg md:text-xl leading-snug text-balance font-normal;
+  }
+
+  /* Emphasized subheadline — 20 → 24px */
+  .type-subheadline-lg {
+    @apply font-display text-xl font-medium leading-snug sm:text-2xl;
+  }
+
+  /* Default body — 16px */
+  .type-body {
+    @apply text-base leading-relaxed;
+  }
+
+  /* Marketing body — 18px */
+  .type-body-lg {
+    @apply text-lg leading-relaxed text-balance;
+  }
+
+  /* Body — 16 → 18px */
+  .type-body-responsive {
+    @apply text-base leading-relaxed sm:text-lg;
+  }
+
+  /* Body — 14 → 16px */
+  .type-body-sm {
+    @apply text-sm leading-relaxed md:text-base;
+  }
+
+  /* Card caption — 15 → 16px */
+  .type-body-caption {
+    @apply text-[15px] leading-relaxed sm:text-base;
+  }
+
+  /* Role / label line */
+  .type-role {
+    @apply text-base font-semibold;
+  }
+
+  /* Decorative index / watermark number */
+  .type-index {
+    @apply font-display text-sm font-bold;
+  }
+
+  /* Step / pillar badge number */
+  .type-badge {
+    @apply font-display text-base font-bold;
+  }
+
   .container-px {
     @apply px-6 md:px-10 lg:px-16;
   }

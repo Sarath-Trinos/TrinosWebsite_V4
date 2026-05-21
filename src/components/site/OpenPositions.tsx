@@ -1,4 +1,5 @@
 import { ArrowRight, MapPin } from "lucide-react";
+import { type as t } from "@/lib/typography";
 
 type Position = {
   title: string;
@@ -37,13 +38,13 @@ const OpenPositions = () => (
     <div className="container-px max-w-[1400px] mx-auto">
       <div className="grid lg:grid-cols-3 gap-12 lg:gap-16">
         <div className="lg:col-span-1">
-          <h2 className="font-display font-normal text-4xl md:text-5xl text-balance leading-tight text-brand-gradient-reverse">
-            Open positions
+          <h2 className={`${t.sectionHeadlineLg} text-foreground`}>
+            Open <span className="text-brand-gradient">positions</span>
           </h2>
-          <p className="mt-3 max-w-xl text-balance font-display font-semibold text-lg md:text-xl leading-snug text-foreground">
+          <p className={`mt-3 max-w-xl ${t.subheadlineSemibold} text-foreground`}>
             Find your next role
           </p>
-          <p className="mt-6 text-lg text-muted-foreground text-balance">
+          <p className={`mt-6 ${t.bodyLg} text-muted-foreground`}>
             Explore exciting opportunities to join our team and help shape the future of
             enterprise AI.
           </p>
@@ -66,7 +67,7 @@ const OpenPositions = () => (
                   <MapPin className="w-3.5 h-3.5" />
                   {location}
                 </span>
-                <h3 className="mt-4 font-display font-bold text-2xl leading-snug">
+                <h3 className={`mt-4 ${t.cardHeadlineMd}`}>
                   {title}
                 </h3>
                 <p className="mt-1 text-sm text-foreground/70">{type}</p>

@@ -1,4 +1,5 @@
 import { ArrowRight, ShieldCheck } from "lucide-react";
+import { type as t } from "@/lib/typography";
 
 const EnterpriseProof = () => (
   <section className="py-16 sm:py-20 lg:py-24 bg-gradient-dark text-on-surface-dark relative overflow-hidden">
@@ -7,11 +8,11 @@ const EnterpriseProof = () => (
       <div className="grid lg:grid-cols-2 gap-10 sm:gap-14 items-center">
         <div>
           <span className="chip bg-white/10 text-white border border-white/10">Built for the enterprise</span>
-          <h2 className="mt-5 font-display font-normal text-3xl sm:text-4xl md:text-5xl leading-tight text-balance">
+          <h2 className={`mt-5 ${t.sectionHeadline}`}>
             Where most transformations stall,{" "}
             <span className="bg-gradient-to-r from-primary-glow to-white bg-clip-text text-transparent">we deliver.</span>
           </h2>
-          <p className="mt-5 text-base sm:text-lg text-white/70 text-balance">
+          <p className={`mt-5 ${t.bodyResponsive} text-white/70`}>
             Enterprises don&apos;t struggle because the technology fails — they struggle when AI, Cloud,
             and ERP modernization collide with legacy systems, fragmented data, and strict compliance
             mandates. Trinos brings AI-first engineering, security by design, and deep enterprise
@@ -29,10 +30,10 @@ const EnterpriseProof = () => (
             { stat: "End-to-End", label: "expertise across AI, Cloud, ERP, CRM, and Cyber Security" },
           ].map((s) => (
             <div key={s.stat} className="bg-white/5 backdrop-blur border border-white/10 rounded-2xl p-5 sm:p-6 flex flex-col sm:flex-row sm:items-center gap-3 sm:gap-5">
-              <div className="font-display font-bold text-4xl sm:text-5xl bg-gradient-to-br from-primary-glow to-white bg-clip-text text-transparent sm:whitespace-nowrap">
+              <div className={`${t.stat} bg-gradient-to-br from-primary-glow to-white bg-clip-text text-transparent sm:whitespace-nowrap`}>
                 {s.stat}
               </div>
-              <p className="text-sm sm:text-base text-white/80">{s.label}</p>
+              <p className={`${t.bodySm} text-white/80`}>{s.label}</p>
             </div>
           ))}
           <div className="flex items-center gap-3 mt-2 text-white/70 text-xs sm:text-sm">

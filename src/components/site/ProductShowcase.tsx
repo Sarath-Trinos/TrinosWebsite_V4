@@ -3,6 +3,7 @@
 import Image from "next/image";
 import { ArrowRight, Check } from "lucide-react";
 import { useEffect, useState } from "react";
+import { type as t } from "@/lib/typography";
 
 type Product = {
   name: string;
@@ -177,10 +178,10 @@ const ProductShowcase = () => (
         >
           <div>
             <span className="chip mb-5">{product.eyebrow}</span>
-            <h2 className="font-display font-normal text-3xl sm:text-4xl md:text-5xl text-balance leading-tight">
+            <h2 className={t.sectionHeadline}>
               {product.name}
             </h2>
-            <p className="mt-5 text-lg text-muted-foreground text-balance">
+            <p className={`mt-5 ${t.bodyLg} text-muted-foreground`}>
               {product.description}
             </p>
 

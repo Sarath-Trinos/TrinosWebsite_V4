@@ -3,6 +3,7 @@
 import { useEffect, useRef, useState } from "react";
 import { Cpu, ShieldCheck, Building2, Gauge } from "lucide-react";
 import { cn } from "@/lib/utils";
+import { type as t } from "@/lib/typography";
 
 type Pillar = {
   title: string;
@@ -123,10 +124,10 @@ const WhyChooseTrinos = () => {
 
       <div className="container-px mx-auto w-full max-w-[1400px]">
         {/* Heading */}
-        <h2 className="font-display font-normal text-3xl sm:text-4xl md:text-5xl leading-tight text-balance text-foreground">
+        <h2 className={`${t.sectionHeadline} text-foreground`}>
           Why <span className="text-brand-gradient">Trinos</span>
         </h2>
-        <p className="mt-5 max-w-2xl text-base text-muted-foreground sm:text-lg">
+        <p className={`mt-5 max-w-2xl ${t.bodyResponsive} text-muted-foreground`}>
           Built on innovation. Driven by trust. Delivered with excellence.
         </p>
 
@@ -178,7 +179,7 @@ const WhyChooseTrinos = () => {
                       transition: "opacity 300ms ease-out, transform 300ms ease-out",
                     }}
                   >
-                    <span className="relative grid h-full w-full place-items-center font-display text-base font-bold text-foreground/80">
+                    <span className={`relative grid h-full w-full place-items-center ${t.badge} text-foreground/80`}>
                       {String(i + 1).padStart(2, "0")}
                     </span>
                   </div>
@@ -204,7 +205,7 @@ const WhyChooseTrinos = () => {
                   {/* Mobile-only inline badge (desktop badges are rendered in the absolutely-positioned row above) */}
                   <div className="relative z-20 -mb-7 lg:hidden">
                     <div className="relative h-14 w-14 rounded-full bg-white shadow-[0_8px_24px_-6px_hsl(var(--primary)/0.35)] ring-1 ring-primary/15">
-                      <span className="relative grid h-full w-full place-items-center font-display text-base font-bold text-foreground/80">
+                      <span className={`relative grid h-full w-full place-items-center ${t.badge} text-foreground/80`}>
                         {String(i + 1).padStart(2, "0")}
                       </span>
                     </div>
@@ -230,14 +231,14 @@ const WhyChooseTrinos = () => {
                     </div>
 
                     {/* Title */}
-                    <h3 className="relative mt-6 text-center font-display text-lg font-bold text-foreground sm:text-xl">
+                    <h3 className={`relative mt-6 text-center ${t.cardHeadlineSm} text-foreground`}>
                       {p.title}
                     </h3>
                     {/* Accent underline */}
                     <div className="relative mx-auto mt-3 h-[3px] w-10 rounded-full bg-gradient-to-r from-primary to-primary-glow" />
 
                     {/* Description */}
-                    <p className="relative mt-5 text-center text-sm leading-relaxed text-muted-foreground sm:text-[15px]">
+                    <p className={`relative mt-5 text-center ${t.bodyCaption} text-muted-foreground`}>
                       {p.description}
                     </p>
                   </div>

@@ -2,6 +2,7 @@
 
 import { ArrowRight } from "lucide-react";
 import { useEffect, useRef } from "react";
+import { type as t } from "@/lib/typography";
 
 const ProductsHero = () => {
   const videoRef = useRef<HTMLVideoElement>(null);
@@ -46,14 +47,14 @@ const ProductsHero = () => {
         <div className="container-px max-w-[1400px] mx-auto relative z-10">
           <div className="max-w-3xl animate-fade-up">
             <span className="chip mb-5">Products</span>
-            <h1 className="font-display text-4xl sm:text-5xl md:text-6xl leading-[1.05] text-balance text-white">
+            <h1 className={`${t.heroHeadline} text-white`}>
               Intelligent solutions for{" "}
               <span className="text-brand-gradient-reverse">
                 modern enterprises
               </span>
               .
             </h1>
-            <p className="mt-6 text-lg md:text-xl text-white/80 max-w-2xl text-balance">
+            <p className={`mt-6 ${t.subheadline} text-white/80 max-w-2xl`}>
               A growing suite of AI-powered products built to accelerate digital transformation
               and drive measurable business outcomes.
             </p>

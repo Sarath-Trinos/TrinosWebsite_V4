@@ -1,4 +1,5 @@
 import { ArrowRight } from "lucide-react";
+import { type as t } from "@/lib/typography";
 
 const ServicesCTA = () => (
   <section id="services-cta" className="py-24">
@@ -7,10 +8,10 @@ const ServicesCTA = () => (
         <div className="absolute -top-32 -left-32 w-[400px] h-[400px] rounded-full bg-white/40 blur-3xl" />
         <div className="absolute -bottom-32 -right-32 w-[400px] h-[400px] rounded-full bg-white/40 blur-3xl" />
         <div className="relative">
-          <h2 className="font-display font-normal text-3xl sm:text-4xl md:text-5xl text-balance text-[#0C4A6E]">
+          <h2 className={`${t.sectionHeadline} text-[#0C4A6E]`}>
             Ready to transform your business?
           </h2>
-          <p className="mt-5 text-lg md:text-xl text-[#0C4A6E]/80 max-w-2xl mx-auto text-balance">
+          <p className={`mt-5 ${t.subheadline} text-[#0C4A6E]/80 max-w-2xl mx-auto`}>
             Let's discuss how our services can help achieve your goals.
           </p>
           <div className="mt-10 flex flex-wrap items-center justify-center gap-4">

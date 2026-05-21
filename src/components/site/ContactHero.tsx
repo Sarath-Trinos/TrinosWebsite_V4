@@ -1,4 +1,5 @@
 import Link from "next/link";
+import { type as t } from "@/lib/typography";
 
 const ContactHero = () => {
   return (
@@ -27,13 +28,13 @@ const ContactHero = () => {
               <span className="text-white/90">Contact</span>
             </nav>
 
-            <h1 className="font-display text-4xl sm:text-5xl md:text-6xl leading-[1.05] text-balance text-white">
+            <h1 className={`${t.heroHeadline} text-white`}>
               Let's Build Something{" "}
               <span className="text-brand-gradient-reverse">
                 Intelligent
               </span>
             </h1>
-            <p className="mt-6 text-lg md:text-xl text-white/80 max-w-2xl text-balance">
+            <p className={`mt-6 ${t.subheadline} text-white/80 max-w-2xl`}>
               Have a question or want to discuss a project? Our team is here to help you transform
               your business with AI-powered solutions.
             </p>

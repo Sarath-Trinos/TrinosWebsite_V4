@@ -3,6 +3,7 @@
 import Image from "next/image";
 import { useEffect, useRef } from "react";
 import { ChevronRight } from "lucide-react";
+import { type as t } from "@/lib/typography";
 import SectionHeader from "./SectionHeader";
 import erpAnalytics from "@/assets/erp-analytics.png";
 import erpUx from "@/assets/erp-ux.png";
@@ -111,7 +112,7 @@ const ErpCrmModernization = () => (
                 />
               )}
             </div>
-            <h3 className="font-display font-bold text-2xl mb-3 text-balance">
+            <h3 className={`${t.cardHeadlineMd} mb-3`}>
               {it.title}
             </h3>
             <p className="text-muted-foreground mb-6 flex-1">{it.desc}</p>
@@ -126,7 +127,7 @@ const ErpCrmModernization = () => (
       </div>
 
       <div className="mt-16 flex justify-center">
-        <p className="text-center text-lg text-muted-foreground text-balance max-w-2xl">
+        <p className={`text-center ${t.bodyLg} text-muted-foreground max-w-2xl`}>
           Helping enterprises streamline processes and make faster, data-led decisions.
         </p>
       </div>

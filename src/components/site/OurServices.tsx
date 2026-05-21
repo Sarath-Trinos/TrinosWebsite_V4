@@ -1,6 +1,7 @@
 "use client";
 
 import { useState } from "react";
+import { type as t } from "@/lib/typography";
 import {
   BarChart3,
   Bot,
@@ -158,14 +159,14 @@ const OurServices = () => {
     <section id="our-services" className="py-10 bg-background">
       <div className="container-px max-w-[1400px] mx-auto">
         <div className="max-w-2xl mb-12">
-          <h2 className="font-display font-normal text-4xl md:text-5xl text-balance">
+          <h2 className={t.sectionHeadlineLg}>
             <span className="text-black">Our</span>{" "}
             <span className="text-brand-gradient-reverse">services</span>
           </h2>
-          <p className="mt-3 max-w-2xl text-balance font-display font-semibold text-lg md:text-xl leading-snug text-foreground">
+          <p className={`mt-3 max-w-2xl ${t.subheadlineSemibold} text-foreground`}>
             Purpose-built solutions across the AI &amp; ERP lifecycle
           </p>
-          <p className="mt-4 text-lg text-muted-foreground text-balance">
+          <p className={`mt-4 ${t.bodyLg} text-muted-foreground`}>
             Designed for impact and scale — from generative AI to industrial automation, we deliver the systems that move enterprises forward.
           </p>
         </div>
@@ -190,7 +191,7 @@ const OurServices = () => {
               </div>
 
               <div className="p-6">
-                <h3 className="font-display font-semibold text-xl leading-snug text-balance">
+                <h3 className={t.cardHeadlineSemibold}>
                   {title}
                 </h3>
                 <p className="mt-3 text-sm text-white/70 leading-relaxed line-clamp-3">
