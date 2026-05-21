@@ -74,17 +74,17 @@ function ActiveCard({ slide }: { slide: Slide }) {
 
 function PreviewCard({ slide }: { slide: Slide }) {
   return (
-    <div className="flex h-full w-full items-end gap-5 p-2 md:gap-6 md:p-4">
-      <div className="relative aspect-square w-40 shrink-0 overflow-hidden rounded-2xl bg-white md:w-56">
+    <div className="flex h-full w-full items-end gap-5 p-2 lg:gap-6 lg:p-4">
+      <div className="relative aspect-square w-40 shrink-0 overflow-hidden rounded-2xl bg-white lg:w-56">
         <Image
           src={slide.image}
           alt={slide.title}
           fill
-          sizes="(max-width: 768px) 160px, 224px"
+          sizes="(max-width: 1024px) 160px, 224px"
           className="object-cover"
         />
       </div>
-      <div className="flex aspect-square flex-1 flex-col justify-center gap-3 pt-8 md:gap-4 md:pt-12">
+      <div className="flex aspect-square flex-1 flex-col justify-center gap-3 pt-8 lg:gap-4 lg:pt-12">
         <h4 className={`${t.cardHeadline} text-foreground`}>{slide.title}</h4>
         <p className={`${t.bodySm} text-muted-foreground`}>
           {slide.description}
@@ -243,9 +243,9 @@ function SliderStage({
   return (
     <div className="relative">
       <div className="relative overflow-hidden">
-        <div className="grid h-[320px] grid-cols-1 items-stretch gap-6 sm:h-[360px] md:h-[340px] md:grid-cols-12 md:gap-10">
+        <div className="grid h-[320px] grid-cols-1 items-stretch gap-6 sm:h-[360px] lg:h-[340px] lg:grid-cols-12 lg:gap-10">
           {/* ACTIVE SLOT */}
-          <div className="relative overflow-hidden md:col-span-7">
+          <div className="relative overflow-hidden lg:col-span-7">
             {/* Outgoing active: slides off left while fading out */}
             {animating && prevActive && (
               <FxLayer
@@ -277,7 +277,7 @@ function SliderStage({
           </div>
 
           {/* PREVIEW SLOT */}
-          <div className="relative hidden overflow-hidden md:col-span-5 md:block">
+          <div className="relative hidden overflow-hidden lg:col-span-5 lg:block">
             {animating && prevPreview && (
               <FxLayer
                 key={`p-out-${lastIndexRef.current}`}

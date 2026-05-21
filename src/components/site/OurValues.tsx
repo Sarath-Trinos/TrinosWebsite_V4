@@ -68,7 +68,7 @@ const OurValues = () => (
                 {number}
               </span>
 
-              <div>
+              <div className="flex-1 flex flex-col">
                 <span
                   className={`inline-flex w-fit items-center rounded-full bg-white px-4 py-1.5 text-sm font-semibold ${tagText}`}
                 >
@@ -98,7 +98,7 @@ const OurValues = () => (
                   alt={title}
                   width={800}
                   height={500}
-                  className="w-full h-44 sm:h-48 md:h-56 object-cover transition-transform duration-500 ease-out group-hover:scale-110"
+                  className="w-full h-44 sm:h-auto sm:aspect-square lg:aspect-auto lg:h-56 object-cover transition-transform duration-500 ease-out group-hover:scale-110"
                 />
               </div>
             </div>

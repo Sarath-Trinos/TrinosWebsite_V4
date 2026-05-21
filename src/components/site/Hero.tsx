@@ -40,9 +40,8 @@ const Hero = () => {
         loop
         muted
         playsInline
-        preload="metadata"
+        preload="auto"
         aria-hidden="true"
-        poster="/home/Gemini_Generated_Image_xisb22xisb22xisb.png"
       >
         <source src="/home/May_05_0114_pm_31s_202605061102_hnu9v.mp4" type="video/mp4" />
       </video>

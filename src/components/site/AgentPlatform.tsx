@@ -134,13 +134,13 @@ const AgentPlatform = () => {
           }
           description="Specialized AI agents and enterprise platforms that transform support, workforce operations, and healthcare—with human-like intelligence you can deploy at scale."
         />
-        <div className="flex flex-col gap-6 lg:grid lg:grid-cols-12 lg:gap-4 xl:gap-5">
+        <div className="flex flex-col gap-6 md:grid md:grid-cols-12 md:gap-4 xl:gap-5">
           {/* Left: media + overlay — slow horizontal slide into view */}
           <div
             ref={imageWrapperRef}
-            className="lg:col-span-4 flex items-center justify-center lg:justify-start"
+            className="md:col-span-5 lg:col-span-4 flex md:h-full items-stretch justify-center md:justify-start"
           >
-            <div className="relative w-full max-w-[300px] sm:max-w-sm lg:max-w-full aspect-[4/5] overflow-hidden rounded-3xl">
+            <div className="relative w-full max-w-[300px] sm:max-w-sm md:max-w-full md:h-full md:aspect-auto lg:aspect-[4/5] overflow-hidden rounded-3xl aspect-[4/5]">
               {tiles.map((tile, i) => {
                 const isActive = i === activeIndex;
                 return (
@@ -194,8 +194,8 @@ const AgentPlatform = () => {
           </div>
 
           {/* Right: Platform overview */}
-          <div className="lg:col-span-8 tile py-6 md:py-8 px-5 md:px-7 lg:px-8 relative overflow-hidden bg-[radial-gradient(ellipse_at_top_right,_#1a3556_0%,_#0f1e35_45%,_#0a1628_100%)] flex items-center justify-center">
-            <div className="w-full grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-3 md:gap-3.5">
+          <div className="md:col-span-7 lg:col-span-8 tile py-6 md:py-8 px-5 md:px-5 lg:px-8 relative overflow-hidden bg-[radial-gradient(ellipse_at_top_right,_#1a3556_0%,_#0f1e35_45%,_#0a1628_100%)] flex items-center justify-center">
+            <div className="w-full grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-3 gap-3 md:gap-3">
               {tiles.map(({ icon: Icon, title }, i) => {
                 const isActive = i === activeIndex;
                 return (

@@ -25,49 +25,49 @@ const cards: BentoCard[] = [
     dot: "purple",
     title: "RAG-based Enterprise Knowledge Systems",
     body: "Trustworthy answers grounded in your private data, with citations on every response.",
-    className: "col-span-12 md:col-span-6",
+    className: "col-span-12 md:col-span-6 lg:col-span-6",
   },
   {
     label: "AGENTS",
     dot: "blue",
     title: "AI Agents & Workflow Automation",
     body: "Autonomous agents that plan, act, and hand off — across CRMs, warehouses, and SaaS tools.",
-    className: "col-span-12 md:col-span-6",
+    className: "col-span-12 md:col-span-6 lg:col-span-6",
   },
   {
     label: "FORECASTING",
     dot: "orange",
     title: "Predictive Analytics",
     body: "Forward-looking decisions from historical signals.",
-    className: "col-span-12 md:col-span-3",
+    className: "col-span-12 md:col-span-6 lg:col-span-3",
   },
   {
     label: "LLMS",
     dot: "red",
     title: "Custom LLM Development",
     body: "Domain-tuned models you own. Datasets, training, and evals managed end-to-end.",
-    className: "col-span-12 md:col-span-6",
+    className: "col-span-12 md:col-span-6 lg:col-span-6",
   },
   {
     label: "RPA",
     dot: "orange",
     title: "Robotic Process Automation",
     body: "Resilient, observable bots that retire repetitive work.",
-    className: "col-span-12 md:col-span-3",
+    className: "col-span-12 md:col-span-12 lg:col-span-3",
   },
   {
     label: "VISION",
     dot: "blue",
     title: "Computer Vision",
     body: "Real-time image and video understanding — detection, OCR, quality control. Cloud or edge.",
-    className: "col-span-12 md:col-span-6",
+    className: "col-span-12 md:col-span-6 lg:col-span-6",
   },
   {
     label: "NLP",
     dot: "purple",
     title: "Natural Language Processing",
     body: "Intent, entities, summarization — at scale.",
-    className: "col-span-12 md:col-span-6",
+    className: "col-span-12 md:col-span-6 lg:col-span-6",
   },
 ];
 
@@ -118,7 +118,7 @@ const ServicesCapabilities = () => (
           <div
             key={card.label}
             className={cn(
-              "group relative overflow-hidden rounded-[28px] border border-white/10 p-8 shadow-card md:p-10",
+              "group relative overflow-hidden rounded-[28px] border border-white/10 p-8 shadow-card lg:p-10",
               "min-h-[200px] md:min-h-[220px]",
               card.className,
             )}

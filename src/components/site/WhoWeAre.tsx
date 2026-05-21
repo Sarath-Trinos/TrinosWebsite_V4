@@ -52,7 +52,7 @@ const WhoWeAre = () => (
   <section id="who-we-are" className="pt-24 pb-0 bg-white">
     <div className="container-px max-w-[1400px] mx-auto">
       <div className="grid lg:grid-cols-2 gap-10 md:gap-12 lg:gap-14 items-start">
-        <div className="relative">
+        <div className="relative order-2 lg:order-1">
           <div className="relative rounded-3xl">
             <Image
               src={aboutImg}
@@ -77,7 +77,7 @@ const WhoWeAre = () => (
           </div>
         </div>
 
-        <div className="lg:pt-16">
+        <div className="order-1 lg:order-2 lg:pt-16">
           <h2 className={t.sectionHeadline}>
             <span className="text-black">Who</span>{" "}
             <span className="text-brand-gradient-reverse">we are</span>

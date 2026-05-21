@@ -55,8 +55,8 @@ const HealthcareAI = () => {
           exploreHref="#"
         />
 
-        <div className="grid grid-cols-1 md:grid-cols-5 gap-6">
-          <div className="md:col-span-2 tile bg-card overflow-hidden relative aspect-[4/5]">
+        <div className="grid grid-cols-1 md:grid-cols-5 gap-6 md:items-stretch">
+          <div className="md:col-span-2 tile bg-card overflow-hidden relative aspect-[4/5] md:aspect-[3/4] lg:aspect-[4/5]">
             {cards.map((card, i) => (
               <Image
                 key={card.title}
@@ -81,7 +81,7 @@ const HealthcareAI = () => {
             </div>
           </div>
 
-          <div className="md:col-span-3 grid gap-4 md:gap-6">
+          <div className="md:col-span-3 grid gap-4 md:gap-3 lg:gap-6 md:grid-rows-4 md:h-full">
             {cards.map((it, i) => {
               const isActive = i === activeIndex;
               return (
@@ -91,7 +91,7 @@ const HealthcareAI = () => {
                   onClick={() => setActiveIndex(i)}
                   aria-pressed={isActive}
                   className={cn(
-                    "tile bg-card border p-6 md:p-7 flex items-center gap-5 text-left w-full transition-all duration-300 ease-out",
+                    "tile bg-card border p-6 md:p-3 md:py-2 lg:p-7 flex items-center gap-5 md:gap-3 lg:gap-5 text-left w-full md:h-full transition-all duration-300 ease-out",
                     isActive
                       ? "border-primary shadow-glow scale-[1.01]"
                       : "border-border hover:border-primary/40 hover:shadow-soft"
@@ -99,13 +99,13 @@ const HealthcareAI = () => {
                 >
                   <div
                     className={cn(
-                      "w-12 h-12 shrink-0 rounded-2xl grid place-items-center transition-colors duration-300",
+                      "w-12 h-12 md:w-9 md:h-9 lg:w-12 lg:h-12 shrink-0 rounded-2xl grid place-items-center transition-colors duration-300",
                       isActive
                         ? "bg-gradient-primary text-white"
                         : "bg-gradient-tile text-primary"
                     )}
                   >
-                    <it.icon className="w-6 h-6" />
+                    <it.icon className="w-6 h-6 md:w-4 md:h-4 lg:w-6 lg:h-6" />
                   </div>
                   <h3 className={`${t.cardHeadline} flex-1`}>{it.title}</h3>
                 </button>
