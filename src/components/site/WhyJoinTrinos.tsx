@@ -176,7 +176,7 @@ const WhyJoinTrinos = () => {
         <div className="mt-10 flex items-center gap-6">
           <div className="relative h-px flex-1 bg-border">
             <div
-              className="absolute inset-y-0 left-0 bg-foreground transition-all ease-[cubic-bezier(0.22,1,0.36,1)]"
+              className="absolute inset-y-0 left-0 bg-foreground transition-all [transition-timing-function:cubic-bezier(0.22,1,0.36,1)]"
               style={{
                 width: `${((index + 1) / total) * 100}%`,
                 transitionDuration: `${SLIDE_MS}ms`,

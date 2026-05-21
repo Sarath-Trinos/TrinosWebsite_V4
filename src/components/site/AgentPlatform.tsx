@@ -154,7 +154,7 @@ const AgentPlatform = () => {
                     }}
                   >
                     <div
-                      className={`absolute inset-0 transition-transform duration-[2800ms] [transition-timing-function:cubic-bezier(0.22,1,0.36,1)] will-change-transform ${
+                      className={`absolute inset-0 transition-transform [transition-duration:2800ms] [transition-timing-function:cubic-bezier(0.22,1,0.36,1)] will-change-transform ${
                         imageVisible ? "translate-x-0" : "translate-x-full"
                       }`}
                     >
