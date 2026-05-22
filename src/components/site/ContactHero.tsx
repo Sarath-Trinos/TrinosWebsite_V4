@@ -3,18 +3,18 @@ import { type as t } from "@/lib/typography";
 
 const ContactHero = () => {
   return (
-    <section className="relative overflow-hidden bg-black">
+    <section className="relative overflow-hidden">
       <div className="h-[5rem]" aria-hidden="true" />
       <div className="relative pt-16 lg:pt-24 pb-20">
         <video
-          className="absolute inset-0 w-full h-full object-cover bg-black"
+          className="absolute inset-0 w-full h-full object-cover"
           style={{ objectPosition: "center 60%" }}
           src="/videos/mp4.mp4"
           autoPlay
           muted
           loop
           playsInline
-          preload="auto"
+          preload="metadata"
           aria-hidden="true"
         />
         <div className="absolute inset-0 bg-black/60" />

@@ -30,17 +30,17 @@ const Hero = () => {
   return (
     <section
       ref={sectionRef}
-      className="relative pt-28 lg:pt-32 pb-20 min-h-screen flex items-center overflow-hidden bg-black isolate"
+      className="relative pt-28 lg:pt-32 pb-20 min-h-screen flex items-center overflow-hidden isolate"
       style={{ contain: "layout paint" }}
     >
       <video
         ref={videoRef}
-        className="absolute inset-0 w-full h-full object-cover bg-black"
+        className="absolute inset-0 w-full h-full object-cover"
         autoPlay
         loop
         muted
         playsInline
-        preload="auto"
+        preload="metadata"
         aria-hidden="true"
       >
         <source src="/home/May_05_0114_pm_31s_202605061102_hnu9v.mp4" type="video/mp4" />

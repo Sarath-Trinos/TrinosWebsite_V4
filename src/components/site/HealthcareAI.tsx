@@ -56,7 +56,7 @@ const HealthcareAI = () => {
         />
 
         <div className="grid grid-cols-1 md:grid-cols-5 gap-6 md:items-stretch">
-          <div className="md:col-span-2 tile bg-surface-dark overflow-hidden relative aspect-[4/5] md:aspect-[3/4] lg:aspect-[4/5]">
+          <div className="md:col-span-2 tile overflow-hidden relative aspect-[4/5] md:aspect-[3/4] lg:aspect-[4/5]">
             {cards.map((card, i) => (
               <Image
                 key={card.title}

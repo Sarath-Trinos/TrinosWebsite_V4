@@ -5,10 +5,10 @@ import { useEffect, useRef } from "react";
 import { ChevronRight } from "lucide-react";
 import { type as t } from "@/lib/typography";
 import SectionHeader from "./SectionHeader";
-import erpAnalytics from "@/assets/erp-analytics.png";
-import erpUx from "@/assets/erp-ux.png";
-import erpWorkflow from "@/assets/erp-workflow.png";
-import erpPerformance from "@/assets/erp-performance.png";
+import erpAnalytics from "@/assets/erp-analytics.jpg";
+import erpUx from "@/assets/erp-ux.jpg";
+import erpWorkflow from "@/assets/erp-workflow.jpg";
+import erpPerformance from "@/assets/erp-performance.jpg";
 
 const items = [
   {
@@ -72,10 +72,10 @@ function CardVideo({ src }: { src: string }) {
       loop
       muted
       playsInline
-      preload="auto"
+      preload="metadata"
       disablePictureInPicture
       disableRemotePlayback
-      className="absolute inset-0 w-full h-full object-cover bg-surface-dark"
+      className="absolute inset-0 w-full h-full object-cover"
     />
   );
 }

@@ -1,7 +1,7 @@
 import Image from "next/image";
 import { Cloud, Cpu, ShieldCheck, BarChart3, Code2, Database } from "lucide-react";
 import { type as t } from "@/lib/typography";
-import aboutImg from "@/assets/aboutus.png";
+import aboutImg from "@/assets/aboutus.jpg";
 
 const floatingIcons = [
   {

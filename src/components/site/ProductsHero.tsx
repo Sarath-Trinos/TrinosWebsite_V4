@@ -27,18 +27,18 @@ const ProductsHero = () => {
   }, []);
 
   return (
-    <section className="relative overflow-hidden bg-black">
+    <section className="relative overflow-hidden">
       <div className="h-[5rem]" aria-hidden="true" />
       <div className="relative pt-16 lg:pt-24 pb-24">
         <video
           ref={videoRef}
-          className="absolute inset-0 w-full h-full object-cover object-[center_32%] bg-black"
+          className="absolute inset-0 w-full h-full object-cover object-[center_32%]"
           src="/videos/product_hero.mp4"
           autoPlay
           muted
           loop
           playsInline
-          preload="auto"
+          preload="metadata"
           disableRemotePlayback
           aria-hidden="true"
         />
