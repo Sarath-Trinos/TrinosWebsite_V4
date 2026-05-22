@@ -14,7 +14,7 @@ const CareersHero = () => {
           muted
           loop
           playsInline
-          preload="metadata"
+          preload="auto"
           aria-hidden="true"
         />
         <div className="absolute inset-0 bg-black/60" />

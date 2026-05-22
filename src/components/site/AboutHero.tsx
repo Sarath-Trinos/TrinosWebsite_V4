@@ -38,7 +38,7 @@ const AboutHero = () => {
           muted
           loop
           playsInline
-          preload="metadata"
+          preload="auto"
           disableRemotePlayback
           aria-hidden="true"
         />

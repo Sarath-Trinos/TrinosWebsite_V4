@@ -72,7 +72,7 @@ function CardVideo({ src }: { src: string }) {
       loop
       muted
       playsInline
-      preload="metadata"
+      preload="auto"
       disablePictureInPicture
       disableRemotePlayback
       className="absolute inset-0 w-full h-full object-cover"
