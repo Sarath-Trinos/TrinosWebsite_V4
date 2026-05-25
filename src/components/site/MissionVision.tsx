@@ -7,7 +7,7 @@ const items = [
     highlight: "mission",
     text: "To empower organizations with intelligent and secure digital solutions that accelerate transformation and unlock operational excellence.",
     image:
-      "/about us /magnific__just-expand-the-background-with-plane-black__85858.jpeg",
+      "/about-us/magnific__just-expand-the-background-with-plane-black__85858.jpeg",
     alt: "Our mission",
     imageClassName: "object-cover object-bottom-right",
   },
@@ -16,7 +16,7 @@ const items = [
     highlight: "vision",
     text: "To be a global leader in AI-driven enterprise transformation by delivering future-ready, scalable, and secure technology platforms.",
     image:
-      "/about us /magnific_2982314553.jpeg",
+      "/about-us/magnific_2982314553.jpeg",
     alt: "Our vision",
     imageClassName: "object-cover",
   },
