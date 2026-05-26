@@ -13,7 +13,7 @@ const EnterpriseProof = () => (
             <span className="bg-gradient-to-r from-primary-glow to-white bg-clip-text text-transparent">Layer Is.</span>
           </h2>
           <p className={`mt-5 ${t.bodyResponsive} text-white/70`}>
-            Most enterprises already have data, systems, and domain expertise. The challenge is turning those assets into operational intelligence. Legacy systems create friction. Generic AI tools fail when they meet real workflows, permissions, compliance needs, and business rules. Trinos builds AI-first systems that connect to your enterprise context, respect your governance model, and take measurable action inside your existing operations.
+            You have the data. You have the systems. You have the domain expertise. What you don't have is the execution layer that turns those assets into action. Generic AI tools collapse the moment they meet a real workflow: permissions, approvals, compliance, business rules. Trinos builds the layer that doesn't collapse.
           </p>
           <a href="/contact" className="inline-flex items-center gap-2 mt-8 bg-gradient-cta text-primary-foreground font-semibold px-6 sm:px-7 py-3 sm:py-3.5 rounded-full shadow-glow text-sm sm:text-base">
             Talk to our experts <ArrowRight className="w-4 h-4" />

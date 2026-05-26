@@ -13,7 +13,7 @@ const cards = [
     title: "Enterprise Resource Planning",
     image: "/home/magnific__talk__91259.jpeg",
     description:
-      "ERP architecture, implementation, integration, and AI-ready workflow design — backed by 25+ years of enterprise systems leadership across SAP, Oracle, Microsoft Dynamics, Infor, QAD, and Epicor.",
+      "ERP architected for AI from day one. SAP, Oracle, Microsoft Dynamics, Infor, QAD, Epicor. Implemented, integrated, and operated by a team carrying 25 years of enterprise deployment experience.",
     href: "/services/enterprise-resource-planning",
   },
   {
@@ -47,7 +47,7 @@ const HealthcareAI = () => {
               Enterprise <span className="text-brand-gradient">Platforms</span>
             </>
           }
-          description="The execution layer for AI-ready operations — ERP that connects, web platforms that scale, mobile apps that put AI in users' hands."
+          description="The execution layer underneath the AI. ERP that holds the data. Web that scales the access. Mobile that puts intelligence where the work actually happens."
           exploreHref="/services"
         />
 

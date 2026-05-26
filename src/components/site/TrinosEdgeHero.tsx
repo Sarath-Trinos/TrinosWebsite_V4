@@ -55,7 +55,7 @@ const TrinosEdgeHero = () => {
               </span>
               .
             </h1>
-            <p className={`mt-6 ${t.subheadline} text-white/80 max-w-2xl`}>
+            <p className={`mt-6 ${t.subheadline} text-white/80`}>
               Four compounding capabilities make every Trinos deployment faster, more
               accurate, and harder to replicate over time. We do not just build software.
               We build intelligent systems that evolve alongside your enterprise.

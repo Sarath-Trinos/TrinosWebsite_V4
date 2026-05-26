@@ -15,7 +15,7 @@ const tracks: Track[] = [
     number: "01",
     title: "We Build AI Products",
     body:
-      "Trinos designs, builds, and scales proprietary AI platforms — Moltter Studio, TraceFlow, VoteSense, and Travel One. These products prove our architecture in real production environments before it ever reaches a client deployment.",
+      "Moltter Studio. TraceFlow. VoteSense. Travel One. Four production AI platforms, built and operated by Trinos. The architecture proves itself in market before it ever reaches a client deployment.",
     cta: "Explore Our Products",
     href: "/products",
   },
@@ -23,7 +23,7 @@ const tracks: Track[] = [
     number: "02",
     title: "We Power AI Enterprises",
     body:
-      "We help organizations deploy agentic AI, workflow automation, fine-tuned models, voice assistants, computer vision, ERP systems, web platforms, mobile apps, and social media automation inside real business workflows.",
+      "Agentic AI. Fine-tuned models. Voice. Vision. ERP. Web. Mobile. We deploy each of these where your business actually runs. Wired into your data, your permissions, your approval chains.",
     cta: "Explore Our Services",
     href: "/services",
   },

@@ -27,7 +27,7 @@ const tiles: Tile[] = [
     title: "Agentic AI",
     headline: "Agentic AI",
     description:
-      "Multi-agent systems that reason, call tools, retrieve enterprise data, and execute multi-step tasks within clear approval, permission, and audit boundaries.",
+      "Agents that reason, call tools, and execute multi-step work. Bounded by your permissions, your approvals, your audit trail. The autonomy is real. The guardrails are too.",
     image: grace,
     video: "/videos/b_a_eb_ea_f_d_e_c_mp_.mp4",
     href: "/services/agentic-ai",
@@ -118,7 +118,7 @@ const AgentPlatform = () => {
               <span className="text-brand-gradient">Automation</span>
             </>
           }
-          description="AI agents and workflow systems that act inside real enterprise operations — not chatbots, not isolated experiments."
+          description="Agents and workflow systems that act inside real enterprise operations. Not chatbots. Not pilots stuck in someone's sandbox."
         />
         <div className="flex flex-col gap-6 md:grid md:grid-cols-12 md:gap-4 xl:gap-5">
           {/* Left: media + overlay — slow horizontal slide into view */}

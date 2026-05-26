@@ -60,7 +60,7 @@ const Hero = () => {
             We Power AI Enterprises.
           </h1>
           <p className={`mt-6 ${t.subheadline} text-white/85 max-w-2xl`}>
-            Trinos is an AI-first engineering company. We ship production-grade AI platforms and build end-to-end AI systems that help enterprises automate operations, improve decision-making, and modernize workflows without disrupting what already works.
+            We ship production AI platforms. And the engineering systems that put them to work inside real enterprise operations, without breaking what already runs.
           </p>
 
           <div className="mt-8 flex flex-wrap items-center gap-4">

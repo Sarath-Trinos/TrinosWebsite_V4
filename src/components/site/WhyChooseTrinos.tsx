@@ -15,19 +15,19 @@ const pillars: Pillar[] = [
   {
     title: "AI-First Engineering",
     description:
-      "We don't bolt AI onto legacy products. Every system is architected as an AI-native platform from the first decision — small language models, retrieval, and feedback loops baked in.",
+      "Nothing we ship is AI bolted onto something older. Every system is architected AI-native from the first whiteboard. Small models, retrieval, feedback loops. Built in. Not added.",
     Icon: Cpu,
   },
   {
     title: "Self-Improving Systems",
     description:
-      "Approved corrections and production signals are captured so AI outputs become more aligned to your business rules over time. Your AI investment compounds with use.",
+      "Every approved correction. Every production signal. Captured, stored, used to sharpen the next output. Your AI investment compounds the longer it runs.",
     Icon: Repeat,
   },
   {
     title: "Product-Proven Engineering",
     description:
-      "Architecture validated in our own production AI platforms — Moltter Studio, TraceFlow, VoteSense, and Travel One — before it reaches your enterprise.",
+      "We run our architecture in production before we sell it. Moltter Studio. TraceFlow. VoteSense. Travel One. Four live platforms. Four proof points. Zero theoretical models.",
     Icon: Package,
   },
 ];

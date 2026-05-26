@@ -24,8 +24,8 @@ export default function Home() {
       <WhyChooseTrinos />
       <CTASection
         variant="purple"
-        title="Ready to deploy AI that actually works?"
-        subtitle="Start with a Discovery Workshop. Trinos will map your operational bottlenecks and identify where AI can create the fastest, safest, and most measurable business impact."
+        title="Stop piloting. Start shipping."
+        subtitle="A Discovery Workshop with Trinos maps your bottlenecks, your data, your systems, and shows you exactly where AI creates the fastest measurable impact. Two hours. No slideware."
         buttonLabel="Book a Discovery Workshop"
         buttonHref="/contact"
       />

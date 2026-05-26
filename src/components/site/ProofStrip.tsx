@@ -1,10 +1,10 @@
 import { type as t } from "@/lib/typography";
 
 const statements = [
-  "Production AI Platforms",
-  "Multi-Agent Systems",
-  "ERP Leadership",
-  "AI-Enabled Web & Mobile Engineering",
+  "Production AI platforms in market",
+  "Multi-agent systems at scale",
+  "25 years of enterprise ERP delivery",
+  "Web and mobile shipping in production",
 ];
 
 const ProofStrip = () => (

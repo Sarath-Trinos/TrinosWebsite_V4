@@ -4,7 +4,7 @@ import Image from "next/image";
 import { useEffect, useRef } from "react";
 import { ChevronRight } from "lucide-react";
 import { type as t } from "@/lib/typography";
-import SectionHeader from "./SectionHeader";
+import { cn } from "@/lib/utils";
 import erpAnalytics from "@/assets/erp-analytics.jpg";
 import erpUx from "@/assets/erp-ux.jpg";
 import erpWorkflow from "@/assets/erp-workflow.jpg";
@@ -14,7 +14,7 @@ const items = [
     image: erpAnalytics,
     video: "/videos/ab_cdef_abcdefmp_.mp4",
     title: "LLM Fine Tuning",
-    desc: "Adapt large and small language models to your terminology, formatting, and decision rules so outputs become enterprise-ready and cost-efficient.",
+    desc: "Small and large language models, fine-tuned on your documents, your rules, your formats. Cheaper to run. Harder to fool. Aligned to how your business actually speaks.",
     cta: "Explore Fine Tuning",
     href: "/services/llm-fine-tuning",
   },
@@ -22,7 +22,7 @@ const items = [
     image: erpUx,
     video: "/videos/Can_you_animate_this_into_a_.mp4",
     title: "Generative AI & Analytics",
-    desc: "Convert enterprise data into natural-language answers, executive summaries, and decision-ready narratives grounded in approved sources.",
+    desc: "Conversational dashboards, intelligent reports, executive briefings, generated from your data and grounded in your approved sources. The hallucination problem ends here.",
     cta: "Explore Analytics",
     href: "/services/generative-ai-analytics",
   },
@@ -30,7 +30,7 @@ const items = [
     image: erpWorkflow,
     video: "/videos/f_mp_.mp4",
     title: "Computer Vision",
-    desc: "Defect detection, OCR, object tracking, and edge AI for manufacturing, logistics, quality inspection, and document-heavy operations.",
+    desc: "Defect detection on the line. OCR on the floor. Object tracking at the edge. Vision systems for the places where a missed call costs real money.",
     cta: "Explore Computer Vision",
     href: "/services/computer-vision",
   },
@@ -74,20 +74,27 @@ function CardVideo({ src }: { src: string }) {
 const ErpCrmModernization = () => (
   <section className="py-24">
     <div className="container-px max-w-[1400px] mx-auto">
-      <div className="mb-16">
-        <SectionHeader
-          headlineWeight="normal"
-          title={
-            <>
-              AI Intelligence{" "}
-              <span className="text-brand-gradient-reverse">Systems</span>
-            </>
-          }
-          description="Language models, generative analytics, and computer vision tuned to your data, your workflows, and your domain rules."
-        />
+      <div className="mb-16 flex flex-col gap-4">
+        <h2
+          className={cn(
+            t.sectionHeadlineLg,
+            "font-normal text-foreground",
+          )}
+        >
+          AI Intelligence{" "}
+          <span className="text-brand-gradient-reverse">Systems</span>
+        </h2>
+        <p
+          className={cn(
+            t.bodyLg,
+            "text-muted-foreground max-w-2xl",
+          )}
+        >
+          Language models, generative analytics, and computer vision, tuned to your terminology, your workflows, your domain. Generic AI stops working at the edges. This is the edges.
+        </p>
       </div>
 
-      <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6 lg:gap-8 max-w-6xl mx-auto">
+      <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6 lg:gap-8">
         {items.map((it) => (
           <article key={it.title} className="flex flex-col">
             <div className="relative aspect-[4/5] rounded-3xl overflow-hidden bg-surface-soft mb-6">
