@@ -49,28 +49,27 @@ const Hero = () => {
 
       <div className="container-px max-w-[1400px] mx-auto relative z-10 w-full">
         <div className="max-w-4xl animate-fade-up text-white">
+          <p className="text-xs sm:text-sm font-semibold uppercase tracking-[0.2em] text-white/80 mb-4">
+            AI-First Enterprise Technology
+          </p>
           <h1 className={t.heroHeadlineHome}>
-            Transforming Enterprises with{" "}
+            We Build AI Products.{" "}
             <span className="hidden sm:inline">
               <br />
             </span>
-            Intelligent, Secure &amp; Scalable{" "}
-            <span className="hidden sm:inline">
-              <br />
-            </span>
-            Technology
+            We Power AI Enterprises.
           </h1>
-          <p className={`mt-6 ${t.subheadline} text-white/85 max-w-xl`}>
-            We empower organizations to accelerate innovation through advanced AI systems, robust Cyber Security, Cloud Modernization, and Enterprise-grade Software Engineering.
+          <p className={`mt-6 ${t.subheadline} text-white/85 max-w-2xl`}>
+            Trinos is an AI-first engineering company. We ship production-grade AI platforms and build end-to-end AI systems that help enterprises automate operations, improve decision-making, and modernize workflows without disrupting what already works.
           </p>
 
           <div className="mt-8 flex flex-wrap items-center gap-4">
-            <a href="#agents" className="group inline-flex items-center gap-2 bg-gradient-cta text-primary-foreground font-semibold px-7 py-3.5 rounded-full shadow-glow hover:shadow-card transition-all">
-              Start Your AI Project
+            <a href="/services" className="group inline-flex items-center gap-2 bg-gradient-cta text-primary-foreground font-semibold px-7 py-3.5 rounded-full shadow-glow hover:shadow-card transition-all">
+              Explore Our Services
               <ArrowRight className="w-4 h-4 transition-transform group-hover:translate-x-1" />
             </a>
-            <a href="#demo" className="inline-flex items-center gap-2 font-semibold px-6 py-3.5 rounded-full border border-white/40 text-white hover:border-white hover:bg-white/10 transition-colors">
-              Explore Our Services
+            <a href="/contact" className="inline-flex items-center gap-2 font-semibold px-6 py-3.5 rounded-full border border-white/40 text-white hover:border-white hover:bg-white/10 transition-colors">
+              Talk to an AI Architect
             </a>
           </div>
         </div>

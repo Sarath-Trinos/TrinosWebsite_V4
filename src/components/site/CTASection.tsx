@@ -44,7 +44,21 @@ const variants: Record<
   },
 };
 
-const CTASection = ({ variant = "purple" }: { variant?: Variant }) => {
+type CTASectionProps = {
+  variant?: Variant;
+  title?: string;
+  subtitle?: string;
+  buttonLabel?: string;
+  buttonHref?: string;
+};
+
+const CTASection = ({
+  variant = "purple",
+  title = "Ready to build intelligent, secure, and scalable solutions?",
+  subtitle = "Let's transform your business together.",
+  buttonLabel = "Get In Touch",
+  buttonHref = "#",
+}: CTASectionProps) => {
   const v = variants[variant];
   return (
     <section id="demo" className="py-24">
@@ -54,17 +68,17 @@ const CTASection = ({ variant = "purple" }: { variant?: Variant }) => {
           <div className="absolute -bottom-32 -right-32 w-[400px] h-[400px] rounded-full bg-white/40 blur-3xl" />
           <div className="relative">
             <h2 className={`${t.sectionHeadline} ${v.title}`}>
-              Ready to build intelligent, secure, and scalable solutions?
+              {title}
             </h2>
             <p className={`mt-5 ${t.subheadline} max-w-2xl mx-auto ${v.subtitle}`}>
-              Let's transform your business together.
+              {subtitle}
             </p>
             <div className="mt-10 flex flex-wrap items-center justify-center gap-4">
               <a
-                href="#"
+                href={buttonHref}
                 className={`inline-flex items-center gap-2 font-semibold px-7 py-3.5 rounded-full shadow-card transition-all ${v.button}`}
               >
-                Get In Touch <ArrowRight className="w-4 h-4" />
+                {buttonLabel} <ArrowRight className="w-4 h-4" />
               </a>
             </div>
           </div>

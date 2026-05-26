@@ -1,6 +1,6 @@
 "use client";
 
-import { CloudUpload, Gauge, Layers, Server } from "lucide-react";
+import { Building2, Globe, Smartphone } from "lucide-react";
 import Image from "next/image";
 import { useState } from "react";
 import { type as t } from "@/lib/typography";
@@ -9,32 +9,28 @@ import { cn } from "@/lib/utils";
 
 const cards = [
   {
-    icon: CloudUpload,
-    title: "Cloud Migration",
+    icon: Building2,
+    title: "Enterprise Resource Planning",
     image: "/home/magnific__talk__91259.jpeg",
     description:
-      "Seamlessly transition your infrastructure to the cloud with minimal downtime and maximum efficiency.",
+      "ERP architecture, implementation, integration, and AI-ready workflow design — backed by 25+ years of enterprise systems leadership across SAP, Oracle, Microsoft Dynamics, Infor, QAD, and Epicor.",
+    href: "/services/enterprise-resource-planning",
   },
   {
-    icon: Layers,
-    title: "Cloud Architecture Design",
+    icon: Globe,
+    title: "Web Development",
     image: "/home/magnific__talk__31260.jpeg",
     description:
-      "Design scalable, secure, and cost-effective cloud architectures tailored to your business needs.",
+      "Production-grade web platforms engineered for scale, performance, and AI-native experiences across customer and internal applications.",
+    href: "/services/web-development",
   },
   {
-    icon: Gauge,
-    title: "Resource Optimization",
+    icon: Smartphone,
+    title: "Mobile App Development",
     image: "/home/magnific_3007480450.jpeg",
     description:
-      "Optimize cloud resources to reduce costs while improving performance and scalability.",
-  },
-  {
-    icon: Server,
-    title: "Managed Cloud Services",
-    image: "/home/magnific_fill-the-empty-parts_3006956021.jpeg",
-    description:
-      "24/7 monitoring, maintenance, and support to ensure your cloud infrastructure runs smoothly.",
+      "Native and cross-platform mobile apps that put AI in users' hands — built for reliability, accessibility, and enterprise integration.",
+    href: "/services/mobile-app-development",
   },
 ];
 
@@ -48,11 +44,11 @@ const HealthcareAI = () => {
           headlineWeight="normal"
           title={
             <>
-              Cloud <span className="text-brand-gradient">Solutions</span>
+              Enterprise <span className="text-brand-gradient">Platforms</span>
             </>
           }
-          description="We enable enterprises to modernize, migrate, and optimize on the cloud with confidence."
-          exploreHref="#"
+          description="The execution layer for AI-ready operations — ERP that connects, web platforms that scale, mobile apps that put AI in users' hands."
+          exploreHref="/services"
         />
 
         <div className="grid grid-cols-1 md:grid-cols-5 gap-6 md:items-stretch">
@@ -83,15 +79,16 @@ const HealthcareAI = () => {
             </div>
           </div>
 
-          <div className="md:col-span-3 grid gap-4 md:gap-3 lg:gap-6 md:grid-rows-4 md:h-full">
+          <div className="md:col-span-3 grid gap-4 md:gap-3 lg:gap-6 md:grid-rows-3 md:h-full">
             {cards.map((it, i) => {
               const isActive = i === activeIndex;
               return (
-                <button
+                <a
                   key={it.title}
-                  type="button"
-                  onClick={() => setActiveIndex(i)}
-                  aria-pressed={isActive}
+                  href={it.href}
+                  onMouseEnter={() => setActiveIndex(i)}
+                  onFocus={() => setActiveIndex(i)}
+                  aria-current={isActive ? "true" : undefined}
                   className={cn(
                     "tile bg-card border p-6 md:p-3 md:py-2 lg:p-7 flex items-center gap-5 md:gap-3 lg:gap-5 text-left w-full md:h-full transition-all duration-300 ease-out",
                     isActive
@@ -110,7 +107,7 @@ const HealthcareAI = () => {
                     <it.icon className="w-6 h-6 md:w-4 md:h-4 lg:w-6 lg:h-6" />
                   </div>
                   <h3 className={`${t.cardHeadline} flex-1`}>{it.title}</h3>
-                </button>
+                </a>
               );
             })}
           </div>

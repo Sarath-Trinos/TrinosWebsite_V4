@@ -1,7 +1,7 @@
 "use client";
 
 import { useEffect, useRef, useState } from "react";
-import { Cpu, ShieldCheck, Building2, Gauge } from "lucide-react";
+import { ArrowRight, Cpu, Repeat, Package } from "lucide-react";
 import { cn } from "@/lib/utils";
 import { type as t } from "@/lib/typography";
 
@@ -15,26 +15,20 @@ const pillars: Pillar[] = [
   {
     title: "AI-First Engineering",
     description:
-      "We embed artificial intelligence at the core of every solution, ensuring your technology stack is future-ready and intelligent by design.",
+      "We don't bolt AI onto legacy products. Every system is architected as an AI-native platform from the first decision — small language models, retrieval, and feedback loops baked in.",
     Icon: Cpu,
   },
   {
-    title: "Security by Design",
+    title: "Self-Improving Systems",
     description:
-      "Security isn't an afterthought — it's woven into every layer of our architecture, protecting your data and systems from day one.",
-    Icon: ShieldCheck,
+      "Approved corrections and production signals are captured so AI outputs become more aligned to your business rules over time. Your AI investment compounds with use.",
+    Icon: Repeat,
   },
   {
-    title: "Enterprise Expertise",
+    title: "Product-Proven Engineering",
     description:
-      "Years of combined experience working with Fortune 500 companies, understanding complex enterprise needs and delivering scalable solutions.",
-    Icon: Building2,
-  },
-  {
-    title: "Rapid Delivery",
-    description:
-      "Move fast without compromising quality. Our agile methodologies and modern architectures enable quick deployment at enterprise scale.",
-    Icon: Gauge,
+      "Architecture validated in our own production AI platforms — Moltter Studio, TraceFlow, VoteSense, and Travel One — before it reaches your enterprise.",
+    Icon: Package,
   },
 ];
 
@@ -125,70 +119,15 @@ const WhyChooseTrinos = () => {
       <div className="container-px mx-auto w-full max-w-[1400px]">
         {/* Heading */}
         <h2 className={`${t.sectionHeadline} text-foreground`}>
-          Why <span className="text-brand-gradient">Trinos</span>
+          The Trinos <span className="text-brand-gradient">Edge</span>
         </h2>
         <p className={`mt-5 max-w-2xl ${t.bodyResponsive} text-muted-foreground`}>
-          Built on innovation. Driven by trust. Delivered with excellence.
+          The longer you use Trinos, the smarter it gets.
         </p>
 
         {/* Timeline + cards */}
         <div ref={cardsRef} className="relative mt-20 sm:mt-24">
-          {/* Timeline line + dots (desktop only) — drawn on top of the cards' top border */}
-          <div className="pointer-events-none absolute inset-x-0 z-10 hidden lg:block" style={{ top: "1.75rem" }}>
-            <div className="relative mx-auto" style={{ width: "75%", height: "2px" }}>
-              <div className="absolute inset-0 rounded-full bg-primary/25" />
-              <div
-                className="absolute inset-y-0 left-0 origin-left rounded-full bg-gradient-to-r from-primary via-primary-glow to-primary-deep"
-                style={{ width: "100%", transform: `scaleX(${progress})`, transition: "transform 200ms ease-out" }}
-              />
-              {/* Connector dots placed in the midpoint of each gap between badges (3 dots between 4 cards) */}
-              {[1, 3, 5].map((n) => {
-                const pos = n / 6;
-                const dotProgress = Math.max(0, Math.min(1, (progress - pos) * 10));
-                return (
-                  <span
-                    key={n}
-                    className="absolute -translate-x-1/2 -translate-y-1/2"
-                    style={{ left: `${pos * 100}%`, top: "50%" }}
-                  >
-                    <span
-                      className="block h-2.5 w-2.5 rounded-full bg-primary shadow-[0_0_0_4px_hsl(var(--primary)/0.12)]"
-                      style={{
-                        opacity: dotProgress,
-                        transform: `scale(${0.4 + dotProgress * 0.6})`,
-                        transition: "opacity 200ms ease-out, transform 200ms ease-out",
-                      }}
-                    />
-                  </span>
-                );
-              })}
-            </div>
-          </div>
-
-          {/* Number badge row (desktop only) — sits above the line so it masks the segment passing behind each badge */}
-          <div className="pointer-events-none absolute inset-x-0 z-20 hidden lg:grid lg:grid-cols-4" style={{ top: 0 }}>
-            {pillars.map((_, i) => {
-              const cp = cardProgress(i);
-              return (
-                <div key={i} className="flex justify-center">
-                  <div
-                    className="relative h-14 w-14 rounded-full bg-white shadow-[0_8px_24px_-6px_hsl(var(--primary)/0.35)] ring-1 ring-primary/15"
-                    style={{
-                      opacity: cp,
-                      transform: `scale(${0.6 + cp * 0.4})`,
-                      transition: "opacity 300ms ease-out, transform 300ms ease-out",
-                    }}
-                  >
-                    <span className={`relative grid h-full w-full place-items-center ${t.badge} text-foreground/80`}>
-                      {String(i + 1).padStart(2, "0")}
-                    </span>
-                  </div>
-                </div>
-              );
-            })}
-          </div>
-
-          <div className="grid grid-cols-1 gap-10 sm:grid-cols-2 sm:gap-8 lg:grid-cols-4 lg:items-stretch lg:pt-7">
+          <div className="grid grid-cols-1 gap-10 sm:grid-cols-2 sm:gap-8 lg:grid-cols-3 lg:items-stretch">
             {pillars.map((p, i) => {
               const { Icon } = p;
               const cp = cardProgress(i);
@@ -202,21 +141,12 @@ const WhyChooseTrinos = () => {
                     transition: "opacity 300ms ease-out, transform 300ms ease-out",
                   }}
                 >
-                  {/* Mobile-only inline badge (desktop badges are rendered in the absolutely-positioned row above) */}
-                  <div className="relative z-20 -mb-7 lg:hidden">
-                    <div className="relative h-14 w-14 rounded-full bg-white shadow-[0_8px_24px_-6px_hsl(var(--primary)/0.35)] ring-1 ring-primary/15">
-                      <span className={`relative grid h-full w-full place-items-center ${t.badge} text-foreground/80`}>
-                        {String(i + 1).padStart(2, "0")}
-                      </span>
-                    </div>
-                  </div>
-
                   {/* Card — equal height via flex column, h-full */}
                   <div
                     className={cn(
                       "relative flex h-full w-full flex-col overflow-hidden rounded-3xl border border-white/60",
                       "bg-white/70",
-                      "px-6 pt-12 pb-8 sm:px-7 sm:pt-14",
+                      "px-6 pt-10 pb-8 sm:px-7 sm:pt-12",
                       "shadow-[0_10px_40px_-18px_hsl(210_60%_25%/0.25)]"
                     )}
                   >
@@ -245,6 +175,16 @@ const WhyChooseTrinos = () => {
                 </div>
               );
             })}
+          </div>
+
+          <div className="mt-12 flex justify-center">
+            <a
+              href="/trinos-edge"
+              className="group inline-flex items-center gap-1 font-semibold text-primary hover:text-primary-deep transition-colors"
+            >
+              Discover the Trinos Edge
+              <ArrowRight className="w-4 h-4 transition-transform group-hover:translate-x-1" />
+            </a>
           </div>
         </div>
       </div>

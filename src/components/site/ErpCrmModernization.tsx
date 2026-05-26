@@ -8,40 +8,31 @@ import SectionHeader from "./SectionHeader";
 import erpAnalytics from "@/assets/erp-analytics.jpg";
 import erpUx from "@/assets/erp-ux.jpg";
 import erpWorkflow from "@/assets/erp-workflow.jpg";
-import erpPerformance from "@/assets/erp-performance.jpg";
 
 const items = [
   {
     image: erpAnalytics,
     video: "/videos/ab_cdef_abcdefmp_.mp4",
-    title: "AI-driven analytics",
-    desc: "Transform raw data into actionable insights with advanced AI analytics that predict trends and optimize decision-making.",
-    cta: "Explore Analytics",
-    href: "#",
+    title: "LLM Fine Tuning",
+    desc: "Adapt large and small language models to your terminology, formatting, and decision rules so outputs become enterprise-ready and cost-efficient.",
+    cta: "Explore Fine Tuning",
+    href: "/services/llm-fine-tuning",
   },
   {
     image: erpUx,
     video: "/videos/Can_you_animate_this_into_a_.mp4",
-    title: "Intelligent UX layers",
-    desc: "Create intuitive, user-friendly interfaces that adapt to user behavior and enhance productivity across all touchpoints.",
-    cta: "Explore UX Layers",
-    href: "#",
+    title: "Generative AI & Analytics",
+    desc: "Convert enterprise data into natural-language answers, executive summaries, and decision-ready narratives grounded in approved sources.",
+    cta: "Explore Analytics",
+    href: "/services/generative-ai-analytics",
   },
   {
     image: erpWorkflow,
     video: "/videos/f_mp_.mp4",
-    title: "Workflow automation",
-    desc: "Streamline business processes with intelligent automation that reduces manual work and eliminates bottlenecks.",
-    cta: "Explore Automation",
-    href: "#",
-  },
-  {
-    image: erpPerformance,
-    video: "/videos/mp_ (1) (1).mp4",
-    title: "Performance optimization",
-    desc: "Enhance system performance and responsiveness to ensure your ERP/CRM platforms run at peak efficiency.",
-    cta: "Explore Performance",
-    href: "#",
+    title: "Computer Vision",
+    desc: "Defect detection, OCR, object tracking, and edge AI for manufacturing, logistics, quality inspection, and document-heavy operations.",
+    cta: "Explore Computer Vision",
+    href: "/services/computer-vision",
   },
 ];
 
@@ -88,15 +79,15 @@ const ErpCrmModernization = () => (
           headlineWeight="normal"
           title={
             <>
-              ERP & CRM{" "}
-              <span className="text-brand-gradient-reverse">Modernization</span>
+              AI Intelligence{" "}
+              <span className="text-brand-gradient-reverse">Systems</span>
             </>
           }
-          description="We enhance platforms such as SAP, Oracle, Microsoft, Infor, QAD, EPICOR with:"
+          description="Language models, generative analytics, and computer vision tuned to your data, your workflows, and your domain rules."
         />
       </div>
 
-      <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+      <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6 lg:gap-8 max-w-6xl mx-auto">
         {items.map((it) => (
           <article key={it.title} className="flex flex-col">
             <div className="relative aspect-[4/5] rounded-3xl overflow-hidden bg-surface-soft mb-6">
@@ -108,7 +99,7 @@ const ErpCrmModernization = () => (
                   alt={it.title}
                   fill
                   className="object-cover"
-                  sizes="(max-width: 768px) 100vw, (max-width: 1024px) 50vw, 25vw"
+                  sizes="(max-width: 768px) 100vw, (max-width: 1024px) 50vw, 33vw"
                 />
               )}
             </div>
@@ -128,7 +119,7 @@ const ErpCrmModernization = () => (
 
       <div className="mt-16 flex justify-center">
         <p className={`text-center ${t.bodyLg} text-muted-foreground max-w-2xl`}>
-          Helping enterprises streamline processes and make faster, data-led decisions.
+          Helping enterprises move from isolated AI experiments to intelligent systems that operate inside real workflows.
         </p>
       </div>
     </div>

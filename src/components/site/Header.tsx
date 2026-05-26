@@ -6,25 +6,55 @@ import { ChevronDown, Menu, X } from "lucide-react";
 import Logo from "./Logo";
 
 type NavLink = { label: string; href: string };
-type NavDropdown = { label: string; children: NavLink[] };
-type NavItem = NavLink | NavDropdown;
+type NavPillar = { label: string; children: NavLink[] };
+type NavDropdown = { label: string; href?: string; children: NavLink[] };
+type NavMega = { label: string; href?: string; pillars: NavPillar[] };
+type NavItem = NavLink | NavDropdown | NavMega;
 
+function isMega(item: NavItem): item is NavMega {
+  return "pillars" in item;
+}
 function isDropdown(item: NavItem): item is NavDropdown {
   return "children" in item;
 }
 
 const navItems: NavItem[] = [
-  { label: "About Us", href: "/about" },
-  { label: "The Trinos Edge", href: "/trinos-edge" },
-  { label: "Products", href: "/products" },
-  { label: "Services", href: "/services" },
   {
-    label: "Company",
-    children: [
-      { label: "Team", href: "/team" },
-      { label: "Careers", href: "/careers" },
+    label: "Services",
+    href: "/services",
+    pillars: [
+      {
+        label: "Agentic Automation",
+        children: [
+          { label: "Agentic AI", href: "/services/agentic-ai" },
+          { label: "AI Workflow Automation", href: "/services/ai-workflow-automation" },
+          { label: "AI Voice Assistants", href: "/services/ai-voice-assistants" },
+          { label: "Social Media Automation", href: "/services/social-media-automation" },
+        ],
+      },
+      {
+        label: "AI Intelligence Systems",
+        children: [
+          { label: "LLM Fine Tuning", href: "/services/llm-fine-tuning" },
+          { label: "Generative AI & Analytics", href: "/services/generative-ai-analytics" },
+          { label: "Computer Vision", href: "/services/computer-vision" },
+        ],
+      },
+      {
+        label: "Enterprise Platforms",
+        children: [
+          { label: "Enterprise Resource Planning", href: "/services/enterprise-resource-planning" },
+          { label: "Web Development", href: "/services/web-development" },
+          { label: "Mobile App Development", href: "/services/mobile-app-development" },
+        ],
+      },
     ],
   },
+  { label: "Products", href: "/products" },
+  { label: "The Trinos Edge", href: "/trinos-edge" },
+  { label: "Careers", href: "/careers" },
+  { label: "Team", href: "/team" },
+  { label: "About Us", href: "/about" },
 ];
 
 const Header = () => {
@@ -67,39 +97,97 @@ const Header = () => {
         </div>
 
         <nav className="hidden lg:flex items-center gap-1">
-          {navItems.map((item) =>
-            isDropdown(item) ? (
-              <div key={item.label} className="relative group">
-                <button
-                  type="button"
-                  className={`nav-link flex items-center gap-1 px-4 py-2 text-base font-medium rounded-full transition-colors ${
-                    isGroupActive(item.children)
-                      ? "is-active text-primary"
-                      : "text-foreground/80 hover:text-primary"
-                  }`}
-                >
-                  {item.label}
-                  <ChevronDown className="w-3.5 h-3.5 opacity-60" />
-                </button>
-                <div className="absolute top-full left-0 pt-2 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200">
-                  <div className="bg-card rounded-2xl shadow-card border border-border p-2 min-w-[200px]">
-                    {item.children.map((c) => (
-                      <a
-                        key={c.label}
-                        href={c.href}
-                        className={`block px-4 py-2.5 text-sm rounded-xl hover:bg-surface-soft transition-colors ${
-                          isActive(c.href)
-                            ? "text-primary bg-surface-soft"
-                            : "text-foreground/80 hover:text-primary"
-                        }`}
-                      >
-                        {c.label}
-                      </a>
-                    ))}
+          {navItems.map((item) => {
+            if (isMega(item)) {
+              const allChildren = item.pillars.flatMap((p) => p.children);
+              const active = (item.href && isActive(item.href)) || isGroupActive(allChildren);
+              return (
+                <div key={item.label} className="relative group">
+                  {item.href ? (
+                    <a
+                      href={item.href}
+                      className={`nav-link flex items-center gap-1 px-4 py-2 text-base font-medium rounded-full transition-colors ${
+                        active ? "is-active text-primary" : "text-foreground/80 hover:text-primary"
+                      }`}
+                    >
+                      {item.label}
+                      <ChevronDown className="w-3.5 h-3.5 opacity-60" />
+                    </a>
+                  ) : (
+                    <button
+                      type="button"
+                      className={`nav-link flex items-center gap-1 px-4 py-2 text-base font-medium rounded-full transition-colors ${
+                        active ? "is-active text-primary" : "text-foreground/80 hover:text-primary"
+                      }`}
+                    >
+                      {item.label}
+                      <ChevronDown className="w-3.5 h-3.5 opacity-60" />
+                    </button>
+                  )}
+                  <div className="absolute top-full left-0 pt-2 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200">
+                    <div className="bg-card rounded-2xl shadow-card border border-border p-6 grid grid-cols-3 gap-8 w-[780px]">
+                      {item.pillars.map((pillar) => (
+                        <div key={pillar.label}>
+                          <div className="text-xs font-semibold uppercase tracking-wider text-primary mb-3">
+                            {pillar.label}
+                          </div>
+                          <div className="space-y-1">
+                            {pillar.children.map((c) => (
+                              <a
+                                key={c.label}
+                                href={c.href}
+                                className={`block px-3 py-2 text-sm rounded-lg hover:bg-surface-soft transition-colors ${
+                                  isActive(c.href)
+                                    ? "text-primary bg-surface-soft"
+                                    : "text-foreground/80 hover:text-primary"
+                                }`}
+                              >
+                                {c.label}
+                              </a>
+                            ))}
+                          </div>
+                        </div>
+                      ))}
+                    </div>
                   </div>
                 </div>
-              </div>
-            ) : (
+              );
+            }
+            if (isDropdown(item)) {
+              return (
+                <div key={item.label} className="relative group">
+                  <button
+                    type="button"
+                    className={`nav-link flex items-center gap-1 px-4 py-2 text-base font-medium rounded-full transition-colors ${
+                      isGroupActive(item.children)
+                        ? "is-active text-primary"
+                        : "text-foreground/80 hover:text-primary"
+                    }`}
+                  >
+                    {item.label}
+                    <ChevronDown className="w-3.5 h-3.5 opacity-60" />
+                  </button>
+                  <div className="absolute top-full left-0 pt-2 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200">
+                    <div className="bg-card rounded-2xl shadow-card border border-border p-2 min-w-[200px]">
+                      {item.children.map((c) => (
+                        <a
+                          key={c.label}
+                          href={c.href}
+                          className={`block px-4 py-2.5 text-sm rounded-xl hover:bg-surface-soft transition-colors ${
+                            isActive(c.href)
+                              ? "text-primary bg-surface-soft"
+                              : "text-foreground/80 hover:text-primary"
+                          }`}
+                        >
+                          {c.label}
+                        </a>
+                      ))}
+                    </div>
+                  </div>
+                </div>
+              );
+            }
+            return (
               <a
                 key={item.label}
                 href={item.href}
@@ -111,8 +199,8 @@ const Header = () => {
               >
                 {item.label}
               </a>
-            )
-          )}
+            );
+          })}
         </nav>
 
         <div className="hidden lg:flex items-center gap-3">
@@ -136,37 +224,79 @@ const Header = () => {
       {open && (
         <div className="lg:hidden bg-background border-t border-border">
           <div className="container-px py-4 space-y-1">
-            {navItems.map((item) =>
-              isDropdown(item) ? (
-                <div key={item.label} className="border-b border-border/60">
-                  <button
-                    type="button"
-                    onClick={() => toggleGroup(item.label)}
-                    aria-expanded={!!openGroups[item.label]}
-                    className="w-full flex items-center justify-between py-3 font-medium text-foreground"
-                  >
-                    <span>{item.label}</span>
-                    <ChevronDown
-                      className={`w-4 h-4 opacity-60 transition-transform duration-200 ${
-                        openGroups[item.label] ? "rotate-180" : ""
-                      }`}
-                    />
-                  </button>
-                  {openGroups[item.label] && (
-                    <div className="pb-2">
-                      {item.children.map((c) => (
-                        <a
-                          key={c.label}
-                          href={c.href}
-                          className="block py-2.5 pl-4 text-sm text-muted-foreground hover:text-primary"
-                        >
-                          {c.label}
-                        </a>
-                      ))}
-                    </div>
-                  )}
-                </div>
-              ) : (
+            {navItems.map((item) => {
+              if (isMega(item)) {
+                return (
+                  <div key={item.label} className="border-b border-border/60">
+                    <button
+                      type="button"
+                      onClick={() => toggleGroup(item.label)}
+                      aria-expanded={!!openGroups[item.label]}
+                      className="w-full flex items-center justify-between py-3 font-medium text-foreground"
+                    >
+                      <span>{item.label}</span>
+                      <ChevronDown
+                        className={`w-4 h-4 opacity-60 transition-transform duration-200 ${
+                          openGroups[item.label] ? "rotate-180" : ""
+                        }`}
+                      />
+                    </button>
+                    {openGroups[item.label] && (
+                      <div className="pb-2 space-y-3">
+                        {item.pillars.map((pillar) => (
+                          <div key={pillar.label}>
+                            <div className="px-4 pt-2 pb-1 text-xs font-semibold uppercase tracking-wider text-primary">
+                              {pillar.label}
+                            </div>
+                            {pillar.children.map((c) => (
+                              <a
+                                key={c.label}
+                                href={c.href}
+                                className="block py-2 pl-6 text-sm text-muted-foreground hover:text-primary"
+                              >
+                                {c.label}
+                              </a>
+                            ))}
+                          </div>
+                        ))}
+                      </div>
+                    )}
+                  </div>
+                );
+              }
+              if (isDropdown(item)) {
+                return (
+                  <div key={item.label} className="border-b border-border/60">
+                    <button
+                      type="button"
+                      onClick={() => toggleGroup(item.label)}
+                      aria-expanded={!!openGroups[item.label]}
+                      className="w-full flex items-center justify-between py-3 font-medium text-foreground"
+                    >
+                      <span>{item.label}</span>
+                      <ChevronDown
+                        className={`w-4 h-4 opacity-60 transition-transform duration-200 ${
+                          openGroups[item.label] ? "rotate-180" : ""
+                        }`}
+                      />
+                    </button>
+                    {openGroups[item.label] && (
+                      <div className="pb-2">
+                        {item.children.map((c) => (
+                          <a
+                            key={c.label}
+                            href={c.href}
+                            className="block py-2.5 pl-4 text-sm text-muted-foreground hover:text-primary"
+                          >
+                            {c.label}
+                          </a>
+                        ))}
+                      </div>
+                    )}
+                  </div>
+                );
+              }
+              return (
                 <a
                   key={item.label}
                   href={item.href}
@@ -174,8 +304,8 @@ const Header = () => {
                 >
                   {item.label}
                 </a>
-              )
-            )}
+              );
+            })}
             <a
               href="/contact"
               className="block mt-4 text-center bg-gradient-cta text-primary-foreground py-3 rounded-full font-semibold"

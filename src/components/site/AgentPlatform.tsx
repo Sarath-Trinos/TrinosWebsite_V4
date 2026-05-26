@@ -1,7 +1,7 @@
 "use client";
 
 import { useCallback, useEffect, useRef, useState } from "react";
-import { Bot, Database, Rocket, MessagesSquare, Eye, Workflow } from "lucide-react";
+import { Bot, Workflow, Mic, Share2 } from "lucide-react";
 import Image from "next/image";
 import { type as t } from "@/lib/typography";
 import type { StaticImageData } from "next/image";
@@ -10,7 +10,6 @@ import grace from "@/assets/agent-grace.jpg";
 import daphne from "@/assets/agent-daphne.jpg";
 import johnny from "@/assets/agent-johnny.jpg";
 import manish from "@/assets/agent-manish.jpg";
-import heroAgent from "@/assets/hero-agent.jpg";
 
 type Tile = {
   icon: typeof Bot;
@@ -19,6 +18,7 @@ type Tile = {
   description: string;
   image: StaticImageData;
   video?: string;
+  href: string;
 };
 
 const tiles: Tile[] = [
@@ -27,54 +27,40 @@ const tiles: Tile[] = [
     title: "Agentic AI",
     headline: "Agentic AI",
     description:
-      "Multi-step autonomous agents that plan, call tools, and take action. Safeguards and human-in-the-loop baked in.",
+      "Multi-agent systems that reason, call tools, retrieve enterprise data, and execute multi-step tasks within clear approval, permission, and audit boundaries.",
     image: grace,
     video: "/videos/b_a_eb_ea_f_d_e_c_mp_.mp4",
-  },
-  {
-    icon: Database,
-    title: "Retrieval-Augmented Generation",
-    headline: "Retrieval-Augmented Generation",
-    description:
-      "Build intelligent systems that combine the power of large language models with your proprietary data.",
-    image: daphne,
-    video: "/videos/rag.mp4",
-  },
-  {
-    icon: Rocket,
-    title: "MVP Development",
-    headline: "MVP Development",
-    description:
-      "Design and ship a production-ready Minimum Viable Product fast—clean UX, reliable backend, and AI features where they matter most.",
-    image: johnny,
-    video: "/videos/vmp_.mp4",
-  },
-  {
-    icon: MessagesSquare,
-    title: "Voice Assistants & Chatbots",
-    headline: "Voice Assistants & Chatbots",
-    description:
-      "Real-time natural conversations with speech-to-text and TTS. Domain-aware assistants for support, sales, and internal ops.",
-    image: manish,
-    video: "/videos/Can_you_animate_this_into_a_ (1).mp4",
-  },
-  {
-    icon: Eye,
-    title: "NLP, Computer Vision",
-    headline: "NLP, Computer Vision",
-    description:
-      "Leverage natural language processing and computer vision technologies.",
-    image: heroAgent,
-    video: "/videos/mp_ (1).mp4",
+    href: "/services/agentic-ai",
   },
   {
     icon: Workflow,
-    title: "Robotic Process Automation (RPA)",
-    headline: "Robotic Process Automation (RPA)",
+    title: "AI Workflow Automation",
+    headline: "AI Workflow Automation",
     description:
-      "Automate repetitive business processes and workflows to improve efficiency and reduce errors.",
-    image: grace,
+      "Intelligent automation that streamlines business processes end to end — removing manual handoffs, eliminating bottlenecks, and keeping humans in control where it matters.",
+    image: daphne,
     video: "/videos/Robotic automation section.mp4",
+    href: "/services/ai-workflow-automation",
+  },
+  {
+    icon: Mic,
+    title: "AI Voice Assistants",
+    headline: "AI Voice Assistants",
+    description:
+      "Real-time, domain-aware voice agents for support, sales, and internal operations — natural conversations with speech-to-text, TTS, and grounded responses.",
+    image: johnny,
+    video: "/videos/Can_you_animate_this_into_a_ (1).mp4",
+    href: "/services/ai-voice-assistants",
+  },
+  {
+    icon: Share2,
+    title: "Social Media Automation",
+    headline: "Social Media Automation",
+    description:
+      "AI-driven content, scheduling, and engagement workflows that keep your brand active across channels — with editorial guardrails and approval flows built in.",
+    image: manish,
+    video: "/videos/mp_ (1).mp4",
+    href: "/services/social-media-automation",
   },
 ];
 
@@ -128,11 +114,11 @@ const AgentPlatform = () => {
           headlineWeight="normal"
           title={
             <>
-              AI & Intelligent{" "}
-              <span className="text-brand-gradient">Systems</span>
+              Agentic{" "}
+              <span className="text-brand-gradient">Automation</span>
             </>
           }
-          description="Specialized AI agents and enterprise platforms that transform support, workforce operations, and healthcare—with human-like intelligence you can deploy at scale."
+          description="AI agents and workflow systems that act inside real enterprise operations — not chatbots, not isolated experiments."
         />
         <div className="flex flex-col gap-6 md:grid md:grid-cols-12 md:gap-4 xl:gap-5">
           {/* Left: media + overlay — slow horizontal slide into view */}
@@ -197,18 +183,16 @@ const AgentPlatform = () => {
 
           {/* Right: Platform overview */}
           <div className="md:col-span-7 lg:col-span-8 tile py-6 md:py-8 px-5 md:px-5 lg:px-8 relative overflow-hidden bg-[radial-gradient(ellipse_at_top_right,_#1a3556_0%,_#0f1e35_45%,_#0a1628_100%)] flex items-center justify-center">
-            <div className="w-full grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-3 gap-3 md:gap-3">
-              {tiles.map(({ icon: Icon, title }, i) => {
+            <div className="w-full grid grid-cols-1 sm:grid-cols-2 gap-3 md:gap-4">
+              {tiles.map(({ icon: Icon, title, href }, i) => {
                 const isActive = i === activeIndex;
                 return (
-                  <div
+                  <a
                     key={title}
+                    href={href}
                     onMouseEnter={() => handleActivate(i)}
                     onFocus={() => handleActivate(i)}
-                    onClick={() => handleActivate(i)}
-                    tabIndex={0}
-                    role="button"
-                    aria-pressed={isActive}
+                    aria-current={isActive ? "true" : undefined}
                     className={`group rounded-2xl border border-white/10 bg-white/5 p-3 md:p-3.5 flex items-center gap-3 min-h-[82px] md:min-h-[86px] cursor-pointer shadow-none outline-none transition-[background-color,box-shadow,border-color] duration-200 hover:border-transparent hover:bg-card hover:shadow-glow focus-visible:border-transparent focus-visible:bg-card focus-visible:shadow-glow ${
                       isActive ? "ring-2 ring-primary/40" : ""
                     }`}
@@ -219,7 +203,7 @@ const AgentPlatform = () => {
                     <div className="flex-1 min-w-0 font-semibold text-[13px] md:text-sm text-white/95 leading-snug group-hover:text-foreground group-focus-visible:text-foreground">
                       {title}
                     </div>
-                  </div>
+                  </a>
                 );
               })}
             </div>
