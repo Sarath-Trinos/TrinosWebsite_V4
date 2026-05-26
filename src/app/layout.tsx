@@ -20,7 +20,7 @@ const sora = Sora({
 
 export const metadata: Metadata = {
   metadataBase: new URL("https://trinos.ai"),
-  title: "Trinos — Power Enterprise decisions with AI that works",
+  title: "AI-First Engineering for Enterprise Impact",
   description:
     "Deploy AI agents that deliver human experiences at AI scale. Voice AI, contact center copilots, and healthcare agents trusted by the world's largest enterprises.",
   icons: {
@@ -29,7 +29,7 @@ export const metadata: Metadata = {
     apple: "/Logo.png",
   },
   openGraph: {
-    title: "Trinos — Power Enterprise decisions with AI that works",
+    title: "AI-First Engineering for Enterprise Impact",
     description:
       "Deploy AI agents that deliver human experiences at AI scale across customer service, contact center, and healthcare.",
     type: "website",

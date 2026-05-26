@@ -15,7 +15,7 @@ function isDropdown(item: NavItem): item is NavDropdown {
 
 const navItems: NavItem[] = [
   { label: "About Us", href: "/about" },
-  { label: "Solutions", href: "/solutions" },
+  { label: "The Trinos Edge", href: "/trinos-edge" },
   { label: "Products", href: "/products" },
   { label: "Services", href: "/services" },
   {
@@ -30,7 +30,11 @@ const navItems: NavItem[] = [
 const Header = () => {
   const [scrolled, setScrolled] = useState(false);
   const [open, setOpen] = useState(false);
+  const [openGroups, setOpenGroups] = useState<Record<string, boolean>>({});
   const pathname = usePathname();
+
+  const toggleGroup = (label: string) =>
+    setOpenGroups((g) => ({ ...g, [label]: !g[label] }));
 
   const isActive = (href: string) =>
     href === "/" ? pathname === "/" : pathname === href || pathname.startsWith(`${href}/`);
@@ -134,17 +138,33 @@ const Header = () => {
           <div className="container-px py-4 space-y-1">
             {navItems.map((item) =>
               isDropdown(item) ? (
-                <div key={item.label} className="border-b border-border/60 pb-2 mb-2">
-                  <div className="py-3 font-medium text-foreground">{item.label}</div>
-                  {item.children.map((c) => (
-                    <a
-                      key={c.label}
-                      href={c.href}
-                      className="block py-2.5 pl-4 text-sm text-muted-foreground hover:text-primary"
-                    >
-                      {c.label}
-                    </a>
-                  ))}
+                <div key={item.label} className="border-b border-border/60">
+                  <button
+                    type="button"
+                    onClick={() => toggleGroup(item.label)}
+                    aria-expanded={!!openGroups[item.label]}
+                    className="w-full flex items-center justify-between py-3 font-medium text-foreground"
+                  >
+                    <span>{item.label}</span>
+                    <ChevronDown
+                      className={`w-4 h-4 opacity-60 transition-transform duration-200 ${
+                        openGroups[item.label] ? "rotate-180" : ""
+                      }`}
+                    />
+                  </button>
+                  {openGroups[item.label] && (
+                    <div className="pb-2">
+                      {item.children.map((c) => (
+                        <a
+                          key={c.label}
+                          href={c.href}
+                          className="block py-2.5 pl-4 text-sm text-muted-foreground hover:text-primary"
+                        >
+                          {c.label}
+                        </a>
+                      ))}
+                    </div>
+                  )}
                 </div>
               ) : (
                 <a

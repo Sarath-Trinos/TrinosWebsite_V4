@@ -36,13 +36,13 @@ const footerCols = [
     ],
   },
   {
-    title: "Solutions",
+    title: "The Trinos Edge",
     links: [
-      { label: "Healthcare & Life Sciences", href: "/solutions" },
-      { label: "Financial Services", href: "/solutions" },
-      { label: "Manufacturing", href: "/solutions" },
-      { label: "Retail & E-Commerce", href: "/solutions" },
-      { label: "Logistics & Supply Chain", href: "/solutions" },
+      { label: "Small Language Models", href: "/trinos-edge" },
+      { label: "Self-Improving AI", href: "/trinos-edge" },
+      { label: "The Feedback Loop", href: "/trinos-edge" },
+      { label: "Rapid App Development", href: "/trinos-edge" },
+      { label: "Use Cases & Results", href: "/trinos-edge#use-cases" },
     ],
   },
   {
