@@ -1,126 +1,86 @@
 import { cn } from "@/lib/utils";
 import { type as t } from "@/lib/typography";
 
-type DotTone = "purple" | "blue" | "orange" | "red";
+type DotTone = "purple" | "blue" | "orange";
 
 const dotClass: Record<DotTone, string> = {
   purple: "bg-violet-500",
   blue: "bg-sky-500",
   orange: "bg-orange-500",
-  red: "bg-red-500",
 };
 
-type BentoCard = {
+type PillarItem = { label: string; href: string };
+
+type Pillar = {
   label: string;
   dot: DotTone;
   title: string;
-  body: string;
-  /** Tailwind col spans: mobile full width, md+ bento layout */
+  items: PillarItem[];
   className: string;
 };
 
-const cards: BentoCard[] = [
+const pillars: Pillar[] = [
   {
-    label: "EKS / RAG",
+    label: "PILLAR 01",
     dot: "purple",
-    title: "RAG-based Enterprise Knowledge Systems",
-    body: "Trustworthy answers grounded in your private data, with citations on every response.",
-    className: "col-span-12 md:col-span-6 lg:col-span-6",
+    title: "Agentic Automation",
+    items: [
+      { label: "Agentic AI", href: "/services/agentic-ai" },
+      { label: "AI Workflow Automation", href: "/services/ai-workflow-automation" },
+      { label: "AI Voice Assistants", href: "/services/ai-voice-assistants" },
+      { label: "Social Media Automation", href: "/services/social-media-automation" },
+    ],
+    className: "col-span-12 md:col-span-6 lg:col-span-4",
   },
   {
-    label: "AGENTS",
+    label: "PILLAR 02",
     dot: "blue",
-    title: "AI Agents & Workflow Automation",
-    body: "Autonomous agents that plan, act, and hand off — across CRMs, warehouses, and SaaS tools.",
-    className: "col-span-12 md:col-span-6 lg:col-span-6",
+    title: "AI Intelligence Systems",
+    items: [
+      { label: "LLM Fine Tuning", href: "/services/llm-fine-tuning" },
+      { label: "Generative AI & Analytics", href: "/services/generative-ai-analytics" },
+      { label: "Computer Vision", href: "/services/computer-vision" },
+    ],
+    className: "col-span-12 md:col-span-6 lg:col-span-4",
   },
   {
-    label: "FORECASTING",
+    label: "PILLAR 03",
     dot: "orange",
-    title: "Predictive Analytics",
-    body: "Forward-looking decisions from historical signals.",
-    className: "col-span-12 md:col-span-6 lg:col-span-3",
-  },
-  {
-    label: "LLMS",
-    dot: "red",
-    title: "Custom LLM Development",
-    body: "Domain-tuned models you own. Datasets, training, and evals managed end-to-end.",
-    className: "col-span-12 md:col-span-6 lg:col-span-6",
-  },
-  {
-    label: "RPA",
-    dot: "orange",
-    title: "Robotic Process Automation",
-    body: "Resilient, observable bots that retire repetitive work.",
-    className: "col-span-12 md:col-span-12 lg:col-span-3",
-  },
-  {
-    label: "VISION",
-    dot: "blue",
-    title: "Computer Vision",
-    body: "Real-time image and video understanding — detection, OCR, quality control. Cloud or edge.",
-    className: "col-span-12 md:col-span-6 lg:col-span-6",
-  },
-  {
-    label: "NLP",
-    dot: "purple",
-    title: "Natural Language Processing",
-    body: "Intent, entities, summarization — at scale.",
-    className: "col-span-12 md:col-span-6 lg:col-span-6",
+    title: "Enterprise Platforms",
+    items: [
+      { label: "Enterprise Resource Planning", href: "/services/enterprise-resource-planning" },
+      { label: "Web Development", href: "/services/web-development" },
+      { label: "Mobile App Development", href: "/services/mobile-app-development" },
+    ],
+    className: "col-span-12 md:col-span-12 lg:col-span-4",
   },
 ];
-
-function BentoCardInner({
-  label,
-  dot,
-  title,
-  body,
-}: Omit<BentoCard, "className">) {
-  return (
-    <div className="relative z-[1] flex h-full flex-col">
-      <div className="mb-5 flex items-center gap-2.5">
-        <span
-          className={cn("h-2 w-2 shrink-0 rounded-full", dotClass[dot])}
-          aria-hidden
-        />
-        <span className="text-[11px] font-semibold uppercase tracking-[0.16em] text-primary-glow">
-          {label}
-        </span>
-      </div>
-      <h3 className={`${t.cardHeadline} text-on-surface-dark`}>
-        {title}
-      </h3>
-      <p className={`mt-3 ${t.bodyCaption} text-white/70`}>{body}</p>
-    </div>
-  );
-}
 
 const ServicesCapabilities = () => (
   <section id="capabilities" className="bg-[#F9F9F7] py-24">
     <div className="container-px mx-auto max-w-[1400px]">
       <div className="mb-14 max-w-3xl md:mb-16">
         <h2 className={t.sectionHeadlineLg}>
-          <span className="text-black">Our</span>{" "}
-          <span className="text-brand-gradient-reverse">capabilities</span>
+          <span className="text-black">Service</span>{" "}
+          <span className="text-brand-gradient-reverse">pillars</span>
         </h2>
         <p className={`mt-3 max-w-2xl ${t.subheadlineSemibold} text-black`}>
-          Our capabilities include.
+          Three pillars covering the full AI-first enterprise stack.
         </p>
         <p className={`mt-4 ${t.bodyLg} text-muted-foreground`}>
-          A full-stack AI practice — from foundational models to production-grade automation —
-          designed to fit how your enterprise actually operates.
+          From autonomous agents to intelligence systems to the enterprise platforms that run
+          your business — built to operate together inside real workflows.
         </p>
       </div>
 
       <div className="grid grid-cols-12 gap-4 md:gap-5">
-        {cards.map((card) => (
+        {pillars.map((pillar) => (
           <div
-            key={card.label}
+            key={pillar.label}
             className={cn(
               "group relative overflow-hidden rounded-[28px] border border-white/10 p-8 shadow-card lg:p-10",
-              "min-h-[200px] md:min-h-[220px]",
-              card.className,
+              "min-h-[280px] md:min-h-[320px]",
+              pillar.className,
             )}
           >
             <div
@@ -139,12 +99,39 @@ const ServicesCapabilities = () => (
               className="pointer-events-none absolute -right-16 -top-16 h-48 w-48 rounded-full bg-white/[0.04] blur-3xl transition-opacity duration-500 group-hover:opacity-80"
               aria-hidden
             />
-            <BentoCardInner
-              label={card.label}
-              dot={card.dot}
-              title={card.title}
-              body={card.body}
-            />
+            <div className="relative z-[1] flex h-full flex-col">
+              <div className="mb-5 flex items-center gap-2.5">
+                <span
+                  className={cn("h-2 w-2 shrink-0 rounded-full", dotClass[pillar.dot])}
+                  aria-hidden
+                />
+                <span className="text-[11px] font-semibold uppercase tracking-[0.16em] text-primary-glow">
+                  {pillar.label}
+                </span>
+              </div>
+              <h3 className={`${t.cardHeadline} text-on-surface-dark`}>
+                {pillar.title}
+              </h3>
+              <ul className="mt-5 space-y-2.5">
+                {pillar.items.map((item) => (
+                  <li
+                    key={item.href}
+                    className={`flex items-start gap-2.5 ${t.bodyCaption} text-white/80`}
+                  >
+                    <span
+                      className="mt-2 h-1.5 w-1.5 shrink-0 rounded-full bg-primary-glow"
+                      aria-hidden
+                    />
+                    <a
+                      href={item.href}
+                      className="hover:text-white transition-colors focus:outline-none focus-visible:underline"
+                    >
+                      {item.label}
+                    </a>
+                  </li>
+                ))}
+              </ul>
+            </div>
           </div>
         ))}
       </div>

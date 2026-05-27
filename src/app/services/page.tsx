@@ -1,15 +1,17 @@
 import type { Metadata } from "next";
 import Header from "@/components/site/Header";
 import ServicesHero from "@/components/site/ServicesHero";
+import ServicesAnswerBlock from "@/components/site/ServicesAnswerBlock";
 import ServicesCapabilities from "@/components/site/ServicesCapabilities";
 import OurServices from "@/components/site/OurServices";
+import ServicesIndustries from "@/components/site/ServicesIndustries";
 import ServicesCTA from "@/components/site/ServicesCTA";
 import Footer from "@/components/site/Footer";
 
 export const metadata: Metadata = {
-  title: "Services | Trinos Technologies",
+  title: "AI-First Enterprise Services | Trinos Technologies",
   description:
-    "End-to-end AI services — generative AI, agent-based automation, RAG, RPA, predictive analytics, and enterprise software development — purpose-built across the AI and ERP lifecycle.",
+    "Explore Trinos services across agentic AI, AI workflow automation, LLM fine tuning, generative analytics, voice assistants, computer vision, ERP, social media automation, web development, and mobile app development.",
 };
 
 export default function ServicesPage() {
@@ -17,8 +19,10 @@ export default function ServicesPage() {
     <main className="min-h-screen bg-background">
       <Header />
       <ServicesHero />
+      <ServicesAnswerBlock />
       <ServicesCapabilities />
       <OurServices />
+      <ServicesIndustries />
       <ServicesCTA />
       <Footer />
     </main>

@@ -49,7 +49,6 @@ const footerCols = [
     title: "Products",
     links: [
       { label: "Moltter", href: "/products" },
-      { label: "BillDefend AI", href: "/products" },
       { label: "TraceFlow", href: "/products" },
     ],
   },

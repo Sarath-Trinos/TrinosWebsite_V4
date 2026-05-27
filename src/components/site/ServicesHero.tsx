@@ -46,32 +46,33 @@ const ServicesHero = () => {
 
         <div className="container-px max-w-[1400px] mx-auto relative z-10">
           <div className="max-w-3xl animate-fade-up">
-            <span className="chip mb-5">Services</span>
+            <span className="chip mb-5">Enterprise AI & Platform Engineering Services</span>
             <h1 className={`${t.heroHeadline} text-white`}>
-              <span className="text-white">AI &</span>{" "}
+              <span className="text-white">AI Services Built for</span>{" "}
               <span className="text-brand-gradient-reverse">
-                Intelligent Systems
+                Real Enterprise Workflows
               </span>
               <span className="text-white">.</span>
             </h1>
             <p className={`mt-6 ${t.subheadline} text-white/80 max-w-2xl`}>
-              We develop end-to-end AI solutions that help enterprises automate operations,
-              enhance decision-making, and unleash the power of data.
+              Trinos designs, builds, integrates, and scales AI-first systems across automation,
+              analytics, ERP, voice, vision, web, mobile, and content operations. We help enterprises
+              move from isolated AI experiments to intelligent systems that operate inside real workflows.
             </p>
 
             <div className="mt-9 flex flex-wrap items-center gap-4">
               <a
-                href="#capabilities"
+                href="/contact"
                 className="group inline-flex items-center gap-2 bg-gradient-cta text-primary-foreground font-semibold px-7 py-3.5 rounded-full shadow-glow hover:shadow-card transition-all"
               >
-                Explore capabilities
+                Book a Discovery Workshop
                 <ArrowRight className="w-4 h-4 transition-transform group-hover:translate-x-1" />
               </a>
               <a
                 href="#our-services"
                 className="inline-flex items-center gap-2 font-semibold px-6 py-3.5 rounded-full border border-white/40 text-white hover:border-white hover:bg-white/10 transition-colors"
               >
-                Our services
+                Explore Services
               </a>
             </div>
           </div>

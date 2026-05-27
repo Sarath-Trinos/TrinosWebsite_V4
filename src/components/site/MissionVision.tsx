@@ -1,54 +1,52 @@
-import Image from "next/image";
+import { Target, Compass } from "lucide-react";
 import { type as t } from "@/lib/typography";
 
 const items = [
   {
-    prefix: "Our",
-    highlight: "mission",
-    text: "To empower organizations with intelligent and secure digital solutions that accelerate transformation and unlock operational excellence.",
-    image:
-      "/about-us/magnific__just-expand-the-background-with-plane-black__85858.jpeg",
-    alt: "Our mission",
-    imageClassName: "object-cover object-bottom-right",
+    title: "Our Mission",
+    description:
+      "To empower organizations with intelligent and secure digital solutions that accelerate transformation and unlock operational excellence.",
+    Icon: Target,
+    iconColor: "text-[#6D28D9]",
+    iconBg: "bg-[#EFE6FF]",
   },
   {
-    prefix: "Our",
-    highlight: "vision",
-    text: "To be a global leader in AI-driven enterprise transformation by delivering future-ready, scalable, and secure technology platforms.",
-    image:
-      "/about-us/magnific_2982314553.jpeg",
-    alt: "Our vision",
-    imageClassName: "object-cover",
+    title: "Our Vision",
+    description:
+      "To be a global leader in AI-driven enterprise transformation by delivering future-ready, scalable, and secure technology platforms.",
+    Icon: Compass,
+    iconColor: "text-[#9A4B00]",
+    iconBg: "bg-[#FFE9CC]",
   },
 ];
 
 const MissionVision = () => (
-  <section className="w-full bg-surface-soft">
-    <div className="grid grid-cols-1 md:grid-cols-2">
-      {items.map(({ prefix, highlight, text, image, alt, imageClassName }) => (
-        <article key={highlight} className="flex flex-col">
-          <div className="relative aspect-[1456/816] w-full max-w-[1456px] mx-auto overflow-hidden">
-            <Image
-              src={image}
-              alt={alt}
-              fill
-              sizes="(min-width: 768px) 50vw, 100vw"
-              className={imageClassName}
-              priority
-            />
-          </div>
+  <section className="bg-background py-24">
+    <div className="container-px max-w-[1400px] mx-auto">
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-5 md:gap-6">
+        {items.map(({ title, description, Icon, iconColor, iconBg }) => (
+          <div
+            key={title}
+            className="group relative rounded-3xl border border-border bg-white p-8 md:p-10 lg:p-12 flex flex-col transition-shadow hover:shadow-card"
+          >
+            <span
+              className={`inline-flex items-center justify-center w-12 h-12 rounded-xl ${iconBg} ${iconColor}`}
+            >
+              <Icon className="w-6 h-6" strokeWidth={2} />
+            </span>
 
-          <div className="flex flex-col gap-5 p-8 md:p-12 lg:p-16">
-            <h3 className={`${t.cardHeadlineMedium} text-black`}>
-              <span>{prefix}</span>{" "}
-              <span className="capitalize">{highlight}</span>
+            <h3 className={`mt-8 ${t.cardHeadlineMd} text-foreground`}>
+              {title}
             </h3>
-            <p className={`${t.bodyResponsive} text-muted-foreground max-w-xl`}>
-              {text}
+
+            <div className="mt-4 h-px w-12 bg-border" />
+
+            <p className={`mt-5 ${t.bodyResponsive} text-muted-foreground`}>
+              {description}
             </p>
           </div>
-        </article>
-      ))}
+        ))}
+      </div>
     </div>
   </section>
 );

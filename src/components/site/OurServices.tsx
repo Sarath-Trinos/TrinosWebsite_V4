@@ -3,22 +3,16 @@
 import { useState } from "react";
 import { type as t } from "@/lib/typography";
 import {
-  BarChart3,
   Bot,
-  Database,
-  Factory,
-  TrendingUp,
-  Smartphone,
-  Layers,
-  Building2,
-  Briefcase,
-  ShieldCheck,
-  Users,
-  Cloud,
-  BrainCircuit,
-  Wrench,
   Workflow,
+  BrainCircuit,
+  BarChart3,
+  Mic,
   Eye,
+  Briefcase,
+  Share2,
+  Globe,
+  Smartphone,
 } from "lucide-react";
 
 type Service = {
@@ -26,119 +20,89 @@ type Service = {
   title: string;
   category: string;
   description: string;
+  href: string;
 };
 
 const services: Service[] = [
   {
-    icon: BarChart3,
-    title: "Generative AI & Analytics",
-    category: "AI & Analytics",
-    description:
-      "Conversational dashboards, intelligent reporting, and automated content generation aligned to business needs.",
-  },
-  {
     icon: Bot,
-    title: "Agent-Based Automation",
-    category: "AI Automation",
+    title: "Agentic AI",
+    category: "Agentic Automation",
     description:
-      "Deploy autonomous AI agents that handle complex workflows and execute tasks with minimal human intervention.",
-  },
-  {
-    icon: Database,
-    title: "Retrieval-Augmented Generation",
-    category: "Generative AI",
-    description: "Build trustworthy AI with private data search and citation.",
-  },
-  {
-    icon: Factory,
-    title: "RPA & Industrial AI",
-    category: "Industrial AI",
-    description:
-      "Automation for assembly lines, defect detection, and recurring pattern identification. Edge AI for offline, low-latency environments.",
-  },
-  {
-    icon: Briefcase,
-    title: "Enterprise Resource Planning",
-    category: "ERP",
-    description:
-      "End-to-end ERP implementation and AI integration with SAP, Oracle, Microsoft Dynamics, Infor, QAD and EPICOR.",
-  },
-  {
-    icon: ShieldCheck,
-    title: "Cyber Security Services",
-    category: "Security",
-    description:
-      "We help enterprises build resilient security frameworks that safeguard critical systems and data.",
-  },
-  {
-    icon: Users,
-    title: "Customer Relationship Management",
-    category: "CRM",
-    description:
-      "Streamline customer interactions and improve relationships with integrated CRM solutions.",
-  },
-  {
-    icon: Cloud,
-    title: "Cloud Solutions",
-    category: "Cloud",
-    description:
-      "Accelerate your cloud transformation with secure, scalable, and cost-optimized cloud ecosystems.",
-  },
-  {
-    icon: BrainCircuit,
-    title: "Domain-Specific LLMs Fine-Tuning",
-    category: "Generative AI",
-    description:
-      "Adapt foundation models to your domain. We manage datasets, training runs, and evaluations for reliable, on-brand outputs.",
-  },
-  {
-    icon: Wrench,
-    title: "Modernization",
-    category: "Modernization",
-    description:
-      "Transform your legacy systems and applications into modern, efficient, and scalable solutions.",
+      "Autonomous AI agents that plan, decide, and act across your enterprise systems — designed to operate inside real business workflows, not isolated demos.",
+    href: "/services/agentic-ai",
   },
   {
     icon: Workflow,
-    title: "Workflow Automation",
-    category: "Automation",
+    title: "AI Workflow Automation",
+    category: "Agentic Automation",
     description:
-      "Orchestrate end-to-end processes with AI triggers and human approvals. Integrate CRMs, data warehouses, and SaaS tools.",
+      "End-to-end orchestration of business processes with AI triggers, human approvals, and integrations across CRMs, ERPs, data warehouses, and SaaS tools.",
+    href: "/services/ai-workflow-automation",
+  },
+  {
+    icon: BrainCircuit,
+    title: "LLM Fine Tuning",
+    category: "AI Intelligence Systems",
+    description:
+      "Domain-tuned language models built on your data. We manage datasets, training runs, and evaluations to deliver reliable, on-brand AI outputs.",
+    href: "/services/llm-fine-tuning",
+  },
+  {
+    icon: BarChart3,
+    title: "Generative AI & Analytics",
+    category: "AI Intelligence Systems",
+    description:
+      "Conversational dashboards, intelligent reporting, and generative analytics that turn enterprise data into decisions and narratives.",
+    href: "/services/generative-ai-analytics",
+  },
+  {
+    icon: Mic,
+    title: "AI Voice Assistants",
+    category: "Agentic Automation",
+    description:
+      "Multilingual voice agents for support, sales, and operations — grounded in your knowledge base with auditable, secure conversation flows.",
+    href: "/services/ai-voice-assistants",
   },
   {
     icon: Eye,
     title: "Computer Vision",
-    category: "AI & Vision",
+    category: "AI Intelligence Systems",
     description:
-      "Real-time image and video understanding for detection, quality checks, OCR, and analytics—on cloud or on device.",
+      "Real-time image and video understanding for detection, OCR, and quality control — deployed in the cloud or at the edge for low-latency environments.",
+    href: "/services/computer-vision",
   },
   {
-    icon: TrendingUp,
-    title: "Predictive Analytics & Data Modeling",
-    category: "Analytics",
+    icon: Briefcase,
+    title: "Enterprise Resource Planning",
+    category: "Enterprise Platforms",
     description:
-      "Transform historical data into actionable insights with advanced machine learning models.",
+      "End-to-end ERP implementation and AI integration across SAP, Oracle, Microsoft Dynamics, Infor, QAD, and EPICOR — aligned to your operating model.",
+    href: "/services/enterprise-resource-planning",
+  },
+  {
+    icon: Share2,
+    title: "Social Media Automation",
+    category: "Agentic Automation",
+    description:
+      "AI-driven content operations across channels — planning, generation, scheduling, and reporting tuned to your brand voice and compliance requirements.",
+    href: "/services/social-media-automation",
+  },
+  {
+    icon: Globe,
+    title: "Web Development",
+    category: "Enterprise Platforms",
+    description:
+      "Modern, accessible, performance-optimized websites and web applications with thoughtful UX and AI-powered features built in from day one.",
+    href: "/services/web-development",
   },
   {
     icon: Smartphone,
-    title: "Web & Mobile Development",
-    category: "Engineering",
+    title: "Mobile App Development",
+    category: "Enterprise Platforms",
     description:
-      "Modern, accessible websites and cross-platform apps with thoughtful UX and AI-powered features.",
-  },
-  {
-    icon: Layers,
-    title: "AI for ERP Systems",
-    category: "ERP & AI",
-    description:
-      "Transform ERPs using NLP, predictive analytics, and generative AI. Reduce training burden and unlock insights.",
-  },
-  {
-    icon: Building2,
-    title: "Enterprise Software Development",
-    category: "Engineering",
-    description:
-      "We build high-performance enterprise applications tailored to your specific needs.",
+      "Cross-platform mobile apps with native-quality experiences, secure data flows, and embedded AI capabilities for field, customer, and internal users.",
+    href: "/services/mobile-app-development",
   },
 ];
 
@@ -164,10 +128,11 @@ const OurServices = () => {
             <span className="text-brand-gradient-reverse">services</span>
           </h2>
           <p className={`mt-3 max-w-2xl ${t.subheadlineSemibold} text-foreground`}>
-            Purpose-built solutions across the AI &amp; ERP lifecycle
+            AI-first services across automation, intelligence, and enterprise platforms
           </p>
           <p className={`mt-4 ${t.bodyLg} text-muted-foreground`}>
-            Designed for impact and scale — from generative AI to industrial automation, we deliver the systems that move enterprises forward.
+            Ten focused services built to move enterprises from isolated AI experiments to
+            intelligent systems that operate inside real workflows.
           </p>
         </div>
 
@@ -175,10 +140,11 @@ const OurServices = () => {
           key={page}
           className="grid sm:grid-cols-2 lg:grid-cols-3 gap-4"
         >
-          {visible.map(({ icon: Icon, title, category, description }, idx) => (
-            <article
+          {visible.map(({ icon: Icon, title, category, description, href }, idx) => (
+            <a
               key={`${page}-${title}`}
-              className="group rounded-2xl overflow-hidden bg-surface-dark text-on-surface-dark shadow-card hover:shadow-glow transition-shadow duration-300 hover:-translate-y-1 animate-zoom-in-br origin-bottom-right"
+              href={href}
+              className="group rounded-2xl overflow-hidden bg-surface-dark text-on-surface-dark shadow-card hover:shadow-glow transition-shadow duration-300 hover:-translate-y-1 animate-zoom-in-br origin-bottom-right block focus:outline-none focus-visible:ring-2 focus-visible:ring-primary-glow"
               style={{ animationDelay: `${idx * 80}ms` }}
             >
               <div className="relative h-52 overflow-hidden bg-gradient-to-br from-primary/40 via-primary/15 to-[#0f1115]">
@@ -199,7 +165,7 @@ const OurServices = () => {
                 </p>
                 <p className="mt-4 text-xs font-medium text-primary-glow">{category}</p>
               </div>
-            </article>
+            </a>
           ))}
         </div>
 

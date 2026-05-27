@@ -8,7 +8,7 @@ import Footer from "@/components/site/Footer";
 export const metadata: Metadata = {
   title: "Products | Trinos Technologies",
   description:
-    "A growing suite of AI-powered products — Moltter, BillDefend AI, TraceFlow, and MeetingBrain — built to accelerate digital transformation and drive measurable business outcomes.",
+    "A growing suite of AI-powered products — Moltter and TraceFlow — built to accelerate digital transformation and drive measurable business outcomes.",
 };
 
 export default function ProductsPage() {

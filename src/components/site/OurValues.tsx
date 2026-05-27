@@ -5,36 +5,27 @@ import SectionHeader from "./SectionHeader";
 
 const values = [
   {
-    number: "01",
-    tag: "Our Value",
     title: "Innovation",
     description: "We bring cutting-edge AI to real business challenges.",
     image:
       "/about-us/Gemini_Generated_Image_7f0jcg7f0jcg7f0j.jpg",
     cardBg: "bg-[#EFE6FF]",
-    tagText: "text-[#6D28D9]",
     linkText: "text-[#6D28D9]",
   },
   {
-    number: "02",
-    tag: "Our Value",
     title: "Integrity",
     description: "Security, transparency, and trust define every engagement.",
     image:
       "/about-us/Gemini_Generated_Image_vwxiflvwxiflvwxi.jpg",
     cardBg: "bg-[#FFE9CC]",
-    tagText: "text-[#9A4B00]",
     linkText: "text-[#9A4B00]",
   },
   {
-    number: "03",
-    tag: "Our Value",
     title: "Excellence",
     description: "We deliver engineering precision and world-class quality.",
     image:
       "/about-us/Gemini_Generated_Image_1v2fy61v2fy61v2f.jpg",
     cardBg: "bg-[#D6F4E4]",
-    tagText: "text-[#0F7A41]",
     linkText: "text-[#0F7A41]",
   },
 ];
@@ -57,25 +48,13 @@ const OurValues = () => (
 
       <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-5 md:gap-6">
         {values.map(
-          ({ number, tag, title, description, image, cardBg, tagText, linkText }) => (
+          ({ title, description, image, cardBg, linkText }) => (
             <div
               key={title}
               className={`${cardBg} group relative rounded-3xl pt-8 md:pt-10 pb-6 px-6 flex flex-col transition-shadow hover:shadow-card`}
             >
-              <span
-                className={`absolute top-6 right-6 ${t.statLg} ${tagText} opacity-25`}
-              >
-                {number}
-              </span>
-
               <div className="flex-1 flex flex-col">
-                <span
-                  className={`inline-flex w-fit items-center rounded-full bg-white px-4 py-1.5 text-sm font-semibold ${tagText}`}
-                >
-                  {tag}
-                </span>
-
-                <h3 className={`mt-8 ${t.cardHeadlineMd} text-foreground`}>
+                <h3 className={`${t.cardHeadlineMd} text-foreground`}>
                   {title}
                 </h3>
 

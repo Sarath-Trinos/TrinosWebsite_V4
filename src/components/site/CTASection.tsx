@@ -1,7 +1,7 @@
 import { ArrowRight } from "lucide-react";
 import { type as t } from "@/lib/typography";
 
-type Variant = "purple" | "green" | "orange" | "pink" | "blue";
+type Variant = "purple" | "green" | "orange" | "pink" | "blue" | "gradient";
 
 const variants: Record<
   Variant,
@@ -41,6 +41,13 @@ const variants: Record<
     title: "text-[#1E3A8A]",
     subtitle: "text-[#1E3A8A]/80",
     button: "bg-[#1D4ED8] text-white hover:bg-[#1E3A8A]",
+  },
+  gradient: {
+    bg: "bg-gradient-cta",
+    accent: "#ffffff",
+    title: "text-white",
+    subtitle: "text-white/85",
+    button: "bg-white text-primary hover:bg-white/90",
   },
 };
 

@@ -1,6 +1,7 @@
 import Header from "@/components/site/Header";
 import Hero from "@/components/site/Hero";
 import ProofStrip from "@/components/site/ProofStrip";
+import EnterpriseProblem from "@/components/site/EnterpriseProblem";
 import TwoTracks from "@/components/site/TwoTracks";
 import AgentPlatform from "@/components/site/AgentPlatform";
 import ErpCrmModernization from "@/components/site/ErpCrmModernization";
@@ -16,6 +17,7 @@ export default function Home() {
       <Header />
       <Hero />
       <ProofStrip />
+      <EnterpriseProblem />
       <TwoTracks />
       <AgentPlatform />
       <ErpCrmModernization />
@@ -23,7 +25,7 @@ export default function Home() {
       <EnterpriseProof />
       <WhyChooseTrinos />
       <CTASection
-        variant="purple"
+        variant="gradient"
         title="Stop piloting. Start shipping."
         subtitle="A Discovery Workshop with Trinos maps your bottlenecks, your data, your systems, and shows you exactly where AI creates the fastest measurable impact. Two hours. No slideware."
         buttonLabel="Book a Discovery Workshop"

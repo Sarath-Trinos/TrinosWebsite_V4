@@ -38,32 +38,6 @@ const products: Product[] = [
     imageAlt: "Moltter product screenshot",
   },
   {
-    name: "BillDefend AI",
-    eyebrow: "Healthcare · Multi-agent AI",
-    description:
-      "An intelligent medical billing analysis platform that uses multi-agent AI to detect, analyze, and dispute erroneous medical charges. Our AI agents work together to identify overcharges, ensure compliance, and help users save thousands on medical bills.",
-    highlights: [
-      "90% detection rate for billing errors and overcharges",
-      "7 specialized AI agents working in coordination",
-      "Average savings of $2,400 per user",
-      "Automated dispute generation with evidence",
-      "Real-time analysis in under 3 minutes",
-      "Comprehensive dashboard with activity tracking",
-    ],
-    images: [
-      "/products/screenshot-1.jpg",
-      "/products/screenshot-2.jpg",
-      "/products/screenshot-3.jpg",
-      "/products/screenshot-4.jpg",
-      "/products/screenshot-5.jpg",
-      "/products/screenshot-6.jpg",
-      "/products/screenshot-7.jpg",
-      "/products/screenshot-8.jpg",
-    ],
-    imageAlt: "BillDefend AI product screenshot",
-    reverse: true,
-  },
-  {
     name: "TraceFlow",
     eyebrow: "Manufacturing · Inventory & traceability",
     description:
@@ -82,28 +56,6 @@ const products: Product[] = [
       "/products/traceflow-8.jpg",
     ],
     imageAlt: "TraceFlow product screenshot",
-  },
-  {
-    name: "MeetingBrain",
-    eyebrow: "Productivity · Real-time meeting intelligence",
-    description:
-      "Your AI-powered meeting assistant that captures every insight, so you can focus on what matters most. MeetingBrain provides real-time transcription, intelligent summaries, and actionable insights to transform your meetings into productive outcomes.",
-    highlights: [
-      "Real-time transcription with 95% accuracy",
-      "AI-powered summaries and action items",
-      "Automatic speaker identification",
-      "Invisible mode for private note-taking",
-      "Smart insights and key takeaways extraction",
-      "Seamless integration with meeting platforms",
-    ],
-    images: [
-      "/products/meeting-1.jpg",
-      "/products/meeting-2.jpg",
-      "/products/meeting-3.jpg",
-      "/products/meeting-4.jpg",
-      "/products/meeting-5.jpg",
-    ],
-    imageAlt: "MeetingBrain product screenshot",
     reverse: true,
   },
 ];
