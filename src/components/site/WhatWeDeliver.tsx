@@ -1,73 +1,113 @@
 import { cn } from "@/lib/utils";
 import { type as t } from "@/lib/typography";
-
-type DotTone = "purple" | "blue" | "orange" | "red";
-
-const dotClass: Record<DotTone, string> = {
-  purple: "bg-violet-500",
-  blue: "bg-sky-500",
-  orange: "bg-orange-500",
-  red: "bg-red-500",
-};
+import { Layers, Hexagon, Activity, ShieldCheck } from "lucide-react";
+import type { LucideIcon } from "lucide-react";
 
 type BentoCard = {
   label: string;
-  dot: DotTone;
   title: string;
   body: string;
+  Icon: LucideIcon;
+  illustration: "orchestration" | "mcp" | "rag" | "security";
   className: string;
 };
 
 const cards: BentoCard[] = [
   {
     label: "SLMS",
-    dot: "purple",
     title: "Small Language Models for Business",
     body: "We fine-tune compact domain-specific models on industry data to improve accuracy, reduce cost, and increase control compared with generic public models.",
-    className: "col-span-12 md:col-span-6 lg:col-span-6",
+    Icon: Layers,
+    illustration: "orchestration",
+    className: "col-span-12 lg:col-span-8",
   },
   {
     label: "SELF-IMPROVING",
-    dot: "blue",
     title: "Self-Improving AI",
-    body: "Systems are designed to learn from new data, validated outcomes, and controlled feedback loops over time.",
-    className: "col-span-12 md:col-span-6 lg:col-span-6",
+    body: "Systems learn from new data and validated outcomes over time.",
+    Icon: Hexagon,
+    illustration: "mcp",
+    className: "col-span-12 lg:col-span-4",
   },
   {
     label: "FEEDBACK LOOP",
-    dot: "orange",
     title: "The Feedback Loop",
-    body: "Corrections and approvals from human teams are captured so AI outputs can become more aligned to organizational standards.",
-    className: "col-span-12 md:col-span-6 lg:col-span-6",
+    body: "Human corrections and approvals shape AI outputs to organizational standards.",
+    Icon: Activity,
+    illustration: "rag",
+    className: "col-span-12 lg:col-span-4",
   },
   {
     label: "RAD",
-    dot: "red",
     title: "Rapid Application Development",
-    body: "AI accelerates Trinos internal engineering workflows, helping the team build and iterate production-grade platforms quickly.",
-    className: "col-span-12 md:col-span-6 lg:col-span-6",
+    body: "AI accelerates Trinos internal engineering workflows, helping the team build and iterate production-grade platforms quickly. Compounding velocity ships faster outcomes.",
+    Icon: ShieldCheck,
+    illustration: "security",
+    className: "col-span-12 lg:col-span-8",
   },
 ];
 
-function BentoCardInner({
-  label,
-  dot,
-  title,
-  body,
-}: Omit<BentoCard, "className">) {
+function Illustration({ kind }: { kind: BentoCard["illustration"] }) {
+  if (kind === "orchestration") {
+    return (
+      <svg viewBox="0 0 400 130" className="h-full w-full" aria-hidden>
+        <line x1="70" y1="80" x2="180" y2="55" stroke="hsl(196 100% 47%)" strokeWidth="1.5" opacity="0.45" />
+        <line x1="180" y1="55" x2="280" y2="85" stroke="hsl(196 100% 47%)" strokeWidth="1.5" opacity="0.45" />
+        <line x1="280" y1="85" x2="340" y2="60" stroke="hsl(196 100% 47%)" strokeWidth="1.5" opacity="0.45" />
+        <circle cx="70" cy="80" r="9" fill="hsl(196 100% 47%)" />
+        <circle cx="180" cy="55" r="7" fill="hsl(210 90% 55%)" opacity="0.85" />
+        <circle cx="280" cy="85" r="6" fill="hsl(196 100% 47%)" opacity="0.8" />
+        <circle cx="340" cy="60" r="8" fill="hsl(210 90% 55%)" />
+      </svg>
+    );
+  }
+  if (kind === "mcp") {
+    return (
+      <svg viewBox="0 0 400 130" className="h-full w-full" aria-hidden>
+        <rect x="140" y="55" width="48" height="22" rx="6" fill="hsl(196 100% 47%)" />
+        <line x1="188" y1="66" x2="220" y2="66" stroke="hsl(196 100% 47%)" strokeWidth="2" />
+        <rect x="220" y="50" width="36" height="32" rx="8" fill="none" stroke="hsl(196 100% 47%)" strokeWidth="2" />
+        <circle cx="238" cy="66" r="4" fill="hsl(196 100% 47%)" />
+      </svg>
+    );
+  }
+  if (kind === "rag") {
+    return (
+      <svg viewBox="0 0 400 130" className="h-full w-full" aria-hidden>
+        <rect x="80" y="58" width="240" height="6" rx="3" fill="hsl(196 100% 47%)" opacity="0.85" />
+        <rect x="80" y="72" width="180" height="6" rx="3" fill="hsl(196 100% 47%)" opacity="0.55" />
+        <rect x="80" y="86" width="120" height="6" rx="3" fill="hsl(196 100% 47%)" opacity="0.3" />
+      </svg>
+    );
+  }
+  return (
+    <svg viewBox="0 0 400 130" className="h-full w-full" aria-hidden>
+      <circle cx="200" cy="65" r="40" fill="none" stroke="hsl(196 100% 47%)" strokeWidth="1.5" strokeDasharray="3 4" opacity="0.5" />
+      <path
+        d="M200 38 L222 50 V70 C222 84 212 92 200 96 C188 92 178 84 178 70 V50 Z"
+        fill="none"
+        stroke="hsl(196 100% 47%)"
+        strokeWidth="2"
+      />
+      <path d="M192 66 L198 72 L210 60" stroke="hsl(196 100% 47%)" strokeWidth="2.5" fill="none" strokeLinecap="round" strokeLinejoin="round" />
+    </svg>
+  );
+}
+
+function BentoCardInner({ label, title, body, Icon, illustration }: Omit<BentoCard, "className">) {
   return (
     <div className="relative z-[1] flex h-full flex-col">
-      <div className="mb-5 flex items-center gap-2.5">
-        <span
-          className={cn("h-2 w-2 shrink-0 rounded-full", dotClass[dot])}
-          aria-hidden
-        />
-        <span className="text-[11px] font-semibold uppercase tracking-[0.16em] text-primary-glow">
-          {label}
-        </span>
+      <div className="mb-6 flex h-11 w-11 items-center justify-center rounded-xl bg-accent">
+        <Icon className="h-5 w-5 text-primary" strokeWidth={2} />
       </div>
-      <h3 className={`${t.cardHeadline} text-on-surface-dark`}>{title}</h3>
-      <p className={`mt-3 ${t.bodyCaption} text-white/70`}>{body}</p>
+      <h3 className={`${t.cardHeadline} text-surface-dark`}>{title}</h3>
+      <p className={`mt-3 ${t.bodyCaption} text-muted-foreground`}>{body}</p>
+      <div className="mt-auto pt-8">
+        <div className="relative h-[140px] overflow-hidden rounded-2xl bg-[hsl(196_100%_95%)] md:h-[160px]">
+          <Illustration kind={illustration} />
+        </div>
+      </div>
+      <span className="sr-only">{label}</span>
     </div>
   );
 }
@@ -95,34 +135,21 @@ const WhatWeDeliver = () => (
         </p>
       </div>
 
-      <div className="grid grid-cols-12 gap-4 md:gap-5">
+      <div className="grid grid-cols-12 items-stretch gap-5 md:gap-6">
         {cards.map((card) => (
           <div
             key={card.label}
             className={cn(
-              "group relative overflow-hidden rounded-[28px] border border-white/10 p-8 shadow-card lg:p-10",
-              "min-h-[200px] md:min-h-[220px]",
+              "group relative overflow-hidden rounded-[28px] border border-primary/15 bg-white p-8 shadow-soft transition-all duration-300 hover:-translate-y-1 hover:border-primary/30 hover:shadow-card lg:p-10",
               card.className,
             )}
           >
-            <div className="absolute inset-0 bg-surface-dark" aria-hidden />
-            <div
-              className="pointer-events-none absolute inset-0 opacity-100"
-              style={{
-                background:
-                  "radial-gradient(ellipse 90% 75% at 100% 0%, rgba(255,255,255,0.09) 0%, transparent 58%)",
-              }}
-              aria-hidden
-            />
-            <div
-              className="pointer-events-none absolute -right-16 -top-16 h-48 w-48 rounded-full bg-white/[0.04] blur-3xl transition-opacity duration-500 group-hover:opacity-80"
-              aria-hidden
-            />
             <BentoCardInner
               label={card.label}
-              dot={card.dot}
               title={card.title}
               body={card.body}
+              Icon={card.Icon}
+              illustration={card.illustration}
             />
           </div>
         ))}

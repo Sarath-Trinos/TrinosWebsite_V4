@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import Header from "@/components/site/Header";
 import AboutHero from "@/components/site/AboutHero";
+import Leadership from "@/components/site/Leadership";
 import WhoWeAre from "@/components/site/WhoWeAre";
 import MissionVision from "@/components/site/MissionVision";
 import OurValues from "@/components/site/OurValues";
@@ -18,10 +19,11 @@ export default function AboutPage() {
     <main className="min-h-screen bg-background">
       <Header />
       <AboutHero />
+      <Leadership />
       <WhoWeAre />
       <OurValues />
       <MissionVision />
-      <CTASection variant="green" />
+      <CTASection variant="gradient" />
       <Footer />
     </main>
   );

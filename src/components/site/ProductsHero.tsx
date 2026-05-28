@@ -46,17 +46,16 @@ const ProductsHero = () => {
 
         <div className="container-px max-w-[1400px] mx-auto relative z-10">
           <div className="max-w-3xl animate-fade-up">
-            <span className="chip mb-5">Products</span>
+            <span className="chip mb-5">Our AI Products</span>
             <h1 className={`${t.heroHeadline} text-white`}>
-              Intelligent solutions for{" "}
+              AI Platforms Built In-House.{" "}
               <span className="text-brand-gradient-reverse">
-                modern enterprises
+                Live in Production
               </span>
               .
             </h1>
             <p className={`mt-6 ${t.subheadline} text-white/80 max-w-2xl`}>
-              A growing suite of AI-powered products built to accelerate digital transformation
-              and drive measurable business outcomes.
+              Trinos Technologies is the parent company engineering dedicated AI platforms for specific industry challenges. We build, launch, and scale products under the Trinos umbrella to prove our AI-first engineering in real production environments.
             </p>
 
             <div className="mt-9 flex flex-wrap items-center gap-4">
@@ -64,14 +63,14 @@ const ProductsHero = () => {
                 href="#products"
                 className="group inline-flex items-center gap-2 bg-gradient-cta text-primary-foreground font-semibold px-7 py-3.5 rounded-full shadow-glow hover:shadow-card transition-all"
               >
-                Explore the suite
+                Explore Our Platforms
                 <ArrowRight className="w-4 h-4 transition-transform group-hover:translate-x-1" />
               </a>
               <a
                 href="/contact"
                 className="inline-flex items-center gap-2 font-semibold px-6 py-3.5 rounded-full border border-white/40 text-white hover:border-white hover:bg-white/10 transition-colors"
               >
-                Request a demo
+                Talk to Our Product Engineers
               </a>
             </div>
           </div>

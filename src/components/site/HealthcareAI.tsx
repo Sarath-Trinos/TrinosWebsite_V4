@@ -35,7 +35,8 @@ const cards = [
 ];
 
 const HealthcareAI = () => {
-  const [activeIndex, setActiveIndex] = useState(0);
+  const [hoveredIndex, setHoveredIndex] = useState<number | null>(null);
+  const activeIndex = hoveredIndex ?? 0;
 
   return (
     <section className="py-24 bg-surface-tint">
@@ -69,28 +70,23 @@ const HealthcareAI = () => {
                 loading={i === 0 ? "eager" : "lazy"}
               />
             ))}
-            <div className="absolute inset-x-0 bottom-0 p-7 bg-gradient-to-t from-foreground/90 via-foreground/50 to-transparent text-on-surface-dark">
-              <h3 className={`${t.cardHeadlineMd} mb-2`}>
-                {cards[activeIndex].title}
-              </h3>
-              <p className={`${t.bodySm} text-white/85`}>
-                {cards[activeIndex].description}
-              </p>
-            </div>
           </div>
 
           <div className="md:col-span-3 grid gap-4 md:gap-3 lg:gap-6 md:grid-rows-3 md:h-full">
             {cards.map((it, i) => {
-              const isActive = i === activeIndex;
+              const isHovered = i === hoveredIndex;
+              const isActive = isHovered;
               return (
                 <a
                   key={it.title}
                   href={it.href}
-                  onMouseEnter={() => setActiveIndex(i)}
-                  onFocus={() => setActiveIndex(i)}
+                  onMouseEnter={() => setHoveredIndex(i)}
+                  onMouseLeave={() => setHoveredIndex(null)}
+                  onFocus={() => setHoveredIndex(i)}
+                  onBlur={() => setHoveredIndex(null)}
                   aria-current={isActive ? "true" : undefined}
                   className={cn(
-                    "tile bg-card border p-6 md:p-3 md:py-2 lg:p-7 flex items-center gap-5 md:gap-3 lg:gap-5 text-left w-full md:h-full transition-all duration-300 ease-out",
+                    "tile bg-card border p-6 md:p-4 lg:p-7 flex items-center gap-5 md:gap-4 lg:gap-5 text-left w-full md:h-full transition-all duration-300 ease-out",
                     isActive
                       ? "border-primary shadow-glow scale-[1.01]"
                       : "border-border hover:border-primary/40 hover:shadow-soft"
@@ -106,7 +102,26 @@ const HealthcareAI = () => {
                   >
                     <it.icon className="w-6 h-6 md:w-4 md:h-4 lg:w-6 lg:h-6" />
                   </div>
-                  <h3 className={`${t.cardHeadline} flex-1`}>{it.title}</h3>
+                  <div className="flex-1 min-w-0">
+                    <h3 className={t.cardHeadline}>{it.title}</h3>
+                    <div
+                      className={cn(
+                        "grid transition-all duration-300 ease-out",
+                        isActive
+                          ? "grid-rows-[1fr] opacity-100 mt-2"
+                          : "grid-rows-[0fr] opacity-0"
+                      )}
+                    >
+                      <p
+                        className={cn(
+                          t.bodySm,
+                          "overflow-hidden text-muted-foreground"
+                        )}
+                      >
+                        {it.description}
+                      </p>
+                    </div>
+                  </div>
                 </a>
               );
             })}

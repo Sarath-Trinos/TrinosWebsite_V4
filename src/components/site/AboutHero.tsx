@@ -46,17 +46,16 @@ const AboutHero = () => {
 
         <div className="container-px max-w-[1400px] mx-auto relative z-10">
           <div className="max-w-3xl animate-fade-up">
-            <span className="chip mb-5">About Trinos</span>
+            <span className="chip mb-5">About Trinos Technologies</span>
             <h1 className={`${t.heroHeadline} text-white`}>
-              Building intelligent{" "}
+              Built by Operators.{" "}
               <span className="text-brand-gradient-reverse">
-                technology ecosystems
+                Not Observers
               </span>
               .
             </h1>
             <p className={`mt-6 ${t.subheadline} text-white/80 max-w-2xl`}>
-              From humble beginnings to industry-leading builds, our story is shaped by passion,
-              craftsmanship, and a commitment to delivering lasting impact.
+              We are an AI-first engineering company backed by deep enterprise experience. We do not just advise on AI. We build, deploy, and scale production-grade systems for global enterprises.
             </p>
 
             <div className="mt-9 flex flex-wrap items-center gap-4">
@@ -64,16 +63,14 @@ const AboutHero = () => {
                 href="/contact"
                 className="group inline-flex items-center gap-2 bg-gradient-cta text-primary-foreground font-semibold px-7 py-3.5 rounded-full shadow-glow hover:shadow-card transition-all"
               >
-                Get in touch
+                Talk to Leadership
                 <ArrowRight className="w-4 h-4 transition-transform group-hover:translate-x-1" />
               </a>
-              <a
-                href="#who-we-are"
-                className="inline-flex items-center gap-2 font-semibold px-6 py-3.5 rounded-full border border-white/40 text-white hover:border-white hover:bg-white/10 transition-colors"
-              >
-                Our story
-              </a>
             </div>
+
+            <p className="mt-8 text-white/70 text-sm md:text-base max-w-2xl">
+              Headquartered in Chennai, Trinos combines AI engineering, product development, ERP expertise, and enterprise delivery experience.
+            </p>
           </div>
         </div>
       </div>

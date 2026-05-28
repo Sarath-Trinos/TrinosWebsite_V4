@@ -144,7 +144,7 @@ const WhyChooseTrinos = () => {
                   {/* Card — equal height via flex column, h-full */}
                   <div
                     className={cn(
-                      "relative flex h-full w-full flex-col overflow-hidden rounded-3xl border border-white/60",
+                      "relative flex h-full w-full flex-col overflow-hidden rounded-3xl border border-sky-200",
                       "bg-white/70",
                       "px-6 pt-10 pb-8 sm:px-7 sm:pt-12",
                       "shadow-[0_10px_40px_-18px_hsl(210_60%_25%/0.25)]"

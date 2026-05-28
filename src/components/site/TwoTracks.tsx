@@ -13,7 +13,7 @@ const tracks: Track[] = [
   {
     title: "We Build AI Products",
     body:
-      "Moltter Studio. TraceFlow. VoteSense. Travel One. Four production AI platforms, built and operated by Trinos. The architecture proves itself in market before it ever reaches a client deployment.",
+      "Moltter Studio. TraceFlow. Travel One. Four production AI platforms, built and operated by Trinos. The architecture proves itself in market before it ever reaches a client deployment.",
     cta: "Explore Our Products",
     href: "/products",
   },
@@ -30,8 +30,9 @@ const TwoTracks = () => (
   <section className="py-24 bg-surface-tint">
     <div className="container-px max-w-[1400px] mx-auto">
       <SectionHeader
-        eyebrow="Our operating model"
         headlineWeight="normal"
+        contentClassName="max-w-none"
+        titleClassName="font-display text-3xl md:text-4xl lg:text-[44px] leading-tight font-normal text-foreground whitespace-nowrap"
         title={
           <>
             Two Tracks. One AI-First{" "}
@@ -44,9 +45,18 @@ const TwoTracks = () => (
         {tracks.map((track) => (
           <article
             key={track.title}
-            className="tile bg-card border border-border p-8 md:p-10 lg:p-12 flex flex-col h-full hover:shadow-card transition-shadow"
+            className="tile bg-card border border-sky-200 p-8 md:p-10 lg:p-12 flex flex-col items-center text-center h-full hover:shadow-card transition-shadow"
           >
-            <h3 className={`${t.featureHeadline} font-semibold mb-5`}>
+            <h3
+              className="mb-5"
+              style={{
+                fontFamily: "Poppins, sans-serif",
+                fontSize: "28px",
+                lineHeight: "32px",
+                fontWeight: 600,
+                color: "#252525",
+              }}
+            >
               {track.title}
             </h3>
             <p className={`${t.bodyLg} text-muted-foreground flex-1`}>

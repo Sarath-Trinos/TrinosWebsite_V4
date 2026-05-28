@@ -2,7 +2,6 @@ import type { Metadata } from "next";
 import Header from "@/components/site/Header";
 import ServicesHero from "@/components/site/ServicesHero";
 import ServicesAnswerBlock from "@/components/site/ServicesAnswerBlock";
-import ServicesCapabilities from "@/components/site/ServicesCapabilities";
 import OurServices from "@/components/site/OurServices";
 import ServicesIndustries from "@/components/site/ServicesIndustries";
 import ServicesCTA from "@/components/site/ServicesCTA";
@@ -20,7 +19,6 @@ export default function ServicesPage() {
       <Header />
       <ServicesHero />
       <ServicesAnswerBlock />
-      <ServicesCapabilities />
       <OurServices />
       <ServicesIndustries />
       <ServicesCTA />

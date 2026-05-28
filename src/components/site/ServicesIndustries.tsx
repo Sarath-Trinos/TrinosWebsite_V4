@@ -1,35 +1,27 @@
-import {
-  Factory,
-  ShieldCheck,
-  Landmark,
-  HeartPulse,
-  Building2,
-  Cpu,
-  Plane,
-  Car,
-} from "lucide-react";
+import Image from "next/image";
 import { type as t } from "@/lib/typography";
 
 type Industry = {
-  icon: typeof Factory;
+  image: string;
   name: string;
+  bg?: string;
 };
 
 const industries: Industry[] = [
-  { icon: Factory, name: "Manufacturing" },
-  { icon: ShieldCheck, name: "Insurance" },
-  { icon: Landmark, name: "Financial Services" },
-  { icon: HeartPulse, name: "Healthcare" },
-  { icon: Building2, name: "Government" },
-  { icon: Cpu, name: "Enterprise Technology" },
-  { icon: Plane, name: "Travel & Hospitality" },
-  { icon: Car, name: "Automobile & Engineering" },
+  { image: "/service/Manufacturing.png", name: "Manufacturing", bg: "bg-[#FF6B3D]" },
+  { image: "/service/Insurance.png", name: "Insurance", bg: "bg-[#1F3A68]" },
+  { image: "/service/Enterprise.png", name: "Enterprise Technology", bg: "bg-[#5B8DEF]" },
+  { image: "/service/Healthcare.png", name: "Healthcare", bg: "bg-[#1AA39A]" },
+  { image: "/service/Travel%26Hospitality.png", name: "Travel & Hospitality", bg: "bg-[#F26A5A]" },
+  { image: "/service/Government.png", name: "Government", bg: "bg-[#A06A2C]" },
+  { image: "/service/Financial_Service.png", name: "Financial Services", bg: "bg-[#7FC7E8]" },
+  { image: "/service/Automobile%26Engineering.png", name: "Automobile & Engineering", bg: "bg-[#2E2E2E]" },
 ];
 
 const ServicesIndustries = () => (
-  <section id="who-we-help" className="bg-[#F9F9F7] py-24">
-    <div className="container-px max-w-[1400px] mx-auto">
-      <div className="mb-12 max-w-3xl">
+  <section id="who-we-help" className="bg-[#F9F9F7] py-12 lg:min-h-screen lg:flex lg:items-center">
+    <div className="container-px max-w-[1400px] mx-auto w-full">
+      <div className="mb-8 max-w-3xl">
         <span className="chip mb-5">Who we help</span>
         <h2 className={t.sectionHeadlineLg}>
           <span className="text-black">Built for</span>{" "}
@@ -43,16 +35,19 @@ const ServicesIndustries = () => (
         </p>
       </div>
 
-      <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-4">
-        {industries.map(({ icon: Icon, name }) => (
-          <div
-            key={name}
-            className="group tile bg-white p-6 flex flex-col items-start gap-4 hover:shadow-card transition-shadow"
-          >
-            <div className="w-12 h-12 rounded-xl bg-primary/10 grid place-items-center text-primary group-hover:bg-primary group-hover:text-white transition-colors">
-              <Icon className="w-6 h-6" strokeWidth={1.75} />
+      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-x-6 gap-y-12 items-start">
+        {industries.map(({ image, name, bg }) => (
+          <div key={name} className="group flex flex-col items-center gap-4">
+            <div className={`aspect-[16/10] w-full overflow-hidden rounded-xl ${bg ?? ""}`}>
+              <Image
+                src={image}
+                alt={name}
+                width={640}
+                height={400}
+                className="h-full w-full object-contain"
+              />
             </div>
-            <p className="font-semibold text-foreground">{name}</p>
+            <p className="font-semibold text-foreground text-center text-lg">{name}</p>
           </div>
         ))}
       </div>

@@ -6,8 +6,7 @@ const ServicesAnswerBlock = () => (
       <div className="tile bg-surface-soft p-8 md:p-12 lg:p-16 relative overflow-hidden">
         <div className="absolute -top-32 -left-32 w-[400px] h-[400px] rounded-full bg-primary/10 blur-3xl" />
         <div className="absolute -bottom-32 -right-32 w-[400px] h-[400px] rounded-full bg-primary-glow/10 blur-3xl" />
-        <div className="relative max-w-4xl">
-          <span className="chip mb-5">At a glance</span>
+        <div className="relative max-w-4xl mx-auto text-center">
           <h2 className={`${t.sectionHeadlineMd} text-foreground`}>
             What services does Trinos provide?
           </h2>

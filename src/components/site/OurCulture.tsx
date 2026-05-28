@@ -140,7 +140,7 @@ const OurCulture = () => (
           {pillars.map(({ Icon, title, description }, i) => (
             <div
               key={title}
-              className="group relative overflow-hidden rounded-3xl border border-white/70 bg-white p-6 shadow-[0_10px_40px_-18px_hsl(210_60%_25%/0.22)] transition-all duration-500 hover:-translate-y-1 hover:border-primary/25 hover:shadow-[0_20px_60px_-20px_hsl(var(--primary)/0.35)] sm:p-7"
+              className="group relative overflow-hidden rounded-3xl border border-sky-200 bg-white p-6 shadow-[0_10px_40px_-18px_hsl(210_60%_25%/0.22)] transition-all duration-500 hover:-translate-y-1 hover:border-sky-300 hover:shadow-[0_20px_60px_-20px_hsl(var(--primary)/0.35)] sm:p-7"
               style={{ animation: `fade-up 0.7s var(--ease-out) ${i * 120}ms both` }}
             >
               {/* Glow border on hover */}
@@ -154,12 +154,7 @@ const OurCulture = () => (
               />
 
 <div className="relative flex items-start gap-5 sm:gap-6">
-                {/* Number badge */}
                 <div className="flex shrink-0 flex-col items-center gap-3">
-                  <span className={`${t.index} text-primary/70`}>
-                    {String(i + 1).padStart(2, "0")}
-                  </span>
-
                   {/* Icon tile */}
                   <div className="relative h-16 w-16 sm:h-[72px] sm:w-[72px]">
                     {/* Outer glow ring */}
