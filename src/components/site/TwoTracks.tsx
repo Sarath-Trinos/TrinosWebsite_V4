@@ -13,14 +13,14 @@ const tracks: Track[] = [
   {
     title: "We Build AI Products",
     body:
-      "Moltter Studio. TraceFlow. Travel One. Four production AI platforms, built and operated by Trinos. The architecture proves itself in market before it ever reaches a client deployment.",
+      "We design, build, and operate AI products such as Moltter Studio, TraceFlow, and Travel One. These platforms validate our architecture in real market environments before we apply it to enterprise client deployments.",
     cta: "Explore Our Products",
     href: "/products",
   },
   {
     title: "We Power AI Enterprises",
     body:
-      "Agentic AI. Fine-tuned models. Voice. Vision. ERP. Web. Mobile. We deploy each of these where your business actually runs. Wired into your data, your permissions, your approval chains.",
+      "From Agentic AI, fine-tuned models, voice, vision, ERP, web, and mobile systems, we deploy intelligence where your business actually operates — connected to your data, permissions, workflows, and approval chains.",
     cta: "Explore Our Services",
     href: "/services",
   },

@@ -13,7 +13,7 @@ const cards = [
     title: "Enterprise Resource Planning",
     image: "/home/magnific__talk__91259.jpeg",
     description:
-      "ERP architected for AI from day one. SAP, Oracle, Microsoft Dynamics, Infor, QAD, Epicor. Implemented, integrated, and operated by a team carrying 25 years of enterprise deployment experience.",
+      "The enterprise execution layer beneath AI — ERP systems that manage core data, web platforms that scale access, and mobile apps that bring intelligence to where work actually happens.",
     href: "/services/enterprise-resource-planning",
   },
   {

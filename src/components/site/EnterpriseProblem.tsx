@@ -14,12 +14,12 @@ const EnterpriseProblem = () => (
         </h2>
         <p className={`mt-6 ${t.bodyLg} text-muted-foreground`}>
           Most enterprises already have data, systems, and domain expertise.
-          The challenge is turning those assets into operational intelligence.
-          Legacy systems create friction. Generic AI tools fail when they meet
-          real workflows, permissions, compliance needs, and business rules.
-          Trinos builds AI-first systems that connect to your enterprise
-          context, respect your governance model, and take measurable action
-          inside your existing operations.
+          The real challenge is converting those assets into operational
+          intelligence. Legacy systems create friction, while generic AI tools
+          struggle with real workflows, permissions, compliance requirements,
+          and business rules. Trinos builds AI-first systems that connect with
+          your enterprise context, respect your governance model, and drive
+          measurable action inside your existing operations.
         </p>
       </div>
     </div>

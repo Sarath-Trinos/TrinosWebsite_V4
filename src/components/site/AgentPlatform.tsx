@@ -29,7 +29,7 @@ const tiles: Tile[] = [
     description:
       "Agents that reason, call tools, and execute multi-step work. Bounded by your permissions, your approvals, your audit trail. The autonomy is real. The guardrails are too.",
     image: grace,
-    video: "/videos/b_a_eb_ea_f_d_e_c_mp_.mp4",
+    video: "/videos/don_t_need_the_right_side_card.mp4",
     href: "/services/agentic-ai",
   },
   {
@@ -118,7 +118,7 @@ const AgentPlatform = () => {
               <span className="text-brand-gradient">Automation</span>
             </>
           }
-          description="Agents and workflow systems that act inside real enterprise operations. Not chatbots. Not pilots stuck in someone's sandbox."
+          description="Production-ready AI agents and workflow systems designed to operate inside real enterprise environments beyond chatbots, pilots, and disconnected automation tools."
         />
         <div className="flex flex-col gap-6 md:grid md:grid-cols-12 md:gap-4 xl:gap-5">
           {/* Left: media + overlay — slow horizontal slide into view */}

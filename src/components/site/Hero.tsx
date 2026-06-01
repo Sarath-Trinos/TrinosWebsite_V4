@@ -60,7 +60,7 @@ const Hero = () => {
             We Power AI Enterprises.
           </h1>
           <p className={`mt-6 ${t.subheadline} text-white/85 max-w-2xl`}>
-            We ship production AI platforms. And the engineering systems that put them to work inside real enterprise operations, without breaking what already runs.
+            We deliver production-ready AI platforms and engineering systems that bring intelligence into real enterprise operations without disrupting what already works.
           </p>
 
           <div className="mt-8 flex flex-wrap items-center gap-4">
