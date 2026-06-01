@@ -1,31 +1,35 @@
+import Image from "next/image";
 import { type as t } from "@/lib/typography";
-import { Target, TrendingUp, Sparkles, ArrowUpRight } from "lucide-react";
 import SectionHeader from "./SectionHeader";
 
 type UseCase = {
-  icon: typeof Target;
+  image: string;
   title: string;
   description: string;
+  href: string;
 };
 
 const useCases: UseCase[] = [
   {
-    icon: Target,
+    image: "/trinos/high-accurancy.jpg",
     title: "High-Accuracy Operations",
     description:
       "Targeted models can improve accuracy on complex domain language and repeatable workflows.",
+    href: "/contact",
   },
   {
-    icon: TrendingUp,
+    image: "/trinos/performance-optimization-with-data-analytics.jpg",
     title: "Continuous Optimization",
     description:
       "Approved corrections and production signals can reduce repeated errors and improve system behavior over time.",
+    href: "/contact",
   },
   {
-    icon: Sparkles,
+    image: "/trinos/results.jpg",
     title: "The Result",
     description:
       "Your AI investment can become more valuable as it captures proprietary workflows, business logic, and operational patterns.",
+    href: "/contact",
   },
 ];
 
@@ -44,25 +48,35 @@ const UseCasesResults = () => (
         description="From targeted accuracy gains to long-term operational leverage — see how the Trinos Edge translates into measurable business outcomes."
       />
 
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6">
-        {useCases.map(({ icon: Icon, title, description }) => (
-          <div
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 lg:gap-8">
+        {useCases.map(({ image, title, description, href }) => (
+          <a
             key={title}
-            className="group tile bg-card p-7 flex flex-col gap-5 hover:shadow-glow"
+            href={href}
+            className="group flex flex-col bg-card rounded-2xl overflow-hidden shadow-soft hover:shadow-card transition-all duration-300 hover:-translate-y-1"
           >
-            <div className="flex items-center justify-between">
-              <div className="w-12 h-12 rounded-2xl bg-gradient-primary grid place-items-center shadow-soft">
-                <Icon className="w-6 h-6 text-white" />
-              </div>
-              <ArrowUpRight className="w-5 h-5 text-muted-foreground transition-all group-hover:text-primary group-hover:-translate-y-0.5 group-hover:translate-x-0.5" />
+            <div className="relative w-full aspect-[16/10] overflow-hidden">
+              <Image
+                src={image}
+                alt={title}
+                fill
+                sizes="(max-width: 768px) 100vw, (max-width: 1024px) 50vw, 33vw"
+                quality={80}
+                className="object-cover transition-transform duration-500 ease-out group-hover:scale-105"
+              />
             </div>
-            <div>
-              <h3 className={`${t.cardHeadline} text-foreground`}>{title}</h3>
-              <p className="mt-3 text-sm text-muted-foreground leading-relaxed text-balance">
+            <div className="p-7 flex flex-col gap-4 flex-1">
+              <h3 className={`${t.cardHeadline} text-foreground font-semibold`}>
+                {title}
+              </h3>
+              <p className="text-sm text-muted-foreground leading-relaxed text-balance">
                 {description}
               </p>
+              <span className="mt-auto text-sm font-semibold uppercase tracking-wider text-primary group-hover:underline">
+                Learn More
+              </span>
             </div>
-          </div>
+          </a>
         ))}
       </div>
     </div>

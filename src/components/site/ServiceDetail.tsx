@@ -1,10 +1,11 @@
-import { ArrowRight, Check, Sparkles } from "lucide-react";
+import Image from "next/image";
+import { ArrowRight, Sparkles } from "lucide-react";
 import { type as t } from "@/lib/typography";
 import type { ServiceContent } from "@/lib/services-content";
 
-type Props = { service: ServiceContent };
+type Props = { service: ServiceContent; heroImage?: string };
 
-const ServiceDetail = ({ service }: Props) => {
+const ServiceDetail = ({ service, heroImage }: Props) => {
   const Icon = service.icon;
 
   return (
@@ -12,8 +13,15 @@ const ServiceDetail = ({ service }: Props) => {
       {/* HERO */}
       <section className="relative overflow-hidden bg-surface-dark text-on-surface-dark">
         <div className="h-[5rem]" aria-hidden="true" />
+        {heroImage && (
+          <div
+            className="absolute inset-0 bg-cover bg-center bg-fixed"
+            style={{ backgroundImage: `url(${heroImage})` }}
+            aria-hidden="true"
+          />
+        )}
         <div className="absolute inset-0 bg-[radial-gradient(circle_at_20%_10%,rgba(99,102,241,0.18),transparent_55%),radial-gradient(circle_at_80%_30%,rgba(56,189,248,0.12),transparent_55%)]" />
-        <div className="absolute inset-0 bg-black/30" />
+        <div className={`absolute inset-0 ${heroImage ? "bg-black/60" : "bg-black/30"}`} />
         <div className="container-px max-w-[1400px] mx-auto relative z-10 pt-16 lg:pt-24 pb-20 lg:pb-28">
           <div className="grid lg:grid-cols-[1fr_auto] gap-10 items-center">
             <div className="max-w-3xl animate-fade-up">
@@ -95,21 +103,14 @@ const ServiceDetail = ({ service }: Props) => {
             {service.deliverables.map((item) => (
               <div
                 key={item.title}
-                className="group relative overflow-hidden rounded-2xl border border-border bg-card p-7 shadow-card hover:shadow-glow transition-all hover:-translate-y-0.5"
+                className="group relative overflow-hidden rounded-2xl border border-border bg-card p-7 shadow-card hover:shadow-glow transition-all hover:-translate-y-0.5 flex flex-col items-center justify-center text-center"
               >
-                <div className="flex items-start gap-4">
-                  <div className="shrink-0 w-11 h-11 rounded-xl bg-gradient-cta text-primary-foreground grid place-items-center shadow-soft">
-                    <Check className="w-5 h-5" strokeWidth={2.5} />
-                  </div>
-                  <div>
-                    <h3 className={`${t.cardHeadlineSemibold} text-foreground`}>
-                      {item.title}
-                    </h3>
-                    <p className={`mt-2 ${t.body} text-muted-foreground`}>
-                      {item.description}
-                    </p>
-                  </div>
-                </div>
+                <h3 className={`${t.cardHeadlineSemibold} text-foreground`}>
+                  {item.title}
+                </h3>
+                <p className={`mt-3 ${t.body} text-muted-foreground`}>
+                  {item.description}
+                </p>
               </div>
             ))}
           </div>
@@ -125,23 +126,54 @@ const ServiceDetail = ({ service }: Props) => {
               <span className="text-brand-gradient-reverse">results</span>
             </h2>
           </div>
-          <div className="grid md:grid-cols-2 gap-5">
-            {service.useCases.map((uc, i) => (
-              <div
-                key={uc.title}
-                className="rounded-2xl border border-border bg-surface-soft p-8 shadow-soft"
-              >
-                <div className="text-xs font-semibold uppercase tracking-[0.16em] text-primary mb-3">
-                  Use case 0{i + 1}
+          <div className="grid md:grid-cols-2 gap-6">
+            {service.useCases.map((uc, i) =>
+              uc.image ? (
+                <div
+                  key={uc.title}
+                  className="group flex flex-col rounded-2xl border border-border bg-card overflow-hidden shadow-soft hover:shadow-card transition-all duration-300 hover:-translate-y-1"
+                >
+                  <div className="relative w-full aspect-[16/9] overflow-hidden">
+                    <Image
+                      src={uc.image}
+                      alt={uc.title}
+                      fill
+                      sizes="(max-width: 768px) 100vw, 50vw"
+                      quality={85}
+                      className="object-cover transition-transform duration-500 ease-out group-hover:scale-105"
+                    />
+                    {uc.badge && (
+                      <span className="absolute top-4 right-4 inline-flex items-center px-3.5 py-1.5 rounded-full text-xs font-semibold bg-gradient-cta text-primary-foreground shadow-soft">
+                        {uc.badge}
+                      </span>
+                    )}
+                  </div>
+                  <div className="p-8 flex flex-col flex-1">
+                    <h3 className={`${t.cardHeadlineMedium} text-foreground`}>
+                      {uc.title}
+                    </h3>
+                    <p className={`mt-3 ${t.body} text-muted-foreground`}>
+                      {uc.description}
+                    </p>
+                  </div>
                 </div>
-                <h3 className={`${t.cardHeadlineMedium} text-foreground`}>
-                  {uc.title}
-                </h3>
-                <p className={`mt-3 ${t.body} text-muted-foreground`}>
-                  {uc.description}
-                </p>
-              </div>
-            ))}
+              ) : (
+                <div
+                  key={uc.title}
+                  className="rounded-2xl border border-border bg-surface-soft p-8 shadow-soft"
+                >
+                  <div className="text-xs font-semibold uppercase tracking-[0.16em] text-primary mb-3">
+                    Use case 0{i + 1}
+                  </div>
+                  <h3 className={`${t.cardHeadlineMedium} text-foreground`}>
+                    {uc.title}
+                  </h3>
+                  <p className={`mt-3 ${t.body} text-muted-foreground`}>
+                    {uc.description}
+                  </p>
+                </div>
+              )
+            )}
           </div>
           <div className="mt-8 rounded-2xl bg-surface-dark text-on-surface-dark p-8 md:p-10 shadow-card">
             <div className="text-xs font-semibold uppercase tracking-[0.16em] text-primary-glow mb-3">
@@ -211,10 +243,9 @@ const ServiceDetail = ({ service }: Props) => {
             {service.faqs.map((faq, i) => (
               <details
                 key={faq.question}
-                className="group rounded-2xl border border-border bg-card p-6 shadow-soft open:shadow-card transition-all"
-                {...(i === 0 ? { open: true } : {})}
+                className="group rounded-2xl border border-transparent bg-transparent transition-all hover:border-primary/30 hover:bg-card hover:shadow-glow open:border-primary/30 open:bg-card open:shadow-glow"
               >
-                <summary className="flex items-start gap-4 cursor-pointer list-none">
+                <summary className="flex items-start gap-4 cursor-pointer list-none p-6">
                   <span className="shrink-0 w-8 h-8 rounded-full bg-surface-soft text-primary font-bold grid place-items-center text-sm">
                     Q
                   </span>
@@ -225,7 +256,7 @@ const ServiceDetail = ({ service }: Props) => {
                     +
                   </span>
                 </summary>
-                <div className="mt-4 pl-12">
+                <div className="px-6 pb-6 pl-[4.5rem]">
                   <p className={`${t.body} text-muted-foreground`}>{faq.answer}</p>
                 </div>
               </details>
@@ -234,31 +265,40 @@ const ServiceDetail = ({ service }: Props) => {
         </div>
       </section>
 
-      {/* FINAL CTA & RELATED */}
-      <section className="py-24">
+      {/* FINAL CTA & RELATED — fixed parallax image contained in a landscape card with white space around it */}
+      <section className="bg-background py-20">
         <div className="container-px max-w-[1400px] mx-auto">
-          <div className="tile bg-[#E0F2FF] p-8 md:p-12 lg:p-16 relative overflow-hidden">
-            <div className="absolute -top-32 -left-32 w-[400px] h-[400px] rounded-full bg-white/40 blur-3xl" />
-            <div className="absolute -bottom-32 -right-32 w-[400px] h-[400px] rounded-full bg-white/40 blur-3xl" />
-            <div className="relative text-center max-w-3xl mx-auto">
-              <h2 className={`${t.sectionHeadline} text-[#0C4A6E]`}>
+          <div className="relative overflow-hidden rounded-3xl bg-surface-dark text-on-surface-dark shadow-card flex items-center justify-center aspect-[21/9] min-h-[420px]">
+            {/* Fixed background image, clipped to this card (stays pinned while content scrolls over it) */}
+            <div
+              className="absolute inset-0 bg-cover bg-center bg-fixed"
+              style={{ backgroundImage: `url(/service/final-cta-bg.jpg)` }}
+              aria-hidden="true"
+            />
+            <div className="absolute inset-0 bg-[radial-gradient(circle_at_20%_10%,rgba(99,102,241,0.18),transparent_55%),radial-gradient(circle_at_80%_30%,rgba(56,189,248,0.12),transparent_55%)]" />
+            <div className="absolute inset-0 bg-black/60" aria-hidden="true" />
+
+            {/* Content flows above the fixed image */}
+            <div className="relative z-10 px-6 sm:px-10 py-12 lg:py-14 w-full">
+              <div className="relative text-center max-w-3xl mx-auto">
+              <h2 className={`${t.sectionHeadline} text-white`}>
                 {service.finalHeadline}
               </h2>
-              <p className={`mt-5 ${t.subheadline} text-[#0C4A6E]/80`}>
+              <p className={`mt-5 ${t.subheadline} text-white/85`}>
                 {service.finalSubText}
               </p>
               <div className="mt-10 flex flex-wrap items-center justify-center gap-4">
                 <a
                   href={service.finalCTA.href}
-                  className="inline-flex items-center gap-2 bg-[#0369A1] text-white hover:bg-[#0C4A6E] font-semibold px-7 py-3.5 rounded-full shadow-card transition-all"
+                  className="inline-flex items-center gap-2 bg-gradient-cta text-primary-foreground font-semibold px-7 py-3.5 rounded-full shadow-glow hover:shadow-card transition-all"
                 >
                   {service.finalCTA.label} <ArrowRight className="w-4 h-4" />
                 </a>
               </div>
 
               {service.related.length > 0 && (
-                <div className="mt-12 pt-8 border-t border-[#0C4A6E]/15">
-                  <div className="text-xs font-semibold uppercase tracking-[0.16em] text-[#0C4A6E] mb-4">
+                <div className="mt-12 pt-8 border-t border-white/20">
+                  <div className="text-xs font-semibold uppercase tracking-[0.16em] text-white/80 mb-4">
                     Related services
                   </div>
                   <div className="flex flex-wrap items-center justify-center gap-2.5">
@@ -266,7 +306,7 @@ const ServiceDetail = ({ service }: Props) => {
                       <a
                         key={link.href}
                         href={link.href}
-                        className="inline-flex items-center gap-1.5 px-4 py-2 rounded-full bg-white/70 hover:bg-white text-[#0C4A6E] text-sm font-medium border border-[#0C4A6E]/15 hover:border-[#0C4A6E]/30 transition-colors"
+                        className="inline-flex items-center gap-1.5 px-4 py-2 rounded-full bg-white/15 hover:bg-white/25 text-white text-sm font-medium border border-white/25 hover:border-white/40 backdrop-blur-sm transition-colors"
                       >
                         {link.label}
                         <ArrowRight className="w-3.5 h-3.5" />
@@ -275,6 +315,7 @@ const ServiceDetail = ({ service }: Props) => {
                   </div>
                 </div>
               )}
+              </div>
             </div>
           </div>
         </div>

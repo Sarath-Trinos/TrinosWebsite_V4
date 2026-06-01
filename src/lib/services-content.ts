@@ -20,6 +20,8 @@ export type ServiceDeliverable = {
 export type ServiceUseCase = {
   title: string;
   description: string;
+  image?: string;
+  badge?: string;
 };
 
 export type ServiceFAQ = {
@@ -107,11 +109,15 @@ export const servicesContent: Record<string, ServiceContent> = {
         title: "Enterprise Operations",
         description:
           "Agents monitor incoming tasks, collect relevant data, prepare recommendations, and route decisions to the right team.",
+        image: "/service/enterprise-operations.jpg",
+        badge: "Operations",
       },
       {
         title: "Decision Intelligence",
         description:
           "Multiple AI agents analyze a strategic problem from different perspectives and produce structured recommendations with risks and confidence levels.",
+        image: "/service/decision-intelligence.jpg",
+        badge: "Strategy",
       },
     ],
     result:

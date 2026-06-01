@@ -15,7 +15,10 @@ export default function AgenticAIPage() {
   return (
     <main className="min-h-screen bg-background">
       <Header />
-      <ServiceDetail service={service} />
+      <ServiceDetail
+        service={service}
+        heroImage="/service/business-people-stacking-their-hands.jpg"
+      />
       <Footer />
     </main>
   );

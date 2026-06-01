@@ -35,21 +35,34 @@ const ServicesIndustries = () => (
         </p>
       </div>
 
-      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-x-6 gap-y-12 items-start">
-        {industries.map(({ image, name, bg }) => (
-          <div key={name} className="group flex flex-col items-center gap-4">
-            <div className={`aspect-[16/10] w-full overflow-hidden rounded-xl ${bg ?? ""}`}>
-              <Image
-                src={image}
-                alt={name}
-                width={640}
-                height={400}
-                className="h-full w-full object-contain"
-              />
+      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-6 gap-x-6 gap-y-12 items-start">
+        {industries.map(({ image, name, bg }, index) => {
+          const isLastTwo = index >= industries.length - 2;
+          const cellClass = isLastTwo
+            ? "lg:col-span-2 lg:[&:nth-last-child(2)]:col-start-2"
+            : "lg:col-span-2";
+          return (
+            <div
+              key={name}
+              className={`group flex flex-col items-center gap-4 ${cellClass}`}
+            >
+              <div
+                className={`aspect-[16/10] w-full overflow-hidden rounded-xl ${bg ?? ""}`}
+              >
+                <Image
+                  src={image}
+                  alt={name}
+                  width={640}
+                  height={400}
+                  className="h-full w-full object-contain"
+                />
+              </div>
+              <p className="font-semibold text-foreground text-center text-lg">
+                {name}
+              </p>
             </div>
-            <p className="font-semibold text-foreground text-center text-lg">{name}</p>
-          </div>
-        ))}
+          );
+        })}
       </div>
     </div>
   </section>

@@ -124,9 +124,9 @@ const AgentPlatform = () => {
           {/* Left: media + overlay — slow horizontal slide into view */}
           <div
             ref={imageWrapperRef}
-            className="md:col-span-5 lg:col-span-4 flex md:h-full items-stretch justify-center md:justify-start"
+            className="md:col-span-7 lg:col-span-8 flex md:h-full items-stretch justify-center md:justify-start"
           >
-            <div className="relative w-full max-w-[300px] sm:max-w-sm md:max-w-full md:h-full md:aspect-auto lg:aspect-[4/5] overflow-hidden rounded-3xl aspect-[4/5]">
+            <div className="relative w-full md:h-full md:aspect-auto overflow-hidden rounded-3xl aspect-[16/9]">
               {tiles.map((tile, i) => {
                 const isActive = i === activeIndex;
                 return (
@@ -181,9 +181,9 @@ const AgentPlatform = () => {
             </div>
           </div>
 
-          {/* Right: Platform overview */}
-          <div className="md:col-span-7 lg:col-span-8 tile py-6 md:py-8 px-5 md:px-5 lg:px-8 relative overflow-hidden bg-[radial-gradient(ellipse_at_top_right,_#1a3556_0%,_#0f1e35_45%,_#0a1628_100%)] flex items-center justify-center">
-            <div className="w-full grid grid-cols-1 sm:grid-cols-2 gap-3 md:gap-4">
+          {/* Right: Platform overview — vertical stack of service tabs */}
+          <div className="md:col-span-5 lg:col-span-4 tile py-6 md:py-8 px-5 md:px-5 lg:px-8 relative overflow-hidden bg-[radial-gradient(ellipse_at_top_right,_#1a3556_0%,_#0f1e35_45%,_#0a1628_100%)] flex items-center justify-center">
+            <div className="w-full grid grid-cols-1 gap-3 md:gap-4">
               {tiles.map(({ icon: Icon, title, href }, i) => {
                 const isActive = i === activeIndex;
                 return (

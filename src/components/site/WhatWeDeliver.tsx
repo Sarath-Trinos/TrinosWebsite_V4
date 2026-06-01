@@ -51,13 +51,84 @@ function Illustration({ kind }: { kind: BentoCard["illustration"] }) {
   if (kind === "orchestration") {
     return (
       <svg viewBox="0 0 400 130" className="h-full w-full" aria-hidden>
-        <line x1="70" y1="80" x2="180" y2="55" stroke="hsl(196 100% 47%)" strokeWidth="1.5" opacity="0.45" />
-        <line x1="180" y1="55" x2="280" y2="85" stroke="hsl(196 100% 47%)" strokeWidth="1.5" opacity="0.45" />
-        <line x1="280" y1="85" x2="340" y2="60" stroke="hsl(196 100% 47%)" strokeWidth="1.5" opacity="0.45" />
-        <circle cx="70" cy="80" r="9" fill="hsl(196 100% 47%)" />
-        <circle cx="180" cy="55" r="7" fill="hsl(210 90% 55%)" opacity="0.85" />
-        <circle cx="280" cy="85" r="6" fill="hsl(196 100% 47%)" opacity="0.8" />
-        <circle cx="340" cy="60" r="8" fill="hsl(210 90% 55%)" />
+        <line
+          x1="70"
+          y1="80"
+          x2="180"
+          y2="55"
+          stroke="hsl(196 100% 47%)"
+          strokeWidth="1.5"
+          opacity="0.45"
+          strokeDasharray="6 4"
+          style={{ animation: "line-dash 2.4s linear infinite" }}
+        />
+        <line
+          x1="180"
+          y1="55"
+          x2="280"
+          y2="85"
+          stroke="hsl(196 100% 47%)"
+          strokeWidth="1.5"
+          opacity="0.45"
+          strokeDasharray="6 4"
+          style={{ animation: "line-dash 2.8s linear infinite" }}
+        />
+        <line
+          x1="280"
+          y1="85"
+          x2="340"
+          y2="60"
+          stroke="hsl(196 100% 47%)"
+          strokeWidth="1.5"
+          opacity="0.45"
+          strokeDasharray="6 4"
+          style={{ animation: "line-dash 2.2s linear infinite" }}
+        />
+        <circle
+          cx="70"
+          cy="80"
+          r="9"
+          fill="hsl(196 100% 47%)"
+          style={{
+            transformOrigin: "70px 80px",
+            animation: "node-pulse 2.6s ease-in-out infinite",
+          }}
+        />
+        <circle
+          cx="180"
+          cy="55"
+          r="7"
+          fill="hsl(210 90% 55%)"
+          opacity="0.85"
+          style={{
+            transformOrigin: "180px 55px",
+            animation: "node-pulse 2.6s ease-in-out infinite",
+            animationDelay: "0.5s",
+          }}
+        />
+        <circle
+          cx="280"
+          cy="85"
+          r="6"
+          fill="hsl(196 100% 47%)"
+          opacity="0.8"
+          style={{
+            transformOrigin: "280px 85px",
+            animation: "node-pulse 2.6s ease-in-out infinite",
+            animationDelay: "1s",
+          }}
+        />
+        <circle
+          cx="340"
+          cy="60"
+          r="8"
+          fill="hsl(210 90% 55%)"
+          style={{
+            transformOrigin: "340px 60px",
+            animation: "node-pulse 2.6s ease-in-out infinite",
+            animationDelay: "1.5s",
+          }}
+        />
       </svg>
     );
   }
@@ -65,31 +136,130 @@ function Illustration({ kind }: { kind: BentoCard["illustration"] }) {
     return (
       <svg viewBox="0 0 400 130" className="h-full w-full" aria-hidden>
         <rect x="140" y="55" width="48" height="22" rx="6" fill="hsl(196 100% 47%)" />
-        <line x1="188" y1="66" x2="220" y2="66" stroke="hsl(196 100% 47%)" strokeWidth="2" />
-        <rect x="220" y="50" width="36" height="32" rx="8" fill="none" stroke="hsl(196 100% 47%)" strokeWidth="2" />
-        <circle cx="238" cy="66" r="4" fill="hsl(196 100% 47%)" />
+        <line
+          x1="188"
+          y1="66"
+          x2="220"
+          y2="66"
+          stroke="hsl(196 100% 47%)"
+          strokeWidth="2"
+          strokeDasharray="4 3"
+          style={{ animation: "line-dash 1.8s linear infinite" }}
+        />
+        <rect
+          x="220"
+          y="50"
+          width="36"
+          height="32"
+          rx="8"
+          fill="none"
+          stroke="hsl(196 100% 47%)"
+          strokeWidth="2"
+        />
+        <circle
+          cx="238"
+          cy="66"
+          r="4"
+          fill="hsl(196 100% 47%)"
+          style={{
+            transformOrigin: "238px 66px",
+            animation: "node-pulse 1.8s ease-in-out infinite",
+          }}
+        />
+        <circle
+          r="3"
+          fill="hsl(196 100% 47%)"
+          opacity="0.75"
+          style={{
+            transformBox: "fill-box",
+            transformOrigin: "center",
+            animation: "packet-travel 2.2s ease-in-out infinite",
+          }}
+          cx="190"
+          cy="66"
+        />
       </svg>
     );
   }
   if (kind === "rag") {
     return (
       <svg viewBox="0 0 400 130" className="h-full w-full" aria-hidden>
-        <rect x="80" y="58" width="240" height="6" rx="3" fill="hsl(196 100% 47%)" opacity="0.85" />
-        <rect x="80" y="72" width="180" height="6" rx="3" fill="hsl(196 100% 47%)" opacity="0.55" />
-        <rect x="80" y="86" width="120" height="6" rx="3" fill="hsl(196 100% 47%)" opacity="0.3" />
+        <rect
+          x="80"
+          y="58"
+          width="240"
+          height="6"
+          rx="3"
+          fill="hsl(196 100% 47%)"
+          opacity="0.85"
+          style={{
+            transformBox: "fill-box",
+            animation: "bar-grow 3s ease-in-out infinite",
+          }}
+        />
+        <rect
+          x="80"
+          y="72"
+          width="180"
+          height="6"
+          rx="3"
+          fill="hsl(196 100% 47%)"
+          opacity="0.55"
+          style={{
+            transformBox: "fill-box",
+            animation: "bar-grow 3s ease-in-out infinite",
+            animationDelay: "0.4s",
+          }}
+        />
+        <rect
+          x="80"
+          y="86"
+          width="120"
+          height="6"
+          rx="3"
+          fill="hsl(196 100% 47%)"
+          opacity="0.3"
+          style={{
+            transformBox: "fill-box",
+            animation: "bar-grow 3s ease-in-out infinite",
+            animationDelay: "0.8s",
+          }}
+        />
       </svg>
     );
   }
   return (
     <svg viewBox="0 0 400 130" className="h-full w-full" aria-hidden>
-      <circle cx="200" cy="65" r="40" fill="none" stroke="hsl(196 100% 47%)" strokeWidth="1.5" strokeDasharray="3 4" opacity="0.5" />
+      <circle
+        cx="200"
+        cy="65"
+        r="40"
+        fill="none"
+        stroke="hsl(196 100% 47%)"
+        strokeWidth="1.5"
+        strokeDasharray="3 4"
+        opacity="0.5"
+        style={{
+          transformBox: "fill-box",
+          transformOrigin: "center",
+          animation: "ring-spin-slow 14s linear infinite",
+        }}
+      />
       <path
         d="M200 38 L222 50 V70 C222 84 212 92 200 96 C188 92 178 84 178 70 V50 Z"
         fill="none"
         stroke="hsl(196 100% 47%)"
         strokeWidth="2"
+        style={{ animation: "shield-glow 2.8s ease-in-out infinite" }}
       />
-      <path d="M192 66 L198 72 L210 60" stroke="hsl(196 100% 47%)" strokeWidth="2.5" fill="none" strokeLinecap="round" strokeLinejoin="round" />
+      <path
+        d="M192 66 L198 72 L210 60"
+        stroke="hsl(196 100% 47%)"
+        strokeWidth="2.5"
+        fill="none"
+        strokeLinecap="round"
+        strokeLinejoin="round"
+      />
     </svg>
   );
 }

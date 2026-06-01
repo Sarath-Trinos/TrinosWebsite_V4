@@ -50,6 +50,7 @@ const navItems: NavItem[] = [
       },
     ],
   },
+  { label: "Industry", href: "/industry" },
   { label: "Products", href: "/products" },
   { label: "The Trinos Edge", href: "/trinos-edge" },
   { label: "Careers", href: "/careers" },
