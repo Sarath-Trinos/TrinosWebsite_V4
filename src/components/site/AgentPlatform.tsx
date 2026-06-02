@@ -39,7 +39,7 @@ const tiles: Tile[] = [
     description:
       "Intelligent automation that streamlines business processes end to end — removing manual handoffs, eliminating bottlenecks, and keeping humans in control where it matters.",
     image: daphne,
-    video: "/videos/Robotic automation section.mp4",
+    video: "/videos/I_need_the_reference_video_in.mp4",
     href: "/services/ai-workflow-automation",
   },
   {
@@ -118,7 +118,7 @@ const AgentPlatform = () => {
               <span className="text-brand-gradient">Automation</span>
             </>
           }
-          description="Production-ready AI agents and workflow systems designed to operate inside real enterprise environments beyond chatbots, pilots, and disconnected automation tools."
+          description="Production-ready AI agents and workflow systems designed to operate inside real enterprise environments beyond chatbots, pilots and disconnected automation tools."
         />
         <div className="flex flex-col gap-6 md:grid md:grid-cols-12 md:gap-4 xl:gap-5">
           {/* Left: media + overlay — slow horizontal slide into view */}

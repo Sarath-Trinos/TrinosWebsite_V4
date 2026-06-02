@@ -2,21 +2,40 @@
 
 import Image from "next/image";
 import { useEffect, useRef, useState } from "react";
-import { X } from "lucide-react";
+import { ArrowRight, X } from "lucide-react";
 import { type as t } from "@/lib/typography";
 
 type Industry = {
   title: string;
   description: string;
   image: string;
+  helpsWith?: string[];
+  businessImpact?: string[];
+  cta?: { label: string; href: string };
 };
 
 const INDUSTRIES: Industry[] = [
   {
-    title: "Healthcare & Life Sciences",
+    title: "Healthcare and Life Sciences",
     description:
-      "We help healthcare organizations reduce administrative burden while improving patient outcomes.",
+      "AI solutions that help healthcare teams reduce manual work, improve visibility and deliver faster patient support.",
     image: "/industry/doctor-holds-green-object-with-word-i-m.jpg",
+    helpsWith: [
+      "Patient support automation",
+      "Claims and document processing",
+      "Appointment and workflow management",
+      "Clinical data dashboards",
+      "Medical records and OCR processing",
+      "Compliance ready AI workflows",
+    ],
+    businessImpact: [
+      "Reduce administrative workload",
+      "Improve response speed",
+      "Make healthcare data easier to access",
+      "Support better operational decisions",
+      "Strengthen accuracy, privacy and compliance",
+    ],
+    cta: { label: "Explore Healthcare AI Solutions", href: "/services" },
   },
   {
     title: "Financial Services & Insurance",
@@ -215,6 +234,70 @@ const IndustryGrid = () => {
                       >
                         {activeIndustry.description}
                       </p>
+
+                      {(activeIndustry.helpsWith || activeIndustry.businessImpact) && (
+                        <div
+                          className="mt-8 grid gap-8 md:grid-cols-2 animate-slide-up-soft"
+                          style={{ animationDelay: "0.4s" }}
+                        >
+                          {activeIndustry.helpsWith && (
+                            <div>
+                              <h4
+                                className={`${t.cardHeadline} text-foreground mb-4`}
+                              >
+                                What Trinos Helps With
+                              </h4>
+                              <ul className="space-y-2.5">
+                                {activeIndustry.helpsWith.map((item) => (
+                                  <li
+                                    key={item}
+                                    className={`${t.body} flex items-start gap-3 text-muted-foreground`}
+                                  >
+                                    <span className="mt-2 h-1.5 w-1.5 shrink-0 rounded-full bg-primary" />
+                                    {item}
+                                  </li>
+                                ))}
+                              </ul>
+                            </div>
+                          )}
+
+                          {activeIndustry.businessImpact && (
+                            <div>
+                              <h4
+                                className={`${t.cardHeadline} text-foreground mb-4`}
+                              >
+                                Business Impact
+                              </h4>
+                              <ul className="space-y-2.5">
+                                {activeIndustry.businessImpact.map((item) => (
+                                  <li
+                                    key={item}
+                                    className={`${t.body} flex items-start gap-3 text-muted-foreground`}
+                                  >
+                                    <span className="mt-2 h-1.5 w-1.5 shrink-0 rounded-full bg-primary" />
+                                    {item}
+                                  </li>
+                                ))}
+                              </ul>
+                            </div>
+                          )}
+                        </div>
+                      )}
+
+                      {activeIndustry.cta && (
+                        <div
+                          className="mt-8 animate-slide-up-soft"
+                          style={{ animationDelay: "0.5s" }}
+                        >
+                          <a
+                            href={activeIndustry.cta.href}
+                            className="inline-flex items-center gap-2 rounded-full bg-gradient-primary px-6 py-3 text-white font-medium shadow-glow transition-transform duration-300 hover:scale-[1.03]"
+                          >
+                            {activeIndustry.cta.label}
+                            <ArrowRight className="w-4 h-4" />
+                          </a>
+                        </div>
+                      )}
                     </div>
                   </div>
                 </div>

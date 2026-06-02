@@ -13,7 +13,7 @@ const cards = [
     title: "Enterprise Resource Planning",
     image: "/home/magnific__talk__91259.jpeg",
     description:
-      "The enterprise execution layer beneath AI — ERP systems that manage core data, web platforms that scale access, and mobile apps that bring intelligence to where work actually happens.",
+      "The execution layer underneath the AI. ERP that holds the data. Web that scales the access. Mobile that puts intelligence where the work actually happens.",
     href: "/services/enterprise-resource-planning",
   },
   {
@@ -21,7 +21,7 @@ const cards = [
     title: "Web Development",
     image: "/home/magnific__talk__31260.jpeg",
     description:
-      "Production-grade web platforms engineered for scale, performance, and AI-native experiences across customer and internal applications.",
+      "Production-grade web platforms engineered for scale, performance and AI-native experiences across customer and internal applications.",
     href: "/services/web-development",
   },
   {
@@ -29,7 +29,7 @@ const cards = [
     title: "Mobile App Development",
     image: "/home/magnific_3007480450.jpeg",
     description:
-      "Native and cross-platform mobile apps that put AI in users' hands — built for reliability, accessibility, and enterprise integration.",
+      "Native and cross platform mobile apps that place AI directly in users' hands, built for reliability, accessibility, security and seamless enterprise integration.",
     href: "/services/mobile-app-development",
   },
 ];
@@ -48,7 +48,7 @@ const HealthcareAI = () => {
               Enterprise <span className="text-brand-gradient">Platforms</span>
             </>
           }
-          description="The execution layer underneath the AI. ERP that holds the data. Web that scales the access. Mobile that puts intelligence where the work actually happens."
+          description="The enterprise execution layer beneath AI. ERP systems that manage core data, web platforms that scale access and mobile apps that bring intelligence to where work actually happens."
           exploreHref="/services"
         />
 

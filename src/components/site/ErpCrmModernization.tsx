@@ -14,15 +14,15 @@ const items = [
     image: erpAnalytics,
     video: "/videos/ab_cdef_abcdefmp_.mp4",
     title: "LLM Fine-Tuning",
-    desc: "Small and large language models fine-tuned on your documents, rules, formats, and business context. Built to deliver more accurate, cost-efficient, and domain-aligned responses.",
+    desc: "Small and large language models fine-tuned on your documents, rules, formats and business context. Built to deliver more accurate, cost-efficient and domain-aligned responses.",
     cta: "Explore Fine-Tuning",
     href: "/services/llm-fine-tuning",
   },
   {
     image: erpUx,
     video: "/videos/Can_you_animate_this_into_a_.mp4",
-    title: "Generative AI & Analytics",
-    desc: "Conversational dashboards, intelligent reports, and executive briefings generated from your enterprise data and grounded in approved sources — reducing hallucination risk and improving decision confidence.",
+    title: "Generative AI and Analytics",
+    desc: "Conversational dashboards, intelligent reports and executive briefings generated from your enterprise data and grounded in approved sources reducing hallucination risk and improving decision confidence.",
     cta: "Explore Analytics",
     href: "/services/generative-ai-analytics",
   },
@@ -90,7 +90,7 @@ const ErpCrmModernization = () => (
             "text-muted-foreground max-w-2xl",
           )}
         >
-          Language models, generative analytics, and computer vision systems tuned to your terminology, workflows and domain. Trinos builds AI that works where generic tools usually fail inside real enterprise complexity.
+          Language models, generative analytics and computer vision systems tuned to your terminology, workflows and domain. Trinos builds AI that works where generic tools usually fail inside real enterprise complexity.
         </p>
       </div>
 

@@ -38,7 +38,7 @@ const pillars: Pillar[] = [
     title: "AI Intelligence Systems",
     items: [
       { label: "LLM Fine Tuning", href: "/services/llm-fine-tuning" },
-      { label: "Generative AI & Analytics", href: "/services/generative-ai-analytics" },
+      { label: "Generative AI and Analytics", href: "/services/generative-ai-analytics" },
       { label: "Computer Vision", href: "/services/computer-vision" },
     ],
     className: "col-span-12 md:col-span-6 lg:col-span-4",

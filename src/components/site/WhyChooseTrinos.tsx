@@ -13,21 +13,21 @@ type Pillar = {
 
 const pillars: Pillar[] = [
   {
-    title: "AI-First Engineering",
+    title: "AI First Engineering",
     description:
-      "Nothing we ship is AI bolted onto something older. Every system is architected AI-native from the first whiteboard. Small models, retrieval, feedback loops. Built in. Not added.",
+      "Every system is designed with AI at the core from day one. Small models, retrieval, feedback loops and workflow intelligence are built into the architecture, not added later.",
     Icon: Cpu,
   },
   {
-    title: "Self-Improving Systems",
+    title: "Self Improving Systems",
     description:
-      "Every approved correction. Every production signal. Captured, stored, used to sharpen the next output. Your AI investment compounds the longer it runs.",
+      "Every approved correction and production signal is captured, stored and used to improve the next output. Your AI investment becomes more valuable as it runs.",
     Icon: Repeat,
   },
   {
-    title: "Product-Proven Engineering",
+    title: "Proven Through Products",
     description:
-      "We run our architecture in production before we sell it. Moltter Studio. TraceFlow. VoteSense. Travel One. Four live platforms. Four proof points. Zero theoretical models.",
+      "We validate our architecture through live production platforms such as Moltter Studio, TraceFlow, VoteSense and Travel One before bringing it into client environments.",
     Icon: Package,
   },
 ];

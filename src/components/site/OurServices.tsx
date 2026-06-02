@@ -65,21 +65,21 @@ const serviceGroups: ServiceGroup[] = [
         icon: BrainCircuit,
         title: "LLM Fine Tuning",
         description:
-          "Domain-tuned language models built on your data. We manage datasets, training runs, and evaluations to deliver reliable, on-brand AI outputs.",
+          "Domain-tuned language models built on your data. We manage datasets, training runs and evaluations to deliver reliable, on-brand AI outputs.",
         href: "/services/llm-fine-tuning",
       },
       {
         icon: BarChart3,
-        title: "Generative AI & Analytics",
+        title: "Generative AI and Analytics",
         description:
-          "Conversational dashboards, intelligent reporting, and generative analytics that turn enterprise data into decisions and narratives.",
+          "Conversational dashboards, intelligent reporting and generative analytics that turn enterprise data into decisions and narratives.",
         href: "/services/generative-ai-analytics",
       },
       {
         icon: Eye,
         title: "Computer Vision",
         description:
-          "Real-time image and video understanding for detection, OCR, and quality control — deployed in the cloud or at the edge for low-latency environments.",
+          "Real-time image and video understanding for detection, OCR and quality control deployed in the cloud or at the edge for low-latency environments.",
         href: "/services/computer-vision",
       },
     ],

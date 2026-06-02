@@ -28,7 +28,7 @@ const footerCols = [
   {
     title: "Services",
     links: [
-      { label: "Generative AI & Analytics", href: "/services" },
+      { label: "Generative AI and Analytics", href: "/services" },
       { label: "Cyber Security", href: "/services" },
       { label: "Cloud Solutions", href: "/services" },
       { label: "ERP & CRM", href: "/services" },
@@ -70,7 +70,7 @@ const Footer = () => (
         <div className="sm:col-span-2 md:col-span-3 lg:col-span-2">
           <Logo />
           <p className="mt-5 text-white/70 max-w-sm">
-            Trinos transforms enterprises with intelligent, secure, and scalable technology — from AI and Cloud to Cyber Security and Enterprise Software Engineering.
+            Trinos transforms enterprises with intelligent, secure and scalable technology across AI, cloud, cybersecurity and enterprise software engineering.
           </p>
           <div className="mt-6 flex items-center gap-3">
             {socials.map(({ icon: Icon, label, href }) => (

@@ -15,7 +15,7 @@ const ServicesAnswerBlock = () => (
             <span className="font-semibold text-foreground">Agentic AI</span>,{" "}
             <span className="font-semibold text-foreground">AI Workflow Automation</span>,{" "}
             <span className="font-semibold text-foreground">LLM Fine Tuning</span>,{" "}
-            <span className="font-semibold text-foreground">Generative AI & Analytics</span>,{" "}
+            <span className="font-semibold text-foreground">Generative AI and Analytics</span>,{" "}
             <span className="font-semibold text-foreground">AI Voice Assistants</span>,{" "}
             <span className="font-semibold text-foreground">Computer Vision</span>,{" "}
             <span className="font-semibold text-foreground">Enterprise Resource Planning</span>,{" "}

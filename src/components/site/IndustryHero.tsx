@@ -48,17 +48,18 @@ const IndustryHero = () => {
           <div className="max-w-4xl animate-fade-up">
             <span className="chip mb-5">Industries we serve</span>
             <h1 className={`${t.heroHeadline} text-white [text-wrap:normal]`}>
-              AI-First Solutions for
+              AI First Solutions for
               <br />
               <span className="text-brand-gradient-reverse">
-                Operations-Heavy Industries
+                Complex Enterprise Industries
               </span>
               .
             </h1>
             <p className={`mt-6 ${t.subheadline} text-white/80`}>
-              From the factory floor to the trading desk, Trinos builds intelligent systems
-              that respect the rules, data, and stakes of your industry. Secure, auditable,
-              and tuned to the way your enterprise actually runs.
+              Trinos builds secure and intelligent AI systems for industries with complex
+              operations, strict rules and high value decisions. From manufacturing to
+              finance, we help enterprises turn data and workflows into measurable business
+              impact.
             </p>
 
             <div className="mt-9 flex flex-wrap items-center gap-4">

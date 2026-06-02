@@ -6,7 +6,7 @@ import { Loader2, Mail, MapPin, Phone, Send } from "lucide-react";
 import { toast } from "sonner";
 
 const services = [
-  "Generative AI & Analytics",
+  "Generative AI and Analytics",
   "Agent-Based Automation",
   "Retrieval-Augmented Generation",
   "RPA & Industrial AI",

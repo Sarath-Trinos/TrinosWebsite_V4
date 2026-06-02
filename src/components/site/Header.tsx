@@ -36,7 +36,7 @@ const navItems: NavItem[] = [
         label: "AI Intelligence Systems",
         children: [
           { label: "LLM Fine Tuning", href: "/services/llm-fine-tuning" },
-          { label: "Generative AI & Analytics", href: "/services/generative-ai-analytics" },
+          { label: "Generative AI and Analytics", href: "/services/generative-ai-analytics" },
           { label: "Computer Vision", href: "/services/computer-vision" },
         ],
       },
