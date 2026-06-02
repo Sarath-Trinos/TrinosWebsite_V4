@@ -175,90 +175,90 @@ export const servicesContent: Record<string, ServiceContent> = {
     pageTitle: "AI Workflow Automation & Process Orchestration | Trinos Technologies",
     metaDescription:
       "Automate enterprise workflows with AI triggers, system integrations, human approvals, audit trails, and cross-platform process orchestration.",
-    h1Lead: "Orchestrate Complex Business Processes",
-    h1Highlight: "With AI",
+    h1Lead: "Let AI Run Your",
+    h1Highlight: "Business Processes",
     subHeadline:
-      "Trinos builds AI-driven workflows that connect ERP, CRM, documents, data warehouses, SaaS tools, approvals, and human teams into one intelligent process layer.",
+      "We connect your tools, teams and data into one smart workflow layer. Less manual work. Faster decisions. Full visibility.",
     primaryCTA: { label: "Map Your Process", href: "/contact" },
     secondaryCTA: { label: "Explore Agentic AI", href: "/services/agentic-ai" },
     credibility:
-      "Trinos workflow automation architecture supports structured document review, QA, anomaly detection, and human approval loops across enterprise operations.",
-    answerHeading: "What is AI Workflow Automation?",
+      "Built for enterprise operations — Trinos workflows support document review, quality checks, anomaly detection and human approval steps out of the box.",
+    answerHeading: "What Is AI Workflow Automation?",
     answerBody:
-      "AI Workflow Automation uses AI triggers, business rules, system integrations, and human approvals to move work across multiple enterprise systems. It reduces manual handoffs, improves process visibility, and makes complex operations faster and more auditable.",
+      "It uses AI to move work through your business automatically. Tasks get triggered, routed, reviewed and approved without manual effort. Your team stays in control while AI handles the repetitive steps in between.",
     deliverables: [
       {
         title: "Cross-System Workflow Orchestration",
         description:
-          "Unified flows across ERP, CRM, databases, documents, email, and custom enterprise applications.",
+          "We connect your ERP, CRM, documents, email and custom tools into one unified flow. No more switching between systems or chasing updates manually.",
       },
       {
         title: "AI-Triggered Process Initiation",
         description:
-          "Workflows triggered by incoming data, predictive alerts, emails, documents, tickets, or thresholds.",
+          "Workflows start on their own — triggered by incoming data, documents, alerts or thresholds. The right action happens at the right time without anyone pressing a button.",
       },
       {
         title: "Approval and Audit Infrastructure",
         description:
-          "Escalation paths, approval screens, logs, and audit trails for regulated workflows.",
+          "Every decision has a clear path. We build escalation flows, approval screens and audit logs so your processes stay compliant and traceable at every stage.",
       },
       {
-        title: "Exception Handling",
+        title: "Smart Exception Handling",
         description:
-          "Routing for low-confidence, incomplete, or high-risk cases that need human intervention.",
+          "When something looks off or needs a human call, it gets flagged and routed instantly. Your team only sees what actually needs their attention.",
       },
     ],
     useCases: [
       {
         title: "Insurance and Document Operations",
         description:
-          "AI routes documents through extraction, validation, QA, anomaly detection, review, and approval stages.",
+          "Trinos routes documents through extraction, validation, AI quality checks and anomaly detection — all the way through to the review and approval stage. Faster processing with fewer errors.",
       },
       {
         title: "HR and Finance Operations",
         description:
-          "Employee onboarding, procurement, invoice review, and approval processes are coordinated across tools without manual follow-up.",
+          "Onboarding, procurement, invoice review and approvals run across your tools without manual follow-up. Every step is tracked and nothing falls through the gaps.",
       },
     ],
     result:
-      "Enterprises reduce process delays, manual tracking, and repeated data entry while preserving governance and human control for critical decisions.",
+      "Enterprises cut process delays, reduce manual tracking and stop repeated data entry — while keeping human control where it matters most.",
     techStack: [
       "Python",
       "REST APIs",
       "Webhooks",
       "AWS Step Functions",
-      "SAP/Oracle integrations",
-      "Workflow engines",
-      "Secure databases",
+      "SAP / Oracle",
+      "Workflow Engines",
+      "Secure Databases",
     ],
     industries: [
       "Insurance",
-      "Financial services",
+      "Financial Services",
       "Healthcare",
       "HR",
-      "Enterprise technology",
+      "Enterprise Technology",
       "Manufacturing",
     ],
     faqs: [
       {
-        question: "How is workflow automation different from Agentic AI?",
+        question: "How is this different from Agentic AI?",
         answer:
-          "Workflow automation focuses on structured process orchestration. Agentic AI focuses on autonomous reasoning and task execution. The two can work together.",
+          "Workflow Automation handles structured, repeatable processes with clear rules and triggers. Agentic AI goes further — it can reason and make decisions with less guidance. The two work well together: automation handles the backbone while agentic tools add intelligent decision-making on top.",
       },
       {
         question: "Will this replace our existing software?",
         answer:
-          "No. It connects existing systems so data and actions move between them with less manual intervention.",
+          "No. Trinos builds on top of what you already have. We integrate with your ERP, CRM and SaaS tools so your current systems keep working — just smarter and more connected.",
       },
       {
         question: "Can workflows include human approvals?",
         answer:
-          "Yes. Human-in-the-loop approvals are central to high-risk, regulated, or subjective decisions.",
+          "Yes. Human review steps are a standard part of our workflow design. Your team approves what needs approving — AI handles everything in between so they can focus on decisions that matter.",
       },
     ],
-    finalHeadline: "Eliminate Manual Handoffs Across Your Business",
+    finalHeadline: "Ready to Cut Manual Work Across Your Business?",
     finalSubText:
-      "Let Trinos map one complex workflow and show where AI automation can reduce cycle time, errors, and operational friction.",
+      "Trinos will map one of your workflows and show you exactly where AI automation saves time and reduces errors.",
     finalCTA: { label: "Schedule a Process Mapping Workshop", href: "/contact" },
     related: [
       { label: "Agentic AI", href: "/services/agentic-ai" },

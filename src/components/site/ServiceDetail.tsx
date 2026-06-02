@@ -265,10 +265,10 @@ const ServiceDetail = ({ service, heroImage }: Props) => {
         </div>
       </section>
 
-      {/* FINAL CTA & RELATED — fixed parallax image contained in a landscape card with white space around it */}
+      {/* FINAL CTA & RELATED — fixed parallax image spanning the full viewport width */}
       <section className="bg-background py-20">
-        <div className="container-px max-w-[1400px] mx-auto">
-          <div className="relative overflow-hidden rounded-3xl bg-surface-dark text-on-surface-dark shadow-card flex items-center justify-center aspect-[21/9] min-h-[420px]">
+        <div className="w-full">
+          <div className="relative overflow-hidden bg-surface-dark text-on-surface-dark shadow-card flex items-center justify-center">
             {/* Fixed background image, clipped to this card (stays pinned while content scrolls over it) */}
             <div
               className="absolute inset-0 bg-cover bg-center bg-fixed"
