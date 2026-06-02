@@ -9,11 +9,11 @@ const TrinosEdgeCTA = () => (
         <div className="absolute -bottom-32 -right-32 w-[400px] h-[400px] rounded-full bg-white/40 blur-3xl" />
         <div className="relative">
           <h2 className={`${t.sectionHeadline} text-white`}>
-            Build an AI Advantage for Your Enterprise
+            Build an AI Advantage That Grows With Your Business
           </h2>
           <p className={`mt-5 ${t.subheadline} text-white/85 max-w-2xl mx-auto`}>
-            Speak with the Trinos leadership team to understand how the Trinos Edge
-            can accelerate your operations.
+            Speak with the Trinos leadership team to understand how the Trinos Edge can
+            accelerate your operations and compound your AI investment over time.
           </p>
           <div className="mt-10 flex flex-wrap items-center justify-center gap-4">
             <a

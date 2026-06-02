@@ -55,7 +55,7 @@ const ProductsHero = () => {
               .
             </h1>
             <p className={`mt-6 ${t.subheadline} text-white/80 max-w-2xl`}>
-              Trinos Technologies is the parent company engineering dedicated AI platforms for specific industry challenges. We build, launch, and scale products under the Trinos umbrella to prove our AI-first engineering in real production environments.
+              Trinos Technologies is the parent company engineering dedicated AI platforms for specific industry challenges. We build, launch and scale products under the Trinos umbrella to prove our AI-first engineering in real production environments.
             </p>
 
             <div className="mt-9 flex flex-wrap items-center gap-4">

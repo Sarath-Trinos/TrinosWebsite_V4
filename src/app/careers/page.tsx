@@ -10,7 +10,7 @@ import Footer from "@/components/site/Footer";
 export const metadata: Metadata = {
   title: "Careers | Trinos Technologies",
   description:
-    "Join a team of passionate innovators transforming enterprises with AI. Work on meaningful projects, grow your tech skills, and make a lasting career impact at Trinos.",
+    "Join a team of passionate innovators transforming enterprises with AI. Work on meaningful projects, grow your tech skills and make a lasting career impact at Trinos.",
 };
 
 export default function CareersPage() {

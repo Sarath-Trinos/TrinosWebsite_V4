@@ -20,10 +20,10 @@ const products: Product[] = [
     name: "Moltter",
     eyebrow: "Parenting · AI-powered companion",
     description:
-      "An AI-powered companion for modern parents that turns everyday parenting questions into clear, personalized guidance. Moltter helps families navigate milestones, routines, and decisions with empathetic, expert-backed answers tailored to each child.",
+      "An AI-powered companion for modern parents that turns everyday parenting questions into clear, personalized guidance. Moltter helps families navigate milestones, routines and decisions with empathetic, expert-backed answers tailored to each child.",
     highlights: [
       "Personalized guidance tailored to your child's age and stage",
-      "Expert-backed answers across health, sleep, feeding, and behavior",
+      "Expert-backed answers across health, sleep, feeding and behavior",
       "Milestone tracking with proactive, timely insights",
       "Private, family-first experience designed for trust",
       "Conversational interface that feels like a knowledgeable friend",
@@ -41,7 +41,7 @@ const products: Product[] = [
     name: "TraceFlow",
     eyebrow: "Manufacturing · Inventory & traceability",
     description:
-      "A comprehensive material tracking and inventory management system designed for manufacturing industries. TraceFlow provides complete visibility from supplier to customer with automated FIFO compliance, real-time inventory tracking, and seamless production workflow management.",
+      "A comprehensive material tracking and inventory management system designed for manufacturing industries. TraceFlow provides complete visibility from supplier to customer with automated FIFO compliance, real-time inventory tracking and seamless production workflow management.",
     highlights: [
       "End-to-end material traceability with LOT tracking",
       "Automated FIFO compliance for inventory management",

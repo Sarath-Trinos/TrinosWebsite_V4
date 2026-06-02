@@ -22,7 +22,7 @@ const CombinedLeadership = () => (
         <p className={`mt-6 ${t.bodyLg} text-muted-foreground`}>
           We bring over 50 years of combined leadership experience in AI-first enterprise
           technology. Built on proven delivery and trusted client partnerships, we offer deep
-          expertise in advanced AI systems, platform modernization, and secure cloud
+          expertise in advanced AI systems, platform modernization and secure cloud
           architectures across multiple industries.
         </p>
       </div>

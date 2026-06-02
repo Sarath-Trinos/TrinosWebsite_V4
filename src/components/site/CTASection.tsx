@@ -61,7 +61,7 @@ type CTASectionProps = {
 
 const CTASection = ({
   variant = "purple",
-  title = "Ready to build intelligent, secure, and scalable solutions?",
+  title = "Ready to build intelligent, secure and scalable solutions?",
   subtitle = "Let's transform your business together.",
   buttonLabel = "Get In Touch",
   buttonHref = "#",

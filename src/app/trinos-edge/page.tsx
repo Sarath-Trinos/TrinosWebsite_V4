@@ -9,7 +9,7 @@ import Footer from "@/components/site/Footer";
 export const metadata: Metadata = {
   title: "The Trinos Edge | AI-First Enterprise Advantage | Trinos Technologies",
   description:
-    "Discover the Trinos Edge: small language models, self-improving AI, feedback loops, and rapid application development for enterprise AI systems.",
+    "Discover the Trinos Edge: small language models, self-improving AI, feedback loops and rapid application development for enterprise AI systems.",
 };
 
 export default function TrinosEdgePage() {

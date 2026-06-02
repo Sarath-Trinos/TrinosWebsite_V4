@@ -6,7 +6,7 @@ const leaders = [
     name: "Rajeshkumar Ganesan",
     role: "Co-Founder & CEO",
     image: "/team/Rajesh.webp",
-    bio: "18+ years across IT, ITES, and semiconductor industries. Drives global business development, strategy, and strategic partnerships across the USA, Europe, India, the Middle East, and Southeast Asia.",
+    bio: "18+ years across IT, ITES and semiconductor industries. Drives global business development, strategy and strategic partnerships across the USA, Europe, India, the Middle East and Southeast Asia.",
   },
   {
     name: "Mukesh Vaidyanathan",
@@ -18,7 +18,7 @@ const leaders = [
     name: "Rajkumar Gangadharan",
     role: "Co-Founder & CTO",
     image: "/team/Raj.webp",
-    bio: "17+ years in software development, system architecture, and AI. Chief architect behind multi-agent orchestration and workflow automation platforms.",
+    bio: "17+ years in software development, system architecture and AI. Chief architect behind multi-agent orchestration and workflow automation platforms.",
   },
 ];
 
@@ -32,7 +32,7 @@ const Leadership = () => (
           <span className="text-brand-gradient-reverse">behind Trinos</span>
         </h2>
         <p className={`mt-4 ${t.subheadlineNormal} text-muted-foreground`}>
-          Operators with decades of enterprise, engineering, and AI experience — building what they once shipped.
+          Operators with decades of enterprise, engineering and AI experience building what they once shipped.
         </p>
       </div>
 

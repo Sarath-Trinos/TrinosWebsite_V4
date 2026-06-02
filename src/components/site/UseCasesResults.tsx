@@ -14,21 +14,21 @@ const useCases: UseCase[] = [
     image: "/trinos/high-accurancy.jpg",
     title: "High-Accuracy Operations",
     description:
-      "Targeted models can improve accuracy on complex domain language and repeatable workflows.",
+      "Fine-tuned models improve accuracy on complex domain language and repeatable workflows. Teams stop correcting the same errors and start trusting AI outputs.",
     href: "/contact",
   },
   {
     image: "/trinos/performance-optimization-with-data-analytics.jpg",
     title: "Continuous Optimization",
     description:
-      "Approved corrections and production signals can reduce repeated errors and improve system behavior over time.",
+      "Approved corrections and production signals reduce repeated errors and improve system behavior over time. The system gets better every week without a rebuild.",
     href: "/contact",
   },
   {
     image: "/trinos/results.jpg",
-    title: "The Result",
+    title: "Growing AI Value Over Time",
     description:
-      "Your AI investment can become more valuable as it captures proprietary workflows, business logic, and operational patterns.",
+      "Your AI investment grows more valuable as it captures proprietary workflows, business logic and operational patterns. The longer you use Trinos, the harder your advantage is to copy.",
     href: "/contact",
   },
 ];
@@ -44,8 +44,8 @@ const UseCasesResults = () => (
             <span className="text-brand-gradient-reverse">&amp; results</span>
           </>
         }
-        subtitle="What compounding intelligence looks like in production"
-        description="From targeted accuracy gains to long-term operational leverage — see how the Trinos Edge translates into measurable business outcomes."
+        subtitle="From targeted accuracy gains to long-term operational leverage."
+        description="See how the Trinos Edge translates into measurable business outcomes for enterprise teams."
       />
 
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 lg:gap-8">

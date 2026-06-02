@@ -16,7 +16,7 @@ const cards: BentoCard[] = [
   {
     label: "SLMS",
     title: "Small Language Models for Business",
-    body: "We fine-tune compact domain-specific models on industry data to improve accuracy, reduce cost, and increase control compared with generic public models.",
+    body: "We fine-tune compact, domain-specific models on your industry data. The result is a model that is more accurate, less costly to run and far harder for competitors to replicate.",
     Icon: Layers,
     illustration: "orchestration",
     className: "col-span-12 lg:col-span-8",
@@ -24,7 +24,7 @@ const cards: BentoCard[] = [
   {
     label: "SELF-IMPROVING",
     title: "Self-Improving AI",
-    body: "Systems learn from new data and validated outcomes over time.",
+    body: "Your systems learn from new data and validated outcomes over time. Every approved output becomes a signal that makes the next response more reliable.",
     Icon: Hexagon,
     illustration: "mcp",
     className: "col-span-12 lg:col-span-4",
@@ -32,7 +32,7 @@ const cards: BentoCard[] = [
   {
     label: "FEEDBACK LOOP",
     title: "The Feedback Loop",
-    body: "Human corrections and approvals shape AI outputs to organizational standards.",
+    body: "Human corrections and approvals shape AI outputs to your organizational standards. Every review cycle raises the quality bar for every future output.",
     Icon: Activity,
     illustration: "rag",
     className: "col-span-12 lg:col-span-4",
@@ -40,7 +40,7 @@ const cards: BentoCard[] = [
   {
     label: "RAD",
     title: "Rapid Application Development",
-    body: "AI accelerates Trinos internal engineering workflows, helping the team build and iterate production-grade platforms quickly. Compounding velocity ships faster outcomes.",
+    body: "AI accelerates our internal engineering workflows so we build and iterate production-grade platforms faster. Compounding velocity means your outcomes ship sooner every cycle.",
     Icon: ShieldCheck,
     illustration: "security",
     className: "col-span-12 lg:col-span-8",
@@ -287,21 +287,21 @@ const WhatWeDeliver = () => (
     <div className="container-px mx-auto max-w-[1400px]">
       <p className="mb-10 max-w-3xl text-sm md:text-base text-muted-foreground border-l-2 border-primary pl-4">
         The Trinos Edge powers production AI platforms and helps products like
-        Moltter Studio improve through repeated operational cycles.
+        Molter Studio improve through repeated operational cycles.
       </p>
 
       <div className="mb-14 max-w-3xl md:mb-16">
         <h2 className={t.sectionHeadlineLg}>
-          <span className="text-black">What</span>{" "}
-          <span className="text-brand-gradient-reverse">we deliver</span>
+          <span className="text-black">Four Capabilities</span>{" "}
+          <span className="text-brand-gradient-reverse">That Compound Over Time</span>
         </h2>
         <p className={`mt-3 max-w-2xl ${t.subheadlineSemibold} text-black`}>
-          Four compounding capabilities, engineered to compound advantage.
+          Built to get better the more you use them.
         </p>
         <p className={`mt-4 ${t.bodyLg} text-muted-foreground`}>
-          Every Trinos deployment combines these building blocks so your AI investment
-          captures proprietary workflows, business logic, and operational patterns over
-          time.
+          Every Trinos deployment combines these building blocks. Your AI investment
+          captures proprietary workflows, business logic and operational patterns with
+          every cycle.
         </p>
       </div>
 

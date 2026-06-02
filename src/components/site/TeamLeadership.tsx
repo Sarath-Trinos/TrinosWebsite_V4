@@ -16,7 +16,7 @@ const founders: Founder[] = [
     image: "/team/Rajesh.webp",
     bio: [
       "Rajeshkumar Ganesan is a Goal-Driven, Business Leader with over 18 years of experience driving business growth and operational excellence across the IT, ITES and Semiconductor industries. He provides strategic leadership, guiding the organization's direction to ensure sustainable growth and long-term value in the global AI market.",
-      "A Startup & Scale-up Specialist, he has a proven track record of building organizations from the ground up and leading key functions including Sales, Business Development, and Strategic Partnerships across the USA, Europe, India, the Middle East and Southeast Asia. He focuses on client success, with strengths in market analysis, account planning and relationship building.",
+      "A Startup & Scale-up Specialist, he has a proven track record of building organizations from the ground up and leading key functions including Sales, Business Development and Strategic Partnerships across the USA, Europe, India, the Middle East and Southeast Asia. He focuses on client success, with strengths in market analysis, account planning and relationship building.",
       "With a strong people management foundation, he fosters people-centric cultures, strengthens leadership pipelines and enhances workforce productivity.",
     ],
   },

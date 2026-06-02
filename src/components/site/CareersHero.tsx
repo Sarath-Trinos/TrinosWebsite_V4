@@ -30,7 +30,7 @@ const CareersHero = () => {
               .
             </h1>
             <p className={`mt-6 ${t.subheadline} text-white/80 max-w-2xl`}>
-              Work on meaningful projects, grow your tech skills, and make a lasting career
+              Work on meaningful projects, grow your tech skills and make a lasting career
               impact at Trinos.
             </p>
 

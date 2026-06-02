@@ -163,8 +163,8 @@ const WhyJoinTrinos = () => {
             </>
           }
           titleClassName={`${t.sectionHeadlineLg} text-foreground`}
-          subtitle="Build a career with meaning"
-          description="Join a team of passionate innovators transforming enterprises with AI. You'll work on meaningful projects, grow your tech skills, and make a lasting career impact."
+          subtitle="Build Work That Matters"
+          description="At Trinos, you will work with a team of innovators building AI first technology for enterprises. Grow your skills, solve meaningful problems and build a career with real impact."
         />
 
         <SliderStage

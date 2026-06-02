@@ -6,7 +6,8 @@ import SectionHeader from "./SectionHeader";
 const values = [
   {
     title: "Innovation",
-    description: "We bring cutting-edge AI to real business challenges.",
+    description:
+      "We bring cutting-edge AI to real business challenges. Not experiments. Not prototypes. Production systems that work.",
     image:
       "/about-us/Gemini_Generated_Image_7f0jcg7f0jcg7f0j.jpg",
     cardBg: "bg-[#EFE6FF]",
@@ -14,7 +15,8 @@ const values = [
   },
   {
     title: "Integrity",
-    description: "Security, transparency, and trust define every engagement.",
+    description:
+      "Security, transparency and trust define every engagement. We say what we will do and we do what we say.",
     image:
       "/about-us/Gemini_Generated_Image_vwxiflvwxiflvwxi.jpg",
     cardBg: "bg-[#FFE9CC]",
@@ -22,7 +24,8 @@ const values = [
   },
   {
     title: "Excellence",
-    description: "We deliver engineering precision and world-class quality.",
+    description:
+      "We deliver engineering precision and world-class quality at every stage of every project.",
     image:
       "/about-us/Gemini_Generated_Image_1v2fy61v2fy61v2f.jpg",
     cardBg: "bg-[#D6F4E4]",
@@ -43,7 +46,7 @@ const OurValues = () => (
           </>
         }
         subtitle="What we stand for"
-        description="Trinos culture is built on trust, respect, and inclusivity — with Innovation, Integrity, and Excellence as the wellspring of our growth. Everyone is welcome at Trinos regardless of background, age, gender, or experience level."
+        description="Trinos culture is built on trust, respect and inclusivity — with Innovation, Integrity and Excellence as the wellspring of our growth. Everyone is welcome at Trinos regardless of background, age, gender, or experience level."
       />
 
       <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-5 md:gap-6">

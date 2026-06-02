@@ -30,7 +30,7 @@ const TeamHero = () => {
             </h1>
             <p className={`mt-6 ${t.subheadline} text-white/80 max-w-2xl`}>
               Three co-founders. Five decades of combined experience building intelligent,
-              secure, and scalable technology for the modern enterprise.
+              secure and scalable technology for the modern enterprise.
             </p>
 
             <div className="mt-9 flex flex-wrap items-center gap-4">

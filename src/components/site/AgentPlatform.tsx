@@ -27,7 +27,7 @@ const tiles: Tile[] = [
     title: "Agentic AI",
     headline: "Agentic AI",
     description:
-      "Agents that reason, call tools, and execute multi-step work. Bounded by your permissions, your approvals, your audit trail. The autonomy is real. The guardrails are too.",
+      "Agents that reason, call tools and execute multi-step work. Bounded by your permissions, your approvals, your audit trail. The autonomy is real. The guardrails are too.",
     image: grace,
     video: "/videos/don_t_need_the_right_side_card.mp4",
     href: "/services/agentic-ai",
@@ -37,7 +37,7 @@ const tiles: Tile[] = [
     title: "AI Workflow Automation",
     headline: "AI Workflow Automation",
     description:
-      "Intelligent automation that streamlines business processes end to end — removing manual handoffs, eliminating bottlenecks, and keeping humans in control where it matters.",
+      "Intelligent automation that streamlines business processes end to end — removing manual handoffs, eliminating bottlenecks and keeping humans in control where it matters.",
     image: daphne,
     video: "/videos/I_need_the_reference_video_in.mp4",
     href: "/services/ai-workflow-automation",
@@ -47,7 +47,7 @@ const tiles: Tile[] = [
     title: "AI Voice Assistants",
     headline: "AI Voice Assistants",
     description:
-      "Real-time, domain-aware voice agents for support, sales, and internal operations — natural conversations with speech-to-text, TTS, and grounded responses.",
+      "Real-time, domain-aware voice agents for support, sales and internal operations — natural conversations with speech-to-text, TTS and grounded responses.",
     image: johnny,
     video: "/videos/Can_you_animate_this_into_a_ (1).mp4",
     href: "/services/ai-voice-assistants",
@@ -57,7 +57,7 @@ const tiles: Tile[] = [
     title: "Social Media Automation",
     headline: "Social Media Automation",
     description:
-      "AI-driven content, scheduling, and engagement workflows that keep your brand active across channels — with editorial guardrails and approval flows built in.",
+      "AI-driven content, scheduling and engagement workflows that keep your brand active across channels — with editorial guardrails and approval flows built in.",
     image: manish,
     video: "/videos/mp_ (1).mp4",
     href: "/services/social-media-automation",

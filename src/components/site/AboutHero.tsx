@@ -55,7 +55,7 @@ const AboutHero = () => {
               .
             </h1>
             <p className={`mt-6 ${t.subheadline} text-white/80 max-w-2xl`}>
-              We are an AI-first engineering company backed by deep enterprise experience. We do not just advise on AI. We build, deploy, and scale production-grade systems for global enterprises.
+              We are an AI-first engineering company backed by deep enterprise experience. We do not just advise on AI. We build, deploy and scale production-grade systems for global enterprises.
             </p>
 
             <div className="mt-9 flex flex-wrap items-center gap-4">
@@ -69,7 +69,7 @@ const AboutHero = () => {
             </div>
 
             <p className="mt-8 text-white/70 text-sm md:text-base max-w-2xl">
-              Headquartered in Chennai, Trinos combines AI engineering, product development, ERP expertise, and enterprise delivery experience.
+              Headquartered in Chennai, Trinos combines AI engineering, product development, ERP expertise and enterprise delivery experience.
             </p>
           </div>
         </div>

@@ -59,12 +59,14 @@ const ServiceDetail = ({ service, heroImage }: Props) => {
             </div>
           </div>
 
-          <div className="mt-12 max-w-4xl flex items-start gap-3 rounded-2xl border border-white/15 bg-white/5 backdrop-blur-sm p-5">
-            <Sparkles className="w-5 h-5 text-primary-glow mt-1 shrink-0" />
-            <p className={`${t.bodyResponsive} text-white/85`}>
-              {service.credibility}
-            </p>
-          </div>
+          {service.credibility && (
+            <div className="mt-12 max-w-4xl flex items-start gap-3 rounded-2xl border border-white/15 bg-white/5 backdrop-blur-sm p-5">
+              <Sparkles className="w-5 h-5 text-primary-glow mt-1 shrink-0" />
+              <p className={`${t.bodyResponsive} text-white/85`}>
+                {service.credibility}
+              </p>
+            </div>
+          )}
         </div>
       </section>
 

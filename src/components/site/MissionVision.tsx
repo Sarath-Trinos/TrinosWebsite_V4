@@ -15,7 +15,7 @@ const items = [
     eyebrow: "Our Ambition",
     title: "Our Vision",
     description:
-      "To be a global leader in AI-driven enterprise transformation by delivering future-ready, scalable, and secure technology platforms.",
+      "To be a global leader in AI-driven enterprise transformation by delivering future-ready, scalable and secure technology platforms.",
     Icon: Compass,
     iconColor: "text-[#9A4B00]",
     iconBg: "bg-[#FFE9CC]",

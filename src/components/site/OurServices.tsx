@@ -32,28 +32,28 @@ const serviceGroups: ServiceGroup[] = [
         icon: Bot,
         title: "Agentic AI",
         description:
-          "Autonomous AI agents that plan, decide, and act across your enterprise systems — designed to operate inside real business workflows, not isolated demos.",
+          "Autonomous AI agents that plan, decide and act across your enterprise systems — designed to operate inside real business workflows, not isolated demos.",
         href: "/services/agentic-ai",
       },
       {
         icon: Workflow,
         title: "AI Workflow Automation",
         description:
-          "End-to-end orchestration of business processes with AI triggers, human approvals, and integrations across CRMs, ERPs, data warehouses, and SaaS tools.",
+          "End-to-end orchestration of business processes with AI triggers, human approvals and integrations across CRMs, ERPs, data warehouses and SaaS tools.",
         href: "/services/ai-workflow-automation",
       },
       {
         icon: Mic,
         title: "AI Voice Assistants",
         description:
-          "Multilingual voice agents for support, sales, and operations — grounded in your knowledge base with auditable, secure conversation flows.",
+          "Multilingual voice agents for support, sales and operations — grounded in your knowledge base with auditable, secure conversation flows.",
         href: "/services/ai-voice-assistants",
       },
       {
         icon: Share2,
         title: "Social Media Automation",
         description:
-          "AI-driven content operations across channels — planning, generation, scheduling, and reporting tuned to your brand voice and compliance requirements.",
+          "AI-driven content operations across channels — planning, generation, scheduling and reporting tuned to your brand voice and compliance requirements.",
         href: "/services/social-media-automation",
       },
     ],
@@ -91,7 +91,7 @@ const serviceGroups: ServiceGroup[] = [
         icon: Briefcase,
         title: "Enterprise Resource Planning",
         description:
-          "End-to-end ERP implementation and AI integration across SAP, Oracle, Microsoft Dynamics, Infor, QAD, and EPICOR — aligned to your operating model.",
+          "End-to-end ERP implementation and AI integration across SAP, Oracle, Microsoft Dynamics, Infor, QAD and EPICOR — aligned to your operating model.",
         href: "/services/enterprise-resource-planning",
       },
       {
@@ -105,7 +105,7 @@ const serviceGroups: ServiceGroup[] = [
         icon: Smartphone,
         title: "Mobile App Development",
         description:
-          "Cross-platform mobile apps with native-quality experiences, secure data flows, and embedded AI capabilities for field, customer, and internal users.",
+          "Cross-platform mobile apps with native-quality experiences, secure data flows and embedded AI capabilities for field, customer and internal users.",
         href: "/services/mobile-app-development",
       },
     ],
@@ -122,7 +122,7 @@ const OurServices = () => {
             <span className="text-brand-gradient-reverse">services</span>
           </h2>
           <p className={`mt-3 max-w-2xl ${t.subheadlineSemibold} text-foreground`}>
-            AI-first services across automation, intelligence, and enterprise platforms
+            AI-first services across automation, intelligence and enterprise platforms
           </p>
           <p className={`mt-4 ${t.bodyLg} text-muted-foreground`}>
             Ten focused services built to move enterprises from isolated AI experiments to

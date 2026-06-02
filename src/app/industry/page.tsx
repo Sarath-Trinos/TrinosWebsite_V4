@@ -8,7 +8,7 @@ import Footer from "@/components/site/Footer";
 export const metadata: Metadata = {
   title: "Industries We Serve | Trinos Technologies",
   description:
-    "Trinos delivers AI-first solutions across manufacturing, insurance, financial services, healthcare, government, enterprise technology, travel & hospitality, and automobile & engineering.",
+    "Trinos delivers AI-first solutions across manufacturing, insurance, financial services, healthcare, government, enterprise technology, travel & hospitality and automobile & engineering.",
 };
 
 export default function IndustryPage() {

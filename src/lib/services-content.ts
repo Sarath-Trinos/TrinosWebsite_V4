@@ -67,7 +67,7 @@ export const servicesContent: Record<string, ServiceContent> = {
     eyebrow: "AGENTIC AI",
     pageTitle: "Agentic AI Services for Enterprises | Trinos Technologies",
     metaDescription:
-      "Build secure agentic AI systems that reason, use tools, automate multi-step tasks, and work across enterprise workflows with human approval controls.",
+      "Build secure agentic AI systems that reason, use tools, automate multi-step tasks and work across enterprise workflows with human approval controls.",
     h1Lead: "AI Agents That",
     h1Highlight: "Think, Act and Improve",
     subHeadline:
@@ -77,8 +77,7 @@ export const servicesContent: Record<string, ServiceContent> = {
       label: "Explore AI Workflow Automation",
       href: "/services/ai-workflow-automation",
     },
-    credibility:
-      "Our multi-agent architecture powers AI products where autonomous agents debate, analyze, generate and escalate outputs through structured workflows.",
+    credibility: "",
     answerHeading: "What Is Agentic AI?",
     answerBody:
       "Agentic AI uses autonomous software agents that understand context, plan tasks, call tools, retrieve data and take action. Unlike a chatbot that answers questions, agentic systems are built to complete workflows from start to finish.",
@@ -174,7 +173,7 @@ export const servicesContent: Record<string, ServiceContent> = {
     eyebrow: "AI WORKFLOW AUTOMATION",
     pageTitle: "AI Workflow Automation & Process Orchestration | Trinos Technologies",
     metaDescription:
-      "Automate enterprise workflows with AI triggers, system integrations, human approvals, audit trails, and cross-platform process orchestration.",
+      "Automate enterprise workflows with AI triggers, system integrations, human approvals, audit trails and cross-platform process orchestration.",
     h1Lead: "Let AI Run Your",
     h1Highlight: "Business Processes",
     subHeadline:
@@ -273,7 +272,7 @@ export const servicesContent: Record<string, ServiceContent> = {
     eyebrow: "LLM FINE TUNING",
     pageTitle: "LLM Fine Tuning & Custom Language Models | Trinos Technologies",
     metaDescription:
-      "Fine-tune language models on enterprise data, workflows, tone, terminology, and domain rules to improve AI accuracy, reliability, and cost efficiency.",
+      "Fine-tune language models on enterprise data, workflows, tone, terminology and domain rules to improve AI accuracy, reliability and cost efficiency.",
     h1Lead: "AI That Knows Your",
     h1Highlight: "Business Language",
     subHeadline:
@@ -375,7 +374,7 @@ export const servicesContent: Record<string, ServiceContent> = {
     eyebrow: "GENERATIVE AI AND ANALYTICS",
     pageTitle: "Generative AI Analytics & Decision Intelligence | Trinos Technologies",
     metaDescription:
-      "Build generative AI analytics systems for conversational dashboards, intelligent reports, data storytelling, and decision intelligence grounded in enterprise data.",
+      "Build generative AI analytics systems for conversational dashboards, intelligent reports, data storytelling and decision intelligence grounded in enterprise data.",
     h1Lead: "Turn Your Business Data Into",
     h1Highlight: "Clear Decisions",
     subHeadline:
@@ -475,7 +474,7 @@ export const servicesContent: Record<string, ServiceContent> = {
     eyebrow: "AI VOICE ASSISTANTS",
     pageTitle: "AI Voice Assistant Development for Enterprises | Trinos Technologies",
     metaDescription:
-      "Develop AI voice assistants for customer support, internal operations, field teams, scheduling, reminders, and workflow automation across enterprise systems.",
+      "Develop AI voice assistants for customer support, internal operations, field teams, scheduling, reminders and workflow automation across enterprise systems.",
     h1Lead: "Voice AI That Connects",
     h1Highlight: "Conversations to Real Workflows",
     subHeadline:
@@ -578,7 +577,7 @@ export const servicesContent: Record<string, ServiceContent> = {
     eyebrow: "COMPUTER VISION",
     pageTitle: "Computer Vision & Edge AI Solutions | Trinos Technologies",
     metaDescription:
-      "Deploy computer vision systems for defect detection, OCR, quality inspection, object detection, live video analytics, and edge AI workflows.",
+      "Deploy computer vision systems for defect detection, OCR, quality inspection, object detection, live video analytics and edge AI workflows.",
     h1Lead: "Give Your Enterprise Systems",
     h1Highlight: "the Power of Sight",
     subHeadline:
@@ -681,7 +680,7 @@ export const servicesContent: Record<string, ServiceContent> = {
     eyebrow: "ENTERPRISE RESOURCE PLANNING",
     pageTitle: "Enterprise Resource Planning Implementation | Trinos Technologies",
     metaDescription:
-      "Implement and modernize ERP systems across SAP, Oracle, Microsoft Dynamics, Infor, QAD, Epicor, integrations, data migration, and AI-ready workflows.",
+      "Implement and modernize ERP systems across SAP, Oracle, Microsoft Dynamics, Infor, QAD, Epicor, integrations, data migration and AI-ready workflows.",
     h1Lead: "ERP Systems Built for",
     h1Highlight: "AI-Ready Operations",
     subHeadline:
@@ -785,7 +784,7 @@ export const servicesContent: Record<string, ServiceContent> = {
     eyebrow: "SOCIAL MEDIA AUTOMATION",
     pageTitle: "AI Social Media Automation Services | Trinos Technologies",
     metaDescription:
-      "Automate social media research, content generation, publishing workflows, trend analysis, reporting, and brand-safe approvals using AI systems.",
+      "Automate social media research, content generation, publishing workflows, trend analysis, reporting and brand-safe approvals using AI systems.",
     h1Lead: "More Content. Less Manual Work.",
     h1Highlight: "Full Brand Control",
     subHeadline:
@@ -886,7 +885,7 @@ export const servicesContent: Record<string, ServiceContent> = {
     eyebrow: "WEB DEVELOPMENT",
     pageTitle: "AI-Enabled Web Development Services | Trinos Technologies",
     metaDescription:
-      "Build secure enterprise websites, portals, dashboards, SaaS platforms, and AI-enabled web applications with scalable architecture and modern UX.",
+      "Build secure enterprise websites, portals, dashboards, SaaS platforms and AI-enabled web applications with scalable architecture and modern UX.",
     h1Lead: "Web Platforms Built for",
     h1Highlight: "Scale, Speed and AI Adoption",
     subHeadline:
@@ -990,7 +989,7 @@ export const servicesContent: Record<string, ServiceContent> = {
     eyebrow: "MOBILE APP DEVELOPMENT",
     pageTitle: "AI-Enabled Mobile App Development | Trinos Technologies",
     metaDescription:
-      "Develop cross-platform mobile apps for enterprise users, customers, agents, field teams, and AI-powered workflows on iOS and Android.",
+      "Develop cross-platform mobile apps for enterprise users, customers, agents, field teams and AI-powered workflows on iOS and Android.",
     h1Lead: "Mobile Apps That Put AI",
     h1Highlight: "Into the Hands of Users",
     subHeadline:

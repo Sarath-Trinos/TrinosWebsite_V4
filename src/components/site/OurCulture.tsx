@@ -11,21 +11,21 @@ type Pillar = {
 const pillars: Pillar[] = [
   {
     Icon: Lightbulb,
-    title: "Innovation first",
+    title: "Innovation First",
     description:
-      "We empower team members to think creatively and challenge the status quo.",
+      "We encourage bold ideas, creative thinking and practical solutions that challenge the usual way of working.",
   },
   {
     Icon: Users,
     title: "Collaboration",
     description:
-      "We win together — sharing knowledge, supporting each other, and building as one team.",
+      "We grow together by sharing knowledge, supporting each other and building as one team.",
   },
   {
     Icon: BookOpen,
-    title: "Continuous learning",
+    title: "Continuous Learning",
     description:
-      "Curiosity is core. We invest in growth so everyone keeps levelling up.",
+      "Curiosity drives us. We help our team keep learning, improving and growing with every project.",
   },
 ];
 
@@ -109,17 +109,17 @@ const OurCulture = () => (
 
           {/* Subheadline */}
           <p className={`mt-3 max-w-xl ${t.subheadlineSemibold} text-foreground`}>
-            A culture built on ownership.
+            A Culture Built on Ownership
           </p>
 
           {/* Copy */}
           <p className={`mt-8 max-w-xl ${t.bodyResponsive} text-muted-foreground`}>
-            At Trinos, we foster a culture of innovation, collaboration, and
-            continuous learning. We believe in empowering our team members to
-            take ownership, think creatively, and make a meaningful impact.
+            At Trinos, we build a culture of innovation, collaboration and
+            continuous learning. We encourage every team member to take
+            ownership, think creatively and create meaningful impact.
           </p>
           <p className={`mt-5 max-w-xl ${t.bodyResponsive} text-muted-foreground`}>
-            Join us in building the future of enterprise technology.
+            Join us in building the future of AI first enterprise technology.
           </p>
 
           {/* Landscape illustration */}

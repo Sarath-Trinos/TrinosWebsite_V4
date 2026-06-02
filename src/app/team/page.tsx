@@ -9,7 +9,7 @@ import Footer from "@/components/site/Footer";
 export const metadata: Metadata = {
   title: "Team | Trinos Technologies",
   description:
-    "Meet the minds behind Trinos. Three co-founders with five decades of combined experience building intelligent, secure, and scalable technology for the modern enterprise.",
+    "Meet the minds behind Trinos. Three co-founders with five decades of combined experience building intelligent, secure and scalable technology for the modern enterprise.",
 };
 
 export default function TeamPage() {

@@ -29,7 +29,7 @@ export const metadata: Metadata = {
   metadataBase: new URL("https://trinos.ai"),
   title: "Trinos Technologies | AI-First Enterprise Technology & Products",
   description:
-    "Trinos builds AI-first enterprise systems, agentic automation, AI-powered analytics, ERP platforms, web applications, and mobile experiences for global businesses.",
+    "Trinos builds AI-first enterprise systems, agentic automation, AI-powered analytics, ERP platforms, web applications and mobile experiences for global businesses.",
   icons: {
     icon: [{ url: "/Logo.png", type: "image/png" }],
     shortcut: "/Logo.png",
@@ -38,7 +38,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Trinos Technologies | AI-First Enterprise Technology & Products",
     description:
-      "Trinos builds AI-first enterprise systems, agentic automation, AI-powered analytics, ERP platforms, web applications, and mobile experiences for global businesses.",
+      "Trinos builds AI-first enterprise systems, agentic automation, AI-powered analytics, ERP platforms, web applications and mobile experiences for global businesses.",
     type: "website",
     url: "https://trinos.ai",
   },

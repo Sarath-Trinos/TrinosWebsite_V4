@@ -28,9 +28,9 @@ const ServicesIndustries = () => (
           <span className="text-brand-gradient-reverse">operations-heavy industries</span>
         </h2>
         <p className={`mt-4 ${t.bodyLg} text-muted-foreground`}>
-          We work with enterprises where AI must be secure, auditable, and aligned with business
+          We work with enterprises where AI must be secure, auditable and aligned with business
           rules — across manufacturing, insurance, financial services, healthcare, government,
-          enterprise technology, travel and hospitality, automobile and engineering, and other
+          enterprise technology, travel and hospitality, automobile and engineering and other
           operations-heavy sectors.
         </p>
       </div>
