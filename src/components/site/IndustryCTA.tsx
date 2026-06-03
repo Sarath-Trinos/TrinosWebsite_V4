@@ -11,7 +11,7 @@ const IndustryCTA = () => (
           <h2 className={`${t.sectionHeadline} text-white`}>
             Don't see your industry? Let's still talk.
           </h2>
-          <p className={`mt-5 ${t.subheadline} text-white/85 max-w-2xl mx-auto`}>
+          <p className={`mt-5 ${t.subheadline} text-white/85 max-w-4xl mx-auto`}>
             Our playbook is built for regulated, operations-heavy enterprises. If your
             business depends on data, workflows and trust, Trinos can help you put AI
             to work safely.
