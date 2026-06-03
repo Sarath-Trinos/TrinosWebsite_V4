@@ -90,7 +90,7 @@ const ServiceDetail = ({ service, heroImage }: Props) => {
             {service.deliverables.map((item) => (
               <div
                 key={item.title}
-                className="group relative overflow-hidden rounded-2xl border border-border bg-card p-7 shadow-card hover:shadow-glow transition-all hover:-translate-y-0.5 flex flex-col items-center justify-center text-center"
+                className="group relative overflow-hidden rounded-2xl border border-border bg-card p-7 shadow-card hover:shadow-glow transition-all hover:-translate-y-0.5 flex flex-col"
               >
                 <h3 className={`${t.cardHeadlineSemibold} text-foreground`}>
                   {item.title}

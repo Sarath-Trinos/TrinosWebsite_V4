@@ -151,7 +151,7 @@ const WhyChooseTrinos = () => {
                     )}
                   >
                     {/* Icon tile */}
-                    <div className="relative mx-auto flex h-16 w-16 items-center justify-center">
+                    <div className="relative flex h-16 w-16 items-center justify-center">
                       <div className="relative flex h-16 w-16 items-center justify-center rounded-2xl bg-gradient-to-br from-white to-primary/5 shadow-[inset_0_1px_0_0_rgba(255,255,255,0.9),0_8px_20px_-10px_hsl(var(--primary)/0.45)] ring-1 ring-primary/10">
                         <Icon
                           className="h-8 w-8 text-primary"
@@ -161,14 +161,14 @@ const WhyChooseTrinos = () => {
                     </div>
 
                     {/* Title */}
-                    <h3 className={`relative mt-6 text-center ${t.cardHeadlineSm} text-foreground`}>
+                    <h3 className={`relative mt-6 ${t.cardHeadlineSm} text-foreground`}>
                       {p.title}
                     </h3>
                     {/* Accent underline */}
-                    <div className="relative mx-auto mt-3 h-[3px] w-10 rounded-full bg-gradient-to-r from-primary to-primary-glow" />
+                    <div className="relative mt-3 h-[3px] w-10 rounded-full bg-gradient-to-r from-primary to-primary-glow" />
 
                     {/* Description */}
-                    <p className={`relative mt-5 text-center ${t.bodyCaption} text-muted-foreground`}>
+                    <p className={`relative mt-5 ${t.bodyCaption} text-muted-foreground`}>
                       {p.description}
                     </p>
                   </div>

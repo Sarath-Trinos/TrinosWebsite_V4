@@ -45,7 +45,7 @@ const TwoTracks = () => (
         {tracks.map((track) => (
           <article
             key={track.title}
-            className="tile bg-card border border-sky-200 p-8 md:p-10 lg:p-12 flex flex-col items-center text-center h-full hover:shadow-card transition-shadow"
+            className="tile bg-card border border-sky-200 p-8 md:p-10 lg:p-12 flex flex-col h-full hover:shadow-card transition-shadow"
           >
             <h3
               className="mb-5"

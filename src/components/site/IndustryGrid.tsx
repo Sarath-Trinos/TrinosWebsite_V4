@@ -529,7 +529,7 @@ const IndustryGrid = () => {
                           className="object-cover transition-transform duration-500 ease-out group-hover:scale-105"
                         />
                       </div>
-                      <h3 className={`${t.cardHeadline} text-foreground mb-3`}>
+                      <h3 className={`${t.cardHeadlineSemibold} text-foreground mb-3`}>
                         {industry.title}
                       </h3>
                       <p
