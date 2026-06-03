@@ -11,9 +11,9 @@ const TrinosEdgeCTA = () => (
           <h2 className={`${t.sectionHeadline} text-white`}>
             Build an AI Advantage for Your Enterprise.
           </h2>
-          <p className={`mt-5 ${t.subheadline} text-white/85 max-w-2xl mx-auto`}>
-            Speak with the Trinos leadership team to understand how the Trinos Edge can
-            support your operations and long term AI roadmap.
+          <p className={`mt-5 ${t.subheadline} text-white/85 max-w-3xl mx-auto`}>
+            Speak with the Trinos leadership team to understand how the Trinos Edge can support
+            your operations and long term AI roadmap.
           </p>
           <div className="mt-10 flex flex-wrap items-center justify-center gap-4">
             <a

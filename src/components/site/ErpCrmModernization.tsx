@@ -87,7 +87,7 @@ const ErpCrmModernization = () => (
         <p
           className={cn(
             t.bodyLg,
-            "text-muted-foreground max-w-2xl",
+            "text-muted-foreground max-w-6xl",
           )}
         >
           Language models, generative analytics and computer vision systems tuned to your terminology, workflows and domain. Trinos builds AI that works where generic tools usually fail inside real enterprise complexity.

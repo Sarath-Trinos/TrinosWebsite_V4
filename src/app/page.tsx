@@ -27,7 +27,8 @@ export default function Home() {
       <CTASection
         variant="gradient"
         title="Stop piloting. Start shipping."
-        subtitle="A Trinos Discovery Workshop helps map your bottlenecks, data and systems, then identifies where AI can create the fastest measurable impact. Clear outcomes, practical next steps and no unnecessary slideware."
+        subtitle="Start with a Discovery Workshop. Trinos will review your workflows, data systems and operational bottlenecks before recommending the right AI first solution for your environment."
+        subtitleClassName="max-w-6xl text-balance"
         buttonLabel="Book a Discovery Workshop"
         buttonHref="/contact"
       />

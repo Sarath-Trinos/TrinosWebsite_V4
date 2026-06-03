@@ -55,7 +55,7 @@ const SectionHeader = ({
     >
       <div
         className={cn(
-          headingLayout === "centered" ? "w-full" : "max-w-2xl",
+          headingLayout === "centered" ? "w-full" : "max-w-6xl",
           contentClassName,
         )}
       >
@@ -76,7 +76,7 @@ const SectionHeader = ({
         {subtitle ? (
           <p
             className={cn(
-              "mt-3 max-w-2xl",
+              "mt-3",
               typography.subheadline,
               subtitleClassName ??
                 cn(
@@ -92,7 +92,7 @@ const SectionHeader = ({
         {description && (
           <p
             className={cn(
-              "mt-4 max-w-2xl",
+              "mt-4",
               typography.bodyLg,
               tone === "dark" ? "text-white/70" : "text-muted-foreground",
             )}

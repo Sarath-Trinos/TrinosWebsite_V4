@@ -121,7 +121,7 @@ const WhyChooseTrinos = () => {
         <h2 className={`${t.sectionHeadline} text-foreground`}>
           The Trinos <span className="text-brand-gradient">Edge</span>
         </h2>
-        <p className={`mt-5 max-w-2xl ${t.bodyResponsive} text-muted-foreground`}>
+        <p className={`mt-5 max-w-6xl ${t.bodyResponsive} text-muted-foreground`}>
           The longer you use Trinos, the smarter it gets.
         </p>
 

@@ -11,7 +11,7 @@ const ServicesCTA = () => (
           <h2 className={`${t.sectionHeadline} text-white`}>
             Ready to Build Your AI-First Enterprise System?
           </h2>
-          <p className={`mt-5 ${t.subheadline} text-white/85 max-w-2xl mx-auto`}>
+          <p className={`mt-5 ${t.subheadline} text-white/85 max-w-6xl mx-auto text-balance`}>
             Start with a Discovery Workshop. Trinos will review your workflows, data systems and
             operational bottlenecks before recommending the right AI first solution for your
             environment.

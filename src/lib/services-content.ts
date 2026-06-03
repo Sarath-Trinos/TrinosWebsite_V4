@@ -109,14 +109,14 @@ export const servicesContent: Record<string, ServiceContent> = {
         title: "Enterprise Operations",
         description:
           "Agents monitor incoming tasks, collect relevant data, prepare recommendations and route decisions to the right team. This reduces coordination effort for operations teams that manage repeatable but context heavy work.",
-        image: "/service/enterprise-operations.jpg",
+        image: "/service/each%20service%20page/enterprise-operations.jpg",
         badge: "Operations",
       },
       {
         title: "Decision Intelligence",
         description:
           "Multiple agents analyze a business problem from different perspectives and produce recommendations with risks, assumptions and confidence levels. Decision makers receive a structured brief instead of scattered information from multiple sources.",
-        image: "/service/decision-intelligence.jpg",
+        image: "/service/each%20service%20page/decision-intelligence.jpg",
         badge: "Strategy",
       },
     ],
@@ -213,11 +213,15 @@ export const servicesContent: Record<string, ServiceContent> = {
         title: "Insurance and Document Operations",
         description:
           "Route policy documents, claims files and supporting records through extraction, validation, quality checks, anomaly detection, review and approval. This reduces repeated manual checking while maintaining visibility across the full document lifecycle.",
+        image: "/service/each%20service%20page/Insurance-and-Document-Operations.png",
+        badge: "Documents",
       },
       {
         title: "HR and Finance Operations",
         description:
           "Coordinate onboarding, procurement, invoice review and approvals across HR, finance and management teams. The workflow keeps every task, approval and exception traceable without depending on repeated email follow up.",
+        image: "/service/each%20service%20page/HR-and-Finance-Operations.png",
+        badge: "Operations",
       },
     ],
     result:

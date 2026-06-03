@@ -25,7 +25,7 @@ const leaders = [
 const Leadership = () => (
   <section id="leadership" className="py-24 bg-white">
     <div className="container-px max-w-[1400px] mx-auto">
-      <div className="max-w-3xl">
+      <div className="max-w-6xl">
         <span className="chip mb-5">Leadership</span>
         <h2 className={t.sectionHeadline}>
           <span className="text-black">Meet the people</span>{" "}

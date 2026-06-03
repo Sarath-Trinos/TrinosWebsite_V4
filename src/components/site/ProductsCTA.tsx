@@ -11,7 +11,7 @@ const ProductsCTA = () => (
           <h2 className={`${t.sectionHeadline} text-white`}>
             Building a product like these?
           </h2>
-          <p className={`mt-5 ${t.subheadline} text-white/85 max-w-2xl mx-auto`}>
+          <p className={`mt-5 ${t.subheadline} text-white/85 max-w-5xl mx-auto text-balance`}>
             Let's talk. We partner with teams to design and ship AI products from MVP to scale.
           </p>
           <div className="mt-10 flex flex-wrap items-center justify-center gap-4">

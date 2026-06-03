@@ -116,13 +116,13 @@ const OurServices = () => {
   return (
     <section id="our-services" className="py-10 bg-background">
       <div className="container-px max-w-[1400px] mx-auto">
-        <div className="max-w-2xl mb-12">
+        <div className="max-w-6xl mb-12">
           <span className="chip mb-5">Our Services</span>
           <h2 className={t.sectionHeadlineLg}>
             <span className="text-black">Our</span>{" "}
             <span className="text-brand-gradient-reverse">services</span>
           </h2>
-          <p className={`mt-3 max-w-2xl ${t.subheadlineSemibold} text-foreground`}>
+          <p className={`mt-3 ${t.subheadlineSemibold} text-foreground`}>
             AI first services across automation, intelligence and enterprise platforms.
           </p>
           <p className={`mt-4 ${t.bodyLg} text-muted-foreground`}>
@@ -162,7 +162,7 @@ const OurServices = () => {
                       <p className="mt-3 text-sm text-white/70 leading-relaxed line-clamp-3">
                         {description}
                       </p>
-                      <p className="mt-4 text-xs font-medium text-primary-glow">{category}</p>
+                      <p className="mt-4 text-xs font-medium text-primary-glow">Learn More</p>
                     </div>
                   </a>
                 ))}

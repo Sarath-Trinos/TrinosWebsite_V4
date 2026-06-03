@@ -55,6 +55,7 @@ type CTASectionProps = {
   variant?: Variant;
   title?: string;
   subtitle?: string;
+  subtitleClassName?: string;
   buttonLabel?: string;
   buttonHref?: string;
 };
@@ -63,6 +64,7 @@ const CTASection = ({
   variant = "purple",
   title = "Ready to build intelligent, secure and scalable solutions?",
   subtitle = "Let's transform your business together.",
+  subtitleClassName = "max-w-2xl",
   buttonLabel = "Get In Touch",
   buttonHref = "#",
 }: CTASectionProps) => {
@@ -77,7 +79,7 @@ const CTASection = ({
             <h2 className={`${t.sectionHeadline} ${v.title}`}>
               {title}
             </h2>
-            <p className={`mt-5 ${t.subheadline} max-w-2xl mx-auto ${v.subtitle}`}>
+            <p className={`mt-5 ${t.subheadline} ${subtitleClassName} mx-auto ${v.subtitle}`}>
               {subtitle}
             </p>
             <div className="mt-10 flex flex-wrap items-center justify-center gap-4">

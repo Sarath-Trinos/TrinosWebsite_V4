@@ -291,12 +291,12 @@ const WhatWeDeliver = () => (
         controlled improvements.
       </p>
 
-      <div className="mb-14 max-w-3xl md:mb-16">
+      <div className="mb-14 max-w-6xl md:mb-16">
         <h2 className={t.sectionHeadlineLg}>
           <span className="text-black">What we</span>{" "}
           <span className="text-brand-gradient-reverse">deliver</span>
         </h2>
-        <p className={`mt-3 max-w-2xl ${t.subheadlineSemibold} text-black`}>
+        <p className={`mt-3 ${t.subheadlineSemibold} text-black`}>
           Four capabilities that support long term AI value.
         </p>
         <p className={`mt-4 ${t.bodyLg} text-muted-foreground`}>

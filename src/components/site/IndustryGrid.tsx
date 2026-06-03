@@ -331,7 +331,7 @@ const IndustryGrid = () => {
   useEffect(() => {
     if (activeIndex === null) return;
     const id = window.setTimeout(() => {
-      expandedRef.current?.scrollIntoView({ behavior: "smooth", block: "center" });
+      expandedRef.current?.scrollIntoView({ behavior: "smooth", block: "start" });
     }, 250);
     return () => window.clearTimeout(id);
   }, [activeIndex]);
@@ -367,12 +367,13 @@ const IndustryGrid = () => {
   return (
     <section id="industries-grid" className="py-16 lg:py-24 bg-background">
       <div className="container-px max-w-[1400px] mx-auto">
-        <div className="max-w-3xl mb-12 lg:mb-16 animate-fade-up">
+        <div className="max-w-7xl mb-12 lg:mb-16 animate-fade-up">
           <span className="chip mb-5">Industry-specific solutions</span>
-          <h2 className={`${t.sectionHeadline} text-foreground`}>
-            Solutions tailored to your industry
+          <h2 className={t.sectionHeadline}>
+            <span className="text-black">Solutions tailored to your</span>{" "}
+            <span className="text-brand-gradient-reverse">industry</span>
           </h2>
-          <p className={`mt-5 ${t.subheadline} text-muted-foreground`}>
+          <p className={`mt-4 ${t.bodyLg} text-muted-foreground`}>
             Discover tailored AI and ERP solutions designed to address the unique
             challenges and opportunities in your industry.
           </p>
@@ -385,7 +386,7 @@ const IndustryGrid = () => {
                 <div
                   ref={expandedRef}
                   key={activeIndex}
-                  className="animate-expand-grow [transform-origin:top_center]"
+                  className="animate-expand-grow [transform-origin:top_center] scroll-mt-24"
                 >
                   <div className="relative w-full overflow-hidden rounded-2xl bg-card shadow-card ring-1 ring-border/60 [contain:layout_paint]">
                     <button
@@ -529,11 +530,11 @@ const IndustryGrid = () => {
                           className="object-cover transition-transform duration-500 ease-out group-hover:scale-105"
                         />
                       </div>
-                      <h3 className={`${t.cardHeadlineSemibold} text-foreground mb-3`}>
+                      <h3 className={`${t.cardHeadlineSemibold} text-foreground mb-3 min-h-[2lh]`}>
                         {industry.title}
                       </h3>
                       <p
-                        className={`${t.body} text-muted-foreground leading-relaxed line-clamp-1`}
+                        className={`${t.body} text-muted-foreground leading-relaxed line-clamp-2`}
                       >
                         {industry.description}
                       </p>

@@ -77,14 +77,11 @@ const ServiceDetail = ({ service, heroImage }: Props) => {
       {/* WHAT WE DELIVER */}
       <section className="py-20 bg-[#F9F9F7]">
         <div className="container-px max-w-[1400px] mx-auto">
-          <div className="max-w-3xl mb-12">
+          <div className="max-w-6xl mb-12">
             <h2 className={t.sectionHeadlineLg}>
               <span className="text-black">What we</span>{" "}
               <span className="text-brand-gradient-reverse">deliver</span>
             </h2>
-            <p className={`mt-4 ${t.bodyLg} text-muted-foreground`}>
-              Capabilities Trinos brings to {service.eyebrow.toLowerCase()} engagements.
-            </p>
           </div>
           <div className="grid sm:grid-cols-2 gap-5">
             {service.deliverables.map((item) => (
@@ -230,6 +227,7 @@ const ServiceDetail = ({ service, heroImage }: Props) => {
             {service.faqs.map((faq, i) => (
               <details
                 key={faq.question}
+                name={`faq-${service.eyebrow}`}
                 className="group rounded-2xl border border-transparent bg-transparent transition-all hover:border-primary/30 hover:bg-card hover:shadow-glow open:border-primary/30 open:bg-card open:shadow-glow"
               >
                 <summary className="flex items-start gap-4 cursor-pointer list-none p-6">

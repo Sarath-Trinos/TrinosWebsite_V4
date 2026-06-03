@@ -49,7 +49,7 @@ const tiles: Tile[] = [
     description:
       "Real-time, domain-aware voice agents for support, sales and internal operations — natural conversations with speech-to-text, TTS and grounded responses.",
     image: johnny,
-    video: "/videos/Can_you_animate_this_into_a_ (1).mp4",
+    video: "/videos/AI_Voice_Assistants_Real_time_.mp4",
     href: "/services/ai-voice-assistants",
   },
   {

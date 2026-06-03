@@ -59,12 +59,12 @@ const pillars: Pillar[] = [
 const ServicesCapabilities = () => (
   <section id="capabilities" className="bg-[#F9F9F7] py-24">
     <div className="container-px mx-auto max-w-[1400px]">
-      <div className="mb-14 max-w-3xl md:mb-16">
+      <div className="mb-14 max-w-6xl md:mb-16">
         <h2 className={t.sectionHeadlineLg}>
           <span className="text-black">Service</span>{" "}
           <span className="text-brand-gradient-reverse">pillars</span>
         </h2>
-        <p className={`mt-3 max-w-2xl ${t.subheadlineSemibold} text-black`}>
+        <p className={`mt-3 ${t.subheadlineSemibold} text-black`}>
           Three pillars covering the full AI-first enterprise stack.
         </p>
         <p className={`mt-4 ${t.bodyLg} text-muted-foreground`}>
