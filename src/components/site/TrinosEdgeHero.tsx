@@ -48,17 +48,16 @@ const TrinosEdgeHero = () => {
           <div className="max-w-4xl animate-fade-up">
             <span className="chip mb-5">Our AI-First Advantage</span>
             <h1 className={`${t.heroHeadline} text-white [text-wrap:normal]`}>
-              The Longer You Use Trinos,
+              AI Systems That Improve
               <br />
               <span className="text-brand-gradient-reverse">
-                the Smarter It Gets
+                With Your Operations
               </span>
               .
             </h1>
             <p className={`mt-6 ${t.subheadline} text-white/80`}>
-              Most software stays the same after you deploy it. Trinos is different. Every
-              deployment captures your workflows, business logic and operational patterns so
-              your AI investment grows more valuable over time.
+              The Trinos Edge helps AI systems improve through validated feedback,
+              operational learning and controlled updates over time.
             </p>
 
             <div className="mt-9 flex flex-wrap items-center gap-4">

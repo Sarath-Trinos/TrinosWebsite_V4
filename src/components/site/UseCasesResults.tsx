@@ -12,23 +12,23 @@ type UseCase = {
 const useCases: UseCase[] = [
   {
     image: "/trinos/high-accurancy.jpg",
-    title: "High-Accuracy Operations",
+    title: "High Accuracy Operations",
     description:
-      "Fine-tuned models improve accuracy on complex domain language and repeatable workflows. Teams stop correcting the same errors and start trusting AI outputs.",
+      "Targeted models can improve accuracy on complex domain language and repeatable workflows. This is valuable when teams need consistent outputs across documents, reports or operational decisions.",
     href: "/contact",
   },
   {
     image: "/trinos/performance-optimization-with-data-analytics.jpg",
     title: "Continuous Optimization",
     description:
-      "Approved corrections and production signals reduce repeated errors and improve system behavior over time. The system gets better every week without a rebuild.",
+      "Approved corrections and production signals can reduce repeated errors and improve system behavior over time. The improvement comes from structured feedback and controlled updates, not from unmanaged model changes.",
     href: "/contact",
   },
   {
     image: "/trinos/results.jpg",
-    title: "Growing AI Value Over Time",
+    title: "The Result",
     description:
-      "Your AI investment grows more valuable as it captures proprietary workflows, business logic and operational patterns. The longer you use Trinos, the harder your advantage is to copy.",
+      "Your AI investment can become more valuable as it captures proprietary workflows, business logic and operational patterns. Over time, this creates a stronger foundation for automation, analytics and AI enabled decision support.",
     href: "/contact",
   },
 ];
@@ -41,11 +41,11 @@ const UseCasesResults = () => (
         title={
           <>
             <span className="text-black">Use cases</span>{" "}
-            <span className="text-brand-gradient-reverse">&amp; results</span>
+            <span className="text-brand-gradient-reverse">and results</span>
           </>
         }
-        subtitle="From targeted accuracy gains to long-term operational leverage."
-        description="See how the Trinos Edge translates into measurable business outcomes for enterprise teams."
+        subtitle="From targeted accuracy gains to long term operational leverage."
+        description="The Trinos Edge is designed to turn practical usage into measurable business improvement."
       />
 
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 lg:gap-8">

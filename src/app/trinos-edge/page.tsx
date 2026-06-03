@@ -7,9 +7,16 @@ import TrinosEdgeCTA from "@/components/site/TrinosEdgeCTA";
 import Footer from "@/components/site/Footer";
 
 export const metadata: Metadata = {
-  title: "The Trinos Edge | AI-First Enterprise Advantage | Trinos Technologies",
+  title: "The Trinos Edge | AI First Advantage for Enterprises",
   description:
-    "Discover the Trinos Edge: small language models, self-improving AI, feedback loops and rapid application development for enterprise AI systems.",
+    "Discover the Trinos Edge, a compounding AI advantage built on small language models, feedback loops, controlled improvement and rapid application development.",
+  keywords: [
+    "AI first advantage",
+    "feedback driven AI",
+    "small language models for business",
+    "enterprise AI improvement",
+    "AI feedback loop",
+  ],
 };
 
 export default function TrinosEdgePage() {

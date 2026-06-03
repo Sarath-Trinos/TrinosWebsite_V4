@@ -86,14 +86,15 @@ const WhoWeAre = () => (
             A next-generation technology partner.
           </p>
           <p className={`mt-6 ${t.bodyLg} text-muted-foreground`}>
-            Trinos Technologies is committed to supporting enterprises in achieving secure,
-            efficient and accelerated digital transformation. We create intelligent technology
-            ecosystems that enhance operational efficiency, drive digital excellence and deliver
-            long-term business value.
+            Trinos Technologies supports enterprises in achieving secure, efficient and
+            accelerated digital transformation. We create intelligent technology ecosystems
+            that enhance operational efficiency, improve digital execution and deliver long-term
+            business value.
           </p>
           <p className={`mt-4 ${t.bodyLg} text-muted-foreground`}>
-            We started from humble beginnings. Today we are driven by passion,
-            craftsmanship and a commitment to lasting impact.
+            Our journey has grown from focused beginnings into industry-driven innovation. Every
+            solution is shaped by practical experience, strong engineering and a commitment to
+            lasting client impact.
           </p>
         </div>
       </div>

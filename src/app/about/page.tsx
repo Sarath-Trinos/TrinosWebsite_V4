@@ -9,9 +9,15 @@ import CTASection from "@/components/site/CTASection";
 import Footer from "@/components/site/Footer";
 
 export const metadata: Metadata = {
-  title: "About Us | Trinos Technologies",
+  title: "About Trinos Technologies | AI-First Enterprise Engineering Company",
   description:
-    "Trinos Technologies builds intelligent technology ecosystems that accelerate secure digital transformation for enterprises.",
+    "Learn about Trinos Technologies, an AI-first engineering company based in Chennai with enterprise experience across AI, ERP and platform development.",
+  keywords: [
+    "AI-first engineering company",
+    "Trinos Technologies",
+    "enterprise AI company",
+    "AI software development company in Chennai",
+  ],
 };
 
 export default function AboutPage() {

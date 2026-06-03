@@ -7,7 +7,7 @@ const values = [
   {
     title: "Innovation",
     description:
-      "We bring cutting-edge AI to real business challenges. Not experiments. Not prototypes. Production systems that work.",
+      "We bring practical AI thinking to real business challenges and focus on systems that work in production.",
     image:
       "/about-us/Gemini_Generated_Image_7f0jcg7f0jcg7f0j.jpg",
     cardBg: "bg-[#EFE6FF]",
@@ -16,7 +16,7 @@ const values = [
   {
     title: "Integrity",
     description:
-      "Security, transparency and trust define every engagement. We say what we will do and we do what we say.",
+      "Security, transparency and trust guide every engagement and every technical decision.",
     image:
       "/about-us/Gemini_Generated_Image_vwxiflvwxiflvwxi.jpg",
     cardBg: "bg-[#FFE9CC]",
@@ -25,7 +25,7 @@ const values = [
   {
     title: "Excellence",
     description:
-      "We deliver engineering precision and world-class quality at every stage of every project.",
+      "We deliver reliable engineering, thoughtful execution and high-quality outcomes.",
     image:
       "/about-us/Gemini_Generated_Image_1v2fy61v2fy61v2f.jpg",
     cardBg: "bg-[#D6F4E4]",
@@ -46,7 +46,7 @@ const OurValues = () => (
           </>
         }
         subtitle="What we stand for"
-        description="Trinos culture is built on trust, respect and inclusivity with Innovation, Integrity and Excellence as the wellspring of our growth. Everyone is welcome at Trinos regardless of background, age, gender, or experience level."
+        description="Trinos culture is built on trust, respect and inclusivity. Innovation, Integrity and Excellence guide our engineering decisions, client relationships and delivery standards."
       />
 
       <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-5 md:gap-6">

@@ -64,14 +64,14 @@ export const servicesContent: Record<string, ServiceContent> = {
   "agentic-ai": {
     slug: "agentic-ai",
     icon: Bot,
-    eyebrow: "AGENTIC AI",
+    eyebrow: "Agentic AI",
     pageTitle: "Agentic AI Services for Enterprise Workflows | Trinos",
     metaDescription:
-      "Deploy AI agents that plan, call tools, coordinate workflows and operate with human approvals, permissions and audit trails.",
+      "Deploy AI agents that plan work, connect with enterprise systems and operate with human approvals, permissions and audit trails.",
     h1Lead: "AI Agents for",
     h1Highlight: "Enterprise Workflows",
     subHeadline:
-      "Trinos builds agentic AI systems that coordinate across tools, data and approvals to support complex enterprise work.",
+      "Trinos builds agentic AI systems that coordinate across business systems, data and approvals to support complex enterprise work.",
     primaryCTA: { label: "Talk to an AI Architect", href: "/contact" },
     secondaryCTA: {
       label: "Explore AI Workflow Automation",
@@ -81,7 +81,7 @@ export const servicesContent: Record<string, ServiceContent> = {
       "Trinos multi agent architecture supports AI products where autonomous agents analyze, generate and escalate outputs through structured workflows.",
     answerHeading: "What is Agentic AI?",
     answerBody:
-      "Agentic AI uses autonomous software agents that can understand business context, plan tasks, call approved tools, retrieve data, take permitted actions and escalate exceptions. Unlike a chatbot, an agentic system is designed to support workflow completion instead of stopping at a text response. In enterprise settings, these agents need clear permissions, monitoring and human approval points.",
+      "Agentic AI uses autonomous software agents that understand business context, plan tasks, retrieve data, connect with approved systems, support permitted actions and escalate exceptions. Unlike a chatbot, an agentic system is designed to support workflow completion instead of stopping at a text response. In enterprise settings, these agents need clear permissions, monitoring and human approval points.",
     deliverables: [
       {
         title: "Multi Agent System Design",
@@ -89,9 +89,9 @@ export const servicesContent: Record<string, ServiceContent> = {
           "Design specialized agents for research, analysis, validation, reporting and operational escalation. Each agent has a defined role so the system can divide complex work into controlled steps.",
       },
       {
-        title: "Tool Calling and System Integration",
+        title: "Enterprise System Integration",
         description:
-          "Connect agents securely to approved APIs, CRMs, ERPs, databases, email systems and internal tools. This allows agents to use real business context while staying inside permission boundaries.",
+          "Connect agents securely to approved APIs, CRMs, ERPs, databases, email systems and internal platforms. This allows agents to work with real business context while staying within clearly defined access and permission boundaries.",
       },
       {
         title: "Human in the Loop Controls",
@@ -115,7 +115,7 @@ export const servicesContent: Record<string, ServiceContent> = {
       {
         title: "Decision Intelligence",
         description:
-          "Multiple agents analyze a business problem from different perspectives and produce recommendations with risks, assumptions and confidence levels. Decision makers receive a structured brief instead of scattered information.",
+          "Multiple agents analyze a business problem from different perspectives and produce recommendations with risks, assumptions and confidence levels. Decision makers receive a structured brief instead of scattered information from multiple sources.",
         image: "/service/decision-intelligence.jpg",
         badge: "Strategy",
       },
@@ -144,12 +144,12 @@ export const servicesContent: Record<string, ServiceContent> = {
       {
         question: "How is Agentic AI different from a chatbot?",
         answer:
-          "A chatbot responds to questions. Agentic AI can plan work, call tools, retrieve live data, complete approved actions and escalate cases that need human review. The value is in supporting a full task flow, not only answering a prompt.",
+          "A chatbot responds to questions. Agentic AI can plan work, retrieve live data, coordinate with approved systems, support permitted actions and escalate cases that need human review. The value is in supporting a full task flow, not only answering a prompt.",
       },
       {
         question: "Can AI agents work with our systems?",
         answer:
-          "Yes. Trinos connects agents to approved systems through authenticated APIs with scoped permissions and action logs. The agent only accesses the tools and data that are defined for its role.",
+          "Yes. Trinos connects agents to approved systems through authenticated APIs with scoped permissions and action logs. The agent only accesses the systems and data that are defined for its role.",
       },
       {
         question: "How do you keep AI agent actions under control?",
@@ -171,94 +171,94 @@ export const servicesContent: Record<string, ServiceContent> = {
   "ai-workflow-automation": {
     slug: "ai-workflow-automation",
     icon: Workflow,
-    eyebrow: "AI WORKFLOW AUTOMATION",
-    pageTitle: "AI Workflow Automation & Process Orchestration | Trinos Technologies",
+    eyebrow: "AI Workflow Automation",
+    pageTitle: "AI Workflow Automation Services | Trinos",
     metaDescription:
-      "Automate enterprise workflows with AI triggers, system integrations, human approvals, audit trails and cross-platform process orchestration.",
-    h1Lead: "Let AI Run Your",
-    h1Highlight: "Business Processes",
+      "Automate enterprise processes with AI workflow orchestration, approvals, audit trails, system integrations and exception handling.",
+    h1Lead: "AI Workflow Automation for",
+    h1Highlight: "Complex Processes",
     subHeadline:
-      "We connect your tools, teams and data into one smart workflow layer. Less manual work. Faster decisions. Full visibility.",
-    primaryCTA: { label: "Map Your Process", href: "/contact" },
+      "Trinos builds AI driven workflows that connect enterprise systems, approvals and human teams into one intelligent process layer.",
+    primaryCTA: { label: "Map Your Workflow", href: "/contact" },
     secondaryCTA: { label: "Explore Agentic AI", href: "/services/agentic-ai" },
     credibility:
-      "Trinos workflows are built for enterprise operations. Document review, quality checks, anomaly detection and human approval steps are included out of the box.",
-    answerHeading: "What Is AI Workflow Automation?",
+      "Trinos workflow automation architecture supports document review, quality checks, anomaly detection and human approval loops across enterprise operations.",
+    answerHeading: "What is AI Workflow Automation?",
     answerBody:
-      "It uses AI to move work through your business automatically. Tasks get triggered, routed, reviewed and approved without manual effort. Your team stays in control while AI handles the repetitive steps in between.",
+      "AI Workflow Automation uses AI triggers, business rules, system integrations and human approvals to move work across enterprise systems. It helps reduce manual handoffs, improve process visibility and make complex operations easier to track. For teams using ERP, CRM, documents, data warehouses and SaaS tools together, it creates one connected layer for everyday process execution.",
     deliverables: [
       {
-        title: "Cross-System Workflow Orchestration",
+        title: "Cross System Workflow Orchestration",
         description:
-          "We connect your ERP, CRM, documents, email and custom tools into one unified flow. No more switching between systems or chasing updates manually.",
+          "Connect ERP, CRM, databases, documents, email and internal applications through one coordinated workflow layer. Teams get fewer disconnected steps and a clearer view of where each process stands.",
       },
       {
-        title: "AI-Triggered Process Initiation",
+        title: "AI Triggered Process Initiation",
         description:
-          "Workflows start on their own, triggered by incoming data, documents, alerts or thresholds. The right action happens at the right time without anyone pressing a button.",
+          "Start workflows from incoming data, predictive alerts, emails, uploaded documents, tickets or threshold events. The right process begins without waiting for manual follow up from different teams.",
       },
       {
         title: "Approval and Audit Infrastructure",
         description:
-          "Every decision has a clear path. We build escalation flows, approval screens and audit logs so your processes stay compliant and traceable at every stage.",
+          "Design approval screens, escalation paths, decision logs and audit trails for regulated workflows. Human control stays visible where business risk, compliance or financial value requires review.",
       },
       {
-        title: "Smart Exception Handling",
+        title: "Exception Handling",
         description:
-          "When something looks off or needs a human call, it gets flagged and routed instantly. Your team only sees what actually needs their attention.",
+          "Route low confidence, incomplete or high risk cases to reviewers with the right context. Routine work moves automatically while sensitive decisions remain with the right people.",
       },
     ],
     useCases: [
       {
         title: "Insurance and Document Operations",
         description:
-          "Trinos routes documents through extraction, validation, AI quality checks and anomaly detection, right through to the review and approval stage. Faster processing with fewer errors.",
+          "Route policy documents, claims files and supporting records through extraction, validation, quality checks, anomaly detection, review and approval. This reduces repeated manual checking while maintaining visibility across the full document lifecycle.",
       },
       {
         title: "HR and Finance Operations",
         description:
-          "Onboarding, procurement, invoice review and approvals run across your tools without manual follow-up. Every step is tracked and nothing falls through the gaps.",
+          "Coordinate onboarding, procurement, invoice review and approvals across HR, finance and management teams. The workflow keeps every task, approval and exception traceable without depending on repeated email follow up.",
       },
     ],
     result:
-      "Enterprises cut process delays, reduce manual tracking and stop repeated data entry. Human control stays in place where it matters most.",
+      "Enterprises can reduce process delays, improve visibility and keep human approval where the business needs it most.",
     techStack: [
       "Python",
       "REST APIs",
       "Webhooks",
       "AWS Step Functions",
-      "SAP / Oracle",
-      "Workflow Engines",
-      "Secure Databases",
+      "SAP and Oracle integrations",
+      "Workflow engines",
+      "Secure databases",
     ],
     industries: [
       "Insurance",
-      "Financial Services",
+      "Financial services",
       "Healthcare",
       "HR",
-      "Enterprise Technology",
+      "Enterprise technology",
       "Manufacturing",
     ],
     faqs: [
       {
-        question: "How is this different from Agentic AI?",
+        question: "How is workflow automation different from Agentic AI?",
         answer:
-          "Workflow Automation handles structured, repeatable processes with clear rules and triggers. Agentic AI goes further. It can reason and make decisions with less guidance. The two work well together: automation handles the backbone while agentic tools add intelligent decision-making on top.",
+          "Workflow automation follows defined process steps, triggers and routing logic. Agentic AI adds adaptive agents that can reason, connect with approved systems and support dynamic tasks within controlled boundaries. Many enterprise solutions use both, with workflow automation providing the structure and agents adding flexibility where needed.",
       },
       {
         question: "Will this replace our existing software?",
         answer:
-          "No. Trinos builds on top of what you already have. We integrate with your ERP, CRM and SaaS tools so your current systems keep working, just smarter and more connected.",
+          "No. Trinos connects and improves your current ERP, CRM, SaaS and internal tools through APIs and workflow layers. The goal is to make existing systems work together more smoothly rather than force a disruptive platform replacement.",
       },
       {
         question: "Can workflows include human approvals?",
         answer:
-          "Yes. Human review steps are a standard part of our workflow design. Your team approves what needs approving. AI handles everything in between so they can focus on decisions that matter.",
+          "Yes. We design human review points, escalation rules and decision logs wherever business risk or compliance requires oversight. This keeps automation useful without removing accountability from important decisions.",
       },
     ],
-    finalHeadline: "Ready to Cut Manual Work Across Your Business?",
+    finalHeadline: "Reduce Manual Handoffs Across Your Business",
     finalSubText:
-      "Trinos will map one of your workflows and show you exactly where AI automation saves time and reduces errors.",
+      "Trinos can map one complex workflow and identify where AI automation can reduce cycle time, reduce errors and remove operational friction.",
     finalCTA: { label: "Schedule a Process Mapping Workshop", href: "/contact" },
     related: [
       { label: "Agentic AI", href: "/services/agentic-ai" },
@@ -270,60 +270,60 @@ export const servicesContent: Record<string, ServiceContent> = {
   "llm-fine-tuning": {
     slug: "llm-fine-tuning",
     icon: BrainCircuit,
-    eyebrow: "LLM FINE TUNING",
-    pageTitle: "LLM Fine Tuning & Custom Language Models | Trinos Technologies",
+    eyebrow: "LLM Fine Tuning",
+    pageTitle: "LLM Fine Tuning Services | Trinos",
     metaDescription:
-      "Fine-tune language models on enterprise data, workflows, tone, terminology and domain rules to improve AI accuracy, reliability and cost efficiency.",
-    h1Lead: "AI That Knows Your",
-    h1Highlight: "Business Language",
+      "Build domain specific language models with dataset curation, instruction fine tuning, small model strategy and enterprise evaluation.",
+    h1Lead: "Language Models for Your",
+    h1Highlight: "Business Context",
     subHeadline:
-      "We train language models on your domain, documents and workflows. The result is a model that understands your terminology, follows your rules and gives accurate outputs every time.",
+      "Trinos fine tunes language models around your domain, documents, workflows and terminology so outputs become more reliable for enterprise use.",
     primaryCTA: { label: "Assess Your Model Opportunity", href: "/contact" },
     secondaryCTA: {
       label: "Explore Generative AI and Analytics",
       href: "/services/generative-ai-analytics",
     },
     credibility:
-      "Custom domain-specific models support Trinos platforms that require high accuracy in technical, regulated and operations-heavy environments.",
-    answerHeading: "What Is LLM Fine Tuning?",
+      "Custom domain specific modeling supports Trinos AI platforms that need high accuracy across regulated, technical and operations heavy language.",
+    answerHeading: "What is LLM Fine Tuning?",
     answerBody:
-      "Fine tuning trains a general AI model on your specific business data. It learns your terminology, answer style and document formats so it performs specialist tasks far better than a generic model.",
+      "LLM Fine Tuning adapts a base language model using carefully prepared examples from a specific business domain. The model learns preferred terminology, answer style, document formats and task patterns so it can support specialist work more reliably. It is most useful when a general model is not consistent enough for repeatable enterprise tasks.",
     deliverables: [
       {
         title: "Dataset Curation and Cleaning",
         description:
-          "We prepare your proprietary documents, examples, prompts and labels into a clean training dataset ready for safe and effective fine tuning.",
+          "Prepare proprietary examples, documents, prompts, labels and outputs for safer and more useful training. We remove noise, align formats and make sure the dataset reflects the task the model must perform.",
       },
       {
         title: "Instruction Fine Tuning",
         description:
-          "We teach the model to follow your business instructions, produce the right output formats and use your industry language consistently.",
+          "Train models to follow business instructions, output formats and industry language more consistently. This helps the model respond in the structure and tone your internal users expect.",
       },
       {
         title: "Small Language Model Strategy",
         description:
-          "Compact, domain-specific models can outperform large generic ones for focused tasks. We advise on the right model size for your cost, speed and control needs.",
+          "Use compact domain specific models where they improve cost, speed and control for focused tasks. For narrow enterprise workflows, a smaller trained model can be more practical than a large general model.",
       },
       {
         title: "Evaluation and Benchmarking",
         description:
-          "We test model quality, measure hallucination risk, latency and cost against benchmarks defined for your specific enterprise use case.",
+          "Test accuracy, hallucination risk, latency and cost against defined enterprise task requirements. Clear benchmarks help decide whether fine tuning, RAG or a hybrid approach is the best path.",
       },
     ],
     useCases: [
       {
         title: "Insurance and Legal Review",
         description:
-          "The model learns your document terminology and classification patterns. It supports faster, more accurate review, summarization and analysis at scale.",
+          "Improve classification, summarization and document analysis using models trained around domain terminology. Teams can review policies, contracts, claims documents and compliance records with more consistent AI support.",
       },
       {
         title: "Internal Knowledge and Support",
         description:
-          "The model answers in your company style and follows your approved formats. Support, reporting and internal operations become faster and more consistent.",
+          "Support teams with models that follow company style, approved formats and internal terminology. This is useful for HR, IT, operations and knowledge teams that need consistent answers from internal information.",
       },
     ],
     result:
-      "Fine-tuned models improve reliability and lower inference costs for domain-specific tasks where a general AI model is not precise enough.",
+      "Fine tuned models can improve reliability and cost efficiency for repeatable tasks where general AI is not precise enough.",
     techStack: [
       "Hugging Face",
       "PyTorch",
@@ -345,23 +345,23 @@ export const servicesContent: Record<string, ServiceContent> = {
       {
         question: "Do we always need fine tuning?",
         answer:
-          "Not always. For some tasks, a well-prompted general model is enough. We assess your use case first and only recommend fine tuning when it delivers a clear improvement in accuracy or cost.",
+          "No. Many use cases work well with retrieval, strong prompting or a general model. Trinos recommends fine tuning only when it improves accuracy, consistency or cost for a clearly defined task.",
       },
       {
         question: "How much data is required?",
         answer:
-          "It depends on the task. Some fine tuning approaches work with a few hundred quality examples. We review your available data and advise on the most practical path forward.",
+          "It depends on the task and the quality of the examples. Narrow use cases may begin with hundreds of high quality examples while complex tasks need larger, cleaner and more representative datasets.",
       },
       {
         question: "Where does the model live?",
         answer:
-          "We can deploy on your cloud environment, a private instance or a managed endpoint depending on your security and infrastructure requirements. Your data stays under your control.",
+          "The model can run in your cloud, a private instance or a managed inference endpoint based on your security and governance needs. The deployment choice depends on data sensitivity, performance requirements and operational control.",
       },
     ],
-    finalHeadline: "Build a Model That Speaks Your Domain",
+    finalHeadline: "Build an AI Model That Speaks Your Domain",
     finalSubText:
-      "Trinos will assess your data, task complexity and model strategy before recommending fine tuning, RAG or a hybrid approach.",
-    finalCTA: { label: "Book a Model Strategy Session", href: "/contact" },
+      "Trinos can assess your data, task complexity and model strategy before recommending fine tuning, RAG or a hybrid approach.",
+    finalCTA: { label: "Book a Model Strategy Call", href: "/contact" },
     related: [
       { label: "Generative AI and Analytics", href: "/services/generative-ai-analytics" },
       { label: "Agentic AI", href: "/services/agentic-ai" },
@@ -372,57 +372,57 @@ export const servicesContent: Record<string, ServiceContent> = {
   "generative-ai-analytics": {
     slug: "generative-ai-analytics",
     icon: BarChart3,
-    eyebrow: "GENERATIVE AI AND ANALYTICS",
-    pageTitle: "Generative AI Analytics & Decision Intelligence | Trinos Technologies",
+    eyebrow: "Generative AI and Analytics",
+    pageTitle: "Generative AI and Analytics Services | Trinos",
     metaDescription:
-      "Build generative AI analytics systems for conversational dashboards, intelligent reports, data storytelling and decision intelligence grounded in enterprise data.",
-    h1Lead: "Turn Your Business Data Into",
-    h1Highlight: "Clear Decisions",
+      "Turn enterprise data into sourced insights with conversational dashboards, intelligent reporting and AI decision workflows.",
+    h1Lead: "Generative AI for",
+    h1Highlight: "Business Intelligence",
     subHeadline:
-      "Trinos builds generative analytics systems that convert complex enterprise data into plain language answers, executive summaries, decision reports and business narratives grounded in your approved sources.",
+      "Trinos turns approved enterprise data into natural language answers, reports and decision ready business insights.",
     primaryCTA: { label: "Explore AI Analytics", href: "/contact" },
     secondaryCTA: { label: "Talk to an AI Architect", href: "/contact" },
     credibility:
-      "Trinos products use structured multi-agent debate and grounded generation to transform data and trends into consultant-grade insights.",
-    answerHeading: "What Is Generative AI and Analytics?",
+      "Trinos AI products use structured multi agent analysis and grounded generation to transform data and trends into consultant grade insights.",
+    answerHeading: "What is Generative AI and Analytics?",
     answerBody:
-      "It combines enterprise data pipelines, language models and reporting workflows so teams can ask questions, generate summaries, interpret trends and produce decision-ready narratives from approved business data.",
+      "Generative AI and Analytics combines enterprise data pipelines, language models, retrieval systems, dashboards and reporting workflows. It helps users ask questions, generate summaries, interpret trends and produce decision ready narratives from approved business data. This reduces dependency on manual report preparation while keeping outputs connected to source information.",
     deliverables: [
       {
         title: "Conversational Dashboards",
         description:
-          "Natural language interfaces let executives and business users ask questions about operational data and get clear, plain language answers instantly.",
+          "Enable executives and business users to query operational data through natural language. Users can ask follow up questions without needing SQL knowledge or deep BI tool experience.",
       },
       {
         title: "Intelligent Reporting",
         description:
-          "We automate the synthesis of multi-source data into readable reports, executive summaries and recommendations your team can act on right away.",
+          "Synthesize multi source data into readable reports, summaries and recommendations. Reports can combine numbers, trends and written explanations in a format that is easier for leadership to use.",
       },
       {
         title: "Grounded Generation",
         description:
-          "All outputs are verified against your approved documents, datasets and business rules so your team can trust what they read and share.",
+          "Ground outputs against approved documents, datasets and business rules where applicable. This helps reduce unsupported answers and gives users more confidence in the response.",
       },
       {
         title: "Decision Intelligence Workflows",
         description:
-          "AI-assisted recommendations include risks, assumptions, confidence signals and source context so decision-makers have everything they need in one view.",
+          "Present recommendations with risks, assumptions, confidence signals and source references. Decision makers get more than a conclusion, they get the context behind it.",
       },
     ],
     useCases: [
       {
         title: "Consulting and Strategy",
         description:
-          "Analysts convert raw data, research and trends into structured reports and presentations in a fraction of the usual time.",
+          "Analysts convert raw data, research and trends into structured reports and presentations. Teams spend less time preparing first drafts and more time refining insights, strategy and recommendations.",
       },
       {
         title: "Government and Enterprise Reporting",
         description:
-          "Leadership teams receive concise briefings from large policy, operations or performance datasets without manual preparation.",
+          "Leadership teams receive concise briefings from large policy, operations or performance datasets. This improves reporting speed while keeping the information traceable for review.",
       },
     ],
     result:
-      "Teams spend less time manually preparing reports and more time acting on clear, traceable insights.",
+      "Teams spend less time preparing reports manually and more time acting on clear, traceable insights.",
     techStack: [
       "Python",
       "OpenAI API",
@@ -443,19 +443,19 @@ export const servicesContent: Record<string, ServiceContent> = {
     ],
     faqs: [
       {
-        question: "How do you reduce hallucination risk?",
+        question: "How do you reduce inaccurate AI outputs?",
         answer:
-          "We use grounded generation techniques that tie every output to approved source documents and datasets. The system flags low-confidence responses and cites its sources so your team can verify before acting.",
+          "We ground outputs in approved data sources, add source context and configure confidence checks for unsupported responses. The system can also flag cases where available data is not enough to produce a reliable answer.",
       },
       {
-        question: "Can this connect to existing BI tools?",
+        question: "Can this work with our BI tools?",
         answer:
-          "Yes. We integrate with your existing BI platforms and data sources so the generative layer sits on top of what you already have, adding natural language access without replacing your current reporting setup.",
+          "Yes. Trinos can add natural language interaction and AI generated narratives on top of existing BI platforms and data infrastructure. The goal is to improve access to insight without replacing trusted reporting systems.",
       },
       {
         question: "Are outputs auditable?",
         answer:
-          "Yes. Every generated output includes a source trail showing which data points and documents were used. This supports compliance, traceability and internal review processes.",
+          "Yes. Outputs can include source trails, data references and logs that support review and compliance workflows. This is important for regulated teams that need to understand how a report or recommendation was produced.",
       },
     ],
     finalHeadline: "Move From Reporting to Decision Intelligence",
@@ -472,63 +472,63 @@ export const servicesContent: Record<string, ServiceContent> = {
   "ai-voice-assistants": {
     slug: "ai-voice-assistants",
     icon: Mic,
-    eyebrow: "AI VOICE ASSISTANTS",
-    pageTitle: "AI Voice Assistant Development for Enterprises | Trinos Technologies",
+    eyebrow: "AI Voice Assistants",
+    pageTitle: "AI Voice Assistant Development Services | Trinos",
     metaDescription:
-      "Develop AI voice assistants for customer support, internal operations, field teams, scheduling, reminders and workflow automation across enterprise systems.",
-    h1Lead: "Voice AI That Connects",
-    h1Highlight: "Conversations to Real Workflows",
+      "Build enterprise voice AI assistants for customer support, internal teams, workflow triggers, system integrations and human handoff.",
+    h1Lead: "Voice AI for",
+    h1Highlight: "Business Workflows",
     subHeadline:
-      "Trinos builds AI voice assistants that understand speech, retrieve context, answer questions, trigger workflows and connect voice interactions to your business systems.",
+      "Trinos builds AI voice assistants that understand speech, retrieve context and connect conversations to business systems.",
     primaryCTA: { label: "Design Your Voice Assistant", href: "/contact" },
     secondaryCTA: {
       label: "Explore AI Workflow Automation",
       href: "/services/ai-workflow-automation",
     },
     credibility:
-      "Trinos combines conversational AI, workflow engineering and enterprise integrations to move voice assistants beyond scripted responses into useful operational tools.",
-    answerHeading: "What Is an AI Voice Assistant?",
+      "Trinos combines conversational AI, workflow engineering and enterprise integrations to move voice assistants beyond scripted responses into useful operational interfaces.",
+    answerHeading: "What is an AI Voice Assistant?",
     answerBody:
-      "An AI voice assistant understands spoken language, processes context and responds naturally. It can answer questions, schedule tasks, collect information, create tickets and trigger business workflows using voice alone.",
+      "An AI voice assistant is a conversational system that understands spoken language, processes intent and responds naturally. It can perform approved actions such as answering questions, scheduling tasks, collecting information, creating tickets or triggering workflows. For enterprise teams, voice becomes a faster interface to systems that normally require screens, forms or manual follow up.",
     deliverables: [
       {
         title: "Voice Conversation Design",
         description:
-          "We design intent flows, prompts, fallback handling and multilingual support so your voice assistant sounds natural and handles real conversations confidently.",
+          "Plan intent flows, prompts, fallback handling, multilingual needs and voice experience. The assistant is designed to handle real user language instead of forcing people into rigid scripts.",
       },
       {
-        title: "Speech-to-Text and Text-to-Speech",
+        title: "Speech to Text and Text to Speech Integration",
         description:
-          "Reliable speech recognition and natural voice responses for customer-facing and internal use cases, built with enterprise-grade accuracy and low latency.",
+          "Integrate speech recognition and natural voice responses for customer and internal use cases. We tune accuracy, latency and response flow based on the environment where the assistant will be used.",
       },
       {
         title: "Enterprise Workflow Integration",
         description:
-          "Voice assistants connect to your CRMs, ERPs, support systems, booking platforms, databases and approval workflows so conversations turn into real actions.",
+          "Connect voice assistants to CRMs, ERPs, support systems, booking systems and databases. Conversations can create records, fetch information and trigger approved workflow steps.",
       },
       {
         title: "Quality and Escalation Controls",
         description:
-          "Confidence thresholds, human handoff, call summaries, transcripts and monitoring dashboards keep your voice operations reliable and auditable.",
+          "Use confidence thresholds, human handoff, call summaries, transcripts and monitoring dashboards. This helps teams review performance, improve responses and manage conversations that need human support.",
       },
     ],
     useCases: [
       {
         title: "Customer Support",
         description:
-          "Voice assistants handle common questions, collect customer information, create tickets and escalate complex requests to the right human agent at the right time.",
+          "Voice assistants answer common questions, collect customer information, create tickets and escalate complex requests. Human agents receive the transcript and collected context so customers do not need to repeat the same details.",
       },
       {
         title: "Field and Internal Operations",
         description:
-          "Employees use voice to check status, update tasks, capture notes and trigger workflows without touching a screen, keeping frontline teams productive on the move.",
+          "Employees use voice to retrieve status, update tasks, capture notes or trigger workflows without navigating screens. This is useful for field teams, frontline staff and operations teams working away from a desk.",
       },
     ],
     result:
       "Voice becomes a practical interface for enterprise systems, reducing friction for customers, frontline teams and operational staff.",
     techStack: [
-      "Speech-to-text APIs",
-      "Text-to-speech APIs",
+      "Speech to Text APIs",
+      "Text to Speech APIs",
       "LLMs",
       "Telephony integrations",
       "Twilio",
@@ -548,23 +548,23 @@ export const servicesContent: Record<string, ServiceContent> = {
       {
         question: "Can voice assistants connect to our systems?",
         answer:
-          "Yes. We integrate voice assistants with your CRMs, ERPs, support platforms and internal APIs so they can retrieve data and trigger real actions, not just provide scripted responses.",
+          "Yes. Trinos integrates voice assistants with CRMs, ERPs, support platforms and approved internal APIs. The assistant can retrieve information or trigger actions based on the permissions you define.",
       },
       {
         question: "Can they transfer to a human?",
         answer:
-          "Yes. We build escalation logic so the assistant hands off to a live agent when needed, passing along the conversation context so the customer does not have to repeat themselves.",
+          "Yes. We build escalation logic that transfers complex conversations with transcript and collected context. This helps the human agent continue the conversation smoothly instead of starting again from the beginning.",
       },
       {
         question: "Can we use voice assistants internally?",
         answer:
-          "Absolutely. Many clients use voice AI for internal operations, field teams and employee support. We design the conversation flow and integrations to match how your internal teams actually work.",
+          "Yes. Voice AI can support field teams, employee self service, approvals, status checks and operational reporting. It is especially useful when teams need quick access to systems without opening a full application.",
       },
     ],
-    finalHeadline: "Build a Voice Interface for Your Enterprise Workflows",
+    finalHeadline: "Plan a Voice Interface for Your Workflows",
     finalSubText:
-      "Trinos will define the conversation flow, integration architecture and governance model for your AI voice assistant.",
-    finalCTA: { label: "Book a Voice AI Scoping Call", href: "/contact" },
+      "Trinos can define the conversation flow, integration architecture and governance model for your AI voice assistant.",
+    finalCTA: { label: "Book a Voice Scoping Call", href: "/contact" },
     related: [
       { label: "AI Workflow Automation", href: "/services/ai-workflow-automation" },
       { label: "Agentic AI", href: "/services/agentic-ai" },
@@ -572,270 +572,63 @@ export const servicesContent: Record<string, ServiceContent> = {
     ],
   },
 
-  "computer-vision": {
-    slug: "computer-vision",
-    icon: Eye,
-    eyebrow: "COMPUTER VISION",
-    pageTitle: "Computer Vision & Edge AI Solutions | Trinos Technologies",
-    metaDescription:
-      "Deploy computer vision systems for defect detection, OCR, quality inspection, object detection, live video analytics and edge AI workflows.",
-    h1Lead: "Give Your Enterprise Systems",
-    h1Highlight: "the Power of Sight",
-    subHeadline:
-      "Trinos builds computer vision systems that interpret images, documents, video feeds, labels, parts and physical environments for real-time enterprise decision-making.",
-    primaryCTA: { label: "Book a Vision AI Assessment", href: "/contact" },
-    secondaryCTA: {
-      label: "Explore AI Workflow Automation",
-      href: "/services/ai-workflow-automation",
-    },
-    credibility:
-      "Trinos computer vision capabilities support industrial, logistics, document and ERP-connected workflows where visual accuracy and traceability matter.",
-    answerHeading: "What Is Computer Vision?",
-    answerBody:
-      "Computer Vision uses AI to understand images and video. It can detect objects, identify defects, extract text, inspect products, read labels, monitor environments and convert visual information into structured data for enterprise systems.",
-    deliverables: [
-      {
-        title: "Real-Time Defect Detection",
-        description:
-          "High-speed visual inspection for manufacturing lines and quality control environments. Defects, surface issues and missing parts are flagged instantly.",
-      },
-      {
-        title: "OCR and Document Vision",
-        description:
-          "Text extraction from documents, labels, ID cards, shipping forms and operational records so your data flows into the right systems automatically.",
-      },
-      {
-        title: "Object Detection and Tracking",
-        description:
-          "Detection, counting, movement tracking and spatial analysis for physical workflows where human inspection is too slow or too inconsistent.",
-      },
-      {
-        title: "Edge Vision Deployment",
-        description:
-          "Local inference on edge devices where latency, privacy or connectivity constraints mean cloud processing is not an option.",
-      },
-    ],
-    useCases: [
-      {
-        title: "Manufacturing Quality Control",
-        description:
-          "Cameras detect defects, surface issues, missing parts or process deviations on the production line, reducing waste and improving consistency.",
-      },
-      {
-        title: "Logistics and Document Operations",
-        description:
-          "OCR and image recognition digitize labels, packages, documents, IDs and operational forms so data capture becomes fast, accurate and automatic.",
-      },
-    ],
-    result:
-      "Organizations convert visual inspection and document capture into faster, more consistent and measurable AI-assisted workflows.",
-    techStack: [
-      "OpenCV",
-      "PyTorch",
-      "YOLO",
-      "TensorFlow",
-      "NVIDIA Jetson",
-      "Edge AI hardware",
-      "OCR engines",
-      "Camera integrations",
-    ],
-    industries: [
-      "Manufacturing",
-      "Logistics",
-      "Automotive and engineering",
-      "Healthcare",
-      "Supply chain",
-      "Government",
-    ],
-    faqs: [
-      {
-        question: "Can computer vision process live video?",
-        answer:
-          "Yes. We build systems that process live video streams in real time for applications like production line monitoring, security and environment tracking. Frame rate and latency are tuned to your specific use case.",
-      },
-      {
-        question: "Does lighting affect accuracy?",
-        answer:
-          "It can. We account for lighting conditions during model training and system design. Where environments are variable, we include calibration and fallback logic to maintain reliable detection.",
-      },
-      {
-        question: "Can the system learn new defect types?",
-        answer:
-          "Yes. Models can be retrained or fine-tuned as new defect types are identified. We build retraining workflows into the system so your model stays accurate as your products or processes evolve.",
-      },
-    ],
-    finalHeadline: "Automate Visual Inspection and Image Understanding",
-    finalSubText:
-      "Trinos can assess your cameras, image data, hardware, workflow and model requirements for a practical computer vision roadmap.",
-    finalCTA: { label: "Book a Vision AI Assessment", href: "/contact" },
-    related: [
-      { label: "AI Workflow Automation", href: "/services/ai-workflow-automation" },
-      { label: "Enterprise Resource Planning", href: "/services/enterprise-resource-planning" },
-      { label: "Mobile App Development", href: "/services/mobile-app-development" },
-    ],
-  },
-
-  "enterprise-resource-planning": {
-    slug: "enterprise-resource-planning",
-    icon: Briefcase,
-    eyebrow: "ENTERPRISE RESOURCE PLANNING",
-    pageTitle: "Enterprise Resource Planning Implementation | Trinos Technologies",
-    metaDescription:
-      "Implement and modernize ERP systems across SAP, Oracle, Microsoft Dynamics, Infor, QAD, Epicor, integrations, data migration and AI-ready workflows.",
-    h1Lead: "ERP Systems Built for",
-    h1Highlight: "AI-Ready Operations",
-    subHeadline:
-      "Trinos architects and implements ERP ecosystems that unify enterprise data, operational workflows, reporting and integrations so your organization has a stable foundation for AI-driven transformation.",
-    primaryCTA: { label: "Book an ERP Consultation", href: "/contact" },
-    secondaryCTA: {
-      label: "Explore AI Workflow Automation",
-      href: "/services/ai-workflow-automation",
-    },
-    credibility:
-      "Trinos ERP capability is supported by leadership with 25 plus years of enterprise systems experience across global deployments.",
-    answerHeading: "What Does Trinos Deliver in Enterprise Resource Planning?",
-    answerBody:
-      "Trinos provides ERP architecture, implementation, configuration, integration, data migration, reporting and AI-ready workflow design. The goal is to create a reliable enterprise backbone that supports operations today and intelligent automation tomorrow.",
-    deliverables: [
-      {
-        title: "ERP Architecture and Blueprinting",
-        description:
-          "Business process mapping, data model design, module planning and implementation roadmap built around how your organization actually operates.",
-      },
-      {
-        title: "ERP Configuration and Integration",
-        description:
-          "SAP, Oracle, Microsoft Dynamics, Infor, QAD, Epicor and custom integration architecture configured to your specific workflows and reporting needs.",
-      },
-      {
-        title: "Data Migration and Integrity",
-        description:
-          "Secure migration, cleansing, mapping, validation and reconciliation from legacy systems so your new ERP starts with clean, trustworthy data.",
-      },
-      {
-        title: "AI-Ready ERP Workflows",
-        description:
-          "We prepare ERP data and processes for natural language queries, predictive alerts and workflow automation so your system is ready for AI from day one.",
-      },
-    ],
-    useCases: [
-      {
-        title: "Manufacturing and Supply Chain",
-        description:
-          "ERP systems unify production, inventory, procurement, finance and supply chain visibility so operations teams work from a single source of truth.",
-      },
-      {
-        title: "Healthcare and Multi-Location Operations",
-        description:
-          "ERP centralizes procurement, HR, finance, reporting and approvals across facilities so multi-site organizations operate with consistency and control.",
-      },
-    ],
-    result:
-      "Enterprises reduce fragmented tools, improve data reliability and prepare the operational backbone required for AI-enabled workflows.",
-    techStack: [
-      "SAP",
-      "Oracle",
-      "Microsoft Dynamics",
-      "Infor",
-      "QAD",
-      "Epicor",
-      "APIs",
-      "Data migration tools",
-      "Reporting layers",
-    ],
-    industries: [
-      "Manufacturing",
-      "Healthcare",
-      "Automotive and engineering",
-      "Supply chain",
-      "Financial services",
-      "Enterprise operations",
-    ],
-    faqs: [
-      {
-        question: "Which ERP platform is right for us?",
-        answer:
-          "It depends on your industry, company size, existing systems and growth plans. Trinos assesses your requirements and recommends the platform that fits your operations and your AI readiness goals, not just the most popular option.",
-      },
-      {
-        question: "Can ERP be implemented in phases?",
-        answer:
-          "Yes. We design phased implementation plans that deliver value at each stage. This reduces risk, manages change across the organization and keeps operations running throughout the transition.",
-      },
-      {
-        question: "Can ERP connect to AI systems later?",
-        answer:
-          "Absolutely. We design ERP architecture with AI integration in mind from the start. Your data structures, workflows and APIs are built to support natural language querying, predictive analytics and agentic AI when you are ready.",
-      },
-    ],
-    finalHeadline: "Build the Enterprise Backbone for AI-Ready Operations",
-    finalSubText:
-      "Speak with Trinos ERP architects to define your implementation strategy, integration model and AI-readiness roadmap.",
-    finalCTA: { label: "Book an ERP Consultation", href: "/contact" },
-    related: [
-      { label: "AI Workflow Automation", href: "/services/ai-workflow-automation" },
-      { label: "Generative AI and Analytics", href: "/services/generative-ai-analytics" },
-      { label: "Web Development", href: "/services/web-development" },
-    ],
-  },
-
   "social-media-automation": {
     slug: "social-media-automation",
     icon: Share2,
-    eyebrow: "SOCIAL MEDIA AUTOMATION",
-    pageTitle: "AI Social Media Automation Services | Trinos Technologies",
+    eyebrow: "Social Media Automation",
+    pageTitle: "Social Media Automation Services | Trinos",
     metaDescription:
-      "Automate social media research, content generation, publishing workflows, trend analysis, reporting and brand-safe approvals using AI systems.",
-    h1Lead: "More Content. Less Manual Work.",
-    h1Highlight: "Full Brand Control",
+      "Automate social media content operations with AI assisted ideation, drafting, approvals, scheduling and performance analytics.",
+    h1Lead: "AI Assisted",
+    h1Highlight: "Social Media Operations",
     subHeadline:
-      "Trinos builds AI-powered social media systems that research trends, generate content, manage approvals, schedule publishing, analyze performance and maintain brand consistency across channels.",
-    primaryCTA: { label: "Automate Your Content Workflow", href: "/contact" },
+      "Trinos builds AI powered content workflows for research, drafting, approvals, scheduling and performance reporting.",
+    primaryCTA: { label: "Plan Your Content Workflow", href: "/contact" },
     secondaryCTA: {
       label: "Explore Generative AI and Analytics",
       href: "/services/generative-ai-analytics",
     },
     credibility:
-      "Trinos builds AI systems capable of generating large volumes of content through structured analysis, trend understanding and multi-agent review workflows.",
-    answerHeading: "What Is Social Media Automation?",
+      "Trinos product experience includes AI systems that support large scale content generation through structured analysis, trend understanding and multi agent review workflows.",
+    answerHeading: "What is Social Media Automation?",
     answerBody:
-      "It uses AI and workflow systems to research content ideas, generate copy, manage creative briefs, handle publishing schedules, track performance and run approval processes while keeping your brand rules and human oversight intact.",
+      "Social Media Automation uses AI and workflow systems to support content research, idea generation, copy drafting, creative briefs, publishing schedules, performance reporting, approvals and campaign optimization. Human review and brand rules remain part of the process so teams can scale output without losing quality control. This is especially useful for companies that need consistent content across LinkedIn, X, Instagram and other digital channels.",
     deliverables: [
       {
         title: "Trend and Topic Intelligence",
         description:
-          "AI monitors competitor signals, customer interests and market conversations so your team always has fresh, relevant content ideas to work with.",
+          "Monitor topics, competitor signals, customer interests and market conversations with AI support. Teams get a clearer view of what to discuss before they start creating content.",
       },
       {
         title: "AI Content Generation",
         description:
-          "We draft posts, captions, campaign ideas, content calendars, hooks and variants aligned to your brand tone. Your team reviews and approves before anything goes live.",
+          "Draft posts, captions, campaign ideas, content calendars and variants aligned to brand tone. The system supports content production while your team keeps final editorial judgment and brand accountability.",
       },
       {
         title: "Approval and Publishing Workflows",
         description:
-          "Human review loops, role-based approvals, scheduling and channel-specific formatting are all built into one clean workflow your team can manage easily.",
+          "Build human review loops, role based approvals, scheduling and channel specific formatting. Content moves from draft to approval to publishing with fewer scattered files and messages.",
       },
       {
         title: "Performance Analytics",
         description:
-          "We report on engagement, reach, campaign outcomes, content themes and improvement opportunities so your strategy gets sharper over time.",
+          "Report on engagement, reach, campaign outcomes, content themes and improvement opportunities. Insights can guide future topics, formats and campaign planning.",
       },
     ],
     useCases: [
       {
         title: "Marketing Teams",
         description:
-          "Teams generate consistent content calendars and reduce manual effort in ideation, drafting and reporting. More output with the same headcount.",
+          "Teams create consistent content calendars and reduce manual effort in ideation, drafting and reporting. This helps smaller teams operate with the structure of a larger content function.",
       },
       {
         title: "Leadership and Brand Communications",
         description:
-          "Insights, announcements and reports are converted into audience-ready posts with review controls in place. Brand voice stays consistent across every channel.",
+          "Organizations turn insights, announcements and reports into audience ready posts with review controls. Leadership content becomes more consistent while still sounding aligned to the person and the brand.",
       },
     ],
     result:
-      "Social content operations become faster and more consistent while brand teams keep control over approvals, tone and publishing decisions.",
+      "Social content operations become more consistent while brand teams keep control over approvals, tone and publishing decisions.",
     techStack: [
       "LLMs",
       "Content workflow engines",
@@ -856,22 +649,22 @@ export const servicesContent: Record<string, ServiceContent> = {
       {
         question: "Will AI publish content automatically?",
         answer:
-          "Only if you choose that option. By default, all content goes through your approval workflow before it is published. You decide how much automation to apply and at which stage.",
+          "Only if you choose that setup. By default, generated content goes through your approval workflow before scheduling or publishing. Your team controls which channels, post types and campaigns require review.",
       },
       {
         question: "Can the system follow our brand tone?",
         answer:
-          "Yes. We build brand rule libraries and tone guidelines into the content generation process. The AI produces drafts that match your voice and your team reviews them before they go anywhere.",
+          "Yes. We build brand tone rules, vocabulary guidance and review feedback into the content workflow. The goal is to make drafts feel closer to your brand before they reach the approval stage.",
       },
       {
         question: "Can it generate reports?",
         answer:
-          "Yes. We connect performance data from your social platforms and generate clear reports on engagement, reach, campaign outcomes and content trends, either on a schedule or on demand.",
+          "Yes. Reports can cover engagement, reach, campaign outcomes, content themes and performance recommendations. These reports help marketing teams understand what worked and what needs to improve.",
       },
     ],
-    finalHeadline: "Scale Social Media Without Losing Quality Control",
+    finalHeadline: "Improve Social Media Workflow Without Losing Control",
     finalSubText:
-      "Trinos can design an AI content workflow that supports ideation, drafting, approvals, scheduling and reporting for your team.",
+      "Trinos can design an AI content workflow that supports ideation, drafting, approvals, scheduling and reporting.",
     finalCTA: { label: "Book a Social Automation Consultation", href: "/contact" },
     related: [
       { label: "Generative AI and Analytics", href: "/services/generative-ai-analytics" },
@@ -880,63 +673,270 @@ export const servicesContent: Record<string, ServiceContent> = {
     ],
   },
 
+  "computer-vision": {
+    slug: "computer-vision",
+    icon: Eye,
+    eyebrow: "Computer Vision",
+    pageTitle: "Computer Vision Services for Enterprise Workflows | Trinos",
+    metaDescription:
+      "Build computer vision systems for defect detection, OCR, image recognition, edge deployment and visual workflow automation.",
+    h1Lead: "Computer Vision for",
+    h1Highlight: "Enterprise Operations",
+    subHeadline:
+      "Trinos builds computer vision systems that convert images, documents, video and physical environments into usable business data.",
+    primaryCTA: { label: "Book a Vision Assessment", href: "/contact" },
+    secondaryCTA: {
+      label: "Explore AI Workflow Automation",
+      href: "/services/ai-workflow-automation",
+    },
+    credibility:
+      "Trinos computer vision capabilities support industrial, logistics, document and ERP connected workflows where visual accuracy and traceability matter.",
+    answerHeading: "What is Computer Vision?",
+    answerBody:
+      "Computer Vision uses AI to understand images and video. It can detect objects, identify defects, extract text, inspect products, read labels, monitor environments and convert visual information into structured data for enterprise systems. For operations teams, it turns visual inspection and document capture into measurable digital workflows.",
+    deliverables: [
+      {
+        title: "Real Time Defect Detection",
+        description:
+          "Inspect manufacturing lines and quality environments using high speed visual detection. The system can flag defects, missing parts or process deviations with supporting image evidence.",
+      },
+      {
+        title: "OCR and Document Vision",
+        description:
+          "Extract text from documents, labels, ID cards, shipping forms and operating records. Captured data can move into ERP, CRM or workflow systems with less manual entry.",
+      },
+      {
+        title: "Object Detection and Tracking",
+        description:
+          "Detect, count and track movement or spatial patterns across physical workflows. This supports inventory visibility, asset movement, safety checks and logistics monitoring.",
+      },
+      {
+        title: "Edge Vision Deployment",
+        description:
+          "Run local inference on edge devices when latency, privacy or connectivity constraints matter. This helps teams process visual data closer to the point of capture.",
+      },
+    ],
+    useCases: [
+      {
+        title: "Manufacturing Quality Control",
+        description:
+          "Cameras detect defects, surface issues, missing parts or process deviations on the production line. Quality teams get faster alerts and better evidence than manual inspection records alone.",
+      },
+      {
+        title: "Logistics and Document Operations",
+        description:
+          "OCR and image recognition digitize labels, packages, documents, IDs and operational forms. This improves data capture speed across receiving, dispatch, verification and compliance workflows.",
+      },
+    ],
+    result:
+      "Organizations can make visual inspection and document capture faster, more consistent and easier to measure.",
+    techStack: [
+      "OpenCV",
+      "PyTorch",
+      "YOLO",
+      "TensorFlow",
+      "NVIDIA Jetson",
+      "Edge AI hardware",
+      "OCR engines",
+      "Camera integrations",
+    ],
+    industries: [
+      "Manufacturing",
+      "Logistics",
+      "Automobile and engineering",
+      "Healthcare",
+      "Supply chain",
+      "Government",
+    ],
+    faqs: [
+      {
+        question: "Can computer vision process live video?",
+        answer:
+          "Yes. Trinos builds real time video pipelines for inspection, monitoring, tracking and operational visibility. Frame rate, resolution and latency are planned around the use case and hardware environment.",
+      },
+      {
+        question: "Can lighting affect accuracy?",
+        answer:
+          "Lighting can affect accuracy, so we account for it through training data, calibration and confidence based fallback logic. We also evaluate camera placement and image quality before deployment.",
+      },
+      {
+        question: "Can the system support new defect types?",
+        answer:
+          "Yes. Models can be updated with new examples and validated through a controlled retraining process. This helps the system stay useful as products, materials or inspection rules change.",
+      },
+    ],
+    finalHeadline: "Plan Computer Vision for Your Operations",
+    finalSubText:
+      "Trinos can assess your cameras, image data, hardware, workflow and model requirements for a practical computer vision roadmap.",
+    finalCTA: { label: "Book a Vision Assessment", href: "/contact" },
+    related: [
+      { label: "AI Workflow Automation", href: "/services/ai-workflow-automation" },
+      { label: "Enterprise Resource Planning", href: "/services/enterprise-resource-planning" },
+      { label: "Mobile App Development", href: "/services/mobile-app-development" },
+    ],
+  },
+
+  "enterprise-resource-planning": {
+    slug: "enterprise-resource-planning",
+    icon: Briefcase,
+    eyebrow: "Enterprise Resource Planning",
+    pageTitle: "Enterprise Resource Planning Services | Trinos",
+    metaDescription:
+      "Plan, implement and integrate ERP systems with AI ready workflows, clean data, reporting layers and enterprise automation foundations.",
+    h1Lead: "ERP Systems for",
+    h1Highlight: "AI Ready Operations",
+    subHeadline:
+      "Trinos architects and implements ERP ecosystems that unify enterprise data, workflows, reporting and integrations for AI ready operations.",
+    primaryCTA: { label: "Book an ERP Consultation", href: "/contact" },
+    secondaryCTA: {
+      label: "Explore AI Workflow Automation",
+      href: "/services/ai-workflow-automation",
+    },
+    credibility:
+      "Trinos ERP capability is supported by leadership with over 25 years of enterprise systems experience across global deployments.",
+    answerHeading: "What does Trinos provide in Enterprise Resource Planning?",
+    answerBody:
+      "Trinos provides ERP architecture, implementation, configuration, integration, data migration, reporting and AI ready workflow design. The goal is to create a reliable enterprise backbone that supports operations today and intelligent automation tomorrow. A well planned ERP environment gives AI systems cleaner data, stronger process structure and better integration points.",
+    deliverables: [
+      {
+        title: "ERP Architecture and Blueprinting",
+        description:
+          "Map business processes, design data models, plan modules and define a practical implementation roadmap. The blueprint helps align the ERP system with how the organization actually works.",
+      },
+      {
+        title: "ERP Configuration and Integration",
+        description:
+          "Configure SAP, Oracle, Microsoft Dynamics, Infor, QAD and Epicor with the right integration architecture. We focus on reliable process fit, clean integrations and long term maintainability.",
+      },
+      {
+        title: "Data Migration and Integrity",
+        description:
+          "Manage secure migration, cleansing, mapping, validation and reconciliation from legacy systems. Clean and trusted data is treated as a foundation for ERP success.",
+      },
+      {
+        title: "AI Ready ERP Workflows",
+        description:
+          "Prepare ERP data and processes for natural language queries, predictive alerts and workflow automation. This makes future AI adoption easier because the operating backbone is already structured.",
+      },
+    ],
+    useCases: [
+      {
+        title: "Manufacturing and Supply Chain",
+        description:
+          "ERP systems unify production, inventory, procurement, finance and supply chain visibility. Teams gain a single operating view instead of relying on disconnected spreadsheets and fragmented tools.",
+      },
+      {
+        title: "Healthcare and Multi Location Operations",
+        description:
+          "ERP centralizes procurement, HR, finance, reporting and approvals across facilities. Multi location teams can work with common standards, cleaner data and better management visibility.",
+      },
+    ],
+    result:
+      "Enterprises can reduce fragmented tools, improve data reliability and prepare the operational backbone for AI enabled workflows.",
+    techStack: [
+      "SAP",
+      "Oracle",
+      "Microsoft Dynamics",
+      "Infor",
+      "QAD",
+      "Epicor",
+      "APIs",
+      "Data migration tools",
+      "Reporting layers",
+    ],
+    industries: [
+      "Manufacturing",
+      "Healthcare",
+      "Automobile and engineering",
+      "Supply chain",
+      "Financial services",
+      "Enterprise operations",
+    ],
+    faqs: [
+      {
+        question: "Which ERP platform is right for us?",
+        answer:
+          "The right platform depends on your industry, processes, existing systems, reporting needs and long term AI readiness goals. Trinos reviews requirements before recommending a platform or implementation path.",
+      },
+      {
+        question: "Can ERP be implemented in phases?",
+        answer:
+          "Yes. Trinos can structure phased delivery so each stage creates value while reducing operational risk. This approach helps teams adopt the system without disrupting day to day work.",
+      },
+      {
+        question: "Can ERP connect to AI systems?",
+        answer:
+          "Yes. We design data structures, workflows and APIs so ERP can support analytics, automation and agentic AI over time. The ERP system becomes a foundation for future intelligent workflows.",
+      },
+    ],
+    finalHeadline: "Build an ERP Foundation for AI Ready Operations",
+    finalSubText:
+      "Speak with Trinos ERP architects to define the implementation strategy, integration model and AI readiness roadmap.",
+    finalCTA: { label: "Book an ERP Consultation", href: "/contact" },
+    related: [
+      { label: "AI Workflow Automation", href: "/services/ai-workflow-automation" },
+      { label: "Generative AI and Analytics", href: "/services/generative-ai-analytics" },
+      { label: "Web Development", href: "/services/web-development" },
+    ],
+  },
+
   "web-development": {
     slug: "web-development",
     icon: Globe,
-    eyebrow: "WEB DEVELOPMENT",
-    pageTitle: "AI-Enabled Web Development Services | Trinos Technologies",
+    eyebrow: "Web Development",
+    pageTitle: "Enterprise Web Development Services | Trinos",
     metaDescription:
-      "Build secure enterprise websites, portals, dashboards, SaaS platforms and AI-enabled web applications with scalable architecture and modern UX.",
-    h1Lead: "Web Platforms Built for",
-    h1Highlight: "Scale, Speed and AI Adoption",
+      "Build secure enterprise websites, portals, dashboards and AI enabled web applications with scalable architecture and system integrations.",
+    h1Lead: "Web Platforms for Enterprise",
+    h1Highlight: "Growth and AI Adoption",
     subHeadline:
-      "Trinos builds modern enterprise websites, portals, dashboards and web applications with production-grade architecture and AI features embedded into the user experience.",
+      "Trinos builds enterprise websites, portals, dashboards and web applications with secure architecture and AI ready features.",
     primaryCTA: { label: "Scope Your Web Platform", href: "/contact" },
     secondaryCTA: {
       label: "Explore Mobile App Development",
       href: "/services/mobile-app-development",
     },
     credibility:
-      "Trinos has built multi-tenant web application architecture for product platforms that support agents, customers, operational teams and AI-powered workflows.",
-    answerHeading: "What Does Trinos Provide in Web Development?",
+      "Trinos has built multi tenant web application architecture for product platforms that support agents, customers, operational teams and AI powered workflows.",
+    answerHeading: "What does Trinos provide in Web Development?",
     answerBody:
-      "Trinos provides enterprise web development for websites, portals, dashboards, SaaS products, internal tools and AI-enabled applications. The focus is secure architecture, strong UX, system integration and features that help users adopt AI inside everyday workflows.",
+      "Trinos provides enterprise web development for websites, portals, dashboards, SaaS products, internal tools and AI enabled applications. The focus is secure architecture, strong UX, system integration and features that help users adopt AI inside everyday workflows. A modern web platform should not only look good, it should support business processes, data access and future product growth.",
     deliverables: [
       {
         title: "Enterprise Websites and Portals",
         description:
-          "Secure, high-performance websites and portals for customers, employees, partners and operational teams, built to handle real enterprise traffic and workflows.",
+          "Build secure, high performance websites and portals for customers, employees, partners and operations teams. Every platform is planned around user journeys, access control and the business systems it needs to connect with.",
       },
       {
         title: "Web Applications and SaaS Platforms",
         description:
-          "Scalable applications with multi-tenant architecture, dashboards, role-based access and workflow logic for product companies and internal platform teams.",
+          "Develop scalable applications with multi tenant architecture, dashboards, access control and workflow logic. The system is designed to grow with users, roles, data and product requirements.",
       },
       {
         title: "Embedded AI Features",
         description:
-          "Conversational search, smart recommendations, report generation, automation triggers and AI assistants built directly into the interface your users already work in.",
+          "Add conversational search, recommendations, report generation, automation triggers and AI assistants. AI becomes part of the product experience rather than a separate tool users must open elsewhere.",
       },
       {
         title: "Backend and Integration Architecture",
         description:
-          "APIs, authentication, databases, cloud deployment, analytics and integration with enterprise systems so your web platform connects to everything it needs.",
+          "Design APIs, authentication, databases, cloud deployment, analytics and enterprise system integrations. This gives the web platform a stable technical foundation for long term use.",
       },
     ],
     useCases: [
       {
         title: "Enterprise Operations Portal",
         description:
-          "A company replaces spreadsheet-heavy operations with a secure web portal connected to enterprise data and workflows, giving teams a single place to work.",
+          "A company replaces spreadsheet heavy operations with a secure web portal connected to enterprise data and workflows. Teams get one place to access information, update tasks and track operational progress.",
       },
       {
-        title: "AI-Enabled Customer Platform",
+        title: "AI Enabled Customer Platform",
         description:
-          "A customer-facing platform uses AI search, recommendations and automated support features to improve adoption and service speed for its users.",
+          "A customer facing platform uses AI search, recommendations and automated support features to improve adoption and service speed. Users get faster answers while the business reduces support friction.",
       },
     ],
     result:
-      "Organizations get web platforms that are modern, usable, secure and ready for AI-powered workflows and enterprise integration.",
+      "Organizations get web platforms that are modern, usable, secure and ready for AI powered workflows and enterprise integration.",
     techStack: [
       "Next.js",
       "React",
@@ -960,23 +960,23 @@ export const servicesContent: Record<string, ServiceContent> = {
       {
         question: "Can you build websites as well as full web applications?",
         answer:
-          "Yes. We handle everything from marketing websites and content portals to complex SaaS platforms and internal operational tools. The approach and tech stack are matched to what your specific platform needs to do.",
+          "Yes. Trinos builds marketing websites, customer portals, internal tools and full SaaS style web platforms. The architecture and delivery approach are matched to the depth of the product you need.",
       },
       {
-        question: "Can the web platform integrate with legacy systems?",
+        question: "Can web platforms integrate with legacy systems?",
         answer:
-          "Yes. We design integration layers that connect modern web applications to your existing ERP, CRM, databases and internal tools through APIs and secure middleware, without requiring a full system replacement.",
+          "Yes. We connect modern web interfaces to ERP, CRM, databases and internal tools through secure API layers. This helps teams keep existing system investments while improving user experience.",
       },
       {
         question: "Can AI features be added after launch?",
         answer:
-          "Yes. We build platforms with AI integration in mind. Features like conversational search, report generation and automation triggers can be added as modules after the core platform is live.",
+          "Yes. We can plan the architecture so conversational search, reporting, recommendations and workflow triggers can be added over time. This makes the platform easier to expand as your AI roadmap matures.",
       },
     ],
-    finalHeadline: "Build a Web Platform That Can Grow Into an AI System",
+    finalHeadline: "Plan a Web Platform That Can Grow With AI",
     finalSubText:
       "Trinos can scope your web architecture, user experience, integrations and AI roadmap in one technical blueprint session.",
-    finalCTA: { label: "Book a Web Platform Scoping Call", href: "/contact" },
+    finalCTA: { label: "Book a Web Scoping Call", href: "/contact" },
     related: [
       { label: "Mobile App Development", href: "/services/mobile-app-development" },
       { label: "Enterprise Resource Planning", href: "/services/enterprise-resource-planning" },
@@ -987,57 +987,57 @@ export const servicesContent: Record<string, ServiceContent> = {
   "mobile-app-development": {
     slug: "mobile-app-development",
     icon: Smartphone,
-    eyebrow: "MOBILE APP DEVELOPMENT",
-    pageTitle: "AI-Enabled Mobile App Development | Trinos Technologies",
+    eyebrow: "Mobile App Development",
+    pageTitle: "Mobile App Development Services | Trinos",
     metaDescription:
-      "Develop cross-platform mobile apps for enterprise users, customers, agents, field teams and AI-powered workflows on iOS and Android.",
-    h1Lead: "Mobile Apps That Put AI",
-    h1Highlight: "Into the Hands of Users",
+      "Build enterprise mobile apps with secure integrations, workflow approvals, AI assistants, voice features and cross platform delivery.",
+    h1Lead: "Mobile Apps for",
+    h1Highlight: "Enterprise Users",
     subHeadline:
-      "Trinos develops cross-platform mobile apps for customers, employees, agents and field teams with secure integrations, intuitive UX and embedded AI capabilities.",
+      "Trinos develops mobile apps for customers, employees and field teams with secure integrations and embedded AI capabilities.",
     primaryCTA: { label: "Scope Your Mobile App", href: "/contact" },
     secondaryCTA: { label: "Explore Web Development", href: "/services/web-development" },
     credibility:
-      "Trinos product engineering includes multi-application mobile ecosystems connected to back-office platforms, customer experiences and operational workflows.",
-    answerHeading: "What Does Trinos Provide in Mobile App Development?",
+      "Trinos product engineering includes multi application mobile ecosystems connected to back office platforms, customer experiences and operational workflows.",
+    answerHeading: "What does Trinos provide in Mobile App Development?",
     answerBody:
-      "Trinos provides mobile app development for enterprise users, customers, agents and field teams. Apps can include AI assistants, real-time updates, workflow approvals, personalized recommendations, document capture, voice interactions and secure access to business systems.",
+      "Trinos provides mobile app development for enterprise users, customers, agents and field teams. Apps can include AI assistants, real time updates, workflow approvals, personalized recommendations, document capture, voice interactions and secure access to business systems. The goal is to make enterprise workflows easier to use where the work actually happens.",
     deliverables: [
       {
-        title: "Cross-Platform App Development",
+        title: "Cross Platform App Development",
         description:
-          "Native-quality iOS and Android apps using efficient shared codebases where appropriate, built for performance, reliability and long-term maintainability.",
+          "Build native quality iOS and Android apps using efficient shared codebases where appropriate. The technology choice is based on performance, user experience and long term maintainability.",
       },
       {
         title: "Mobile Workflow Interfaces",
         description:
-          "Mobile-first approval flows, task updates, field reporting, document capture and operational dashboards so your teams can work from anywhere.",
+          "Create mobile approval flows, task updates, field reporting, document capture and dashboards. Users can complete operational work without waiting to return to a desktop system.",
       },
       {
         title: "AI Features Inside Mobile UX",
         description:
-          "AI assistants, recommendations, search, voice inputs, summaries and predictive guidance built directly into the app experience your users interact with daily.",
+          "Embed AI assistants, recommendations, search, voice input, summaries and predictive guidance. These features help users make faster decisions inside the mobile experience.",
       },
       {
         title: "Secure Enterprise Connectivity",
         description:
-          "Authentication, APIs, offline sync, push notifications, analytics and role-based access so your app connects securely to every system it needs.",
+          "Integrate authentication, APIs, offline sync, push notifications, analytics and role based access. The app connects to business systems while keeping permissions and governance in place.",
       },
     ],
     useCases: [
       {
         title: "Travel and Field Operations",
         description:
-          "Agents, customers and field guides use connected apps for itineraries, updates, service requests and operational coordination while away from a desk.",
+          "Agents, customers and field guides use connected apps for itineraries, updates, service requests and coordination. This improves communication when teams and customers are moving across locations.",
       },
       {
         title: "Enterprise Approvals and Reporting",
         description:
-          "Managers approve workflows, review AI summaries, capture documents and act on alerts from mobile devices without needing to be at a desktop system.",
+          "Managers approve workflows, review AI summaries, capture documents and act on alerts from mobile devices. Decisions move faster because approval no longer depends on being at a desk.",
       },
     ],
     result:
-      "Enterprises improve adoption by giving users mobile access to AI-enabled workflows where the work actually happens.",
+      "Enterprises can improve adoption by giving users mobile access to AI enabled workflows where the work happens.",
     techStack: [
       "React Native",
       "Flutter where appropriate",
@@ -1058,25 +1058,25 @@ export const servicesContent: Record<string, ServiceContent> = {
     ],
     faqs: [
       {
-        question: "Do you build for both iOS and Android?",
+        question: "Do you build for iOS and Android?",
         answer:
-          "Yes. We build cross-platform apps using React Native and Flutter where appropriate, or native builds when performance and platform-specific features require it. You get quality on both platforms without doubling the budget.",
+          "Yes. Trinos builds cross platform apps or native apps depending on performance, design and feature requirements. The recommendation depends on what the app needs to do and how users will interact with it.",
       },
       {
         question: "Can mobile apps work with enterprise systems?",
         answer:
-          "Yes. We build secure API integrations that connect your mobile app to ERP, CRM, workflow platforms and internal databases. Apps access only what they are permitted to and every connection is authenticated and logged.",
+          "Yes. We connect apps to ERP, CRM, workflow engines and internal databases through secure APIs and role based permissions. Users only access the data and actions approved for their role.",
       },
       {
         question: "Can mobile apps include AI voice or chat assistants?",
         answer:
-          "Yes. We embed voice inputs, conversational assistants and AI-powered interactions directly into the mobile UX. These connect to your backend AI systems and business data through secure API layers.",
+          "Yes. Voice input, conversational AI and assistant features can be embedded directly into the mobile experience. These capabilities can connect to enterprise data through secure backend services.",
       },
     ],
-    finalHeadline: "Bring Enterprise AI to Mobile Workflows",
+    finalHeadline: "Bring Enterprise AI Into Mobile Workflows",
     finalSubText:
       "Trinos can help define the mobile experience, integration architecture, AI features and delivery roadmap for your application.",
-    finalCTA: { label: "Book a Mobile App Scoping Call", href: "/contact" },
+    finalCTA: { label: "Book a Mobile Scoping Call", href: "/contact" },
     related: [
       { label: "Web Development", href: "/services/web-development" },
       { label: "AI Voice Assistants", href: "/services/ai-voice-assistants" },

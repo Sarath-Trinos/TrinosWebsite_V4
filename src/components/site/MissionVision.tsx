@@ -6,7 +6,7 @@ const items = [
     eyebrow: "Our Purpose",
     title: "Our Mission",
     description:
-      "To empower organizations with intelligent and secure digital solutions that accelerate transformation and unlock operational excellence.",
+      "To empower organizations with intelligent and secure digital solutions that accelerate transformation, improve operational efficiency and unlock new levels of business performance.",
     Icon: Target,
     iconColor: "text-[#6D28D9]",
     iconBg: "bg-[#EFE6FF]",
@@ -15,7 +15,7 @@ const items = [
     eyebrow: "Our Ambition",
     title: "Our Vision",
     description:
-      "To be a global leader in AI-driven enterprise transformation by delivering future-ready, scalable and secure technology platforms.",
+      "To be a global leader in AI-driven enterprise transformation by delivering future-ready, scalable and secure technology platforms for organizations operating in an AI-first world.",
     Icon: Compass,
     iconColor: "text-[#9A4B00]",
     iconBg: "bg-[#FFE9CC]",

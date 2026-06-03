@@ -56,8 +56,7 @@ const ServicesHero = () => {
             </h1>
             <p className={`mt-6 ${t.subheadline} text-white/80 max-w-2xl`}>
               Trinos designs, builds and integrates AI first systems across automation, analytics,
-              ERP, voice, vision, web, mobile and content operations. We help enterprises move from
-              isolated AI experiments to practical systems that support daily business processes.
+              ERP, voice, vision, web, mobile and content operations for enterprise teams.
             </p>
 
             <div className="mt-9 flex flex-wrap items-center gap-4">

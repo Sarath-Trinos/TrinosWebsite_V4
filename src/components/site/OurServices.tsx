@@ -32,28 +32,28 @@ const serviceGroups: ServiceGroup[] = [
         icon: Bot,
         title: "Agentic AI",
         description:
-          "AI agents that can plan work, use approved tools and support enterprise workflows with human oversight and audit controls.",
+          "AI agents that plan tasks, connect with approved systems and coordinate work across enterprise workflows. Built with human oversight, scoped permissions and audit controls.",
         href: "/services/agentic-ai",
       },
       {
         icon: Workflow,
         title: "AI Workflow Automation",
         description:
-          "Workflow systems that connect tasks, approvals, business rules and enterprise applications into one coordinated process layer.",
+          "AI driven workflow systems that connect tasks, approvals, business rules and enterprise applications into one coordinated process layer.",
         href: "/services/ai-workflow-automation",
       },
       {
         icon: Mic,
         title: "AI Voice Assistants",
         description:
-          "Voice based AI assistants for customer support, sales and internal operations with business system integration.",
+          "Voice based AI assistants for support, sales and internal operations. Designed to answer questions, collect information and trigger approved workflows.",
         href: "/services/ai-voice-assistants",
       },
       {
         icon: Share2,
         title: "Social Media Automation",
         description:
-          "AI supported content operations for planning, drafting, approvals, scheduling and reporting while keeping brand control in place.",
+          "AI supported content operations for research, drafting, approvals, scheduling and reporting while keeping brand tone and review control in place.",
         href: "/services/social-media-automation",
       },
     ],
@@ -65,21 +65,21 @@ const serviceGroups: ServiceGroup[] = [
         icon: BrainCircuit,
         title: "LLM Fine Tuning",
         description:
-          "Domain tuned language models trained around your data, terminology and tasks to improve reliability for defined use cases.",
+          "Domain tuned language models trained around your data, terminology and task patterns to improve reliability for defined enterprise use cases.",
         href: "/services/llm-fine-tuning",
       },
       {
         icon: BarChart3,
         title: "Generative AI and Analytics",
         description:
-          "Conversational dashboards and intelligent reporting systems that turn enterprise data into sourced business insights.",
+          "Conversational dashboards and intelligent reporting systems that turn approved enterprise data into clear, sourced and decision ready insights.",
         href: "/services/generative-ai-analytics",
       },
       {
         icon: Eye,
         title: "Computer Vision",
         description:
-          "Image, video and document intelligence for visual inspection, OCR, quality control and physical workflow automation.",
+          "Image, video and document intelligence for defect detection, OCR, quality control, asset tracking and physical workflow automation.",
         href: "/services/computer-vision",
       },
     ],
@@ -91,21 +91,21 @@ const serviceGroups: ServiceGroup[] = [
         icon: Briefcase,
         title: "Enterprise Resource Planning",
         description:
-          "ERP architecture, implementation and integration across leading platforms with an AI ready operating foundation.",
+          "ERP architecture, implementation and integration across leading platforms with clean data, connected workflows and an AI ready operating foundation.",
         href: "/services/enterprise-resource-planning",
       },
       {
         icon: Globe,
         title: "Web Development",
         description:
-          "Enterprise websites, portals and web applications built with secure architecture, strong user experience and AI ready features.",
+          "Enterprise websites, portals and web applications built with secure architecture, intuitive UX, system integration and AI ready features.",
         href: "/services/web-development",
       },
       {
         icon: Smartphone,
         title: "Mobile App Development",
         description:
-          "Cross platform mobile apps with secure data connections, workflow access and embedded AI capabilities for users on the move.",
+          "Cross platform mobile apps with secure data connections, workflow access and embedded AI capabilities for field teams, customers and employees.",
         href: "/services/mobile-app-development",
       },
     ],
@@ -127,7 +127,7 @@ const OurServices = () => {
           </p>
           <p className={`mt-4 ${t.bodyLg} text-muted-foreground`}>
             Ten focused services that help enterprises plan, build and scale practical AI systems
-            inside real business environments.
+            inside business environments where security, usability and operational control matter.
           </p>
         </div>
 

@@ -16,15 +16,15 @@ const cards: BentoCard[] = [
   {
     label: "SLMS",
     title: "Small Language Models for Business",
-    body: "We fine-tune compact, domain-specific models on your industry data. The result is a model that is more accurate, less costly to run and far harder for competitors to replicate.",
+    body: "Fine-tune compact, domain-specific models on industry data to improve accuracy, reduce cost and increase control for focused tasks. These models can reflect your terminology, workflows and document patterns more closely than generic public models.",
     Icon: Layers,
     illustration: "orchestration",
     className: "col-span-12 lg:col-span-8",
   },
   {
-    label: "SELF-IMPROVING",
-    title: "Self-Improving AI",
-    body: "Your systems learn from new data and validated outcomes over time. Every approved output becomes a signal that makes the next response more reliable.",
+    label: "FEEDBACK DRIVEN",
+    title: "Feedback Driven AI",
+    body: "Improve systems through new data, validated outcomes and controlled update cycles over time. Feedback becomes useful only when it is reviewed, structured and connected to clear quality measures.",
     Icon: Hexagon,
     illustration: "mcp",
     className: "col-span-12 lg:col-span-4",
@@ -32,7 +32,7 @@ const cards: BentoCard[] = [
   {
     label: "FEEDBACK LOOP",
     title: "The Feedback Loop",
-    body: "Human corrections and approvals shape AI outputs to your organizational standards. Every review cycle raises the quality bar for every future output.",
+    body: "Use human corrections and approvals to align AI outputs with organizational standards. Each review cycle can help reduce repeated errors and improve consistency in future outputs.",
     Icon: Activity,
     illustration: "rag",
     className: "col-span-12 lg:col-span-4",
@@ -40,7 +40,7 @@ const cards: BentoCard[] = [
   {
     label: "RAD",
     title: "Rapid Application Development",
-    body: "AI accelerates our internal engineering workflows so we build and iterate production-grade platforms faster. Compounding velocity means your outcomes ship sooner every cycle.",
+    body: "Use AI assisted engineering workflows to help build and iterate production grade platforms faster. This supports faster delivery without removing engineering review, testing and quality control.",
     Icon: ShieldCheck,
     illustration: "security",
     className: "col-span-12 lg:col-span-8",
@@ -286,22 +286,24 @@ const WhatWeDeliver = () => (
   <section id="what-we-deliver" className="bg-[#F9F9F7] py-24">
     <div className="container-px mx-auto max-w-[1400px]">
       <p className="mb-10 max-w-3xl text-sm md:text-base text-muted-foreground border-l-2 border-primary pl-4">
-        The Trinos Edge powers production AI platforms and helps products like
-        Molter Studio improve through repeated operational cycles.
+        The Trinos Edge powers production AI platforms and supports products like
+        Molter Studio through repeated operational cycles, structured feedback and
+        controlled improvements.
       </p>
 
       <div className="mb-14 max-w-3xl md:mb-16">
         <h2 className={t.sectionHeadlineLg}>
-          <span className="text-black">Four Capabilities</span>{" "}
-          <span className="text-brand-gradient-reverse">That Compound Over Time</span>
+          <span className="text-black">What we</span>{" "}
+          <span className="text-brand-gradient-reverse">deliver</span>
         </h2>
         <p className={`mt-3 max-w-2xl ${t.subheadlineSemibold} text-black`}>
-          Built to get better the more you use them.
+          Four capabilities that support long term AI value.
         </p>
         <p className={`mt-4 ${t.bodyLg} text-muted-foreground`}>
-          Every Trinos deployment combines these building blocks. Your AI investment
-          captures proprietary workflows, business logic and operational patterns with
-          every cycle.
+          Every Trinos deployment combines these building blocks so your AI investment
+          can capture proprietary workflows, business logic and operational patterns over
+          time. The goal is not uncontrolled learning. It is controlled improvement based
+          on validated feedback, production signals and measurable business outcomes.
         </p>
       </div>
 
