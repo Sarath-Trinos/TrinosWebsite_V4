@@ -46,7 +46,7 @@ const OurValues = () => (
           </>
         }
         subtitle="What we stand for"
-        description="Trinos culture is built on trust, respect and inclusivity — with Innovation, Integrity and Excellence as the wellspring of our growth. Everyone is welcome at Trinos regardless of background, age, gender, or experience level."
+        description="Trinos culture is built on trust, respect and inclusivity with Innovation, Integrity and Excellence as the wellspring of our growth. Everyone is welcome at Trinos regardless of background, age, gender, or experience level."
       />
 
       <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-5 md:gap-6">

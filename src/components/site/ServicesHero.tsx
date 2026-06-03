@@ -46,18 +46,18 @@ const ServicesHero = () => {
 
         <div className="container-px max-w-[1400px] mx-auto relative z-10">
           <div className="max-w-3xl animate-fade-up">
-            <span className="chip mb-5">Enterprise AI & Platform Engineering Services</span>
+            <span className="chip mb-5">Enterprise AI and Platform Engineering Services</span>
             <h1 className={`${t.heroHeadline} text-white`}>
-              <span className="text-white">AI Services Built for</span>{" "}
+              <span className="text-white">Enterprise AI Services for</span>{" "}
               <span className="text-brand-gradient-reverse">
-                Real Enterprise Workflows
+                Real Workflows
               </span>
               <span className="text-white">.</span>
             </h1>
             <p className={`mt-6 ${t.subheadline} text-white/80 max-w-2xl`}>
-              Trinos designs, builds, integrates and scales AI-first systems across automation,
-              analytics, ERP, voice, vision, web, mobile and content operations. We help enterprises
-              move from isolated AI experiments to intelligent systems that operate inside real workflows.
+              Trinos designs, builds and integrates AI first systems across automation, analytics,
+              ERP, voice, vision, web, mobile and content operations. We help enterprises move from
+              isolated AI experiments to practical systems that support daily business processes.
             </p>
 
             <div className="mt-9 flex flex-wrap items-center gap-4">

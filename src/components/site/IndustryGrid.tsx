@@ -416,7 +416,7 @@ const IndustryGrid = () => {
                         {activeIndustry.title}
                       </h3>
                       <p
-                        className={`mt-4 ${t.subheadline} text-muted-foreground max-w-3xl animate-slide-up-soft`}
+                        className={`mt-4 ${t.body} text-muted-foreground max-w-5xl animate-slide-up-soft`}
                         style={{ animationDelay: "0.3s" }}
                       >
                         {activeIndustry.description}

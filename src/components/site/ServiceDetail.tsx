@@ -1,13 +1,11 @@
 import Image from "next/image";
-import { ArrowRight, Sparkles } from "lucide-react";
+import { ArrowRight } from "lucide-react";
 import { type as t } from "@/lib/typography";
 import type { ServiceContent } from "@/lib/services-content";
 
 type Props = { service: ServiceContent; heroImage?: string };
 
 const ServiceDetail = ({ service, heroImage }: Props) => {
-  const Icon = service.icon;
-
   return (
     <>
       {/* HERO */}
@@ -23,7 +21,7 @@ const ServiceDetail = ({ service, heroImage }: Props) => {
         <div className="absolute inset-0 bg-[radial-gradient(circle_at_20%_10%,rgba(99,102,241,0.18),transparent_55%),radial-gradient(circle_at_80%_30%,rgba(56,189,248,0.12),transparent_55%)]" />
         <div className={`absolute inset-0 ${heroImage ? "bg-black/60" : "bg-black/30"}`} />
         <div className="container-px max-w-[1400px] mx-auto relative z-10 pt-16 lg:pt-24 pb-20 lg:pb-28">
-          <div className="grid lg:grid-cols-[1fr_auto] gap-10 items-center">
+          <div className="items-center">
             <div className="max-w-3xl animate-fade-up">
               <span className="chip mb-5 bg-white/10 text-white border-white/20">
                 {service.eyebrow}
@@ -54,19 +52,7 @@ const ServiceDetail = ({ service, heroImage }: Props) => {
                 </a>
               </div>
             </div>
-            <div className="hidden lg:flex w-44 h-44 rounded-3xl bg-white/10 backdrop-blur-sm border border-white/15 items-center justify-center shadow-soft">
-              <Icon className="w-20 h-20 text-white" strokeWidth={1.4} />
-            </div>
           </div>
-
-          {service.credibility && (
-            <div className="mt-12 max-w-4xl flex items-start gap-3 rounded-2xl border border-white/15 bg-white/5 backdrop-blur-sm p-5">
-              <Sparkles className="w-5 h-5 text-primary-glow mt-1 shrink-0" />
-              <p className={`${t.bodyResponsive} text-white/85`}>
-                {service.credibility}
-              </p>
-            </div>
-          )}
         </div>
       </section>
 
@@ -76,8 +62,7 @@ const ServiceDetail = ({ service, heroImage }: Props) => {
           <div className="tile bg-surface-soft p-8 md:p-12 lg:p-16 relative overflow-hidden">
             <div className="absolute -top-32 -left-32 w-[400px] h-[400px] rounded-full bg-primary/10 blur-3xl" />
             <div className="absolute -bottom-32 -right-32 w-[400px] h-[400px] rounded-full bg-primary-glow/10 blur-3xl" />
-            <div className="relative max-w-4xl">
-              <span className="chip mb-5">At a glance</span>
+            <div className="relative max-w-6xl">
               <h2 className={`${t.sectionHeadlineMd} text-foreground`}>
                 {service.answerHeading}
               </h2>

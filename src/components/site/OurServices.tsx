@@ -32,28 +32,28 @@ const serviceGroups: ServiceGroup[] = [
         icon: Bot,
         title: "Agentic AI",
         description:
-          "Autonomous AI agents that plan, decide and act across your enterprise systems — designed to operate inside real business workflows, not isolated demos.",
+          "AI agents that can plan work, use approved tools and support enterprise workflows with human oversight and audit controls.",
         href: "/services/agentic-ai",
       },
       {
         icon: Workflow,
         title: "AI Workflow Automation",
         description:
-          "End-to-end orchestration of business processes with AI triggers, human approvals and integrations across CRMs, ERPs, data warehouses and SaaS tools.",
+          "Workflow systems that connect tasks, approvals, business rules and enterprise applications into one coordinated process layer.",
         href: "/services/ai-workflow-automation",
       },
       {
         icon: Mic,
         title: "AI Voice Assistants",
         description:
-          "Multilingual voice agents for support, sales and operations — grounded in your knowledge base with auditable, secure conversation flows.",
+          "Voice based AI assistants for customer support, sales and internal operations with business system integration.",
         href: "/services/ai-voice-assistants",
       },
       {
         icon: Share2,
         title: "Social Media Automation",
         description:
-          "AI-driven content operations across channels — planning, generation, scheduling and reporting tuned to your brand voice and compliance requirements.",
+          "AI supported content operations for planning, drafting, approvals, scheduling and reporting while keeping brand control in place.",
         href: "/services/social-media-automation",
       },
     ],
@@ -65,21 +65,21 @@ const serviceGroups: ServiceGroup[] = [
         icon: BrainCircuit,
         title: "LLM Fine Tuning",
         description:
-          "Domain-tuned language models built on your data. We manage datasets, training runs and evaluations to deliver reliable, on-brand AI outputs.",
+          "Domain tuned language models trained around your data, terminology and tasks to improve reliability for defined use cases.",
         href: "/services/llm-fine-tuning",
       },
       {
         icon: BarChart3,
         title: "Generative AI and Analytics",
         description:
-          "Conversational dashboards, intelligent reporting and generative analytics that turn enterprise data into decisions and narratives.",
+          "Conversational dashboards and intelligent reporting systems that turn enterprise data into sourced business insights.",
         href: "/services/generative-ai-analytics",
       },
       {
         icon: Eye,
         title: "Computer Vision",
         description:
-          "Real-time image and video understanding for detection, OCR and quality control deployed in the cloud or at the edge for low-latency environments.",
+          "Image, video and document intelligence for visual inspection, OCR, quality control and physical workflow automation.",
         href: "/services/computer-vision",
       },
     ],
@@ -91,21 +91,21 @@ const serviceGroups: ServiceGroup[] = [
         icon: Briefcase,
         title: "Enterprise Resource Planning",
         description:
-          "End-to-end ERP implementation and AI integration across SAP, Oracle, Microsoft Dynamics, Infor, QAD and EPICOR — aligned to your operating model.",
+          "ERP architecture, implementation and integration across leading platforms with an AI ready operating foundation.",
         href: "/services/enterprise-resource-planning",
       },
       {
         icon: Globe,
         title: "Web Development",
         description:
-          "Modern, accessible, performance-optimized websites and web applications with thoughtful UX and AI-powered features built in from day one.",
+          "Enterprise websites, portals and web applications built with secure architecture, strong user experience and AI ready features.",
         href: "/services/web-development",
       },
       {
         icon: Smartphone,
         title: "Mobile App Development",
         description:
-          "Cross-platform mobile apps with native-quality experiences, secure data flows and embedded AI capabilities for field, customer and internal users.",
+          "Cross platform mobile apps with secure data connections, workflow access and embedded AI capabilities for users on the move.",
         href: "/services/mobile-app-development",
       },
     ],
@@ -117,16 +117,17 @@ const OurServices = () => {
     <section id="our-services" className="py-10 bg-background">
       <div className="container-px max-w-[1400px] mx-auto">
         <div className="max-w-2xl mb-12">
+          <span className="chip mb-5">Our Services</span>
           <h2 className={t.sectionHeadlineLg}>
             <span className="text-black">Our</span>{" "}
             <span className="text-brand-gradient-reverse">services</span>
           </h2>
           <p className={`mt-3 max-w-2xl ${t.subheadlineSemibold} text-foreground`}>
-            AI-first services across automation, intelligence and enterprise platforms
+            AI first services across automation, intelligence and enterprise platforms.
           </p>
           <p className={`mt-4 ${t.bodyLg} text-muted-foreground`}>
-            Ten focused services built to move enterprises from isolated AI experiments to
-            intelligent systems that operate inside real workflows.
+            Ten focused services that help enterprises plan, build and scale practical AI systems
+            inside real business environments.
           </p>
         </div>
 

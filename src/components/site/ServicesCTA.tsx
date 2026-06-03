@@ -12,8 +12,9 @@ const ServicesCTA = () => (
             Ready to Build Your AI-First Enterprise System?
           </h2>
           <p className={`mt-5 ${t.subheadline} text-white/85 max-w-2xl mx-auto`}>
-            Start with a Discovery Workshop. Trinos will map your workflows, data, systems, and
-            bottlenecks before recommending the right AI-first solution.
+            Start with a Discovery Workshop. Trinos will review your workflows, data systems and
+            operational bottlenecks before recommending the right AI first solution for your
+            environment.
           </p>
           <div className="mt-10 flex flex-wrap items-center justify-center gap-4">
             <a

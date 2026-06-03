@@ -1,7 +1,6 @@
 import type { Metadata } from "next";
 import { Inter, Sora, Poppins } from "next/font/google";
 import { Providers } from "./providers";
-import { CustomCursor } from "@/components/site/CustomCursor";
 import "./globals.css";
 
 const inter = Inter({
@@ -51,7 +50,6 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
   return (
     <html lang="en" className={`${inter.variable} ${sora.variable} ${poppins.variable}`}>
       <body>
-        <CustomCursor />
         <Providers>{children}</Providers>
       </body>
     </html>

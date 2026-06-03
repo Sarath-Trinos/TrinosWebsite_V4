@@ -8,9 +8,9 @@ import ServicesCTA from "@/components/site/ServicesCTA";
 import Footer from "@/components/site/Footer";
 
 export const metadata: Metadata = {
-  title: "AI-First Enterprise Services | Trinos Technologies",
+  title: "Enterprise AI Services and Platform Engineering | Trinos",
   description:
-    "Explore Trinos services across agentic AI, AI workflow automation, LLM fine tuning, generative analytics, voice assistants, computer vision, ERP, social media automation, web development and mobile app development.",
+    "Explore Trinos enterprise AI services across agentic AI, workflow automation, analytics, ERP, voice AI, computer vision, web and mobile platforms.",
 };
 
 export default function ServicesPage() {

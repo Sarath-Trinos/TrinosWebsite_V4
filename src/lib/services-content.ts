@@ -65,62 +65,63 @@ export const servicesContent: Record<string, ServiceContent> = {
     slug: "agentic-ai",
     icon: Bot,
     eyebrow: "AGENTIC AI",
-    pageTitle: "Agentic AI Services for Enterprises | Trinos Technologies",
+    pageTitle: "Agentic AI Services for Enterprise Workflows | Trinos",
     metaDescription:
-      "Build secure agentic AI systems that reason, use tools, automate multi-step tasks and work across enterprise workflows with human approval controls.",
-    h1Lead: "AI Agents That",
-    h1Highlight: "Think, Act and Improve",
+      "Deploy AI agents that plan, call tools, coordinate workflows and operate with human approvals, permissions and audit trails.",
+    h1Lead: "AI Agents for",
+    h1Highlight: "Enterprise Workflows",
     subHeadline:
-      "Trinos builds AI agent systems that understand context, coordinate across tools and complete complex tasks within clear security, approval and audit boundaries.",
+      "Trinos builds agentic AI systems that coordinate across tools, data and approvals to support complex enterprise work.",
     primaryCTA: { label: "Talk to an AI Architect", href: "/contact" },
     secondaryCTA: {
       label: "Explore AI Workflow Automation",
       href: "/services/ai-workflow-automation",
     },
-    credibility: "",
-    answerHeading: "What Is Agentic AI?",
+    credibility:
+      "Trinos multi agent architecture supports AI products where autonomous agents analyze, generate and escalate outputs through structured workflows.",
+    answerHeading: "What is Agentic AI?",
     answerBody:
-      "Agentic AI uses autonomous software agents that understand context, plan tasks, call tools, retrieve data and take action. Unlike a chatbot that answers questions, agentic systems are built to complete workflows from start to finish.",
+      "Agentic AI uses autonomous software agents that can understand business context, plan tasks, call approved tools, retrieve data, take permitted actions and escalate exceptions. Unlike a chatbot, an agentic system is designed to support workflow completion instead of stopping at a text response. In enterprise settings, these agents need clear permissions, monitoring and human approval points.",
     deliverables: [
       {
-        title: "Multi-Agent System Design",
+        title: "Multi Agent System Design",
         description:
-          "We build specialized agents for research, analysis, validation, reporting and operations. Each agent knows its role and works within a coordinated system.",
+          "Design specialized agents for research, analysis, validation, reporting and operational escalation. Each agent has a defined role so the system can divide complex work into controlled steps.",
       },
       {
         title: "Tool Calling and System Integration",
         description:
-          "Agents connect securely to your approved APIs, CRMs, ERPs, databases, email systems and internal tools to take real action inside your business.",
+          "Connect agents securely to approved APIs, CRMs, ERPs, databases, email systems and internal tools. This allows agents to use real business context while staying inside permission boundaries.",
       },
       {
-        title: "Human-in-the-Loop Controls",
+        title: "Human in the Loop Controls",
         description:
-          "Approval checkpoints are built in so high-risk decisions always go through a human review step before execution. Your team stays in control.",
+          "Add approval checkpoints so high risk actions require human review before execution. This protects business critical decisions while still allowing agents to prepare, route and support the work.",
       },
       {
         title: "Agent Monitoring and Audit Trails",
         description:
-          "Full logs, traceability, performance monitoring and exception reporting keep every agent action visible and accountable for responsible AI operations.",
+          "Track agent actions with logs, traceability, performance monitoring and exception reporting. Operations teams can see what the agent did, why it acted and where human review was involved.",
       },
     ],
     useCases: [
       {
         title: "Enterprise Operations",
         description:
-          "Agents monitor incoming tasks, collect relevant data, prepare recommendations and route decisions to the right person or system without manual hand-holding.",
+          "Agents monitor incoming tasks, collect relevant data, prepare recommendations and route decisions to the right team. This reduces coordination effort for operations teams that manage repeatable but context heavy work.",
         image: "/service/enterprise-operations.jpg",
         badge: "Operations",
       },
       {
         title: "Decision Intelligence",
         description:
-          "Multiple agents analyze a problem from different angles and produce structured recommendations with risk levels and confidence scores for faster decisions.",
+          "Multiple agents analyze a business problem from different perspectives and produce recommendations with risks, assumptions and confidence levels. Decision makers receive a structured brief instead of scattered information.",
         image: "/service/decision-intelligence.jpg",
         badge: "Strategy",
       },
     ],
     result:
-      "Teams move repetitive analysis and coordination work from manual effort to controlled AI execution while keeping oversight where it matters.",
+      "Teams can reduce repetitive analysis and coordination work while keeping oversight in the right parts of the process.",
     techStack: [
       "Python",
       "OpenAI API",
@@ -143,22 +144,22 @@ export const servicesContent: Record<string, ServiceContent> = {
       {
         question: "How is Agentic AI different from a chatbot?",
         answer:
-          "A chatbot responds to questions. An AI agent takes action. It can call tools, retrieve data, run multi-step processes and escalate based on what it finds. It is built to complete tasks, not just answer them.",
+          "A chatbot responds to questions. Agentic AI can plan work, call tools, retrieve live data, complete approved actions and escalate cases that need human review. The value is in supporting a full task flow, not only answering a prompt.",
       },
       {
-        question: "Can AI agents work with our internal systems?",
+        question: "Can AI agents work with our systems?",
         answer:
-          "Yes. We build agents with secure connections to your existing APIs, databases, CRMs and internal tools. Agents only access what they are permitted to and every action is logged.",
+          "Yes. Trinos connects agents to approved systems through authenticated APIs with scoped permissions and action logs. The agent only accesses the tools and data that are defined for its role.",
       },
       {
-        question: "How do you prevent uncontrolled agent actions?",
+        question: "How do you keep AI agent actions under control?",
         answer:
-          "Every agent system we build includes approval gates, permission boundaries and audit trails. High-risk actions require human sign-off before they execute. Control is designed in from the start, not added later.",
+          "We use permission limits, approval gates, monitoring and audit trails. High value or ambiguous actions require human approval before execution so the system remains controlled and accountable.",
       },
     ],
-    finalHeadline: "AI Agents That Work Like Operational Teammates",
+    finalHeadline: "Use AI Agents to Support Operational Work",
     finalSubText:
-      "Start with a focused agentic AI discovery session to identify where autonomous agents can reduce repetitive work and improve decision speed.",
+      "Start with a focused discovery session to identify where agentic AI can reduce repetitive work and improve decision speed.",
     finalCTA: { label: "Book an Agentic AI Workshop", href: "/contact" },
     related: [
       { label: "AI Workflow Automation", href: "/services/ai-workflow-automation" },
