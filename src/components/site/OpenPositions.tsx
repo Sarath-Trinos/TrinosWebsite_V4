@@ -35,7 +35,7 @@ const positions: Position[] = [
 
 const OpenPositions = () => (
   <section id="open-positions" className="py-24">
-    <div className="container-px max-w-[1400px] mx-auto">
+    <div className="container-px max-w-[1200px] mx-auto">
       <div className="grid lg:grid-cols-3 gap-12 lg:gap-16">
         <div className="lg:col-span-1">
           <h2 className={`${t.sectionHeadlineLg} text-foreground`}>

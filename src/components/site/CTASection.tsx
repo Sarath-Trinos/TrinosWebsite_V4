@@ -71,10 +71,10 @@ const CTASection = ({
   const v = variants[variant];
   return (
     <section id="demo" className="py-24">
-      <div className="container-px max-w-[1400px] mx-auto">
+      <div className="container-px max-w-[1200px] mx-auto">
         <div className={`tile ${v.bg} p-8 md:p-12 lg:p-20 text-center relative overflow-hidden`}>
-          <div className="absolute -top-32 -left-32 w-[400px] h-[400px] rounded-full bg-white/40 blur-3xl" />
-          <div className="absolute -bottom-32 -right-32 w-[400px] h-[400px] rounded-full bg-white/40 blur-3xl" />
+          <div className="absolute -top-32 -left-32 w-[25rem] h-[25rem] rounded-full bg-white/40 blur-3xl" />
+          <div className="absolute -bottom-32 -right-32 w-[25rem] h-[25rem] rounded-full bg-white/40 blur-3xl" />
           <div className="relative">
             <h2 className={`${t.sectionHeadline} ${v.title}`}>
               {title}

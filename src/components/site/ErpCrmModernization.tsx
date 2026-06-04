@@ -73,7 +73,7 @@ function CardVideo({ src }: { src: string }) {
 
 const ErpCrmModernization = () => (
   <section className="py-24">
-    <div className="container-px max-w-[1400px] mx-auto">
+    <div className="container-px max-w-[1200px] mx-auto">
       <div className="mb-16 flex flex-col gap-4">
         <h2
           className={cn(

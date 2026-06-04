@@ -120,7 +120,7 @@ const ProductImageSlideshow = ({
 
 const ProductShowcase = () => (
   <section id="products" className="py-24 bg-surface-soft">
-    <div className="container-px max-w-[1400px] mx-auto space-y-24 lg:space-y-32">
+    <div className="container-px max-w-[1200px] mx-auto space-y-24 lg:space-y-32">
       {products.map((product) => (
         <div
           key={product.name}

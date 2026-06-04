@@ -35,7 +35,7 @@ const values = [
 
 const OurValues = () => (
   <section className="bg-background py-24">
-    <div className="container-px max-w-[1400px] mx-auto">
+    <div className="container-px max-w-[1200px] mx-auto">
       <SectionHeader
         titleClassName={t.sectionHeadlineLg}
         subtitleClassName="font-normal text-muted-foreground"

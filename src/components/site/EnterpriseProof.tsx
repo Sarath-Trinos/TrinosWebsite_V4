@@ -3,8 +3,8 @@ import { type as t } from "@/lib/typography";
 
 const EnterpriseProof = () => (
   <section className="py-16 sm:py-20 lg:py-24 bg-gradient-dark text-on-surface-dark relative overflow-hidden">
-    <div className="absolute -top-40 left-1/3 w-[400px] sm:w-[600px] h-[400px] sm:h-[600px] rounded-full bg-primary/20 blur-3xl" />
-    <div className="container-px max-w-[1400px] mx-auto relative">
+    <div className="absolute -top-40 left-1/3 w-[25rem] sm:w-[600px] h-[25rem] sm:h-[600px] rounded-full bg-primary/20 blur-3xl" />
+    <div className="container-px max-w-[1200px] mx-auto relative">
       <div className="grid lg:grid-cols-2 gap-10 sm:gap-14 items-center">
         <div>
           <span className="chip bg-white/10 text-white border border-white/10">Why enterprises choose Trinos</span>

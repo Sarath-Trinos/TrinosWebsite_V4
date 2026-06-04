@@ -98,7 +98,7 @@ const OurCulture = () => (
       </svg>
     </div>
 
-    <div className="container-px mx-auto w-full max-w-[1400px]">
+    <div className="container-px mx-auto w-full max-w-[1200px]">
       <div className="grid items-stretch gap-14 lg:grid-cols-[1.05fr_1fr] lg:gap-16">
         {/* LEFT — heading, copy, illustration */}
         <div className="relative flex flex-col">

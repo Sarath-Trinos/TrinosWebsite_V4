@@ -45,7 +45,7 @@ const founders: Founder[] = [
 
 const TeamLeadership = () => (
   <section id="leadership" className="py-24">
-    <div className="container-px max-w-[1400px] mx-auto space-y-24 lg:space-y-28">
+    <div className="container-px max-w-[1200px] mx-auto space-y-24 lg:space-y-28">
       {founders.map((founder) => (
         <div
           key={founder.name}

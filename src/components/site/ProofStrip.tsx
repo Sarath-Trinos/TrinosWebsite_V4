@@ -9,7 +9,7 @@ const statements = [
 
 const ProofStrip = () => (
   <section className="bg-white border-y border-border/60">
-    <div className="container-px max-w-[1400px] mx-auto py-5 sm:py-6">
+    <div className="container-px max-w-[1200px] mx-auto py-5 sm:py-6">
       <ul className="flex flex-col sm:flex-row items-center justify-between gap-3 sm:gap-2 divide-y sm:divide-y-0 sm:divide-x divide-border/60">
         {statements.map((s) => (
           <li

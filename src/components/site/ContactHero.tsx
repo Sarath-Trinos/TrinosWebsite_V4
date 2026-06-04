@@ -29,7 +29,7 @@ const ContactHero = () => {
   return (
     <section className="relative overflow-hidden">
       <div className="h-[5rem]" aria-hidden="true" />
-      <div className="relative pt-16 lg:pt-24 pb-20">
+      <div className="relative pt-16 lg:pt-24 pb-24">
         <video
           ref={videoRef}
           className="absolute inset-0 w-full h-full object-cover"
@@ -45,7 +45,7 @@ const ContactHero = () => {
         />
         <div className="absolute inset-0 bg-black/60" />
 
-        <div className="container-px max-w-[1400px] mx-auto relative z-10">
+        <div className="container-px max-w-[1200px] mx-auto relative z-10 flex items-center min-h-[20rem] lg:min-h-[24rem]">
           <div className="max-w-3xl animate-fade-up">
             <nav aria-label="Breadcrumb" className="text-sm text-white/70 mb-6">
               <Link href="/" className="hover:text-white transition-colors">

@@ -366,7 +366,7 @@ const IndustryGrid = () => {
 
   return (
     <section id="industries-grid" className="py-16 lg:py-24 bg-background">
-      <div className="container-px max-w-[1400px] mx-auto">
+      <div className="container-px max-w-[1200px] mx-auto">
         <div className="max-w-7xl mb-12 lg:mb-16 animate-fade-up">
           <span className="chip mb-5">Industry-specific solutions</span>
           <h2 className={t.sectionHeadline}>

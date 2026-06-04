@@ -35,7 +35,7 @@ const useCases: UseCase[] = [
 
 const UseCasesResults = () => (
   <section id="use-cases" className="py-24 bg-surface-soft">
-    <div className="container-px max-w-[1400px] mx-auto">
+    <div className="container-px max-w-[1200px] mx-auto">
       <SectionHeader
         titleClassName={t.sectionHeadlineLg}
         title={

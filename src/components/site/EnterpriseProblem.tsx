@@ -2,7 +2,7 @@ import { type as t } from "@/lib/typography";
 
 const EnterpriseProblem = () => (
   <section className="py-24">
-    <div className="container-px max-w-[1400px] mx-auto">
+    <div className="container-px max-w-[1200px] mx-auto">
       <div className="max-w-6xl">
         <h2
           className={`${t.sectionHeadlineLg} font-normal text-foreground`}

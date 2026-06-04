@@ -25,10 +25,10 @@ export default function AboutPage() {
     <main className="min-h-screen bg-background">
       <Header />
       <AboutHero />
-      <Leadership />
       <WhoWeAre />
       <OurValues />
       <MissionVision />
+      <Leadership />
       <CTASection variant="gradient" />
       <Footer />
     </main>

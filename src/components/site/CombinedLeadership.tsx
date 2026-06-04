@@ -9,7 +9,7 @@ const stats = [
 
 const CombinedLeadership = () => (
   <section className="py-24 bg-surface-soft">
-    <div className="container-px max-w-[1400px] mx-auto">
+    <div className="container-px max-w-[1200px] mx-auto">
       <div className="text-center max-w-3xl mx-auto">
         <span className="chip mb-5">Combined leadership</span>
         <h2 className={t.sectionHeadlineLg}>

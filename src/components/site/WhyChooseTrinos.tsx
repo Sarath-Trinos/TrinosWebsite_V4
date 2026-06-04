@@ -116,7 +116,7 @@ const WhyChooseTrinos = () => {
         </svg>
       </div>
 
-      <div className="container-px mx-auto w-full max-w-[1400px]">
+      <div className="container-px mx-auto w-full max-w-[1200px]">
         {/* Heading */}
         <h2 className={`${t.sectionHeadline} text-foreground`}>
           The Trinos <span className="text-brand-gradient">Edge</span>

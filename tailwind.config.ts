@@ -9,7 +9,7 @@ export default {
       center: true,
       padding: "2rem",
       screens: {
-        "2xl": "1400px",
+        "2xl": "1200px",
       },
     },
     extend: {
@@ -17,6 +17,7 @@ export default {
         sans: ['Inter', 'system-ui', 'sans-serif'],
         display: ['Sora', 'Inter', 'sans-serif'],
         poppins: ['var(--font-poppins)', 'Poppins', 'sans-serif'],
+        handwrite: ['var(--font-caveat)', 'Caveat', 'cursive'],
       },
       colors: {
         'primary-glow': 'hsl(var(--primary-glow))',

@@ -44,7 +44,7 @@ const ProductsHero = () => {
         />
         <div className="absolute inset-0 bg-black/60" />
 
-        <div className="container-px max-w-[1400px] mx-auto relative z-10">
+        <div className="container-px max-w-[1200px] mx-auto relative z-10 flex items-center min-h-[20rem] lg:min-h-[24rem]">
           <div className="max-w-3xl animate-fade-up">
             <span className="chip mb-5">Our AI Products</span>
             <h1 className={`${t.heroHeadline} text-white`}>

@@ -115,7 +115,7 @@ const serviceGroups: ServiceGroup[] = [
 const OurServices = () => {
   return (
     <section id="our-services" className="py-10 bg-background">
-      <div className="container-px max-w-[1400px] mx-auto">
+      <div className="container-px max-w-[1200px] mx-auto">
         <div className="max-w-6xl mb-12">
           <span className="chip mb-5">Our Services</span>
           <h2 className={t.sectionHeadlineLg}>

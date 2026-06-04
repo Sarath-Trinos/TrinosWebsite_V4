@@ -73,7 +73,7 @@ const TechStackIndustries = ({ techStack, industries }: Props) => {
         <div className="absolute -bottom-32 right-1/4 h-[30rem] w-[30rem] translate-x-1/2 rounded-full bg-primary-glow/10 blur-3xl" />
       </div>
 
-      <div className="container-px mx-auto max-w-[1400px]">
+      <div className="container-px mx-auto max-w-[1200px]">
         {/* ── Section heading ── */}
         <div className="mb-12 max-w-2xl lg:mb-16">
           <h2 className={`${t.sectionHeadlineMd} text-foreground`}>

@@ -44,7 +44,7 @@ const AboutHero = () => {
         />
         <div className="absolute inset-0 bg-black/60" />
 
-        <div className="container-px max-w-[1400px] mx-auto relative z-10">
+        <div className="container-px max-w-[1200px] mx-auto relative z-10 flex items-center min-h-[20rem] lg:min-h-[24rem]">
           <div className="max-w-3xl animate-fade-up">
             <span className="chip mb-5">About Trinos Technologies</span>
             <h1 className={`${t.heroHeadline} text-white`}>
@@ -67,10 +67,6 @@ const AboutHero = () => {
                 <ArrowRight className="w-4 h-4 transition-transform group-hover:translate-x-1" />
               </a>
             </div>
-
-            <p className="mt-8 text-white/70 text-sm md:text-base max-w-2xl">
-              Headquartered in Chennai, Trinos combines AI engineering, product development, ERP expertise and enterprise delivery experience for clients across global markets.
-            </p>
           </div>
         </div>
       </div>

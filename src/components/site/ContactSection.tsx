@@ -78,7 +78,7 @@ const ContactSection = () => {
 
   return (
     <section className="py-16 md:py-20 bg-background">
-      <div className="container-px max-w-[1400px] mx-auto grid grid-cols-1 md:grid-cols-2 gap-10 md:gap-12 lg:gap-16">
+      <div className="container-px max-w-[1200px] mx-auto grid grid-cols-1 md:grid-cols-2 gap-10 md:gap-12 lg:gap-16">
         <div>
           <h2 className={`${t.sectionHeadline} text-foreground`}>
             Send us a message

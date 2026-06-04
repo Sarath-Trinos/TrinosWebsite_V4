@@ -35,12 +35,11 @@ const cards = [
 ];
 
 const HealthcareAI = () => {
-  const [hoveredIndex, setHoveredIndex] = useState<number | null>(null);
-  const activeIndex = hoveredIndex ?? 0;
+  const [activeIndex, setActiveIndex] = useState<number | null>(null);
 
   return (
     <section className="py-24 bg-surface-tint">
-      <div className="container-px max-w-[1400px] mx-auto">
+      <div className="container-px max-w-[1200px] mx-auto">
         <SectionHeader
           headlineWeight="normal"
           title={
@@ -63,7 +62,7 @@ const HealthcareAI = () => {
                 sizes="(min-width: 1024px) 40vw, 100vw"
                 className={cn(
                   "object-cover transition-opacity duration-500 ease-out",
-                  i === activeIndex ? "opacity-100" : "opacity-0"
+                  i === (activeIndex ?? 0) ? "opacity-100" : "opacity-0"
                 )}
                 priority={i === 0}
                 fetchPriority={i === 0 ? "high" : "auto"}
@@ -79,10 +78,14 @@ const HealthcareAI = () => {
                 <a
                   key={it.title}
                   href={it.href}
-                  onMouseEnter={() => setHoveredIndex(i)}
-                  onMouseLeave={() => setHoveredIndex(null)}
-                  onFocus={() => setHoveredIndex(i)}
-                  onBlur={() => setHoveredIndex(null)}
+                  onClick={(e) => {
+                    // First click reveals the description; click again to follow the link.
+                    if (!isActive) {
+                      e.preventDefault();
+                      setActiveIndex(i);
+                    }
+                  }}
+                  aria-expanded={isActive}
                   aria-current={isActive ? "true" : undefined}
                   className={cn(
                     "tile bg-card border p-6 md:p-4 lg:p-7 flex items-center gap-5 md:gap-4 lg:gap-5 text-left w-full transition-[border-color,box-shadow] duration-300 ease-out md:min-h-0",

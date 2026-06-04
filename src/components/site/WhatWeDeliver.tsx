@@ -284,7 +284,7 @@ function BentoCardInner({ label, title, body, Icon, illustration }: Omit<BentoCa
 
 const WhatWeDeliver = () => (
   <section id="what-we-deliver" className="bg-[#F9F9F7] py-24">
-    <div className="container-px mx-auto max-w-[1400px]">
+    <div className="container-px mx-auto max-w-[1200px]">
       <p className="mb-10 max-w-3xl text-sm md:text-base text-muted-foreground border-l-2 border-primary pl-4">
         The Trinos Edge powers production AI platforms and supports products like
         Molter Studio through repeated operational cycles, structured feedback and

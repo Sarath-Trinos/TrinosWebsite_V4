@@ -47,7 +47,7 @@ const Hero = () => {
       </video>
       <div className="pointer-events-none absolute inset-0 bg-gradient-to-r from-black/85 via-black/55 to-transparent" />
 
-      <div className="container-px max-w-[1400px] mx-auto relative z-10 w-full">
+      <div className="container-px max-w-[1200px] mx-auto relative z-10 w-full">
         <div className="max-w-4xl animate-fade-up text-white">
           <p className="text-xs sm:text-sm font-semibold uppercase tracking-[0.2em] text-white/80 mb-4">
             AI-First Enterprise Technology

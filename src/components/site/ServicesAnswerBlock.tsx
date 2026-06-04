@@ -2,10 +2,10 @@ import { type as t } from "@/lib/typography";
 
 const ServicesAnswerBlock = () => (
   <section id="services-answer" className="py-20 bg-background">
-    <div className="container-px max-w-[1400px] mx-auto">
+    <div className="container-px max-w-[1200px] mx-auto">
       <div className="tile bg-surface-soft p-8 md:p-12 lg:p-16 relative overflow-hidden">
-        <div className="absolute -top-32 -left-32 w-[400px] h-[400px] rounded-full bg-primary/10 blur-3xl" />
-        <div className="absolute -bottom-32 -right-32 w-[400px] h-[400px] rounded-full bg-primary-glow/10 blur-3xl" />
+        <div className="absolute -top-32 -left-32 w-[25rem] h-[25rem] rounded-full bg-primary/10 blur-3xl" />
+        <div className="absolute -bottom-32 -right-32 w-[25rem] h-[25rem] rounded-full bg-primary-glow/10 blur-3xl" />
         <div className="relative">
           <span className="chip mb-5">At a glance</span>
           <h2 className={`${t.sectionHeadlineMd} text-foreground`}>

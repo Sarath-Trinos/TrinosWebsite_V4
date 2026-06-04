@@ -65,7 +65,7 @@ const footerCols = [
 
 const Footer = () => (
   <footer className="bg-surface-dark text-on-surface-dark pt-20 pb-10">
-    <div className="container-px max-w-[1400px] mx-auto">
+    <div className="container-px max-w-[1200px] mx-auto">
       <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-8 md:gap-10 pb-14 border-b border-white/10">
         <div className="sm:col-span-2 md:col-span-3 lg:col-span-2">
           <Logo />

@@ -21,7 +21,7 @@ const ServiceDetail = ({ service, heroImage }: Props) => {
         )}
         <div className="absolute inset-0 bg-[radial-gradient(circle_at_20%_10%,rgba(99,102,241,0.18),transparent_55%),radial-gradient(circle_at_80%_30%,rgba(56,189,248,0.12),transparent_55%)]" />
         <div className={`absolute inset-0 ${heroImage ? "bg-black/60" : "bg-black/30"}`} />
-        <div className="container-px max-w-[1400px] mx-auto relative z-10 pt-16 lg:pt-24 pb-20 lg:pb-28">
+        <div className="container-px max-w-[1200px] mx-auto relative z-10 pt-16 lg:pt-24 pb-20 lg:pb-28">
           <div className="items-center">
             <div className="max-w-3xl animate-fade-up">
               <span className="chip mb-5 bg-white/10 text-white border-white/20">
@@ -59,10 +59,10 @@ const ServiceDetail = ({ service, heroImage }: Props) => {
 
       {/* ANSWER BLOCK */}
       <section className="py-20 bg-background">
-        <div className="container-px max-w-[1400px] mx-auto">
+        <div className="container-px max-w-[1200px] mx-auto">
           <div className="tile bg-surface-soft p-8 md:p-12 lg:p-16 relative overflow-hidden">
-            <div className="absolute -top-32 -left-32 w-[400px] h-[400px] rounded-full bg-primary/10 blur-3xl" />
-            <div className="absolute -bottom-32 -right-32 w-[400px] h-[400px] rounded-full bg-primary-glow/10 blur-3xl" />
+            <div className="absolute -top-32 -left-32 w-[25rem] h-[25rem] rounded-full bg-primary/10 blur-3xl" />
+            <div className="absolute -bottom-32 -right-32 w-[25rem] h-[25rem] rounded-full bg-primary-glow/10 blur-3xl" />
             <div className="relative max-w-6xl">
               <h2 className={`${t.sectionHeadlineMd} text-foreground`}>
                 {service.answerHeading}
@@ -77,7 +77,7 @@ const ServiceDetail = ({ service, heroImage }: Props) => {
 
       {/* WHAT WE DELIVER */}
       <section className="py-20 bg-[#F9F9F7]">
-        <div className="container-px max-w-[1400px] mx-auto">
+        <div className="container-px max-w-[1200px] mx-auto">
           <div className="max-w-6xl mb-12">
             <h2 className={t.sectionHeadlineLg}>
               <span className="text-black">What we</span>{" "}
@@ -104,7 +104,7 @@ const ServiceDetail = ({ service, heroImage }: Props) => {
 
       {/* USE CASES & RESULTS */}
       <section className="py-20 bg-background">
-        <div className="container-px max-w-[1400px] mx-auto">
+        <div className="container-px max-w-[1200px] mx-auto">
           <div className="max-w-3xl mb-12">
             <h2 className={t.sectionHeadlineLg}>
               <span className="text-black">Use cases &</span>{" "}
@@ -179,7 +179,7 @@ const ServiceDetail = ({ service, heroImage }: Props) => {
 
       {/* FAQ */}
       <section className="py-20 bg-background">
-        <div className="container-px max-w-[1400px] mx-auto">
+        <div className="container-px max-w-[1200px] mx-auto">
           <div className="max-w-3xl mb-12">
             <h2 className={t.sectionHeadlineLg}>
               <span className="text-black">Frequently asked</span>{" "}
