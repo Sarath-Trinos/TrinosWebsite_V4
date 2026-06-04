@@ -60,14 +60,14 @@ const Leadership = () => {
         </div>
 
         {/* Image-only cards — click to reveal the bio in a modal */}
-        <div className="mt-14 grid justify-center gap-8 sm:grid-cols-2 lg:grid-cols-3">
+        <div className="mt-14 grid justify-center gap-8 sm:grid-cols-2 lg:grid-cols-3 lg:gap-9">
           {leaders.map((leader, i) => (
             <button
               key={leader.name}
               type="button"
               onClick={() => setActive(i)}
               aria-label={`Show ${leader.name}, ${leader.role}`}
-              className="group relative mx-auto block w-full max-w-[360px] overflow-hidden rounded-2xl bg-surface-soft text-left shadow-soft transition-all duration-300 hover:shadow-card focus:outline-none focus-visible:ring-2 focus-visible:ring-primary focus-visible:ring-offset-2"
+              className="group relative mx-auto block w-full max-w-[310px] overflow-hidden rounded-2xl bg-surface-soft text-left shadow-soft transition-all duration-300 hover:shadow-card focus:outline-none focus-visible:ring-2 focus-visible:ring-primary focus-visible:ring-offset-2"
             >
               <div className="relative aspect-[4/5] w-full">
                 <Image
@@ -75,7 +75,7 @@ const Leadership = () => {
                   alt={`${leader.name}, ${leader.role}`}
                   fill
                   className="object-cover grayscale-[0.15] transition-transform duration-500 group-hover:scale-[1.03] group-hover:grayscale-0"
-                  sizes="(min-width: 640px) 360px, 100vw"
+                  sizes="(min-width: 640px) 310px, 100vw"
                 />
               </div>
 

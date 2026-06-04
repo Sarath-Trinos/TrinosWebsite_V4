@@ -6,7 +6,6 @@ import TwoTracks from "@/components/site/TwoTracks";
 import AgentPlatform from "@/components/site/AgentPlatform";
 import ErpCrmModernization from "@/components/site/ErpCrmModernization";
 import HealthcareAI from "@/components/site/HealthcareAI";
-import EnterpriseProof from "@/components/site/EnterpriseProof";
 import WhyChooseTrinos from "@/components/site/WhyChooseTrinos";
 import CTASection from "@/components/site/CTASection";
 import Footer from "@/components/site/Footer";
@@ -22,7 +21,6 @@ export default function Home() {
       <AgentPlatform />
       <ErpCrmModernization />
       <HealthcareAI />
-      <EnterpriseProof />
       <WhyChooseTrinos />
       <CTASection
         variant="gradient"

@@ -14,33 +14,33 @@ type BentoCard = {
 
 const cards: BentoCard[] = [
   {
-    label: "SLMS",
-    title: "Small Language Models for Business",
-    body: "Fine-tune compact, domain-specific models on industry data to improve accuracy, reduce cost and increase control for focused tasks. These models can reflect your terminology, workflows and document patterns more closely than generic public models.",
+    label: "AGENTIC REASONING",
+    title: "Agentic Reasoning Models",
+    body: "Purpose-built small and mid-scale models that plan, decide, and act across multi-step enterprise workflows, so high accuracy at a fraction of frontier-model cost.",
     Icon: Layers,
     illustration: "orchestration",
     className: "col-span-12 lg:col-span-8",
   },
   {
-    label: "FEEDBACK DRIVEN",
-    title: "Feedback Driven AI",
-    body: "Improve systems through new data, validated outcomes and controlled update cycles over time. Feedback becomes useful only when it is reviewed, structured and connected to clear quality measures.",
+    label: "MEMORY-DRIVEN",
+    title: "Memory-Driven Agents with MCP",
+    body: "Agents equipped with enterprise tools, long-term memory, and contextual recall, turning one-shot AI into compounding intelligence.",
     Icon: Hexagon,
     illustration: "mcp",
     className: "col-span-12 lg:col-span-4",
   },
   {
-    label: "FEEDBACK LOOP",
-    title: "The Feedback Loop",
-    body: "Use human corrections and approvals to align AI outputs with organizational standards. Each review cycle can help reduce repeated errors and improve consistency in future outputs.",
+    label: "HUMAN-IN-THE-LOOP",
+    title: "Human-in-the-Loop Control",
+    body: "Every approval, correction, and override is captured as signal, making agents safer, more aligned, and measurably better over time.",
     Icon: Activity,
     illustration: "rag",
     className: "col-span-12 lg:col-span-4",
   },
   {
-    label: "RAD",
-    title: "Rapid Application Development",
-    body: "Use AI assisted engineering workflows to help build and iterate production grade platforms faster. This supports faster delivery without removing engineering review, testing and quality control.",
+    label: "RAPID APP DEV",
+    title: "Rapid application dev",
+    body: "Production-grade AI systems designed, built and deployed in weeks — not months.",
     Icon: ShieldCheck,
     illustration: "security",
     className: "col-span-12 lg:col-span-8",
@@ -283,7 +283,7 @@ function BentoCardInner({ label, title, body, Icon, illustration }: Omit<BentoCa
 }
 
 const WhatWeDeliver = () => (
-  <section id="what-we-deliver" className="bg-[#F9F9F7] py-24">
+  <section id="what-we-deliver" className="bg-[#F9F9F7] pt-24 pb-12">
     <div className="container-px mx-auto max-w-[1200px]">
       <p className="mb-10 max-w-3xl text-sm md:text-base text-muted-foreground border-l-2 border-primary pl-4">
         The Trinos Edge powers production AI platforms and supports products like
