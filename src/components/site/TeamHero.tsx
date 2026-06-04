@@ -1,12 +1,37 @@
+"use client";
+
 import { ArrowRight } from "lucide-react";
+import { useEffect, useRef } from "react";
 import { type as t } from "@/lib/typography";
 
 const TeamHero = () => {
+  const videoRef = useRef<HTMLVideoElement>(null);
+
+  useEffect(() => {
+    const video = videoRef.current;
+    if (!video) return;
+
+    const observer = new IntersectionObserver(
+      ([entry]) => {
+        if (entry.isIntersecting) {
+          video.play().catch(() => {});
+        } else {
+          video.pause();
+        }
+      },
+      { threshold: 0.01 }
+    );
+    observer.observe(video);
+
+    return () => observer.disconnect();
+  }, []);
+
   return (
     <section className="relative overflow-hidden">
       <div className="h-[5rem]" aria-hidden="true" />
       <div className="relative pt-16 lg:pt-24 pb-24">
         <video
+          ref={videoRef}
           className="absolute inset-0 w-full h-full object-cover"
           src="/team/mp_.mp4"
           autoPlay
@@ -14,6 +39,7 @@ const TeamHero = () => {
           loop
           playsInline
           preload="auto"
+          disableRemotePlayback
           aria-hidden="true"
         />
         <div className="absolute inset-0 bg-black/60" />

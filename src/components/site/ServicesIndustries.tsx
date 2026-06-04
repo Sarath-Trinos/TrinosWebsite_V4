@@ -58,7 +58,7 @@ const ServicesIndustries = () => (
                   className="h-full w-full object-contain"
                 />
               </div>
-              <p className="font-semibold text-foreground text-center text-lg">
+              <p className={`${t.cardHeadlineSm} text-foreground text-center`}>
                 {name}
               </p>
             </div>

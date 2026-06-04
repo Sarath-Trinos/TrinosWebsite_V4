@@ -29,7 +29,7 @@ const TrinosEdgeHero = () => {
   return (
     <section className="relative overflow-hidden">
       <div className="h-[5rem]" aria-hidden="true" />
-      <div className="relative pt-12 lg:pt-16 pb-16">
+      <div className="relative pt-16 lg:pt-24 pb-24">
         <video
           ref={videoRef}
           className="absolute inset-0 w-full h-full object-cover"
@@ -45,7 +45,7 @@ const TrinosEdgeHero = () => {
         <div className="absolute inset-0 bg-black/60" />
 
         <div className="container-px max-w-[1400px] mx-auto relative z-10">
-          <div className="max-w-4xl animate-fade-up">
+          <div className="max-w-3xl animate-fade-up">
             <span className="chip mb-5">Our AI-First Advantage</span>
             <h1 className={`${t.heroHeadline} text-white [text-wrap:normal]`}>
               AI Systems That Improve
@@ -55,7 +55,7 @@ const TrinosEdgeHero = () => {
               </span>
               .
             </h1>
-            <p className={`mt-6 ${t.subheadline} text-white/80`}>
+            <p className={`mt-6 ${t.subheadline} text-white/80 max-w-2xl`}>
               The Trinos Edge helps AI systems improve through validated feedback,
               operational learning and controlled updates over time.
             </p>

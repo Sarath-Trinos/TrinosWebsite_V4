@@ -2,6 +2,7 @@ import Image from "next/image";
 import { ArrowRight } from "lucide-react";
 import { type as t } from "@/lib/typography";
 import type { ServiceContent } from "@/lib/services-content";
+import TechStackIndustries from "@/components/site/TechStackIndustries";
 
 type Props = { service: ServiceContent; heroImage?: string };
 
@@ -171,48 +172,10 @@ const ServiceDetail = ({ service, heroImage }: Props) => {
       </section>
 
       {/* TECH STACK & INDUSTRIES */}
-      <section className="py-20 bg-[#F9F9F7]">
-        <div className="container-px max-w-[1400px] mx-auto">
-          <div className="grid lg:grid-cols-2 gap-6">
-            <div className="rounded-2xl bg-card border border-border p-8 shadow-card">
-              <div className="text-xs font-semibold uppercase tracking-[0.16em] text-primary mb-3">
-                Tech stack & tools
-              </div>
-              <h3 className={`${t.cardHeadlineMedium} text-foreground mb-5`}>
-                The toolchain we work with
-              </h3>
-              <div className="flex flex-wrap gap-2">
-                {service.techStack.map((tech) => (
-                  <span
-                    key={tech}
-                    className="inline-flex items-center px-3.5 py-1.5 rounded-full text-sm font-medium bg-surface-soft text-foreground border border-border"
-                  >
-                    {tech}
-                  </span>
-                ))}
-              </div>
-            </div>
-            <div className="rounded-2xl bg-card border border-border p-8 shadow-card">
-              <div className="text-xs font-semibold uppercase tracking-[0.16em] text-primary mb-3">
-                Industries
-              </div>
-              <h3 className={`${t.cardHeadlineMedium} text-foreground mb-5`}>
-                Where this service is applied
-              </h3>
-              <div className="flex flex-wrap gap-2">
-                {service.industries.map((ind) => (
-                  <span
-                    key={ind}
-                    className="inline-flex items-center px-3.5 py-1.5 rounded-full text-sm font-medium bg-gradient-cta text-primary-foreground shadow-soft"
-                  >
-                    {ind}
-                  </span>
-                ))}
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
+      <TechStackIndustries
+        techStack={service.techStack}
+        industries={service.industries}
+      />
 
       {/* FAQ */}
       <section className="py-20 bg-background">

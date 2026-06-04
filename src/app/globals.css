@@ -87,9 +87,11 @@
   }
   html {
     scroll-behavior: smooth;
+    overscroll-behavior-y: none;
   }
   body {
     @apply bg-background text-foreground font-sans antialiased;
+    overscroll-behavior-y: none;
     font-family: var(--font-inter), 'Inter', system-ui, sans-serif;
     font-feature-settings: "ss01", "cv11";
   }

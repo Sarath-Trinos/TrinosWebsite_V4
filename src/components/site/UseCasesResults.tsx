@@ -66,7 +66,7 @@ const UseCasesResults = () => (
               />
             </div>
             <div className="p-7 flex flex-col gap-4 flex-1">
-              <h3 className={`${t.cardHeadline} text-foreground font-semibold`}>
+              <h3 className={`${t.cardHeadline} text-foreground`}>
                 {title}
               </h3>
               <p className="text-sm text-muted-foreground leading-relaxed text-balance">

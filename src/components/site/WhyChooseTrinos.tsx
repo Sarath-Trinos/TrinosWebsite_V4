@@ -126,7 +126,7 @@ const WhyChooseTrinos = () => {
         </p>
 
         {/* Timeline + cards */}
-        <div ref={cardsRef} className="relative mt-20 sm:mt-24">
+        <div ref={cardsRef} className="relative mt-10 sm:mt-12">
           <div className="grid grid-cols-1 gap-10 sm:grid-cols-2 sm:gap-8 lg:grid-cols-3 lg:items-stretch">
             {pillars.map((p, i) => {
               const { Icon } = p;

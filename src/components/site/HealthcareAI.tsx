@@ -53,7 +53,7 @@ const HealthcareAI = () => {
         />
 
         <div className="grid grid-cols-1 md:grid-cols-5 gap-6 md:items-stretch">
-          <div className="md:col-span-2 tile overflow-hidden relative aspect-[4/5] md:aspect-[3/4] lg:aspect-[4/5]">
+          <div className="md:col-span-2 tile overflow-hidden relative aspect-[4/5] md:aspect-auto md:h-[26rem] lg:h-[30rem]">
             {cards.map((card, i) => (
               <Image
                 key={card.title}
@@ -72,10 +72,9 @@ const HealthcareAI = () => {
             ))}
           </div>
 
-          <div className="md:col-span-3 grid gap-4 md:gap-3 lg:gap-6 md:grid-rows-3 md:h-full">
+          <div className="md:col-span-3 flex flex-col gap-4 md:gap-3 lg:gap-6 md:h-[26rem] lg:h-[30rem]">
             {cards.map((it, i) => {
-              const isHovered = i === hoveredIndex;
-              const isActive = isHovered;
+              const isActive = i === activeIndex;
               return (
                 <a
                   key={it.title}
@@ -86,10 +85,10 @@ const HealthcareAI = () => {
                   onBlur={() => setHoveredIndex(null)}
                   aria-current={isActive ? "true" : undefined}
                   className={cn(
-                    "tile bg-card border p-6 md:p-4 lg:p-7 flex items-center gap-5 md:gap-4 lg:gap-5 text-left w-full md:h-full transition-all duration-300 ease-out",
+                    "tile bg-card border p-6 md:p-4 lg:p-7 flex items-center gap-5 md:gap-4 lg:gap-5 text-left w-full transition-[border-color,box-shadow] duration-300 ease-out md:min-h-0",
                     isActive
-                      ? "border-primary shadow-glow scale-[1.01]"
-                      : "border-border hover:border-primary/40 hover:shadow-soft"
+                      ? "border-primary shadow-glow md:flex-1"
+                      : "border-border hover:border-primary/40 hover:shadow-soft md:flex-none"
                   )}
                 >
                   <div
@@ -106,7 +105,7 @@ const HealthcareAI = () => {
                     <h3 className={t.cardHeadline}>{it.title}</h3>
                     <div
                       className={cn(
-                        "grid transition-all duration-300 ease-out",
+                        "grid transition-opacity duration-300 ease-out",
                         isActive
                           ? "grid-rows-[1fr] opacity-100 mt-2"
                           : "grid-rows-[0fr] opacity-0"

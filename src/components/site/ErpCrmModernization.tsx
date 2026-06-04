@@ -125,7 +125,7 @@ const ErpCrmModernization = () => (
       </div>
 
       <div className="mt-16 flex justify-center">
-        <p className={`text-center ${t.bodyLg} text-muted-foreground max-w-2xl`}>
+        <p className={`text-center ${t.bodyLg} text-muted-foreground max-w-none whitespace-nowrap`}>
           Helping enterprises move from isolated AI experiments to intelligent systems that operate inside real workflows.
         </p>
       </div>

@@ -31,7 +31,7 @@ const Leadership = () => (
           <span className="text-black">Meet the people</span>{" "}
           <span className="text-brand-gradient-reverse">behind Trinos</span>
         </h2>
-        <p className={`mt-4 ${t.subheadlineNormal} text-muted-foreground`}>
+        <p className={`mt-4 ${t.body} text-muted-foreground`}>
           Operators with decades of enterprise, engineering and AI experience who have built and shipped the kind of systems they now help others deploy.
         </p>
       </div>

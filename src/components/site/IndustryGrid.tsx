@@ -35,7 +35,7 @@ const INDUSTRIES: Industry[] = [
       "Improved patient experience",
       "Secure and reliable operations",
     ],
-    cta: { label: "Explore Healthcare AI Solutions", href: "/services" },
+    cta: { label: "Explore Healthcare AI Solutions", href: "/contact" },
   },
   {
     title: "Financial Services & Insurance",
@@ -60,7 +60,7 @@ const INDUSTRIES: Industry[] = [
       "Better visibility across teams",
       "Secure and scalable processes",
     ],
-    cta: { label: "Explore Secure Financial AI", href: "/services" },
+    cta: { label: "Explore Secure Financial AI", href: "/contact" },
   },
   {
     title: "Retail & E-Commerce",
@@ -85,7 +85,7 @@ const INDUSTRIES: Industry[] = [
       "Smarter sales decisions",
       "Scalable retail operations",
     ],
-    cta: { label: "Create Better Shopping Experiences", href: "/services" },
+    cta: { label: "Create Better Shopping Experiences", href: "/contact" },
   },
   {
     title: "Manufacturing & Industrial AI",
@@ -109,7 +109,7 @@ const INDUSTRIES: Industry[] = [
       "Smarter resource planning",
       "More connected operations",
     ],
-    cta: { label: "Connect Manufacturing Operations", href: "/services" },
+    cta: { label: "Connect Manufacturing Operations", href: "/contact" },
   },
   {
     title: "Legal & Professional Services",
@@ -134,7 +134,7 @@ const INDUSTRIES: Industry[] = [
       "Easier access to knowledge",
       "More reliable service delivery",
     ],
-    cta: { label: "Automate Document Workflows", href: "/services" },
+    cta: { label: "Automate Document Workflows", href: "/contact" },
   },
   {
     title: "Real Estate & Property Management",
@@ -159,7 +159,7 @@ const INDUSTRIES: Industry[] = [
       "Reduced manual follow ups",
       "Smarter property decisions",
     ],
-    cta: { label: "Simplify Property Management", href: "/services" },
+    cta: { label: "Simplify Property Management", href: "/contact" },
   },
   {
     title: "Media & Entertainment",
@@ -184,7 +184,7 @@ const INDUSTRIES: Industry[] = [
       "Reduced manual follow ups",
       "More efficient production workflows",
     ],
-    cta: { label: "Optimize Content Operations", href: "/services" },
+    cta: { label: "Optimize Content Operations", href: "/contact" },
   },
   {
     title: "Logistics & Supply Chain",
@@ -214,7 +214,7 @@ const INDUSTRIES: Industry[] = [
       "Clearer learning insights",
       "Scalable education operations",
     ],
-    cta: { label: "Personalize Learning Experiences", href: "/services" },
+    cta: { label: "Personalize Learning Experiences", href: "/contact" },
   },
   {
     title: "Energy & Utilities",
@@ -238,7 +238,7 @@ const INDUSTRIES: Industry[] = [
       "Stronger compliance support",
       "More reliable operations",
     ],
-    cta: { label: "Improve Asset Performance", href: "/services" },
+    cta: { label: "Improve Asset Performance", href: "/contact" },
   },
   {
     title: "Construction & Engineering",
@@ -263,7 +263,7 @@ const INDUSTRIES: Industry[] = [
       "Stronger compliance support",
       "Smoother project delivery",
     ],
-    cta: { label: "Track Projects Better", href: "/services" },
+    cta: { label: "Track Projects Better", href: "/contact" },
   },
   {
     title: "Hospitality & Tourism",
@@ -288,7 +288,7 @@ const INDUSTRIES: Industry[] = [
       "Clearer operational visibility",
       "More efficient hospitality workflows",
     ],
-    cta: { label: "Enhance Guest Operations", href: "/services" },
+    cta: { label: "Enhance Guest Operations", href: "/contact" },
   },
 ];
 
@@ -411,7 +411,7 @@ const IndustryGrid = () => {
                     </div>
                     <div className="p-6 md:p-10">
                       <h3
-                        className={`${t.featureHeadline} text-foreground font-semibold animate-slide-up-soft`}
+                        className={`${t.featureHeadline} text-foreground animate-slide-up-soft`}
                         style={{ animationDelay: "0.15s" }}
                       >
                         {activeIndustry.title}

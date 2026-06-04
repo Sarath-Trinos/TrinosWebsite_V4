@@ -29,7 +29,7 @@ const IndustryHero = () => {
   return (
     <section className="relative overflow-hidden">
       <div className="h-[5rem]" aria-hidden="true" />
-      <div className="relative pt-12 lg:pt-16 pb-16">
+      <div className="relative pt-16 lg:pt-24 pb-24">
         <video
           ref={videoRef}
           className="absolute inset-0 w-full h-full object-cover"
@@ -42,10 +42,10 @@ const IndustryHero = () => {
           disableRemotePlayback
           aria-hidden="true"
         />
-        <div className="absolute inset-0 bg-black/65" />
+        <div className="absolute inset-0 bg-black/60" />
 
         <div className="container-px max-w-[1400px] mx-auto relative z-10">
-          <div className="max-w-4xl animate-fade-up">
+          <div className="max-w-3xl animate-fade-up">
             <span className="chip mb-5">Industries we serve</span>
             <h1 className={`${t.heroHeadline} text-white [text-wrap:normal]`}>
               AI First Solutions for
@@ -55,7 +55,7 @@ const IndustryHero = () => {
               </span>
               .
             </h1>
-            <p className={`mt-6 ${t.subheadline} text-white/80`}>
+            <p className={`mt-6 ${t.subheadline} text-white/80 max-w-2xl`}>
               Trinos builds secure and intelligent AI systems for industries with complex
               operations, strict rules and high value decisions. From manufacturing to
               finance, we help enterprises turn data and workflows into measurable business
