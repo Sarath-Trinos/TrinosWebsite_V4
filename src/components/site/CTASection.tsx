@@ -58,6 +58,7 @@ type CTASectionProps = {
   subtitleClassName?: string;
   buttonLabel?: string;
   buttonHref?: string;
+  className?: string;
 };
 
 const CTASection = ({
@@ -67,10 +68,11 @@ const CTASection = ({
   subtitleClassName = "max-w-2xl",
   buttonLabel = "Get In Touch",
   buttonHref = "#",
+  className = "py-24",
 }: CTASectionProps) => {
   const v = variants[variant];
   return (
-    <section id="demo" className="py-24">
+    <section id="demo" className={className}>
       <div className="container-px max-w-[1200px] mx-auto">
         <div className={`tile ${v.bg} p-8 md:p-12 lg:p-20 text-center relative overflow-hidden`}>
           <div className="absolute -top-32 -left-32 w-[25rem] h-[25rem] rounded-full bg-white/40 blur-3xl" />

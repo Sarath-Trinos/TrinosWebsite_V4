@@ -24,6 +24,7 @@ export default function Home() {
       <WhyChooseTrinos />
       <CTASection
         variant="gradient"
+        className="pt-0 pb-24"
         title="Stop piloting. Start shipping."
         subtitle="Start with a Discovery Workshop. Trinos will review your workflows, data systems and operational bottlenecks before recommending the right AI first solution for your environment."
         subtitleClassName="max-w-6xl text-balance"

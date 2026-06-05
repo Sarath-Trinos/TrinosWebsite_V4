@@ -20,6 +20,18 @@ function isDropdown(item: NavItem): item is NavDropdown {
 
 const navItems: NavItem[] = [
   {
+    label: "About Us",
+    href: "/about",
+    children: [
+      { label: "Who We Are", href: "/about#who-we-are" },
+      { label: "Our Values", href: "/about#our-values" },
+      { label: "Mission & Vision", href: "/about#mission-vision" },
+      { label: "Leadership", href: "/about#leadership" },
+    ],
+  },
+  { label: "The Trinos Edge", href: "/trinos-edge" },
+  { label: "Industries", href: "/industry" },
+  {
     label: "Services",
     href: "/services",
     pillars: [
@@ -50,12 +62,8 @@ const navItems: NavItem[] = [
       },
     ],
   },
-  { label: "Industries", href: "/industry" },
   { label: "Products", href: "/products" },
-  { label: "The Trinos Edge", href: "/trinos-edge" },
   { label: "Careers", href: "/careers" },
-  { label: "Team", href: "/team" },
-  { label: "About Us", href: "/about" },
 ];
 
 const Header = () => {
@@ -125,8 +133,8 @@ const Header = () => {
                       <ChevronDown className="w-3.5 h-3.5 opacity-60" />
                     </button>
                   )}
-                  <div className="absolute top-full left-0 pt-2 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200">
-                    <div className="bg-card rounded-2xl shadow-card border border-border p-6 grid grid-cols-3 gap-8 w-[780px]">
+                  <div className="absolute top-full left-1/2 -translate-x-1/2 pt-2 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200">
+                    <div className="bg-card rounded-2xl shadow-card border border-border p-6 grid grid-cols-3 gap-8 w-[min(780px,calc(100vw-2rem))]">
                       {item.pillars.map((pillar) => (
                         <div key={pillar.label}>
                           <div className="text-xs font-semibold uppercase tracking-wider text-primary mb-3">
@@ -155,19 +163,31 @@ const Header = () => {
               );
             }
             if (isDropdown(item)) {
+              const active =
+                (item.href && isActive(item.href)) || isGroupActive(item.children);
               return (
                 <div key={item.label} className="relative group">
-                  <button
-                    type="button"
-                    className={`nav-link flex items-center gap-1 px-4 py-2 text-base font-medium rounded-full transition-colors ${
-                      isGroupActive(item.children)
-                        ? "is-active text-primary"
-                        : "text-foreground/80 hover:text-primary"
-                    }`}
-                  >
-                    {item.label}
-                    <ChevronDown className="w-3.5 h-3.5 opacity-60" />
-                  </button>
+                  {item.href ? (
+                    <a
+                      href={item.href}
+                      className={`nav-link flex items-center gap-1 px-4 py-2 text-base font-medium rounded-full transition-colors ${
+                        active ? "is-active text-primary" : "text-foreground/80 hover:text-primary"
+                      }`}
+                    >
+                      {item.label}
+                      <ChevronDown className="w-3.5 h-3.5 opacity-60" />
+                    </a>
+                  ) : (
+                    <button
+                      type="button"
+                      className={`nav-link flex items-center gap-1 px-4 py-2 text-base font-medium rounded-full transition-colors ${
+                        active ? "is-active text-primary" : "text-foreground/80 hover:text-primary"
+                      }`}
+                    >
+                      {item.label}
+                      <ChevronDown className="w-3.5 h-3.5 opacity-60" />
+                    </button>
+                  )}
                   <div className="absolute top-full left-0 pt-2 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200">
                     <div className="bg-card rounded-2xl shadow-card border border-border p-2 min-w-[200px]">
                       {item.children.map((c) => (

@@ -73,7 +73,7 @@ const WhyChooseTrinos = () => {
     <section
       ref={sectionRef}
       id="why-choose-trinos"
-      className="relative overflow-hidden bg-gradient-to-b from-white via-surface-soft to-white py-24 sm:py-28 lg:py-32"
+      className="relative overflow-hidden bg-gradient-to-b from-white via-surface-soft to-white pt-24 pb-12 sm:pt-28 sm:pb-14 lg:pt-32 lg:pb-16"
     >
       {/* Ambient decorative background */}
       <div className="pointer-events-none absolute inset-0 -z-10">

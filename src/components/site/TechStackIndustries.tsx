@@ -1,16 +1,56 @@
 import {
+  ArrowLeftRight,
+  Atom,
+  AudioLines,
+  Bell,
+  Bot,
   Boxes,
   Braces,
+  BrainCircuit,
   Building2,
+  CalendarClock,
+  Camera,
+  CircuitBoard,
+  ClipboardCheck,
+  Cloud,
+  Cog,
+  Component,
   Cpu,
   Database,
+  Factory,
+  FileSearch,
+  Flame,
   GitBranch,
+  HeartPulse,
+  Hexagon,
   Landmark,
   Layers,
   LineChart,
+  MessagesSquare,
+  Mic,
   Network,
+  Palette,
+  PhoneCall,
+  Plug,
+  Radio,
+  RefreshCw,
+  ScanEye,
+  ScanFace,
+  ScanText,
+  Server,
+  ServerCog,
+  Share2,
   ShieldCheck,
+  SlidersHorizontal,
+  Smartphone,
   Sparkles,
+  TabletSmartphone,
+  Table,
+  Truck,
+  Users,
+  Volume2,
+  Webhook,
+  Wind,
   Workflow,
   type LucideIcon,
 } from "lucide-react";
@@ -29,22 +69,98 @@ type Props = {
  */
 const resolveIcon = (label: string, fallback: LucideIcon): LucideIcon => {
   const s = label.toLowerCase();
+  // Order matters: earlier, more-specific patterns win over later generic ones.
   const table: Array<[RegExp, LucideIcon]> = [
-    [/python|node|java|ruby|\bgo\b|rust|code|sdk/, Braces],
-    [/openai|anthropic|claude|gpt|llm|model|\bai\b/, Sparkles],
-    [/langchain|llamaindex|orchestr|agent/, Network],
-    [/vector|database|\bdb\b|postgres|redis|store/, Database],
-    [/secure|security|auth|api|encrypt/, ShieldCheck],
-    [/workflow|pipeline|engine|automation/, Workflow],
+    // ── Tech stack ──
+    // ML frameworks & model tooling — keep each tool visually distinct.
+    [/hugging\s?face/, Bot],
+    [/pytorch/, Flame],
+    [/tensorflow/, BrainCircuit],
+    [/\bpeft\b/, Cog],
+    [/\blora\b|fine-?tun/, SlidersHorizontal],
+    [/sagemaker/, ServerCog],
+    [/\btraining\b/, BrainCircuit],
+    [/evaluation|\beval\b|benchmark/, ClipboardCheck],
+    // Cloud / managed compute (check before generic "api"/"engine")
+    [/aws|azure|\bgcp\b|google cloud|step functions|cloud/, Cloud],
+    // Foundation models / providers — distinguish provider vs. provider.
+    [/anthropic|claude/, Bot],
+    [/openai|gpt|\bllm|\bai\b/, Sparkles],
+    // Orchestration vs. retrieval/indexing.
+    [/llamaindex|\bindex/, FileSearch],
+    [/langchain|orchestr|agent/, Network],
+    // Computer vision — detection vs. OCR vs. camera.
+    [/\bocr\b|text recognition/, ScanText],
+    [/camera/, Camera],
+    [/\byolo\b/, ScanFace],
+    [/opencv|vision|image recognition|detection/, ScanEye],
+    // Edge / hardware
+    [/jetson|nvidia|edge ai|hardware|embedded|\biot\b/, CircuitBoard],
+    // Voice / speech — input vs. output.
+    [/speech to text|\bstt\b|transcri/, Mic],
+    [/text to speech|\btts\b/, Volume2],
+    [/voice|audio/, AudioLines],
+    // Telephony — distinct glyph per channel.
+    [/twilio/, MessagesSquare],
+    [/\bsip\b/, Radio],
+    [/telephony|\bcall\b/, PhoneCall],
+    // ERP / enterprise systems — vendor-distinct where possible.
+    [/sap and oracle|oracle integration/, Server],
+    [/oracle/, Database],
+    [/\bsap\b/, Factory],
+    [/dynamics|microsoft/, Layers],
+    [/infor/, Boxes],
+    [/\bqad\b/, Cog],
+    [/epicor|\berp\b/, Server],
+    [/\bcrm\b/, Users],
+    // Data
+    [/vector/, Boxes],
+    [/\bsql\b/, Table],
+    [/database|\bdb\b|postgres|redis|data store|datastore/, Database],
+    [/data (pipeline|migration)|migration tools|etl/, ArrowLeftRight],
+    [/\bbi\b|analytics|reporting|dashboard|metrics/, LineChart],
+    // APIs & integrations — scheduling/social are more specific than generic API.
+    [/scheduling/, CalendarClock],
+    [/social|platform api/, Share2],
+    [/webhook/, Webhook],
+    [/graphql/, Hexagon],
+    [/rest|\bapis?\b|integration|\bsdk\b/, Plug],
+    // Web & mobile frameworks — keep each framework distinct.
+    [/push notification/, Bell],
+    [/offline/, RefreshCw],
+    [/flutter/, TabletSmartphone],
+    [/react native|\bmobile\b/, Smartphone],
+    [/tailwind/, Wind],
+    [/\breact\b(?! native)/, Component],
+    [/next\.?js|frontend|\bui\b/, Atom],
+    [/python|node|java|ruby|\bgo\b|rust|\bcode\b/, Braces],
+    // Workflow / automation
+    [/workflow|pipeline|\bengines?\b|automation/, Workflow],
+    // Security & auth
+    [/secure|security|auth|encrypt|identity/, ShieldCheck],
+    // Content / brand
+    [/brand|content|creative|design/, Palette],
+    [/\bshare\b/, Share2],
+    // Devops
     [/git|repo|version|ci\/cd|deploy/, GitBranch],
-    [/cloud|infra|compute|kubernetes|docker|container/, Boxes],
-    // Industries
+    [/infra|kubernetes|docker|container|compute/, Boxes],
+
+    // ── Industries ──
     [/financ|bank|fintech|capital|invest/, LineChart],
-    [/insur|risk|claims/, ShieldCheck],
-    [/government|public|gov|civic/, Landmark],
-    [/manufactur|industr|factory|supply/, Cpu],
-    [/enterprise|technology|saas|software/, Layers],
-    [/consult|advisory|services/, Building2],
+    [/insur|\brisk\b|claims/, ShieldCheck],
+    [/healthcare|health|medical|clinical/, HeartPulse],
+    [/government|public|\bgov\b|civic/, Landmark],
+    [/automobile|engineering/, Cog],
+    [/manufactur|industr|factory/, Factory],
+    [/supply/, Truck],
+    [/logistic|warehouse/, ArrowLeftRight],
+    [/\bhr\b|human resource|recruit|talent/, Users],
+    [/legal|compliance|law/, Landmark],
+    [/customer support|support|service desk/, PhoneCall],
+    [/travel|hospitality|tourism/, Share2],
+    [/\bb2b\b/, Network],
+    [/enterprise|technology|saas|software|operations/, Layers],
+    [/consult|advisory|services|marketing/, Building2],
   ];
   for (const [re, icon] of table) if (re.test(s)) return icon;
   return fallback;
@@ -75,11 +191,10 @@ const TechStackIndustries = ({ techStack, industries }: Props) => {
 
       <div className="container-px mx-auto max-w-[1200px]">
         {/* ── Section heading ── */}
-        <div className="mb-12 max-w-2xl lg:mb-16">
-          <h2 className={`${t.sectionHeadlineMd} text-foreground`}>
-            Built on a{" "}
-            <span className="text-brand-gradient">modern AI toolchain</span>,
-            applied across industries
+        <div className="mb-12 lg:mb-16">
+          <h2 className={`${t.sectionHeadlineLg} text-foreground`}>
+            Built on a modern AI toolchain,{" "}
+            <span className="text-brand-gradient-reverse">applied across industries</span>
           </h2>
         </div>
 
@@ -105,7 +220,7 @@ const TechStackIndustries = ({ techStack, industries }: Props) => {
                 <div className="text-[11px] font-semibold uppercase tracking-[0.18em] text-primary">
                   Tech stack &amp; tools
                 </div>
-                <h3 className={`${t.cardHeadlineSm} text-foreground`}>
+                <h3 className={`${t.cardHeadlineSemibold} text-foreground`}>
                   The toolchain we work with
                 </h3>
               </div>
@@ -162,7 +277,7 @@ const TechStackIndustries = ({ techStack, industries }: Props) => {
                 <div className="text-[11px] font-semibold uppercase tracking-[0.18em] text-primary">
                   Industries
                 </div>
-                <h3 className={`${t.cardHeadlineSm} text-foreground`}>
+                <h3 className={`${t.cardHeadlineSemibold} text-foreground`}>
                   Where this service is applied
                 </h3>
               </div>

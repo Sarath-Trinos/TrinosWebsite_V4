@@ -23,7 +23,7 @@ const items = [
 ];
 
 const MissionVision = () => (
-  <section className="bg-background py-24">
+  <section id="mission-vision" className="bg-background py-24">
     <div className="container-px max-w-[1200px] mx-auto">
       <div className="grid grid-cols-1 md:grid-cols-2 gap-5 md:gap-6">
         {items.map(({ eyebrow, title, description, Icon, iconColor, iconBg }) => (

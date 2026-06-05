@@ -80,11 +80,11 @@ const Leadership = () => {
               </div>
 
               {/* Name caption overlay */}
-              <div className="pointer-events-none absolute inset-x-3 bottom-3 rounded-xl bg-white/95 px-4 py-2.5 text-center shadow-soft backdrop-blur-sm">
+              <div className="pointer-events-none absolute inset-x-2 bottom-3 rounded-xl bg-white/95 px-2 py-2.5 text-center shadow-soft backdrop-blur-sm">
                 <span className="block font-display text-lg font-semibold leading-tight text-foreground">
                   {leader.name}
                 </span>
-                <span className={`mt-1 block ${t.bodySm} font-medium text-muted-foreground`}>
+                <span className={`mt-1 block whitespace-nowrap ${t.bodySm} font-medium text-muted-foreground`}>
                   {leader.role}
                 </span>
               </div>
@@ -101,12 +101,12 @@ const Leadership = () => {
           aria-modal="true"
           aria-label={`${selected.name}, ${selected.role}`}
         >
-          {/* Backdrop with blur */}
+          {/* Backdrop — light dim, no blur (blur on a full-screen overlay janks the animation) */}
           <button
             type="button"
             aria-label="Close"
             onClick={() => setActive(null)}
-            className="absolute inset-0 bg-black/40 backdrop-blur-md animate-fade-up"
+            className="absolute inset-0 bg-black/50 animate-backdrop-in"
           />
 
           {/* Bottom panel */}

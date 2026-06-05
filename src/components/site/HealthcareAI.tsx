@@ -71,7 +71,12 @@ const HealthcareAI = () => {
             ))}
           </div>
 
-          <div className="md:col-span-3 flex flex-col gap-4 md:gap-3 lg:gap-6 md:h-[26rem] lg:h-[30rem]">
+          <div
+            className={cn(
+              "md:col-span-3 flex flex-col gap-4 md:gap-3 lg:gap-6 md:h-[26rem] lg:h-[30rem]",
+              activeIndex === null && "md:justify-center"
+            )}
+          >
             {cards.map((it, i) => {
               const isActive = i === activeIndex;
               return (
@@ -79,16 +84,14 @@ const HealthcareAI = () => {
                   key={it.title}
                   href={it.href}
                   onClick={(e) => {
-                    // First click reveals the description; click again to follow the link.
-                    if (!isActive) {
-                      e.preventDefault();
-                      setActiveIndex(i);
-                    }
+                    // Toggle: first click opens the card, clicking it again closes it.
+                    e.preventDefault();
+                    setActiveIndex(isActive ? null : i);
                   }}
                   aria-expanded={isActive}
                   aria-current={isActive ? "true" : undefined}
                   className={cn(
-                    "tile bg-card border p-6 md:p-4 lg:p-7 flex items-center gap-5 md:gap-4 lg:gap-5 text-left w-full transition-[border-color,box-shadow] duration-300 ease-out md:min-h-0",
+                    "tile bg-card border p-6 md:p-4 lg:p-7 flex items-center gap-5 md:gap-4 lg:gap-5 text-left w-full transition-[border-color,box-shadow] duration-300 ease-out md:min-h-0 hover:!translate-y-0",
                     isActive
                       ? "border-primary shadow-glow md:flex-1"
                       : "border-border hover:border-primary/40 hover:shadow-soft md:flex-none"

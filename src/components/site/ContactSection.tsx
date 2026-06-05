@@ -288,6 +288,18 @@ const ContactSection = () => {
                 </p>
               </div>
             </li>
+
+            <li className="flex items-start gap-4">
+              <span className="shrink-0 w-12 h-12 rounded-full bg-surface-soft grid place-items-center">
+                <MapPin className="w-5 h-5 text-primary" strokeWidth={1.75} />
+              </span>
+              <div>
+                <div className="text-sm text-muted-foreground">Office (Canada) 🇨🇦</div>
+                <p className="font-semibold text-foreground mt-1">
+                  214 - 6502 60 Ave, Beaumont, Alberta T4X 2A7
+                </p>
+              </div>
+            </li>
           </ul>
         </div>
       </div>

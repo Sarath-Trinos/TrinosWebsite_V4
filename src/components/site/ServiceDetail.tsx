@@ -3,6 +3,7 @@ import { ArrowRight } from "lucide-react";
 import { type as t } from "@/lib/typography";
 import type { ServiceContent } from "@/lib/services-content";
 import TechStackIndustries from "@/components/site/TechStackIndustries";
+import ServiceFAQ from "@/components/site/ServiceFAQ";
 
 type Props = { service: ServiceContent; heroImage?: string };
 
@@ -186,35 +187,12 @@ const ServiceDetail = ({ service, heroImage }: Props) => {
               <span className="text-brand-gradient-reverse">questions</span>
             </h2>
           </div>
-          <div className="max-w-4xl mx-auto space-y-4">
-            {service.faqs.map((faq, i) => (
-              <details
-                key={faq.question}
-                name={`faq-${service.eyebrow}`}
-                className="group rounded-2xl border border-transparent bg-transparent transition-all hover:border-primary/30 hover:bg-card hover:shadow-glow open:border-primary/30 open:bg-card open:shadow-glow"
-              >
-                <summary className="flex items-start gap-4 cursor-pointer list-none p-6">
-                  <span className="shrink-0 w-8 h-8 rounded-full bg-surface-soft text-primary font-bold grid place-items-center text-sm">
-                    Q
-                  </span>
-                  <h3 className={`${t.cardHeadlineSm} text-foreground flex-1`}>
-                    {faq.question}
-                  </h3>
-                  <span className="shrink-0 text-primary text-2xl leading-none transition-transform group-open:rotate-45">
-                    +
-                  </span>
-                </summary>
-                <div className="px-6 pb-6 pl-[4.5rem]">
-                  <p className={`${t.body} text-muted-foreground`}>{faq.answer}</p>
-                </div>
-              </details>
-            ))}
-          </div>
+          <ServiceFAQ faqs={service.faqs} />
         </div>
       </section>
 
       {/* FINAL CTA & RELATED — fixed parallax image spanning the full viewport width */}
-      <section className="bg-background py-20">
+      <section className="bg-background pt-20">
         <div className="w-full">
           <div className="relative overflow-hidden bg-surface-dark text-on-surface-dark shadow-card flex items-center justify-center">
             {/* Fixed background image, clipped to this card (stays pinned while content scrolls over it) */}
