@@ -96,6 +96,11 @@
   body {
     @apply bg-background text-foreground font-sans antialiased;
     overscroll-behavior-y: none;
+    /* Safety net: no single section may push the page wider than the viewport.
+       Prevents a stray nowrap/fixed-width element from shifting centered
+       layouts off-screen (the tablet-view overflow bug). Kept on body (not
+       html) so vertical scrolling is unaffected. */
+    overflow-x: clip;
     font-family: var(--font-inter), 'Inter', system-ui, sans-serif;
     font-feature-settings: "ss01", "cv11";
   }

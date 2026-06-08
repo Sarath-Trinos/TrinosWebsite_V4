@@ -47,9 +47,9 @@ const IndustryHero = () => {
         <div className="container-px max-w-[1200px] mx-auto relative z-10 flex items-center min-h-[20rem] lg:min-h-[24rem]">
           <div className="max-w-5xl animate-fade-up">
             <span className="chip mb-5">Industries we serve</span>
-            <h1 className={`${t.heroHeadline} text-white [text-wrap:nowrap]`}>
+            <h1 className={`${t.heroHeadline} text-white lg:[text-wrap:nowrap]`}>
               AI First Solutions for
-              <br />
+              <br className="hidden lg:block" />{" "}
               <span className="text-brand-gradient-reverse">
                 Complex Enterprise Industries
               </span>

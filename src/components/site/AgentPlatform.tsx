@@ -64,9 +64,12 @@ const tiles: Tile[] = [
   },
 ];
 
+const AUTO_ROTATE_MS = 4000;
+
 const AgentPlatform = () => {
   const [activeIndex, setActiveIndex] = useState(0);
   const [imageVisible, setImageVisible] = useState(false);
+  const [isTouch, setIsTouch] = useState(false);
   const imageWrapperRef = useRef<HTMLDivElement | null>(null);
   const isScrollingRef = useRef(false);
   const scrollTimeoutRef = useRef<number | null>(null);
@@ -87,6 +90,28 @@ const AgentPlatform = () => {
     return () => observer.disconnect();
   }, []);
 
+  // Detect hover-less (touch) devices — mobile/tablet — and keep it in sync
+  // with viewport changes (e.g. rotating a 2-in-1 or resizing dev tools).
+  useEffect(() => {
+    const mql = window.matchMedia("(hover: none)");
+    const update = () => setIsTouch(mql.matches);
+    update();
+    mql.addEventListener("change", update);
+    return () => mql.removeEventListener("change", update);
+  }, []);
+
+  // On touch devices there is no hover, so mimic the laptop hover effect by
+  // auto-cycling the left media/content through every service. Only runs once
+  // the section is visible, and pauses while the user is actively scrolling.
+  useEffect(() => {
+    if (!isTouch || !imageVisible) return;
+    const id = window.setInterval(() => {
+      if (isScrollingRef.current) return;
+      setActiveIndex((prev) => (prev + 1) % tiles.length);
+    }, AUTO_ROTATE_MS);
+    return () => window.clearInterval(id);
+  }, [isTouch, imageVisible]);
+
   useEffect(() => {
     const onScroll = () => {
       isScrollingRef.current = true;
@@ -102,10 +127,15 @@ const AgentPlatform = () => {
     };
   }, []);
 
-  const handleActivate = useCallback((i: number) => {
-    if (isScrollingRef.current) return;
-    setActiveIndex((prev) => (prev === i ? prev : i));
-  }, []);
+  // Hover (laptop) drives the active tile directly. On touch the left card
+  // auto-rotates instead, so hover/focus activation is a no-op there.
+  const handleActivate = useCallback(
+    (i: number) => {
+      if (isTouch || isScrollingRef.current) return;
+      setActiveIndex((prev) => (prev === i ? prev : i));
+    },
+    [isTouch]
+  );
 
   return (
     <section id="agents" className="py-24">

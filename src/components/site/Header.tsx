@@ -249,19 +249,33 @@ const Header = () => {
               if (isMega(item)) {
                 return (
                   <div key={item.label} className="border-b border-border/60">
-                    <button
-                      type="button"
-                      onClick={() => toggleGroup(item.label)}
-                      aria-expanded={!!openGroups[item.label]}
-                      className="w-full flex items-center justify-between py-3 font-medium text-foreground"
-                    >
-                      <span>{item.label}</span>
-                      <ChevronDown
-                        className={`w-4 h-4 opacity-60 transition-transform duration-200 ${
-                          openGroups[item.label] ? "rotate-180" : ""
-                        }`}
-                      />
-                    </button>
+                    <div className="flex items-center justify-between">
+                      {item.href ? (
+                        <a
+                          href={item.href}
+                          className="flex-1 py-3 font-medium text-foreground"
+                        >
+                          {item.label}
+                        </a>
+                      ) : (
+                        <span className="flex-1 py-3 font-medium text-foreground">
+                          {item.label}
+                        </span>
+                      )}
+                      <button
+                        type="button"
+                        onClick={() => toggleGroup(item.label)}
+                        aria-expanded={!!openGroups[item.label]}
+                        aria-label={`Toggle ${item.label} submenu`}
+                        className="p-3 -mr-3 text-foreground"
+                      >
+                        <ChevronDown
+                          className={`w-4 h-4 opacity-60 transition-transform duration-200 ${
+                            openGroups[item.label] ? "rotate-180" : ""
+                          }`}
+                        />
+                      </button>
+                    </div>
                     {openGroups[item.label] && (
                       <div className="pb-2 space-y-3">
                         {item.pillars.map((pillar) => (
@@ -288,19 +302,33 @@ const Header = () => {
               if (isDropdown(item)) {
                 return (
                   <div key={item.label} className="border-b border-border/60">
-                    <button
-                      type="button"
-                      onClick={() => toggleGroup(item.label)}
-                      aria-expanded={!!openGroups[item.label]}
-                      className="w-full flex items-center justify-between py-3 font-medium text-foreground"
-                    >
-                      <span>{item.label}</span>
-                      <ChevronDown
-                        className={`w-4 h-4 opacity-60 transition-transform duration-200 ${
-                          openGroups[item.label] ? "rotate-180" : ""
-                        }`}
-                      />
-                    </button>
+                    <div className="flex items-center justify-between">
+                      {item.href ? (
+                        <a
+                          href={item.href}
+                          className="flex-1 py-3 font-medium text-foreground"
+                        >
+                          {item.label}
+                        </a>
+                      ) : (
+                        <span className="flex-1 py-3 font-medium text-foreground">
+                          {item.label}
+                        </span>
+                      )}
+                      <button
+                        type="button"
+                        onClick={() => toggleGroup(item.label)}
+                        aria-expanded={!!openGroups[item.label]}
+                        aria-label={`Toggle ${item.label} submenu`}
+                        className="p-3 -mr-3 text-foreground"
+                      >
+                        <ChevronDown
+                          className={`w-4 h-4 opacity-60 transition-transform duration-200 ${
+                            openGroups[item.label] ? "rotate-180" : ""
+                          }`}
+                        />
+                      </button>
+                    </div>
                     {openGroups[item.label] && (
                       <div className="pb-2">
                         {item.children.map((c) => (

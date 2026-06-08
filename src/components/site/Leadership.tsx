@@ -45,7 +45,7 @@ const Leadership = () => {
   }, [selected]);
 
   return (
-    <section id="leadership" className="py-24 bg-white">
+    <section id="leadership" className="pt-24 pb-0 bg-white">
       <div className="container-px max-w-[1200px] mx-auto">
         <div className="max-w-3xl">
           <span className="chip mb-5">Leadership</span>
@@ -60,14 +60,14 @@ const Leadership = () => {
         </div>
 
         {/* Image-only cards — click to reveal the bio in a modal */}
-        <div className="mt-14 grid justify-center gap-8 sm:grid-cols-2 lg:grid-cols-3 lg:gap-9">
+        <div className="mt-14 grid grid-cols-1 justify-center gap-8 sm:grid-cols-2 lg:grid-cols-3 lg:gap-9">
           {leaders.map((leader, i) => (
             <button
               key={leader.name}
               type="button"
               onClick={() => setActive(i)}
               aria-label={`Show ${leader.name}, ${leader.role}`}
-              className="group relative mx-auto block w-full max-w-[310px] overflow-hidden rounded-2xl bg-surface-soft text-left shadow-soft transition-all duration-300 hover:shadow-card focus:outline-none focus-visible:ring-2 focus-visible:ring-primary focus-visible:ring-offset-2"
+              className="group relative mx-auto block w-[min(310px,100%)] overflow-hidden rounded-2xl bg-surface-soft text-left shadow-soft transition-all duration-300 hover:shadow-card focus:outline-none focus-visible:ring-2 focus-visible:ring-primary focus-visible:ring-offset-2"
             >
               <div className="relative aspect-[4/5] w-full">
                 <Image
