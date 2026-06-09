@@ -13,7 +13,7 @@ const tracks: Track[] = [
   {
     title: "We Build AI Products",
     body:
-      "We design, build and operate AI products such as Moltter Studio, TraceFlow and Travel One. These platforms validate our architecture in real market environments before we apply it to enterprise client deployments.",
+      "We design, build and operate AI products such as Moltter Studio, TraceFlow and Trip11. These platforms validate our architecture in real market environments before we apply it to enterprise client deployments.",
     cta: "Explore Our Products",
     href: "/products",
   },
@@ -35,8 +35,8 @@ const TwoTracks = () => (
         titleClassName="font-display text-3xl md:text-4xl lg:text-[44px] leading-tight font-normal text-foreground lg:whitespace-nowrap"
         title={
           <>
-            Two Tracks. One AI-First{" "}
-            <span className="text-brand-gradient">Engine</span>.
+            We Build AI. We{" "}
+            <span className="text-brand-gradient">Deploy AI</span>.
           </>
         }
       />

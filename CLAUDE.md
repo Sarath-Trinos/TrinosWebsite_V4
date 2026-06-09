@@ -19,7 +19,7 @@ Tests live next to source as `*.test.ts(x)` / `*.spec.ts(x)`. Global setup is [s
 
 ## Architecture
 
-Single-page marketing site for **trinos.ai** built with **Next.js 15 (App Router) + React 18 + TypeScript + Tailwind + shadcn/ui**. Originally scaffolded by Lovable as a Vite app; migrated to Next.js for SEO and deployability.
+Multi-page marketing site for **trinos.ai** built with **Next.js 15 (App Router) + React 18 + TypeScript + Tailwind + shadcn/ui**. Originally scaffolded by Lovable as a Vite app; migrated to Next.js for SEO and deployability. (The `README.md` is an unedited Lovable stub — ignore it.)
 
 ### Routing & entry
 
@@ -30,12 +30,25 @@ App Router lives at [src/app/](src/app/):
 - [src/app/not-found.tsx](src/app/not-found.tsx) — 404 page.
 - [src/app/globals.css](src/app/globals.css) — Tailwind layers + brand CSS variables; imported by the root layout.
 
+**Top-level pages:** `/` (home), `/about`, `/careers`, `/contact`, `/industry`, `/products`, `/services`, `/trinos-edge`. Each `page.tsx` composes section components from `src/components/site/`.
+
+**Service detail pages:** `src/app/services/<slug>/page.tsx` — one route per AI service (`agentic-ai`, `ai-voice-assistants`, `ai-workflow-automation`, `computer-vision`, `enterprise-resource-planning`, `generative-ai-analytics`, `llm-fine-tuning`, `mobile-app-development`, `social-media-automation`, `web-development`). These share the [ServiceDetail.tsx](src/components/site/ServiceDetail.tsx) layout plus per-page content; look at an existing slug before adding a new one.
+
 To add a new page, create `src/app/<segment>/page.tsx` (App Router file-based routing). No central route table.
+
+### Contact form API
+
+[src/app/api/contact/route.ts](src/app/api/contact/route.ts) is the only backend route — a `POST` handler that validates the contact payload with a **zod** schema, then sends an email via **Resend**. It HTML-escapes all user input into the email template. The browser-side form ([ContactSection.tsx](src/components/site/ContactSection.tsx), client, `react-hook-form` + `@hookform/resolvers` + zod) POSTs JSON here.
+
+Environment variables (read in the route handler; required for the form to work):
+- `RESEND_API_KEY` — **required**; the route returns HTTP 500 if unset.
+- `CONTACT_TO_EMAIL` — recipient (defaults to `info@trinos.ai`).
+- `CONTACT_FROM_EMAIL` — sender (defaults to Resend's `onboarding@resend.dev` test sender).
 
 ### Component layout
 
 - [src/components/ui/](src/components/ui/) — shadcn/ui primitives (Radix-based). All marked `"use client"` because they use hooks/Radix internals. Configured via [components.json](components.json) (style: default, base color: slate, CSS variables, no RSC). Add new primitives via the shadcn CLI; they land here.
-- [src/components/site/](src/components/site/) — page sections specific to the marketing site. These are server components by default; only [Header.tsx](src/components/site/Header.tsx) is `"use client"` (uses `useState`/`useEffect` for scroll + mobile menu).
+- [src/components/site/](src/components/site/) — page sections specific to the marketing site. A mix of server and client components (see the split below). Hero/interactive sections, the contact form, and the FAQ accordion are client; static content sections stay server.
 - [src/hooks/](src/hooks/) — `use-mobile`, `use-toast`. Both client.
 - [src/lib/utils.ts](src/lib/utils.ts) — the `cn()` helper (clsx + tailwind-merge). Use it for all conditional className composition.
 - [src/assets/](src/assets/) — static images imported via the `@/assets/*` alias. Next.js processes these as `StaticImageData` and they must be rendered with `<Image>` from `next/image` (never `<img>`).
@@ -56,10 +69,8 @@ Fonts: Inter (body, `font-sans`) and Sora (display, headings — `font-display`)
 
 Default to **server components**. Add `"use client"` only when a file uses hooks, browser APIs, event handlers, or Radix primitives. The current split:
 - All `src/components/ui/*` files: client.
-- `src/components/site/Header.tsx`: client (scroll/menu state).
-- All other `src/components/site/*`: server.
-- `src/app/providers.tsx`: client.
-- `src/app/page.tsx`, `src/app/layout.tsx`, `src/app/not-found.tsx`: server.
+- `src/app/providers.tsx`: client. `src/app/page.tsx`, `src/app/layout.tsx`, `src/app/not-found.tsx` and the route `page.tsx` files: server.
+- In `src/components/site/`, client components are: `Header`, `CustomCursor`, `ContactSection`, `ServiceFAQ`, and the animated hero/interactive sections (`Hero`, `AboutHero`, `CareersHero`, `ContactHero`, `IndustryHero`, `ProductsHero`, `ServicesHero`, `TrinosEdgeHero`, `AgentPlatform`, `ProductShowcase`, `IndustryGrid`, `Leadership`, `WhyChooseTrinos`, `WhyJoinTrinos`, `ErpCrmModernization`). Everything else in `site/` is a server component. The reliable check is `grep -rl '"use client"' src/components/site/` rather than trusting this list to stay current.
 
 ### Path alias
 

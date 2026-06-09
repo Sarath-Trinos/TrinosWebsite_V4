@@ -19,18 +19,7 @@ function isDropdown(item: NavItem): item is NavDropdown {
 }
 
 const navItems: NavItem[] = [
-  {
-    label: "About Us",
-    href: "/about",
-    children: [
-      { label: "Who We Are", href: "/about#who-we-are" },
-      { label: "Our Values", href: "/about#our-values" },
-      { label: "Mission & Vision", href: "/about#mission-vision" },
-      { label: "Leadership", href: "/about#leadership" },
-    ],
-  },
-  { label: "The Trinos Edge", href: "/trinos-edge" },
-  { label: "Industries", href: "/industry" },
+  { label: "Products", href: "/products" },
   {
     label: "Services",
     href: "/services",
@@ -62,8 +51,19 @@ const navItems: NavItem[] = [
       },
     ],
   },
-  { label: "Products", href: "/products" },
+  { label: "Industries", href: "/industry" },
+  { label: "Trinos Edge", href: "/trinos-edge" },
   { label: "Careers", href: "/careers" },
+  {
+    label: "About Us",
+    href: "/about",
+    children: [
+      { label: "Who We Are", href: "/about#who-we-are" },
+      { label: "Our Values", href: "/about#our-values" },
+      { label: "Mission & Vision", href: "/about#mission-vision" },
+      { label: "Leadership", href: "/about#leadership" },
+    ],
+  },
 ];
 
 const Header = () => {
@@ -100,7 +100,7 @@ const Header = () => {
         scrolled ? "bg-white shadow-soft" : "bg-white/95"
       }`}
     >
-      <div className="container-px max-w-[1200px] mx-auto flex items-center justify-between min-h-[4.5rem] py-3 md:min-h-[5rem] md:py-4">
+      <div className="container-px max-w-[1200px] mx-auto flex items-center justify-between min-h-[4rem] py-2.5 md:min-h-[4.5rem] md:py-3">
         <div className="[&_.logo-wordmark]:text-[#0c3470] [&_.logo-wordmark]:font-normal">
           <Logo variant="header" />
         </div>

@@ -50,7 +50,7 @@ const IndustryHero = () => {
             <h1 className={`${t.heroHeadline} text-white lg:[text-wrap:nowrap]`}>
               AI First Solutions for
               <br className="hidden lg:block" />{" "}
-              <span className="text-brand-gradient-reverse">
+              <span className="text-white">
                 Complex Enterprise Industries
               </span>
               .

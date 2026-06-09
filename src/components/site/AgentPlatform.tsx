@@ -142,6 +142,7 @@ const AgentPlatform = () => {
       <div className="container-px max-w-[1200px] mx-auto">
         <SectionHeader
           headlineWeight="normal"
+          contentClassName="max-w-none"
           title={
             <>
               Agentic{" "}
@@ -149,6 +150,7 @@ const AgentPlatform = () => {
             </>
           }
           description="Production-ready AI agents and workflow systems designed to operate inside real enterprise environments beyond chatbots, pilots and disconnected automation tools."
+          descriptionClassName="text-wrap"
         />
         <div className="flex flex-col gap-6 md:grid md:grid-cols-12 md:gap-4 xl:gap-5">
           {/* Left: media + overlay — slow horizontal slide into view */}

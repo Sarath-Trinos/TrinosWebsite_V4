@@ -3,7 +3,6 @@ import Header from "@/components/site/Header";
 import ServicesHero from "@/components/site/ServicesHero";
 import ServicesAnswerBlock from "@/components/site/ServicesAnswerBlock";
 import OurServices from "@/components/site/OurServices";
-import ServicesIndustries from "@/components/site/ServicesIndustries";
 import ServicesCTA from "@/components/site/ServicesCTA";
 import Footer from "@/components/site/Footer";
 
@@ -20,7 +19,6 @@ export default function ServicesPage() {
       <ServicesHero />
       <ServicesAnswerBlock />
       <OurServices />
-      <ServicesIndustries />
       <ServicesCTA />
       <Footer />
     </main>

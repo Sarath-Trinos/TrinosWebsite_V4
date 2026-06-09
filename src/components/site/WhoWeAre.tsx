@@ -86,15 +86,22 @@ const WhoWeAre = () => (
             A next-generation technology partner.
           </p>
           <p className={`mt-6 ${t.bodyLg} text-muted-foreground`}>
-            Trinos Technologies supports enterprises in achieving secure, efficient and
-            accelerated digital transformation. We create intelligent technology ecosystems
-            that enhance operational efficiency, improve digital execution and deliver long-term
-            business value.
+            Trinos is an AI-first engineering company that helps enterprises move from
+            experimentation to execution. We design, deploy and execute intelligent systems
+            that connect AI to real business workflows.
           </p>
           <p className={`mt-4 ${t.bodyLg} text-muted-foreground`}>
-            Our journey has grown from focused beginnings into industry-driven innovation. Every
-            solution is shaped by practical experience, strong engineering and a commitment to
-            lasting client impact.
+            Unlike traditional consulting firms, we build and run our own products, giving us
+            firsthand experience in scaling systems and delivering measurable outcomes in
+            production environments.
+          </p>
+          <p className={`mt-4 ${t.bodyLg} text-muted-foreground`}>
+            Every solution we design, develop, deploy and deliver is shaped by practical
+            experience, strong engineering discipline and a commitment to long-term client
+            success.
+          </p>
+          <p className={`mt-12 ${t.bodyLg} text-muted-foreground italic`}>
+            "We don&apos;t hand off slideware. We ship systems that run".
           </p>
         </div>
       </div>

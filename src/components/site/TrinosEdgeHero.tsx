@@ -48,15 +48,16 @@ const TrinosEdgeHero = () => {
           <div className="max-w-3xl animate-fade-up">
             <span className="chip mb-5">Our AI-First Advantage</span>
             <h1 className={`${t.heroHeadline} text-white`}>
-              AI Systems That Improve{" "}
-              <span className="text-brand-gradient-reverse">
-                With Your Operations
+              AI Systems That Get Smarter{" "}
+              <span className="text-white">
+                With Every Workflow
               </span>
               .
             </h1>
             <p className={`mt-6 ${t.subheadline} text-white/80 max-w-2xl`}>
-              The Trinos Edge helps AI systems improve through validated feedback,
-              operational learning and controlled updates over time.
+              The Trinos Edge helps AI systems learn from approved feedback,
+              real workflows and controlled updates so every deployment becomes
+              more useful over time.
             </p>
 
             <div className="mt-9 flex flex-wrap items-center gap-4">

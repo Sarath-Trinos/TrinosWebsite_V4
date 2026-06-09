@@ -48,9 +48,9 @@ const AboutHero = () => {
           <div className="max-w-3xl animate-fade-up">
             <span className="chip mb-5">About Trinos Technologies</span>
             <h1 className={`${t.heroHeadline} text-white`}>
-              Built by Operators.{" "}
-              <span className="text-brand-gradient-reverse">
-                Not Observers
+              Created with Passion.{" "}
+              <span className="text-white">
+                Delivered with Purpose
               </span>
               .
             </h1>

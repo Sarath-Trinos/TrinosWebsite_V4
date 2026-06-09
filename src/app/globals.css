@@ -239,6 +239,11 @@
   .container-px {
     @apply px-4 md:px-8 lg:px-10;
   }
+  /* Landing page only: widen the content container to trim the large
+     left/right margins on wide screens. Scoped via .landing-wide on <main>. */
+  .landing-wide .max-w-\[1200px\] {
+    max-width: 1560px;
+  }
   .tile {
     @apply rounded-[28px] overflow-hidden relative transition-all duration-500;
     box-shadow: var(--shadow-card);
@@ -365,13 +370,13 @@
   .shadow-glow { box-shadow: var(--shadow-glow); }
   .text-balance { text-wrap: balance; }
 
-  /* Section headlines — brand multi-stop gradients ( hsl tokens from :root ) */
+  /* Section headlines — solid brand color (gradient removed) */
   .text-brand-gradient {
-    @apply bg-gradient-to-r from-primary via-primary-glow to-primary-deep bg-clip-text text-transparent;
+    @apply text-foreground;
   }
 
   .text-brand-gradient-reverse {
-    @apply bg-gradient-to-r from-primary-deep via-primary to-primary-glow bg-clip-text text-transparent;
+    @apply text-foreground;
   }
 
   @keyframes float-slow {

@@ -30,7 +30,7 @@ const ServiceDetail = ({ service, heroImage }: Props) => {
               </span>
               <h1 className={`${t.heroHeadline} text-white`}>
                 <span className="text-white">{service.h1Lead}</span>{" "}
-                <span className="text-brand-gradient-reverse">
+                <span className="text-white">
                   {service.h1Highlight}
                 </span>
                 <span className="text-white">.</span>
@@ -223,7 +223,7 @@ const ServiceDetail = ({ service, heroImage }: Props) => {
               </div>
 
               {service.related.length > 0 && (
-                <div className="mt-12 pt-8 border-t border-white/20">
+                <div className="mt-8 pt-6 border-t border-white/20">
                   <div className="text-xs font-semibold uppercase tracking-[0.16em] text-white/80 mb-4">
                     Related services
                   </div>

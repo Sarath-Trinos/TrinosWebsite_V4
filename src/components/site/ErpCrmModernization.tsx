@@ -14,7 +14,7 @@ const items = [
     image: erpAnalytics,
     video: "/videos/ab_cdef_abcdefmp_.mp4",
     title: "LLM Fine-Tuning",
-    desc: "Small and large language models fine-tuned on your documents, rules, formats and business context. Built to deliver more accurate, cost-efficient and domain-aligned responses.",
+    desc: "Enterprise language models tailored to your documents, policies, terminology and workflows-delivering more accurate responses, stronger governance and higher user trust.",
     cta: "Explore Fine-Tuning",
     href: "/services/llm-fine-tuning",
   },
@@ -72,9 +72,9 @@ function CardVideo({ src }: { src: string }) {
 }
 
 const ErpCrmModernization = () => (
-  <section className="py-24">
+  <section className="pt-0 pb-16 lg:pb-20">
     <div className="container-px max-w-[1200px] mx-auto">
-      <div className="mb-16 flex flex-col gap-4">
+      <div className="mb-10 lg:mb-12 flex flex-col gap-4">
         <h2
           className={cn(
             t.sectionHeadlineLg,
@@ -87,7 +87,7 @@ const ErpCrmModernization = () => (
         <p
           className={cn(
             t.bodyLg,
-            "text-muted-foreground max-w-6xl",
+            "text-muted-foreground max-w-none text-wrap",
           )}
         >
           Language models, generative analytics and computer vision systems tuned to your terminology, workflows and domain. Trinos builds AI that works where generic tools usually fail inside real enterprise complexity.
@@ -97,7 +97,7 @@ const ErpCrmModernization = () => (
       <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6 lg:gap-8">
         {items.map((it) => (
           <article key={it.title} className="flex flex-col">
-            <div className="relative aspect-[4/5] rounded-3xl overflow-hidden bg-surface-soft mb-6">
+            <div className="relative aspect-[4/3] rounded-3xl overflow-hidden bg-surface-soft mb-6">
               {it.video ? (
                 <CardVideo src={it.video} />
               ) : (
@@ -124,7 +124,7 @@ const ErpCrmModernization = () => (
         ))}
       </div>
 
-      <div className="mt-16 flex justify-center">
+      <div className="mt-4 lg:mt-6 flex justify-center">
         <p className={`text-center ${t.bodyLg} text-muted-foreground max-w-3xl lg:max-w-none lg:whitespace-nowrap`}>
           Helping enterprises move from isolated AI experiments to intelligent systems that operate inside real workflows.
         </p>

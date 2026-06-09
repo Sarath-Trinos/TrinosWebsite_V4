@@ -57,7 +57,7 @@ const ContactHero = () => {
 
             <h1 className={`${t.heroHeadline} text-white`}>
               Let's Build Something{" "}
-              <span className="text-brand-gradient-reverse">
+              <span className="text-white">
                 Intelligent
               </span>
             </h1>

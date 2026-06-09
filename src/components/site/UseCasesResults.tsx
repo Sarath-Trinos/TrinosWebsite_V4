@@ -40,8 +40,8 @@ const UseCasesResults = () => (
         titleClassName={t.sectionHeadlineLg}
         title={
           <>
-            <span className="text-black">Use cases</span>{" "}
-            <span className="text-brand-gradient-reverse">and results</span>
+            <span className="text-black">Case Study</span>{" "}
+            <span className="text-brand-gradient-reverse">and Results</span>
           </>
         }
         subtitle="From targeted accuracy gains to long term operational leverage."

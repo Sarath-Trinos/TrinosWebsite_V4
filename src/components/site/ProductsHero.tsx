@@ -49,7 +49,7 @@ const ProductsHero = () => {
             <span className="chip mb-5">Our AI Products</span>
             <h1 className={`${t.heroHeadline} text-white`}>
               AI Platforms Built In-House.{" "}
-              <span className="text-brand-gradient-reverse">
+              <span className="text-white">
                 Live in Production
               </span>
               .

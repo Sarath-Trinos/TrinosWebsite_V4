@@ -49,7 +49,7 @@ const ServicesHero = () => {
             <span className="chip mb-5">Enterprise AI and Platform Engineering Services</span>
             <h1 className={`${t.heroHeadline} text-white`}>
               <span className="text-white">Enterprise AI Services for</span>{" "}
-              <span className="text-brand-gradient-reverse">
+              <span className="text-white">
                 Real Workflows
               </span>
               <span className="text-white">.</span>

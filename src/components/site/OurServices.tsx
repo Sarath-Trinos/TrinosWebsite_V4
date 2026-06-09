@@ -138,7 +138,13 @@ const OurServices = () => {
                 {category}
               </h3>
 
-              <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-4">
+              <div
+                className={`grid sm:grid-cols-2 ${
+                  services.length === 4
+                    ? "gap-4 lg:grid-cols-4"
+                    : "gap-8 lg:grid-cols-3"
+                }`}
+              >
                 {services.map(({ icon: Icon, title, description, href }, idx) => (
                   <a
                     key={title}
@@ -146,11 +152,11 @@ const OurServices = () => {
                     className="group rounded-2xl overflow-hidden bg-surface-dark text-on-surface-dark shadow-card hover:shadow-glow transition-shadow duration-300 hover:-translate-y-1 animate-zoom-in-br origin-bottom-right block focus:outline-none focus-visible:ring-2 focus-visible:ring-primary-glow"
                     style={{ animationDelay: `${idx * 80}ms` }}
                   >
-                    <div className="relative h-52 overflow-hidden bg-gradient-to-br from-primary/40 via-primary/15 to-[#0f1115]">
+                    <div className="relative h-44 overflow-hidden bg-gradient-to-br from-primary/40 via-primary/15 to-[#0f1115]">
                       <div className="absolute inset-0 bg-[radial-gradient(circle_at_30%_20%,rgba(255,255,255,0.18),transparent_60%)]" />
                       <div className="absolute inset-0 grid place-items-center">
-                        <div className="w-28 h-28 rounded-3xl bg-white/10 backdrop-blur-sm border border-white/15 grid place-items-center shadow-soft transition-transform duration-300 group-hover:scale-110">
-                          <Icon className="w-12 h-12 text-white" strokeWidth={1.5} />
+                        <div className="w-24 h-24 rounded-3xl bg-white/10 backdrop-blur-sm border border-white/15 grid place-items-center shadow-soft transition-transform duration-300 group-hover:scale-110">
+                          <Icon className="w-10 h-10 text-white" strokeWidth={1.5} />
                         </div>
                       </div>
                     </div>

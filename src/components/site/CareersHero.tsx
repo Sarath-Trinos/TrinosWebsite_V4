@@ -50,7 +50,7 @@ const CareersHero = () => {
             <span className="chip mb-5">Careers</span>
             <h1 className={`${t.heroHeadline} text-white`}>
               Join a team of{" "}
-              <span className="text-brand-gradient-reverse">
+              <span className="text-white">
                 passionate innovators
               </span>
               .

@@ -59,10 +59,8 @@ const Hero = () => {
             </span>
             We Power AI Enterprises.
           </h1>
-          <p className={`mt-6 ${t.subheadline} text-white/85 max-w-2xl`}>
-            We deliver production-ready AI platforms and engineering systems that bring intelligence into real enterprise operations without disrupting what already works.
-          </p>
-
+          <p className={`mt-6 ${t.subheadline} text-white/85 max-w-none`}>
+          We deliver production-ready AI platforms and engineering systems that bring intelligence into real enterprise operations without disrupting what already works.</p>
           <div className="mt-8 flex flex-wrap items-center gap-4">
             <a href="/services" className="group inline-flex items-center gap-2 bg-gradient-cta text-primary-foreground font-semibold px-7 py-3.5 rounded-full shadow-glow hover:shadow-card transition-all">
               Explore Our Services

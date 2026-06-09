@@ -11,6 +11,8 @@ interface Props {
   /** Overrides default subtitle weight/color (e.g. `font-normal text-muted-foreground`) */
   subtitleClassName?: string;
   description?: string;
+  /** Applied to the description paragraph (e.g. `[text-wrap:normal]` to fill lines to the edge) */
+  descriptionClassName?: string;
   exploreHref?: string;
   exploreLabel?: string;
   /** Use on `bg-surface-dark` (or similar) so headings and copy stay readable */
@@ -31,6 +33,7 @@ const SectionHeader = ({
   subtitle,
   subtitleClassName,
   description,
+  descriptionClassName,
   exploreHref,
   exploreLabel = "Explore all",
   tone = "default",
@@ -95,6 +98,7 @@ const SectionHeader = ({
               "mt-4",
               typography.bodyLg,
               tone === "dark" ? "text-white/70" : "text-muted-foreground",
+              descriptionClassName,
             )}
           >
             {description}

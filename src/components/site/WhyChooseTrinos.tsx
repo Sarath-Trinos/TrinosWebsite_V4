@@ -1,190 +1,140 @@
 "use client";
 
-import { useEffect, useRef, useState } from "react";
-import { ArrowRight, Cpu, Repeat, Package } from "lucide-react";
-import { cn } from "@/lib/utils";
+import { Cpu, Repeat, Package, ChevronDown } from "lucide-react";
+import Image from "next/image";
+import { useState } from "react";
 import { type as t } from "@/lib/typography";
+import SectionHeader from "./SectionHeader";
+import { cn } from "@/lib/utils";
 
-type Pillar = {
-  title: string;
-  description: string;
-  Icon: typeof Cpu;
-};
-
-const pillars: Pillar[] = [
+const cards = [
   {
-    title: "AI First Engineering",
+    icon: Cpu,
+    title: "AI-First Engineering",
+    image: "/home/magnific__talk__91259.jpeg",
     description:
-      "Every system is designed with AI at the core from day one. Small models, retrieval, feedback loops and workflow intelligence are built into the architecture, not added later.",
-    Icon: Cpu,
+      "Built from the ground up utilizing advanced neural architectures to automate workflows and optimize enterprise data pipelines seamlessly.",
+    href: "/trinos-edge",
   },
   {
+    icon: Repeat,
     title: "Self Improving Systems",
+    image: "/home/magnific__talk__31260.jpeg",
     description:
-      "Every approved correction and production signal is captured, stored and used to improve the next output. Your AI investment becomes more valuable as it runs.",
-    Icon: Repeat,
+      "Continuous learning feedback loops ensure that the system adapts to your enterprise data patterns and grows smarter with every interaction.",
+    href: "/trinos-edge",
   },
   {
+    icon: Package,
     title: "Proven Through Products",
+    image: "/home/magnific_3007480450.jpeg",
     description:
-      "We validate our architecture through live production platforms such as Moltter Studio, TraceFlow, VoteSense and Travel One before bringing it into client environments.",
-    Icon: Package,
+      "Battle-tested across production environments, delivering measurable efficiency gains and robust security standards for scaling enterprises.",
+    href: "/trinos-edge",
   },
 ];
 
 const WhyChooseTrinos = () => {
-  const sectionRef = useRef<HTMLElement | null>(null);
-  const cardsRef = useRef<HTMLDivElement | null>(null);
-  const [progress, setProgress] = useState(0); // 0..1 reveal progress driven by scroll
-
-  useEffect(() => {
-    const update = () => {
-      const el = cardsRef.current;
-      if (!el) return;
-      const rect = el.getBoundingClientRect();
-      const viewportH = window.innerHeight || document.documentElement.clientHeight;
-      // Start revealing as soon as the cards enter the viewport,
-      // fully revealed by the time the cards' top reaches ~55% of the viewport
-      // so the section heading is still visible when the last card lands.
-      const start = viewportH * 0.90;
-      const end = viewportH * 0.50;
-      const p = (start - rect.top) / (start - end);
-      const clamped = Math.max(0, Math.min(1, p));
-      setProgress(clamped);
-    };
-    update();
-    window.addEventListener("scroll", update, { passive: true });
-    window.addEventListener("resize", update);
-    return () => {
-      window.removeEventListener("scroll", update);
-      window.removeEventListener("resize", update);
-    };
-  }, []);
-
-  const cardCount = pillars.length;
-  // Each card occupies an equal slice of the overall progress; within its slice,
-  // the card animates from 0 to 1 so it reveals smoothly in sequence.
-  const cardProgress = (i: number) => {
-    const slice = 1 / cardCount;
-    return Math.max(0, Math.min(1, (progress - i * slice) / slice));
-  };
+  const [activeIndex, setActiveIndex] = useState<number | null>(null);
 
   return (
-    <section
-      ref={sectionRef}
-      id="why-choose-trinos"
-      className="relative overflow-hidden bg-gradient-to-b from-white via-surface-soft to-white pt-24 pb-12 sm:pt-28 sm:pb-14 lg:pt-32 lg:pb-16"
-    >
-      {/* Ambient decorative background */}
-      <div className="pointer-events-none absolute inset-0 -z-10">
-        {/* soft radial blue glows */}
-        <div className="absolute -top-32 -left-32 h-[28rem] w-[28rem] rounded-full bg-primary/10 blur-3xl" />
-        <div className="absolute -bottom-40 -right-20 h-[32rem] w-[32rem] rounded-full bg-primary-glow/10 blur-3xl" />
-        {/* dotted abstract pattern, top-left */}
-        <svg
-          aria-hidden="true"
-          className="absolute left-0 top-16 h-72 w-72 opacity-50"
-          viewBox="0 0 200 200"
-          fill="none"
-        >
-          <defs>
-            <radialGradient id="dotsFadeLeft" cx="20%" cy="50%" r="60%">
-              <stop offset="0%" stopColor="hsl(var(--primary))" stopOpacity="0.55" />
-              <stop offset="100%" stopColor="hsl(var(--primary))" stopOpacity="0" />
-            </radialGradient>
-            <pattern id="dotsLeft" x="0" y="0" width="10" height="10" patternUnits="userSpaceOnUse">
-              <circle cx="1.2" cy="1.2" r="1.2" fill="hsl(var(--primary))" />
-            </pattern>
-          </defs>
-          <rect width="200" height="200" fill="url(#dotsLeft)" />
-          <rect width="200" height="200" fill="url(#dotsFadeLeft)" />
-        </svg>
-        {/* thin concentric rings, top-right */}
-        <svg
-          aria-hidden="true"
-          className="absolute right-0 top-10 h-80 w-80 opacity-40"
-          viewBox="0 0 200 200"
-          fill="none"
-        >
-          <g stroke="hsl(var(--primary))" strokeOpacity="0.35" strokeWidth="0.6">
-            <circle cx="180" cy="60" r="40" />
-            <circle cx="180" cy="60" r="70" />
-            <circle cx="180" cy="60" r="100" />
-            <circle cx="180" cy="60" r="130" />
-          </g>
-          <circle cx="220" cy="60" r="2.5" fill="hsl(var(--primary))" />
-        </svg>
-      </div>
+    <section id="why-choose-trinos" className="py-24 bg-surface-tint">
+      <div className="container-px max-w-[1200px] mx-auto">
+        <SectionHeader
+          headlineWeight="normal"
+          title={
+            <>
+              Why Enterprises Choose{" "}
+              <span className="text-brand-gradient">Trinos</span>
+            </>
+          }
+          description="The longer you use Trinos, the smarter it gets."
+          exploreHref="/trinos-edge"
+          exploreLabel="Discover the Trinos Edge"
+        />
 
-      <div className="container-px mx-auto w-full max-w-[1200px]">
-        {/* Heading */}
-        <h2 className={`${t.sectionHeadline} text-foreground`}>
-          The Trinos <span className="text-brand-gradient">Edge</span>
-        </h2>
-        <p className={`mt-5 max-w-6xl ${t.bodyResponsive} text-muted-foreground`}>
-          The longer you use Trinos, the smarter it gets.
-        </p>
-
-        {/* Timeline + cards */}
-        <div ref={cardsRef} className="relative mt-10 sm:mt-12">
-          <div className="grid grid-cols-1 gap-10 sm:grid-cols-2 sm:gap-8 lg:grid-cols-3 lg:items-stretch">
-            {pillars.map((p, i) => {
-              const { Icon } = p;
-              const cp = cardProgress(i);
-              return (
-                <div
-                  key={p.title}
-                  className="group relative flex h-full flex-col items-center"
-                  style={{
-                    opacity: cp,
-                    transform: `translateY(${(1 - cp) * 24}px)`,
-                    transition: "opacity 300ms ease-out, transform 300ms ease-out",
-                  }}
-                >
-                  {/* Card — equal height via flex column, h-full */}
-                  <div
-                    className={cn(
-                      "relative flex h-full w-full flex-col overflow-hidden rounded-3xl border border-sky-200",
-                      "bg-white/70",
-                      "px-6 pt-10 pb-8 sm:px-7 sm:pt-12",
-                      "shadow-[0_10px_40px_-18px_hsl(210_60%_25%/0.25)]"
-                    )}
-                  >
-                    {/* Icon tile */}
-                    <div className="relative flex h-16 w-16 items-center justify-center">
-                      <div className="relative flex h-16 w-16 items-center justify-center rounded-2xl bg-gradient-to-br from-white to-primary/5 shadow-[inset_0_1px_0_0_rgba(255,255,255,0.9),0_8px_20px_-10px_hsl(var(--primary)/0.45)] ring-1 ring-primary/10">
-                        <Icon
-                          className="h-8 w-8 text-primary"
-                          strokeWidth={1.6}
-                        />
-                      </div>
-                    </div>
-
-                    {/* Title */}
-                    <h3 className={`relative mt-6 ${t.cardHeadlineSm} text-foreground`}>
-                      {p.title}
-                    </h3>
-                    {/* Accent underline */}
-                    <div className="relative mt-3 h-[3px] w-10 rounded-full bg-gradient-to-r from-primary to-primary-glow" />
-
-                    {/* Description */}
-                    <p className={`relative mt-5 ${t.bodyCaption} text-muted-foreground`}>
-                      {p.description}
-                    </p>
-                  </div>
-                </div>
-              );
-            })}
+        <div className="grid grid-cols-1 md:grid-cols-5 gap-6 md:items-stretch">
+          <div className="md:col-span-3 tile overflow-hidden relative aspect-[4/5] md:aspect-auto md:h-[26rem] lg:h-[30rem]">
+            {cards.map((card, i) => (
+              <Image
+                key={card.title}
+                src={card.image}
+                alt={card.title}
+                fill
+                sizes="(min-width: 1024px) 60vw, 100vw"
+                className={cn(
+                  "object-cover transition-opacity duration-500 ease-out",
+                  i === (activeIndex ?? 0) ? "opacity-100" : "opacity-0"
+                )}
+                priority={i === 0}
+                fetchPriority={i === 0 ? "high" : "auto"}
+                loading={i === 0 ? "eager" : "lazy"}
+              />
+            ))}
           </div>
 
-          <div className="mt-12 flex justify-center">
-            <a
-              href="/trinos-edge"
-              className="group inline-flex items-center gap-1 font-semibold text-primary hover:text-primary-deep transition-colors"
-            >
-              Discover the Trinos Edge
-              <ArrowRight className="w-4 h-4 transition-transform group-hover:translate-x-1" />
-            </a>
+          <div className="md:col-span-2 flex flex-col justify-center gap-8 md:gap-8 lg:gap-10 md:h-[26rem] lg:h-[30rem]">
+            {cards.map((it, i) => {
+              const isActive = i === activeIndex;
+              return (
+                <a
+                  key={it.title}
+                  href={it.href}
+                  onClick={(e) => {
+                    // Toggle: first click opens the card, clicking it again closes it.
+                    e.preventDefault();
+                    setActiveIndex(isActive ? null : i);
+                  }}
+                  aria-expanded={isActive}
+                  aria-current={isActive ? "true" : undefined}
+                  className={cn(
+                    "tile bg-card border border-l-[3px] p-5 md:p-4 lg:p-6 text-left w-full h-auto transition-all duration-300 ease-out md:min-h-0 md:flex-none hover:!translate-y-0",
+                    isActive
+                      ? "border-primary border-l-primary shadow-glow"
+                      : "border-border border-l-transparent hover:border-primary/40 hover:bg-slate-50/50 hover:shadow-soft"
+                  )}
+                >
+                  <div className="flex items-center justify-between gap-4">
+                    <div className="flex items-center gap-4 md:gap-3 lg:gap-4 min-w-0">
+                      <div
+                        className={cn(
+                          "w-11 h-11 md:w-9 md:h-9 lg:w-11 lg:h-11 shrink-0 rounded-2xl grid place-items-center transition-colors duration-300",
+                          isActive
+                            ? "bg-gradient-primary text-white"
+                            : "bg-gradient-tile text-primary"
+                        )}
+                      >
+                        <it.icon className="w-5 h-5 md:w-4 md:h-4 lg:w-5 lg:h-5" />
+                      </div>
+                      <h3 className={cn(t.cardHeadline, "min-w-0")}>{it.title}</h3>
+                    </div>
+                    <ChevronDown
+                      className={cn(
+                        "w-5 h-5 shrink-0 text-muted-foreground transition-transform duration-300 ease-out",
+                        isActive && "rotate-180 text-primary"
+                      )}
+                    />
+                  </div>
+                  <div
+                    className={cn(
+                      "grid transition-all duration-300 ease-out",
+                      isActive
+                        ? "grid-rows-[1fr] opacity-100 mt-3"
+                        : "grid-rows-[0fr] opacity-0"
+                    )}
+                  >
+                    <p
+                      className={cn(
+                        t.bodySm,
+                        "overflow-hidden text-muted-foreground"
+                      )}
+                    >
+                      {it.description}
+                    </p>
+                  </div>
+                </a>
+              );
+            })}
           </div>
         </div>
       </div>

@@ -1,6 +1,5 @@
 import Header from "@/components/site/Header";
 import Hero from "@/components/site/Hero";
-import ProofStrip from "@/components/site/ProofStrip";
 import EnterpriseProblem from "@/components/site/EnterpriseProblem";
 import TwoTracks from "@/components/site/TwoTracks";
 import AgentPlatform from "@/components/site/AgentPlatform";
@@ -12,20 +11,19 @@ import Footer from "@/components/site/Footer";
 
 export default function Home() {
   return (
-    <main className="min-h-screen bg-background">
+    <main className="landing-wide min-h-screen bg-background">
       <Header />
       <Hero />
-      <ProofStrip />
       <EnterpriseProblem />
       <TwoTracks />
       <AgentPlatform />
       <ErpCrmModernization />
-      <HealthcareAI />
       <WhyChooseTrinos />
+      <HealthcareAI />
       <CTASection
         variant="gradient"
+        title=""
         className="pt-0 pb-24"
-        title="Stop piloting. Start shipping."
         subtitle="Start with a Discovery Workshop. Trinos will review your workflows, data systems and operational bottlenecks before recommending the right AI first solution for your environment."
         subtitleClassName="max-w-6xl text-balance"
         buttonLabel="Book a Discovery Workshop"
