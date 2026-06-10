@@ -6,7 +6,7 @@ import { cn } from "@/lib/utils";
 interface Props {
   eyebrow?: string;
   title: ReactNode;
-  /** Shown directly under the main headline — supporting line (sentence case OK) */
+  /** Shown directly under the main headline - supporting line (sentence case OK) */
   subtitle?: ReactNode;
   /** Overrides default subtitle weight/color (e.g. `font-normal text-muted-foreground`) */
   subtitleClassName?: string;
@@ -19,7 +19,7 @@ interface Props {
   tone?: "default" | "dark";
   /** When set, replaces the default heading typography entirely */
   titleClassName?: string;
-  /** Main h2 weight — default bold for legacy pages; use `normal` for lighter section titles */
+  /** Main h2 weight - default bold for legacy pages; use `normal` for lighter section titles */
   headlineWeight?: "bold" | "semibold" | "medium" | "normal";
   /** Stacks and centers heading + description (use with `titleClassName` for bespoke headlines) */
   headingLayout?: "default" | "centered";

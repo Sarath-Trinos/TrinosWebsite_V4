@@ -191,7 +191,7 @@ const ServiceDetail = ({ service, heroImage }: Props) => {
         </div>
       </section>
 
-      {/* FINAL CTA & RELATED — fixed parallax image spanning the full viewport width */}
+      {/* FINAL CTA & RELATED - fixed parallax image spanning the full viewport width */}
       <section className="bg-background pt-20">
         <div className="w-full">
           <div className="relative overflow-hidden bg-surface-dark text-on-surface-dark shadow-card flex items-center justify-center">

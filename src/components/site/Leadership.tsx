@@ -59,7 +59,7 @@ const Leadership = () => {
           </p>
         </div>
 
-        {/* Image-only cards — click to reveal the bio in a modal */}
+        {/* Image-only cards - click to reveal the bio in a modal */}
         <div className="mt-14 grid grid-cols-1 justify-center gap-8 sm:grid-cols-2 lg:grid-cols-3 lg:gap-9">
           {leaders.map((leader, i) => (
             <button
@@ -93,7 +93,7 @@ const Leadership = () => {
         </div>
       </div>
 
-      {/* Detail panel — slides up from the bottom, blurs the page behind it */}
+      {/* Detail panel - slides up from the bottom, blurs the page behind it */}
       {selected && (
         <div
           className="fixed inset-0 z-50 flex items-end justify-center"
@@ -101,7 +101,7 @@ const Leadership = () => {
           aria-modal="true"
           aria-label={`${selected.name}, ${selected.role}`}
         >
-          {/* Backdrop — light dim, no blur (blur on a full-screen overlay janks the animation) */}
+          {/* Backdrop - light dim, no blur (blur on a full-screen overlay janks the animation) */}
           <button
             type="button"
             aria-label="Close"

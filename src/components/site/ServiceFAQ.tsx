@@ -12,7 +12,7 @@ const ServiceFAQ = ({ faqs }: Props) => {
 
   return (
     // Fixed min-height reserves room for one open answer so the list never
-    // changes height — the section below it (the CTA) stays perfectly still.
+    // changes height - the section below it (the CTA) stays perfectly still.
     <div className="max-w-4xl mx-auto space-y-4 min-h-[26rem]">
       {faqs.map((faq, i) => {
         const isOpen = openIndex === i;

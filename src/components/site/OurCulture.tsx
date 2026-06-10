@@ -100,7 +100,7 @@ const OurCulture = () => (
 
     <div className="container-px mx-auto w-full max-w-[1200px]">
       <div className="grid items-stretch gap-14 lg:grid-cols-[1.05fr_1fr] lg:gap-16">
-        {/* LEFT — heading, copy, illustration */}
+        {/* LEFT - heading, copy, illustration */}
         <div className="relative flex flex-col">
           {/* Headline */}
           <h2 className={`${t.sectionHeadlineLg} text-foreground`}>
@@ -135,7 +135,7 @@ const OurCulture = () => (
           </div>
         </div>
 
-        {/* RIGHT — pillar cards */}
+        {/* RIGHT - pillar cards */}
         <div className="relative flex flex-col gap-6 sm:gap-7">
           {pillars.map(({ Icon, title, description }, i) => (
             <div

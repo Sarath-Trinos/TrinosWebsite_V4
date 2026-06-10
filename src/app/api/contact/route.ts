@@ -51,8 +51,8 @@ export async function POST(request: Request) {
   const rows: Array<[string, string]> = [
     ["Name", name],
     ["Email", email],
-    ["Company", company || "—"],
-    ["Phone", phone || "—"],
+    ["Company", company || "-"],
+    ["Phone", phone || "-"],
     ["Service", service],
   ];
 

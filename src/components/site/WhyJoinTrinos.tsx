@@ -22,7 +22,7 @@ const slides: Slide[] = [
     bg: "bg-[#EFE6FF]",
   },
   {
-    title: "Work–life balance",
+    title: "Work-life balance",
     description:
       "Flexible schedules and remote work options to support your lifestyle.",
     image: "/career/smiling-attractive-woman-holding-coffee-cup-while-working-laptop.jpg",

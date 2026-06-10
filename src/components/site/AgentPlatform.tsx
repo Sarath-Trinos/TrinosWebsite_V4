@@ -90,7 +90,7 @@ const AgentPlatform = () => {
     return () => observer.disconnect();
   }, []);
 
-  // Detect hover-less (touch) devices — mobile/tablet — and keep it in sync
+  // Detect hover-less (touch) devices - mobile/tablet - and keep it in sync
   // with viewport changes (e.g. rotating a 2-in-1 or resizing dev tools).
   useEffect(() => {
     const mql = window.matchMedia("(hover: none)");
@@ -153,7 +153,7 @@ const AgentPlatform = () => {
           descriptionClassName="text-wrap"
         />
         <div className="flex flex-col gap-6 md:grid md:grid-cols-12 md:gap-4 xl:gap-5">
-          {/* Left: media + overlay — slow horizontal slide into view */}
+          {/* Left: media + overlay - slow horizontal slide into view */}
           <div
             ref={imageWrapperRef}
             className="md:col-span-7 lg:col-span-8 flex md:h-full items-stretch justify-center md:justify-start"
@@ -213,7 +213,7 @@ const AgentPlatform = () => {
             </div>
           </div>
 
-          {/* Right: Platform overview — vertical stack of service tabs */}
+          {/* Right: Platform overview - vertical stack of service tabs */}
           <div className="md:col-span-5 lg:col-span-4 tile py-6 md:py-8 px-5 md:px-5 lg:px-8 relative overflow-hidden bg-[radial-gradient(ellipse_at_top_right,_#1a3556_0%,_#0f1e35_45%,_#0a1628_100%)] flex items-center justify-center">
             <div className="w-full grid grid-cols-1 gap-3 md:gap-4">
               {tiles.map(({ icon: Icon, title, href }, i) => {

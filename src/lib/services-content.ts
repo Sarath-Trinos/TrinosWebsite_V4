@@ -68,10 +68,10 @@ export const servicesContent: Record<string, ServiceContent> = {
     pageTitle: "Agentic AI Services for Enterprise Workflows | Trinos",
     metaDescription:
       "Deploy AI agents that plan work, connect with enterprise systems and operate with human approvals, permissions and audit trails.",
-    h1Lead: "AI Agents for",
-    h1Highlight: "Enterprise Workflows",
+    h1Lead: "AI Agents That Get",
+    h1Highlight: "Enterprise Work Done",
     subHeadline:
-      "Trinos builds agentic AI systems that coordinate across business systems, data and approvals to support complex enterprise work.",
+      "Trinos builds agentic AI that plans tasks, works across your systems and data, and acts within clear approvals, so AI moves beyond answers to completed work.",
     primaryCTA: { label: "Talk to an AI Architect", href: "/contact" },
     secondaryCTA: {
       label: "Explore AI Workflow Automation",
@@ -81,63 +81,63 @@ export const servicesContent: Record<string, ServiceContent> = {
       "Trinos multi agent architecture supports AI products where autonomous agents analyze, generate and escalate outputs through structured workflows.",
     answerHeading: "What is Agentic AI?",
     answerBody:
-      "Agentic AI uses autonomous software agents that understand business context, plan tasks, retrieve data, connect with approved systems, support permitted actions and escalate exceptions. Unlike a chatbot, an agentic system is designed to support workflow completion instead of stopping at a text response. In enterprise settings, these agents need clear permissions, monitoring and human approval points.",
+      "Agentic AI uses autonomous software agents that understand business context, plan tasks, retrieve data, connect to approved systems and escalate exceptions. Unlike a chatbot that stops at a text reply, an agentic system is built to carry a task through to completion. In an enterprise, that means clear permissions, monitoring and human approval points are not optional, they're the design.",
     deliverables: [
       {
-        title: "Multi Agent System Design",
+        title: "Multi-Agent System Design",
         description:
-          "Design specialized agents for research, analysis, validation, reporting and operational escalation. Each agent has a defined role so the system can divide complex work into controlled steps.",
+          "Specialized agents for research, analysis, validation, reporting and escalation, each with a defined role so complex work breaks into controlled steps.",
       },
       {
         title: "Enterprise System Integration",
         description:
-          "Connect agents securely to approved APIs, CRMs, ERPs, databases, email systems and internal platforms. This allows agents to work with real business context while staying within clearly defined access and permission boundaries.",
+          "Secure connections to approved APIs, CRMs, ERPs, databases and internal platforms, so agents work with real context inside strict access boundaries.",
       },
       {
-        title: "Human in the Loop Controls",
+        title: "Human-in-the-Loop Controls",
         description:
-          "Add approval checkpoints so high risk actions require human review before execution. This protects business critical decisions while still allowing agents to prepare, route and support the work.",
+          "Approval checkpoints so high-risk actions require human review before execution, protecting critical decisions while agents prepare and route the work.",
       },
       {
-        title: "Agent Monitoring and Audit Trails",
+        title: "Monitoring & Audit Trails",
         description:
-          "Track agent actions with logs, traceability, performance monitoring and exception reporting. Operations teams can see what the agent did, why it acted and where human review was involved.",
+          "Logs, traceability and exception reporting so operations teams can see what an agent did, why it acted and where a human signed off.",
       },
     ],
     useCases: [
       {
         title: "Enterprise Operations",
         description:
-          "Agents monitor incoming tasks, collect relevant data, prepare recommendations and route decisions to the right team. This reduces coordination effort for operations teams that manage repeatable but context heavy work.",
+          "Agents monitor incoming tasks, gather data, prepare recommendations and route decisions to the right team, cutting coordination effort on repeatable but context-heavy work.",
         image: "/service/each%20service%20page/enterprise-operations.jpg",
         badge: "Operations",
       },
       {
         title: "Decision Intelligence",
         description:
-          "Multiple agents analyze a business problem from different perspectives and produce recommendations with risks, assumptions and confidence levels. Decision makers receive a structured brief instead of scattered information from multiple sources.",
+          "Multiple agents analyze a problem from different angles and return a structured brief with risks, assumptions and confidence levels, instead of scattered inputs.",
         image: "/service/each%20service%20page/decision-intelligence.jpg",
         badge: "Strategy",
       },
     ],
     result:
-      "Teams can reduce repetitive analysis and coordination work while keeping oversight in the right parts of the process.",
+      "Teams cut repetitive analysis and coordination while keeping human oversight exactly where it matters.",
     techStack: [
       "Python",
       "OpenAI API",
-      "Anthropic",
+      "Anthropic Claude",
       "LangChain",
       "LlamaIndex",
-      "Secure internal APIs",
       "Vector databases",
       "Workflow engines",
+      "Secure internal APIs",
     ],
     industries: [
       "Financial services",
-      "Enterprise technology",
       "Insurance",
       "Government",
       "Manufacturing",
+      "Enterprise technology",
       "Consulting",
     ],
     faqs: [
@@ -157,9 +157,9 @@ export const servicesContent: Record<string, ServiceContent> = {
           "We use permission limits, approval gates, monitoring and audit trails. High value or ambiguous actions require human approval before execution so the system remains controlled and accountable.",
       },
     ],
-    finalHeadline: "Use AI Agents to Support Operational Work",
+    finalHeadline: "Put AI Agents to Work on Operational Tasks",
     finalSubText:
-      "Start with a focused discovery session to identify where agentic AI can reduce repetitive work and improve decision speed.",
+      "Start with a focused discovery session to find where agentic AI can reduce repetitive work and speed up decisions.",
     finalCTA: { label: "Book an Agentic AI Workshop", href: "/contact" },
     related: [
       { label: "AI Workflow Automation", href: "/services/ai-workflow-automation" },

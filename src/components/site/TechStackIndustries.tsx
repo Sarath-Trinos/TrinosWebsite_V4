@@ -64,7 +64,7 @@ type Props = {
 
 /**
  * Keyword → icon resolver. `techStack`/`industries` are arbitrary strings that
- * vary per service, so we map by substring and fall back to a neutral icon —
+ * vary per service, so we map by substring and fall back to a neutral icon -
  * every chip always renders with a relevant or sensible default glyph.
  */
 const resolveIcon = (label: string, fallback: LucideIcon): LucideIcon => {
@@ -72,7 +72,7 @@ const resolveIcon = (label: string, fallback: LucideIcon): LucideIcon => {
   // Order matters: earlier, more-specific patterns win over later generic ones.
   const table: Array<[RegExp, LucideIcon]> = [
     // ── Tech stack ──
-    // ML frameworks & model tooling — keep each tool visually distinct.
+    // ML frameworks & model tooling - keep each tool visually distinct.
     [/hugging\s?face/, Bot],
     [/pytorch/, Flame],
     [/tensorflow/, BrainCircuit],
@@ -83,28 +83,28 @@ const resolveIcon = (label: string, fallback: LucideIcon): LucideIcon => {
     [/evaluation|\beval\b|benchmark/, ClipboardCheck],
     // Cloud / managed compute (check before generic "api"/"engine")
     [/aws|azure|\bgcp\b|google cloud|step functions|cloud/, Cloud],
-    // Foundation models / providers — distinguish provider vs. provider.
+    // Foundation models / providers - distinguish provider vs. provider.
     [/anthropic|claude/, Bot],
     [/openai|gpt|\bllm|\bai\b/, Sparkles],
     // Orchestration vs. retrieval/indexing.
     [/llamaindex|\bindex/, FileSearch],
     [/langchain|orchestr|agent/, Network],
-    // Computer vision — detection vs. OCR vs. camera.
+    // Computer vision - detection vs. OCR vs. camera.
     [/\bocr\b|text recognition/, ScanText],
     [/camera/, Camera],
     [/\byolo\b/, ScanFace],
     [/opencv|vision|image recognition|detection/, ScanEye],
     // Edge / hardware
     [/jetson|nvidia|edge ai|hardware|embedded|\biot\b/, CircuitBoard],
-    // Voice / speech — input vs. output.
+    // Voice / speech - input vs. output.
     [/speech to text|\bstt\b|transcri/, Mic],
     [/text to speech|\btts\b/, Volume2],
     [/voice|audio/, AudioLines],
-    // Telephony — distinct glyph per channel.
+    // Telephony - distinct glyph per channel.
     [/twilio/, MessagesSquare],
     [/\bsip\b/, Radio],
     [/telephony|\bcall\b/, PhoneCall],
-    // ERP / enterprise systems — vendor-distinct where possible.
+    // ERP / enterprise systems - vendor-distinct where possible.
     [/sap and oracle|oracle integration/, Server],
     [/oracle/, Database],
     [/\bsap\b/, Factory],
@@ -119,13 +119,13 @@ const resolveIcon = (label: string, fallback: LucideIcon): LucideIcon => {
     [/database|\bdb\b|postgres|redis|data store|datastore/, Database],
     [/data (pipeline|migration)|migration tools|etl/, ArrowLeftRight],
     [/\bbi\b|analytics|reporting|dashboard|metrics/, LineChart],
-    // APIs & integrations — scheduling/social are more specific than generic API.
+    // APIs & integrations - scheduling/social are more specific than generic API.
     [/scheduling/, CalendarClock],
     [/social|platform api/, Share2],
     [/webhook/, Webhook],
     [/graphql/, Hexagon],
     [/rest|\bapis?\b|integration|\bsdk\b/, Plug],
-    // Web & mobile frameworks — keep each framework distinct.
+    // Web & mobile frameworks - keep each framework distinct.
     [/push notification/, Bell],
     [/offline/, RefreshCw],
     [/flutter/, TabletSmartphone],
@@ -200,7 +200,7 @@ const TechStackIndustries = ({ techStack, industries }: Props) => {
 
         {/* ── Two matching glass panels ── */}
         <div className="relative grid gap-6 lg:grid-cols-2">
-          {/* ░░ ZONE A — Tech stack ░░ */}
+          {/* ░░ ZONE A - Tech stack ░░ */}
           <div
             className={cn(
               "group/panel relative overflow-hidden rounded-3xl",
@@ -257,7 +257,7 @@ const TechStackIndustries = ({ techStack, industries }: Props) => {
             </ul>
           </div>
 
-          {/* ░░ ZONE B — Industries (matches Zone A) ░░ */}
+          {/* ░░ ZONE B - Industries (matches Zone A) ░░ */}
           <div
             className={cn(
               "group/panel relative overflow-hidden rounded-3xl",
