@@ -7,6 +7,7 @@ import { type as t } from "@/lib/typography";
 
 type Industry = {
   title: string;
+  taglines?: [string, string];
   description: string;
   image: string;
   helpsWith?: string[];
@@ -17,6 +18,7 @@ type Industry = {
 const INDUSTRIES: Industry[] = [
   {
     title: "Healthcare and Life Sciences",
+    taglines: ["Smarter care, less paperwork", "Secure, AI-first operations"],
     description:
       "Trinos helps healthcare and life science organizations reduce manual work, improve patient support and make better use of clinical and operational data. Our AI first systems support secure workflows, faster decisions and smoother day to day operations.",
     image: "/industry/doctor-holds-green-object-with-word-i-m.jpg",
@@ -39,6 +41,7 @@ const INDUSTRIES: Industry[] = [
   },
   {
     title: "Financial Services & Insurance",
+    taglines: ["Faster service, stronger trust", "Compliance-ready automation"],
     description:
       "Trinos helps banks, insurers and fintech companies move faster while maintaining trust, compliance and data security. Our AI first systems improve customer service, document processing, risk checks and internal workflows without disrupting core operations.",
     image:
@@ -64,6 +67,7 @@ const INDUSTRIES: Industry[] = [
   },
   {
     title: "Retail & E-Commerce",
+    taglines: ["Personalized at every touchpoint", "Operations that scale with demand"],
     description:
       "Trinos helps retail and ecommerce businesses improve speed, personalization and operational efficiency. Our AI first systems support customer journeys, inventory visibility, order workflows and business insights across online and offline channels.",
     image:
@@ -89,6 +93,7 @@ const INDUSTRIES: Industry[] = [
   },
   {
     title: "Manufacturing & Industrial AI",
+    taglines: ["Connected shop floor to office", "Faster, data-driven decisions"],
     description:
       "Trinos helps manufacturers connect plant operations, production data and business systems for better visibility and faster decisions. Our AI first systems support quality checks, workflow automation and operational intelligence across the shop floor and office teams.",
     image: "/industry/ai-managing-energy-resources-remote-areas.jpg",
@@ -113,6 +118,7 @@ const INDUSTRIES: Industry[] = [
   },
   {
     title: "Legal & Professional Services",
+    taglines: ["Less paperwork, more strategy", "Knowledge at your fingertips"],
     description:
       "Trinos helps legal firms, consulting teams and professional service companies reduce paperwork and improve service speed. Our AI first systems support document review, client workflows and internal knowledge access so experts can focus more on strategy and client outcomes.",
     image:
@@ -138,6 +144,7 @@ const INDUSTRIES: Industry[] = [
   },
   {
     title: "Real Estate & Property Management",
+    taglines: ["Tenants and assets in one view", "Smoother, faster operations"],
     description:
       "Trinos helps real estate and property management teams manage tenants, maintenance, finances and investor updates with better speed and visibility. Our AI first systems simplify service requests, property workflows and operational reporting across residential, commercial and portfolio teams.",
     image:
@@ -163,6 +170,7 @@ const INDUSTRIES: Industry[] = [
   },
   {
     title: "Media & Entertainment",
+    taglines: ["Content that moves faster", "Audience insight that converts"],
     description:
       "Trinos helps media and entertainment teams manage content, workflows and audience engagement with better speed and clarity. Our AI first systems support content planning, production workflows, asset management and business insights across creative and operational teams.",
     image:
@@ -188,12 +196,32 @@ const INDUSTRIES: Industry[] = [
   },
   {
     title: "Logistics & Supply Chain",
-    description: "Every mile and every minute counts.",
+    taglines: ["Every mile, every minute counts", "End-to-end shipment visibility"],
+    description:
+      "Trinos helps logistics and supply chain teams move goods faster with better visibility and fewer delays. Our AI first systems support shipment tracking, warehouse workflows, demand planning and operational reporting across complex, multi-party networks.",
     image:
       "/industry/smart-warehouse-management-system-with-innovative-internet-things-technology (1).jpg",
+    helpsWith: [
+      "Shipment tracking automation",
+      "Warehouse workflow support",
+      "Demand and inventory planning",
+      "Route and delivery visibility",
+      "Exception and delay alerts",
+      "Operations dashboards",
+    ],
+    businessImpact: [
+      "Faster, more reliable delivery",
+      "Better end-to-end visibility",
+      "Reduced manual coordination",
+      "Smarter inventory decisions",
+      "Fewer delays and exceptions",
+      "More resilient operations",
+    ],
+    cta: { label: "Streamline Your Supply Chain", href: "/contact" },
   },
   {
     title: "Education & EdTech",
+    taglines: ["Personalized learning at scale", "Less admin, more teaching"],
     description:
       "Trinos helps schools, universities and EdTech companies improve learning support, student engagement and administrative efficiency. Our AI first systems support personalized learning, student services, content workflows and data driven decisions across education teams.",
     image: "/industry/computer-screen-with-globe-screen-globe-screen.jpg",
@@ -218,6 +246,7 @@ const INDUSTRIES: Industry[] = [
   },
   {
     title: "Energy & Utilities",
+    taglines: ["Reliable assets, fewer outages", "Field operations, fully connected"],
     description:
       "Trinos helps energy and utility companies improve asset visibility, field operations and service reliability. Our AI first systems support maintenance workflows, outage response, compliance tasks and operational dashboards across asset heavy environments.",
     image: "/industry/man-looking-out-window-with-words-welcome-bottom.jpg",
@@ -242,6 +271,7 @@ const INDUSTRIES: Industry[] = [
   },
   {
     title: "Construction & Engineering",
+    taglines: ["Projects on time, on budget", "Site and office in sync"],
     description:
       "Trinos helps construction and engineering teams improve project visibility, document control and site coordination. Our AI first systems support planning, reporting and workflow automation from bidding to project completion.",
     image:
@@ -267,6 +297,7 @@ const INDUSTRIES: Industry[] = [
   },
   {
     title: "Hospitality & Tourism",
+    taglines: ["Guest experiences that delight", "Operations that run smoother"],
     description:
       "Trinos helps hotels, resorts and travel companies improve guest service, booking workflows and daily operations. Our AI first systems support faster responses, smoother coordination and more personalized experiences across guest facing and internal teams.",
     image:
@@ -388,7 +419,7 @@ const IndustryGrid = () => {
                   key={activeIndex}
                   className="animate-expand-grow [transform-origin:top_center] scroll-mt-24"
                 >
-                  <div className="relative w-full overflow-hidden rounded-2xl bg-card shadow-card ring-1 ring-border/60 [contain:layout_paint]">
+                  <div className="relative w-full overflow-hidden rounded-2xl bg-card shadow-[0_0_40px_-4px_hsl(210_60%_25%/0.22)] ring-1 ring-border/60 [contain:layout_paint]">
                     <button
                       type="button"
                       onClick={() => setActiveIndex(null)}
@@ -397,95 +428,102 @@ const IndustryGrid = () => {
                     >
                       <X className="w-5 h-5" />
                     </button>
-                    <div className="relative w-full aspect-[16/7] md:aspect-[16/6] overflow-hidden">
-                      <Image
-                        src={activeIndustry.image}
-                        alt={activeIndustry.title}
-                        fill
-                        sizes="(max-width: 1400px) 100vw, 1400px"
-                        quality={75}
-                        className="object-cover animate-ken-burns"
-                        priority
-                      />
-                      <div className="absolute inset-x-0 bottom-0 h-1/3 bg-gradient-to-t from-black/40 to-transparent pointer-events-none" />
-                    </div>
-                    <div className="p-6 md:p-10">
-                      <h3
-                        className={`${t.featureHeadline} text-foreground animate-slide-up-soft`}
-                        style={{ animationDelay: "0.15s" }}
-                      >
-                        {activeIndustry.title}
-                      </h3>
-                      <p
-                        className={`mt-4 ${t.body} text-muted-foreground max-w-5xl animate-slide-up-soft`}
-                        style={{ animationDelay: "0.3s" }}
-                      >
-                        {activeIndustry.description}
-                      </p>
 
-                      {(activeIndustry.helpsWith || activeIndustry.businessImpact) && (
+                    <div className="p-6 md:p-10 lg:p-12">
+                      {/* Header: industry name chip + single tagline headline, centered */}
+                      <div className="mx-auto max-w-3xl text-center">
+                        <span className="chip mb-5">{activeIndustry.title}</span>
+                        {activeIndustry.taglines && (
+                          <h3
+                            className={`${t.featureHeadline} text-foreground animate-slide-up-soft`}
+                            style={{ animationDelay: "0.15s" }}
+                          >
+                            {activeIndustry.taglines[0]}
+                          </h3>
+                        )}
+                      </div>
+
+                      {/* Two-column body: description + Helps With / Business Impact on the left, image on the right */}
+                      <div className="mt-8 grid gap-8 lg:gap-12 lg:grid-cols-2 lg:items-start">
                         <div
-                          className="mt-8 grid gap-8 md:grid-cols-2 animate-slide-up-soft"
+                          className="animate-slide-up-soft"
+                          style={{ animationDelay: "0.35s" }}
+                        >
+                          <p className={`${t.body} text-muted-foreground`}>
+                            {activeIndustry.description}
+                          </p>
+
+                          {(activeIndustry.helpsWith || activeIndustry.businessImpact) && (
+                            <div className="mt-8 grid gap-8 sm:grid-cols-2">
+                              {activeIndustry.helpsWith && (
+                                <div>
+                                  <h4 className={`${t.cardHeadline} text-foreground mb-4`}>
+                                    What Trinos Helps With
+                                  </h4>
+                                  <ul className="grid gap-y-2.5">
+                                    {activeIndustry.helpsWith.map((item) => (
+                                      <li
+                                        key={item}
+                                        className={`${t.body} flex items-start gap-3 text-muted-foreground`}
+                                      >
+                                        <span className="mt-2 h-1.5 w-1.5 shrink-0 rounded-full bg-primary" />
+                                        {item}
+                                      </li>
+                                    ))}
+                                  </ul>
+                                </div>
+                              )}
+
+                              {activeIndustry.businessImpact && (
+                                <div>
+                                  <h4 className={`${t.cardHeadline} text-foreground mb-4`}>
+                                    Business Impact
+                                  </h4>
+                                  <ul className="grid gap-y-2.5">
+                                    {activeIndustry.businessImpact.map((item) => (
+                                      <li
+                                        key={item}
+                                        className={`${t.body} flex items-start gap-3 text-muted-foreground`}
+                                      >
+                                        <span className="mt-2 h-1.5 w-1.5 shrink-0 rounded-full bg-primary" />
+                                        {item}
+                                      </li>
+                                    ))}
+                                  </ul>
+                                </div>
+                              )}
+                            </div>
+                          )}
+
+                          {activeIndustry.cta && (
+                            <div className="mt-8">
+                              <a
+                                href={activeIndustry.cta.href}
+                                className="inline-flex items-center gap-2 rounded-full bg-gradient-primary px-6 py-3 text-white font-medium shadow-glow transition-transform duration-300 hover:scale-[1.03]"
+                              >
+                                {activeIndustry.cta.label}
+                                <ArrowRight className="w-4 h-4" />
+                              </a>
+                            </div>
+                          )}
+                        </div>
+
+                        <div
+                          className="relative w-full aspect-[4/3] overflow-hidden rounded-2xl shadow-soft ring-1 ring-border/60 animate-slide-up-soft"
                           style={{ animationDelay: "0.4s" }}
                         >
-                          {activeIndustry.helpsWith && (
-                            <div>
-                              <h4
-                                className={`${t.cardHeadline} text-foreground mb-4`}
-                              >
-                                What Trinos Helps With
-                              </h4>
-                              <ul className="space-y-2.5">
-                                {activeIndustry.helpsWith.map((item) => (
-                                  <li
-                                    key={item}
-                                    className={`${t.body} flex items-start gap-3 text-muted-foreground`}
-                                  >
-                                    <span className="mt-2 h-1.5 w-1.5 shrink-0 rounded-full bg-primary" />
-                                    {item}
-                                  </li>
-                                ))}
-                              </ul>
-                            </div>
-                          )}
-
-                          {activeIndustry.businessImpact && (
-                            <div>
-                              <h4
-                                className={`${t.cardHeadline} text-foreground mb-4`}
-                              >
-                                Business Impact
-                              </h4>
-                              <ul className="space-y-2.5">
-                                {activeIndustry.businessImpact.map((item) => (
-                                  <li
-                                    key={item}
-                                    className={`${t.body} flex items-start gap-3 text-muted-foreground`}
-                                  >
-                                    <span className="mt-2 h-1.5 w-1.5 shrink-0 rounded-full bg-primary" />
-                                    {item}
-                                  </li>
-                                ))}
-                              </ul>
-                            </div>
-                          )}
+                          <Image
+                            src={activeIndustry.image}
+                            alt={activeIndustry.title}
+                            fill
+                            sizes="(max-width: 1024px) 100vw, 600px"
+                            quality={75}
+                            className="object-cover animate-ken-burns"
+                            priority
+                          />
+                          <div className="absolute inset-x-0 bottom-0 h-1/3 bg-gradient-to-t from-black/30 to-transparent pointer-events-none" />
                         </div>
-                      )}
-
-                      {activeIndustry.cta && (
-                        <div
-                          className="mt-8 animate-slide-up-soft"
-                          style={{ animationDelay: "0.5s" }}
-                        >
-                          <a
-                            href={activeIndustry.cta.href}
-                            className="inline-flex items-center gap-2 rounded-full bg-gradient-primary px-6 py-3 text-white font-medium shadow-glow transition-transform duration-300 hover:scale-[1.03]"
-                          >
-                            {activeIndustry.cta.label}
-                            <ArrowRight className="w-4 h-4" />
-                          </a>
-                        </div>
-                      )}
+                      </div>
                     </div>
                   </div>
                 </div>
@@ -509,7 +547,7 @@ const IndustryGrid = () => {
                       type="button"
                       key={industry.title}
                       onClick={() => handleCardClick(originalIndex)}
-                      className="group flex flex-col text-left focus:outline-none focus-visible:ring-2 focus-visible:ring-primary focus-visible:ring-offset-2 rounded-2xl"
+                      className="group flex flex-col text-left rounded-2xl overflow-hidden bg-surface-dark text-on-surface-dark shadow-card hover:shadow-glow transition-shadow duration-300 hover:-translate-y-1 focus:outline-none focus-visible:ring-2 focus-visible:ring-primary-glow"
                       style={{
                         opacity: isVisible ? 1 : 0,
                         transform: isVisible
@@ -519,7 +557,7 @@ const IndustryGrid = () => {
                           "opacity 0.6s cubic-bezier(0.4, 0, 0.2, 1), transform 0.6s cubic-bezier(0.4, 0, 0.2, 1)",
                       }}
                     >
-                      <div className="relative w-full aspect-[4/3] mb-4 overflow-hidden rounded-2xl">
+                      <div className="relative h-44 w-full overflow-hidden">
                         <Image
                           src={industry.image}
                           alt={industry.title}
@@ -530,14 +568,16 @@ const IndustryGrid = () => {
                           className="object-cover transition-transform duration-500 ease-out group-hover:scale-105"
                         />
                       </div>
-                      <h3 className={`${t.cardHeadlineSemibold} text-foreground mb-3 min-h-[2lh]`}>
-                        {industry.title}
-                      </h3>
-                      <p
-                        className={`${t.body} text-muted-foreground leading-relaxed line-clamp-2`}
-                      >
-                        {industry.description}
-                      </p>
+
+                      <div className="p-6">
+                        <h4 className={t.cardHeadlineSemibold}>
+                          {industry.title}
+                        </h4>
+                        <p className="mt-3 text-sm text-white/70 leading-relaxed line-clamp-3">
+                          {industry.description}
+                        </p>
+                        <p className="mt-4 text-xs font-medium text-primary-glow">Learn More</p>
+                      </div>
                     </button>
                   );
                 })}

@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { Inter, Sora, Poppins, Caveat } from "next/font/google";
+import { Inter, Inter_Tight, Sora, Poppins, Caveat, Manrope } from "next/font/google";
 import { Providers } from "./providers";
 import "./globals.css";
 
@@ -7,6 +7,20 @@ const inter = Inter({
   subsets: ["latin"],
   weight: ["400", "500", "600", "700"],
   variable: "--font-inter",
+  display: "swap",
+});
+
+const interTight = Inter_Tight({
+  subsets: ["latin"],
+  weight: ["400", "500", "600", "700", "800"],
+  variable: "--font-inter-tight",
+  display: "swap",
+});
+
+const manrope = Manrope({
+  subsets: ["latin"],
+  weight: ["400", "500", "600", "700", "800"],
+  variable: "--font-manrope",
   display: "swap",
 });
 
@@ -55,7 +69,7 @@ export const metadata: Metadata = {
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
-    <html lang="en" className={`${inter.variable} ${sora.variable} ${poppins.variable} ${caveat.variable}`}>
+    <html lang="en" className={`${inter.variable} ${interTight.variable} ${manrope.variable} ${sora.variable} ${poppins.variable} ${caveat.variable}`}>
       <body>
         <Providers>{children}</Providers>
       </body>

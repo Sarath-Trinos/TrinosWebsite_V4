@@ -15,7 +15,7 @@ export const metadata: Metadata = {
 
 export default function CareersPage() {
   return (
-    <main className="min-h-screen bg-background">
+    <main className="landing-wide min-h-screen bg-background">
       <Header />
       <CareersHero />
       <WhyJoinTrinos />

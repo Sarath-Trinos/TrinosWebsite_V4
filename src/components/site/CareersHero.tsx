@@ -43,7 +43,7 @@ const CareersHero = () => {
           disableRemotePlayback
           aria-hidden="true"
         />
-        <div className="absolute inset-0 bg-black/60" />
+        <div className="pointer-events-none absolute inset-0 bg-gradient-to-r from-black/85 from-10% via-black/55 via-35% to-transparent to-55%" />
 
         <div className="container-px max-w-[1200px] mx-auto relative z-10 flex items-center min-h-[20rem] lg:min-h-[24rem]">
           <div className="max-w-3xl animate-fade-up">

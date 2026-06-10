@@ -64,7 +64,7 @@ const ServiceDetail = ({ service, heroImage }: Props) => {
           <div className="tile bg-surface-soft p-8 md:p-12 lg:p-16 relative overflow-hidden">
             <div className="absolute -top-32 -left-32 w-[25rem] h-[25rem] rounded-full bg-primary/10 blur-3xl" />
             <div className="absolute -bottom-32 -right-32 w-[25rem] h-[25rem] rounded-full bg-primary-glow/10 blur-3xl" />
-            <div className="relative max-w-6xl">
+            <div className="relative">
               <h2 className={`${t.sectionHeadlineMd} text-foreground`}>
                 {service.answerHeading}
               </h2>
@@ -165,7 +165,7 @@ const ServiceDetail = ({ service, heroImage }: Props) => {
             <div className="text-xs font-semibold uppercase tracking-[0.16em] text-primary-glow mb-3">
               The result
             </div>
-            <p className={`${t.subheadlineNormal} text-white/90 max-w-4xl`}>
+            <p className={`${t.subheadlineNormal} text-white/90`}>
               {service.result}
             </p>
           </div>

@@ -42,17 +42,14 @@ const ProductsHero = () => {
           disableRemotePlayback
           aria-hidden="true"
         />
-        <div className="absolute inset-0 bg-black/60" />
+        <div className="pointer-events-none absolute inset-0 bg-gradient-to-r from-black/85 from-10% via-black/55 via-35% to-transparent to-55%" />
 
         <div className="container-px max-w-[1200px] mx-auto relative z-10 flex items-center min-h-[20rem] lg:min-h-[24rem]">
-          <div className="max-w-3xl animate-fade-up">
+          <div className="max-w-4xl lg:max-w-5xl animate-fade-up">
             <span className="chip mb-5">Our AI Products</span>
             <h1 className={`${t.heroHeadline} text-white`}>
-              AI Platforms Built In-House.{" "}
-              <span className="text-white">
-                Live in Production
-              </span>
-              .
+              <span className="block whitespace-nowrap">AI Platforms Built In-House.</span>
+              <span className="block whitespace-nowrap text-white">Live in Production.</span>
             </h1>
             <p className={`mt-6 ${t.subheadline} text-white/80 max-w-2xl`}>
               Trinos Technologies is the parent company engineering dedicated AI platforms for specific industry challenges. We build, launch and scale products under the Trinos umbrella to prove our AI-first engineering in real production environments.

@@ -3,8 +3,8 @@ import { type as t } from "@/lib/typography";
 
 const IndustryCTA = () => (
   <section id="industry-cta" className="py-16 md:py-20">
-    <div className="container-px max-w-[1200px] mx-auto">
-      <div className="tile bg-gradient-cta px-8 py-12 md:px-12 md:py-14 lg:px-20 lg:py-16 text-center relative overflow-hidden">
+    <div className="container-px max-w-fit mx-auto">
+      <div className="tile bg-gradient-cta w-full max-w-full lg:min-w-[82rem] px-8 py-12 md:px-12 md:py-14 lg:px-20 lg:py-16 text-center relative overflow-hidden">
         <div className="absolute -top-32 -left-32 w-[25rem] h-[25rem] rounded-full bg-white/40 blur-3xl" />
         <div className="absolute -bottom-32 -right-32 w-[25rem] h-[25rem] rounded-full bg-white/40 blur-3xl" />
         <div className="relative">

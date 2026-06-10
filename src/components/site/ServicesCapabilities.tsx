@@ -69,7 +69,7 @@ const ServicesCapabilities = () => (
         </p>
         <p className={`mt-4 ${t.bodyLg} text-muted-foreground`}>
           From autonomous agents to intelligence systems to the enterprise platforms that run
-          your business — built to operate together inside real workflows.
+          your business, built to operate together inside real workflows.
         </p>
       </div>
 

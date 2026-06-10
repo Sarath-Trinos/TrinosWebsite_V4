@@ -9,24 +9,23 @@ const ServicesAnswerBlock = () => (
         <div className="relative">
           <span className="chip mb-5">At a glance</span>
           <h2 className={`${t.sectionHeadlineMd} text-foreground`}>
-            What services does Trinos provide?
+            What does Trinos provide?
           </h2>
           <p className={`mt-5 ${t.bodyLg} text-muted-foreground`}>
-            Trinos provides AI first enterprise services that help organizations move from early AI
-            ideas to production ready systems. Our work covers{" "}
-            <span className="font-semibold text-foreground">Agentic AI</span>,{" "}
-            <span className="font-semibold text-foreground">AI Workflow Automation</span>,{" "}
-            <span className="font-semibold text-foreground">LLM Fine Tuning</span>,{" "}
-            <span className="font-semibold text-foreground">Generative AI and Analytics</span>,{" "}
-            <span className="font-semibold text-foreground">AI Voice Assistants</span>,{" "}
-            <span className="font-semibold text-foreground">Computer Vision</span>,{" "}
-            <span className="font-semibold text-foreground">Enterprise Resource Planning</span>,{" "}
-            <span className="font-semibold text-foreground">Social Media Automation</span>,{" "}
-            <span className="font-semibold text-foreground">Web Development</span> and{" "}
-            <span className="font-semibold text-foreground">Mobile App Development</span>. Each
-            service is designed to connect AI with real workflows, trusted data and measurable
-            business outcomes.
+            Trinos provides AI first enterprise services that take organizations from early AI ideas
+            to production ready systems. Our work spans ten services across three areas:{" "}
+            <span className="font-semibold text-foreground">Agentic Automation</span>,{" "}
+            <span className="font-semibold text-foreground">AI Intelligence Systems</span> and{" "}
+            <span className="font-semibold text-foreground">Enterprise Platforms</span>. Every
+            engagement connects AI to real workflows, trusted data and clear operational control,
+            with human oversight built in rather than bolted on.
           </p>
+
+          <div className="mt-7 flex flex-wrap gap-3">
+            <span className="chip">Agentic Automation</span>
+            <span className="chip">AI Intelligence Systems</span>
+            <span className="chip">Enterprise Platforms</span>
+          </div>
         </div>
       </div>
     </div>

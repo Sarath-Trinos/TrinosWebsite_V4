@@ -13,7 +13,7 @@ export const metadata: Metadata = {
 
 export default function IndustryPage() {
   return (
-    <main className="min-h-screen bg-background">
+    <main className="landing-wide min-h-screen bg-background">
       <Header />
       <IndustryHero />
       <IndustryGrid />

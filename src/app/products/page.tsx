@@ -8,12 +8,12 @@ import Footer from "@/components/site/Footer";
 export const metadata: Metadata = {
   title: "Products | Trinos Technologies",
   description:
-    "A growing suite of AI-powered products — Moltter and TraceFlow — built to accelerate digital transformation and drive measurable business outcomes.",
+    "A growing suite of AI-powered products, Moltter and TraceFlow, built to accelerate digital transformation and drive measurable business outcomes.",
 };
 
 export default function ProductsPage() {
   return (
-    <main className="min-h-screen bg-background">
+    <main className="landing-wide min-h-screen bg-background">
       <Header />
       <ProductsHero />
       <ProductShowcase />

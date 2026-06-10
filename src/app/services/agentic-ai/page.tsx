@@ -13,7 +13,7 @@ export const metadata: Metadata = {
 
 export default function AgenticAIPage() {
   return (
-    <main className="min-h-screen bg-background">
+    <main className="landing-wide min-h-screen bg-background">
       <Header />
       <ServiceDetail
         service={service}

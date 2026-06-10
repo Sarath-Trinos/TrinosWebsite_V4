@@ -33,7 +33,8 @@ const ServicesHero = () => {
         <video
           ref={videoRef}
           className="absolute inset-0 w-full h-full object-cover"
-          src="/videos/mp_ (3).mp4"
+          src={encodeURI("/videos/services-hero.mp4")}
+          poster="/videos/services-hero-poster.jpg"
           autoPlay
           muted
           loop
@@ -42,13 +43,14 @@ const ServicesHero = () => {
           disableRemotePlayback
           aria-hidden="true"
         />
-        <div className="absolute inset-0 bg-black/60" />
+        <div className="pointer-events-none absolute inset-0 bg-black/45" />
+        <div className="pointer-events-none absolute inset-0 bg-gradient-to-r from-black/85 from-10% via-black/55 via-35% to-transparent to-55%" />
 
         <div className="container-px max-w-[1200px] mx-auto relative z-10 flex items-center min-h-[20rem] lg:min-h-[24rem]">
           <div className="max-w-full lg:max-w-[75%] animate-fade-up">
-            <span className="chip mb-5">Enterprise AI and Platform Engineering Services</span>
+            <span className="chip mb-5">Enterprise AI &amp; Platform Engineering</span>
             <h1 className={`${t.heroHeadline} text-white`}>
-              <span className="text-white">Enterprise AI Services for</span>{" "}
+              <span className="text-white">Enterprise AI Built for</span>{" "}
               <span className="text-white">
                 Real Workflows
               </span>
@@ -56,7 +58,8 @@ const ServicesHero = () => {
             </h1>
             <p className={`mt-6 ${t.subheadline} text-white/80 max-w-2xl`}>
               Trinos designs, builds and integrates AI first systems across automation, analytics,
-              ERP, voice, vision, web, mobile and content operations for enterprise teams.
+              ERP, voice, vision, web and mobile, so enterprise teams move from AI ideas to systems
+              they can actually run.
             </p>
 
             <div className="mt-9 flex flex-wrap items-center gap-4">
@@ -71,7 +74,7 @@ const ServicesHero = () => {
                 href="#our-services"
                 className="inline-flex items-center gap-2 font-semibold px-6 py-3.5 rounded-full border border-white/40 text-white hover:border-white hover:bg-white/10 transition-colors"
               >
-                Explore Services
+                Explore the 10 Services ↓
               </a>
             </div>
           </div>

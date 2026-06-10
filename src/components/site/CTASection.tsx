@@ -74,7 +74,7 @@ const CTASection = ({
   return (
     <section id="demo" className={className}>
       <div className="container-px max-w-fit mx-auto">
-        <div className={`tile ${v.bg} px-8 py-12 md:px-12 md:py-14 lg:px-20 lg:py-16 text-center relative overflow-hidden`}>
+        <div className={`tile ${v.bg} w-full max-w-full lg:min-w-[82rem] px-8 py-12 md:px-12 md:py-14 lg:px-20 lg:py-16 text-center relative overflow-hidden`}>
           <div className="absolute -top-32 -left-32 w-[25rem] h-[25rem] rounded-full bg-white/40 blur-3xl" />
           <div className="absolute -bottom-32 -right-32 w-[25rem] h-[25rem] rounded-full bg-white/40 blur-3xl" />
           <div className="relative">

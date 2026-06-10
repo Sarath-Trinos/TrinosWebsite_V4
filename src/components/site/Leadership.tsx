@@ -22,7 +22,7 @@ const leaders = [
     name: "Rajkumar Gangadharan",
     role: "Co-Founder & CTO",
     image: "/team/Raj.webp",
-    bio: "17+ years in software development, system architecture and AI. Chief architect behind multi-agent orchestration, workflow automation and the AI infrastructure that supports Trinos platforms. He sets the technical direction and is hands-on in the work — designing the systems the rest of the team builds on.",
+    bio: "17+ years in software development, system architecture and AI. Chief architect behind multi-agent orchestration, workflow automation and the AI infrastructure that supports Trinos platforms. He sets the technical direction and is hands-on in the work, designing the systems the rest of the team builds on.",
   },
 ];
 

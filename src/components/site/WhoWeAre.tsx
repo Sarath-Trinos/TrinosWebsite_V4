@@ -53,13 +53,13 @@ const WhoWeAre = () => (
     <div className="container-px max-w-[1200px] mx-auto">
       <div className="grid lg:grid-cols-2 gap-10 md:gap-12 lg:gap-14 items-start">
         <div className="relative order-2 lg:order-1">
-          <div className="relative rounded-3xl">
+          <div className="relative rounded-3xl mx-auto max-w-[460px]">
             <Image
               src={aboutImg}
               alt="Trinos Technologies team collaborating"
               placeholder="blur"
               className="w-full h-auto object-cover"
-              sizes="(min-width: 1024px) 600px, 100vw"
+              sizes="(min-width: 1024px) 460px, 100vw"
             />
 
             {floatingIcons.map(({ Icon, label, iconBg, style, delay }) => (

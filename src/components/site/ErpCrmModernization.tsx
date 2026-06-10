@@ -97,7 +97,7 @@ const ErpCrmModernization = () => (
       <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6 lg:gap-8">
         {items.map((it) => (
           <article key={it.title} className="flex flex-col">
-            <div className="relative aspect-[4/3] rounded-3xl overflow-hidden bg-surface-soft mb-6">
+            <div className="relative aspect-[5/4] rounded-3xl overflow-hidden bg-surface-soft mb-6">
               {it.video ? (
                 <CardVideo src={it.video} />
               ) : (

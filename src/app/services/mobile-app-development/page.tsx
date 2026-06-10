@@ -13,7 +13,7 @@ export const metadata: Metadata = {
 
 export default function MobileAppDevelopmentPage() {
   return (
-    <main className="min-h-screen bg-background">
+    <main className="landing-wide min-h-screen bg-background">
       <Header />
       <ServiceDetail service={service} />
       <Footer />

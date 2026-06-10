@@ -21,58 +21,78 @@ type Service = {
 
 type ServiceGroup = {
   category: string;
+  intro: string;
+  /** Tailwind classes for the per-category color accent (carried to detail pages). */
+  accent: {
+    /** Left border + dot on the category heading. */
+    bar: string;
+    /** Icon tile background tint inside each card. */
+    tile: string;
+  };
   services: Service[];
 };
 
 const serviceGroups: ServiceGroup[] = [
   {
     category: "Agentic Automation",
+    intro:
+      "AI that takes action. Agents and workflows that plan, route and execute work across your systems, with approvals and audit trails.",
+    accent: {
+      bar: "bg-primary",
+      tile: "from-primary/40 via-primary/15 to-[#0f1115]",
+    },
     services: [
       {
         icon: Bot,
         title: "Agentic AI",
         description:
-          "AI agents that plan tasks, connect with approved systems and coordinate work across enterprise workflows. Built with human oversight, scoped permissions and audit controls.",
+          "AI agents that plan tasks, connect to approved systems and coordinate work across enterprise workflows, with human oversight, scoped permissions and audit controls.",
         href: "/services/agentic-ai",
       },
       {
         icon: Workflow,
         title: "AI Workflow Automation",
         description:
-          "AI driven workflow systems that connect tasks, approvals, business rules and enterprise applications into one coordinated process layer.",
+          "Workflow systems that connect tasks, approvals, business rules and applications into one coordinated process layer.",
         href: "/services/ai-workflow-automation",
       },
       {
         icon: Mic,
         title: "AI Voice Assistants",
         description:
-          "Voice based AI assistants for support, sales and internal operations. Designed to answer questions, collect information and trigger approved workflows.",
+          "Voice AI for support, sales and internal operations that answers questions, captures information and triggers approved workflows.",
         href: "/services/ai-voice-assistants",
       },
       {
         icon: Share2,
         title: "Social Media Automation",
         description:
-          "AI supported content operations for research, drafting, approvals, scheduling and reporting while keeping brand tone and review control in place.",
+          "AI-supported content operations for research, drafting, approval, scheduling and reporting, with brand tone and review control kept in place.",
         href: "/services/social-media-automation",
       },
     ],
   },
   {
     category: "AI Intelligence Systems",
+    intro:
+      "AI that understands. Models and analytics that turn your data, documents and images into reliable, traceable insight.",
+    accent: {
+      bar: "bg-cyan-400",
+      tile: "from-cyan-400/40 via-cyan-400/15 to-[#0f1115]",
+    },
     services: [
       {
         icon: BrainCircuit,
         title: "LLM Fine Tuning",
         description:
-          "Domain tuned language models trained around your data, terminology and task patterns to improve reliability for defined enterprise use cases.",
+          "Domain-tuned language models trained on your data, terminology and task patterns to improve reliability for defined enterprise use cases.",
         href: "/services/llm-fine-tuning",
       },
       {
         icon: BarChart3,
         title: "Generative AI and Analytics",
         description:
-          "Conversational dashboards and intelligent reporting systems that turn approved enterprise data into clear, sourced and decision ready insights.",
+          "Conversational dashboards and intelligent reporting that turn approved enterprise data into sourced, decision-ready insight.",
         href: "/services/generative-ai-analytics",
       },
       {
@@ -86,26 +106,32 @@ const serviceGroups: ServiceGroup[] = [
   },
   {
     category: "Enterprise Platforms",
+    intro:
+      "The foundation. ERP, web and mobile systems engineered to be secure, integrated and AI-ready from day one.",
+    accent: {
+      bar: "bg-violet-400",
+      tile: "from-violet-400/40 via-violet-400/15 to-[#0f1115]",
+    },
     services: [
       {
         icon: Briefcase,
         title: "Enterprise Resource Planning",
         description:
-          "ERP architecture, implementation and integration across leading platforms with clean data, connected workflows and an AI ready operating foundation.",
+          "ERP architecture, implementation and integration across leading platforms, with clean data and an AI-ready operating foundation.",
         href: "/services/enterprise-resource-planning",
       },
       {
         icon: Globe,
         title: "Web Development",
         description:
-          "Enterprise websites, portals and web applications built with secure architecture, intuitive UX, system integration and AI ready features.",
+          "Enterprise websites, portals and web applications with secure architecture, strong UX, system integration and AI-ready features.",
         href: "/services/web-development",
       },
       {
         icon: Smartphone,
         title: "Mobile App Development",
         description:
-          "Cross platform mobile apps with secure data connections, workflow access and embedded AI capabilities for field teams, customers and employees.",
+          "Cross-platform mobile apps with secure data connections, workflow access and embedded AI for field teams, customers and employees.",
         href: "/services/mobile-app-development",
       },
     ],
@@ -114,7 +140,7 @@ const serviceGroups: ServiceGroup[] = [
 
 const OurServices = () => {
   return (
-    <section id="our-services" className="py-10 bg-background">
+    <section id="our-services" className="scroll-mt-24 py-10 bg-background">
       <div className="container-px max-w-[1200px] mx-auto">
         <div className="max-w-6xl mb-12">
           <span className="chip mb-5">Our Services</span>
@@ -132,11 +158,22 @@ const OurServices = () => {
         </div>
 
         <div className="space-y-14">
-          {serviceGroups.map(({ category, services }) => (
+          {serviceGroups.map(({ category, intro, accent, services }) => (
             <div key={category}>
-              <h3 className={`${t.subheadlineSemibold} text-foreground mb-6`}>
-                {category}
-              </h3>
+              <div className="mb-6 flex gap-4">
+                <span
+                  className={`mt-1.5 w-1 self-stretch rounded-full ${accent.bar}`}
+                  aria-hidden="true"
+                />
+                <div>
+                  <h3 className={`${t.subheadlineSemibold} text-foreground`}>
+                    {category}
+                  </h3>
+                  <p className={`mt-1 ${t.body} text-muted-foreground max-w-2xl`}>
+                    {intro}
+                  </p>
+                </div>
+              </div>
 
               <div
                 className={`grid sm:grid-cols-2 ${
@@ -152,7 +189,7 @@ const OurServices = () => {
                     className="group rounded-2xl overflow-hidden bg-surface-dark text-on-surface-dark shadow-card hover:shadow-glow transition-shadow duration-300 hover:-translate-y-1 animate-zoom-in-br origin-bottom-right block focus:outline-none focus-visible:ring-2 focus-visible:ring-primary-glow"
                     style={{ animationDelay: `${idx * 80}ms` }}
                   >
-                    <div className="relative h-44 overflow-hidden bg-gradient-to-br from-primary/40 via-primary/15 to-[#0f1115]">
+                    <div className={`relative h-44 overflow-hidden bg-gradient-to-br ${accent.tile}`}>
                       <div className="absolute inset-0 bg-[radial-gradient(circle_at_30%_20%,rgba(255,255,255,0.18),transparent_60%)]" />
                       <div className="absolute inset-0 grid place-items-center">
                         <div className="w-24 h-24 rounded-3xl bg-white/10 backdrop-blur-sm border border-white/15 grid place-items-center shadow-soft transition-transform duration-300 group-hover:scale-110">

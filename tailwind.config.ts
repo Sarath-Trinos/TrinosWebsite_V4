@@ -17,6 +17,8 @@ export default {
         sans: ['Inter', 'system-ui', 'sans-serif'],
         display: ['Sora', 'Inter', 'sans-serif'],
         poppins: ['var(--font-poppins)', 'Poppins', 'sans-serif'],
+        'inter-tight': ['var(--font-inter-tight)', 'Inter Tight', 'Inter', 'sans-serif'],
+        manrope: ['var(--font-manrope)', 'Manrope', 'Inter', 'sans-serif'],
         handwrite: ['var(--font-caveat)', 'Caveat', 'cursive'],
       },
       colors: {

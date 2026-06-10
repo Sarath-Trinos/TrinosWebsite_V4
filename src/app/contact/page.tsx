@@ -7,12 +7,12 @@ import Footer from "@/components/site/Footer";
 export const metadata: Metadata = {
   title: "Contact | Trinos Technologies",
   description:
-    "Have a question or want to discuss a project? Reach out to Trinos Technologies — our team is here to help you transform your business with AI-powered solutions.",
+    "Have a question or want to discuss a project? Reach out to Trinos Technologies. Our team is here to help you transform your business with AI-powered solutions.",
 };
 
 export default function ContactPage() {
   return (
-    <main className="min-h-screen bg-background">
+    <main className="landing-wide min-h-screen bg-background">
       <Header />
       <ContactHero />
       <ContactSection />
