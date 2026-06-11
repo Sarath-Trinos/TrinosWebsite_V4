@@ -21,7 +21,7 @@ const INDUSTRIES: Industry[] = [
     taglines: ["Smarter care, less paperwork", "Secure, AI-first operations"],
     description:
       "Trinos helps healthcare and life science organizations reduce manual work, improve patient support and make better use of clinical and operational data. Our AI first systems support secure workflows, faster decisions and smoother day to day operations.",
-    image: "/industry/doctor-holds-green-object-with-word-i-m.jpg",
+    image: "/industry/Healthcare (1).png",
     helpsWith: [
       "Patient support automation",
       "Appointment and follow up workflows",
@@ -44,8 +44,7 @@ const INDUSTRIES: Industry[] = [
     taglines: ["Faster service, stronger trust", "Compliance-ready automation"],
     description:
       "Trinos helps banks, insurers and fintech companies move faster while maintaining trust, compliance and data security. Our AI first systems improve customer service, document processing, risk checks and internal workflows without disrupting core operations.",
-    image:
-      "/industry/happy-couple-clients-signing-house-buying-rent-contract-insurance-agreement-filling-bank-papers-mortgage-loan-meeting-with-lawyer-broker-realtor-real-estate-agent-office.jpg",
+    image: "/industry/Finance.png",
     helpsWith: [
       "Customer support automation",
       "Claims processing support",
@@ -95,7 +94,7 @@ const INDUSTRIES: Industry[] = [
     taglines: ["Connected shop floor to office", "Faster, data-driven decisions"],
     description:
       "Trinos helps manufacturers connect plant operations, production data and business systems for better visibility and faster decisions. Our AI first systems support quality checks, workflow automation and operational intelligence across the shop floor and office teams.",
-    image: "/industry/ai-managing-energy-resources-remote-areas.jpg",
+    image: "/industry/manufacturing (1).png",
     helpsWith: [
       "Production workflow automation",
       "Quality inspection support",
@@ -120,8 +119,7 @@ const INDUSTRIES: Industry[] = [
     taglines: ["Less paperwork, more strategy", "Knowledge at your fingertips"],
     description:
       "Trinos helps legal firms, consulting teams and professional service companies reduce paperwork and improve service speed. Our AI first systems support document review, client workflows and internal knowledge access so experts can focus more on strategy and client outcomes.",
-    image:
-      "/industry/smart-law-legal-advice-icons-savvy-lawyer-working-tools-lawyers-office.jpg",
+    image: "/industry/Legal & professional services.png",
     helpsWith: [
       "Contract and document review",
       "Legal research support",
@@ -140,58 +138,6 @@ const INDUSTRIES: Industry[] = [
       "More reliable service delivery",
     ],
     cta: { label: "Automate Document Workflows", href: "/contact" },
-  },
-  {
-    title: "Real Estate & Property Management",
-    taglines: ["Tenants and assets in one view", "Smoother, faster operations"],
-    description:
-      "Trinos helps real estate and property management teams manage tenants, maintenance, finances and investor updates with better speed and visibility. Our AI first systems simplify service requests, property workflows and operational reporting across residential, commercial and portfolio teams.",
-    image:
-      "/industry/real-estate-investment-concept-person-showing-house-icon-growth-graph-virtual-screen.jpg",
-    helpsWith: [
-      "Tenant support automation",
-      "Maintenance request tracking",
-      "Lease and document management",
-      "Property performance dashboards",
-      "Rent and finance workflow support",
-      "Investor reporting support",
-      "Portfolio data visibility",
-    ],
-    businessImpact: [
-      "Faster tenant response",
-      "Better maintenance coordination",
-      "Improved document access",
-      "Clearer financial visibility",
-      "Reduced manual follow ups",
-      "Smarter property decisions",
-    ],
-    cta: { label: "Simplify Property Management", href: "/contact" },
-  },
-  {
-    title: "Media & Entertainment",
-    taglines: ["Content that moves faster", "Audience insight that converts"],
-    description:
-      "Trinos helps media and entertainment teams manage content, workflows and audience engagement with better speed and clarity. Our AI first systems support content planning, production workflows, asset management and business insights across creative and operational teams.",
-    image:
-      "/industry/team-working-together-cover-live-events-update-news-stories-real-time.jpg",
-    helpsWith: [
-      "Content workflow automation",
-      "Media asset search and organization",
-      "Audience engagement insights",
-      "Campaign and publishing support",
-      "Production task tracking",
-      "Creative review workflows",
-      "Performance dashboards",
-    ],
-    businessImpact: [
-      "Faster content operations",
-      "Better asset visibility",
-      "Improved team coordination",
-      "Smarter audience decisions",
-      "Reduced manual follow ups",
-      "More efficient production workflows",
-    ],
-    cta: { label: "Optimize Content Operations", href: "/contact" },
   },
   {
     title: "Logistics & Supply Chain",
@@ -222,7 +168,7 @@ const INDUSTRIES: Industry[] = [
     taglines: ["Personalized learning at scale", "Less admin, more teaching"],
     description:
       "Trinos helps schools, universities and EdTech companies improve learning support, student engagement and administrative efficiency. Our AI first systems support personalized learning, student services, content workflows and data driven decisions across education teams.",
-    image: "/industry/computer-screen-with-globe-screen-globe-screen.jpg",
+    image: "/industry/Edtech.png",
     helpsWith: [
       "Student support automation",
       "Personalized learning assistance",
@@ -247,7 +193,7 @@ const INDUSTRIES: Industry[] = [
     taglines: ["Reliable assets, fewer outages", "Field operations, fully connected"],
     description:
       "Trinos helps energy and utility companies improve asset visibility, field operations and service reliability. Our AI first systems support maintenance workflows, outage response, compliance tasks and operational dashboards across asset heavy environments.",
-    image: "/industry/man-looking-out-window-with-words-welcome-bottom.jpg",
+    image: "/industry/Energy & utility.png",
     helpsWith: [
       "Asset monitoring and alerts",
       "Predictive maintenance support",
@@ -272,8 +218,7 @@ const INDUSTRIES: Industry[] = [
     taglines: ["Projects on time, on budget", "Site and office in sync"],
     description:
       "Trinos helps construction and engineering teams improve project visibility, document control and site coordination. Our AI first systems support planning, reporting and workflow automation from bidding to project completion.",
-    image:
-      "/industry/team-working-urban-infrastructure-upgrades-using-digital-tools-datadriven-insights.jpg",
+    image: "/industry/Construction .png",
     helpsWith: [
       "Project tracking and reporting",
       "Bid and proposal support",
@@ -298,8 +243,7 @@ const INDUSTRIES: Industry[] = [
     taglines: ["Guest experiences that delight", "Operations that run smoother"],
     description:
       "Trinos helps hotels, resorts and travel companies improve guest service, booking workflows and daily operations. Our AI first systems support faster responses, smoother coordination and more personalized experiences across guest facing and internal teams.",
-    image:
-      "/industry/business-people-tablet-workplace-discussion-presentation-brainstorming-boardroom-group-teamwork-technology-career-workshop-as-colleagues-meeting-working-together.jpg",
+    image: "/industry/Hospitality and tourism.png",
     helpsWith: [
       "Guest support automation",
       "Booking and enquiry management",
