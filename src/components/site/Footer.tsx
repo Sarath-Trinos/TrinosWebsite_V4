@@ -5,22 +5,22 @@ const socials = [
   {
     icon: Linkedin,
     label: "LinkedIn",
-    href: "https://www.linkedin.com/feed/update/urn:li:activity:7457033236377124864",
+    href: "https://www.linkedin.com/company/trinos-technologies-private-limited/posts/",
   },
   {
     icon: Twitter,
     label: "X",
-    href: "https://x.com/TrinosAI1512/status/2051278205739487509?s=20",
+    href: "https://x.com/TrinosAI1512",
   },
   {
     icon: Facebook,
     label: "Facebook",
-    href: "https://www.facebook.com/share/p/1CHPFd3Ca4/",
+    href: "https://www.facebook.com/Trinostechnologies",
   },
   {
     icon: Instagram,
     label: "Instagram",
-    href: "https://www.instagram.com/p/DX6nGg6kcni/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==",
+    href: "https://www.instagram.com/trinos_technologies/",
   },
 ];
 
