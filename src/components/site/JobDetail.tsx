@@ -1,3 +1,4 @@
+import Link from "next/link";
 import { ArrowRight, ArrowLeft } from "lucide-react";
 import { type as t } from "@/lib/typography";
 import type { JobContent } from "@/lib/careers-content";
@@ -11,12 +12,12 @@ const JobDetail = ({ job }: Props) => {
       <div className="h-[5rem]" aria-hidden="true" />
 
       <div className="container-px max-w-[1100px] mx-auto py-16 lg:py-24">
-        <a
+        <Link
           href="/careers#open-positions"
           className="inline-flex items-center gap-1.5 text-sm font-semibold text-muted-foreground transition-colors hover:text-primary"
         >
           <ArrowLeft className="w-4 h-4" /> Back to open positions
-        </a>
+        </Link>
 
         <p className="mt-8 text-sm text-muted-foreground">
           {job.department}
@@ -32,13 +33,13 @@ const JobDetail = ({ job }: Props) => {
 
         <p className={`mt-6 ${t.bodyLg} text-muted-foreground`}>{job.summary}</p>
 
-        <a
+        <Link
           href="/contact"
           className="group mt-8 inline-flex items-center gap-2 bg-gradient-cta text-primary-foreground font-semibold px-7 py-3.5 rounded-full shadow-glow hover:shadow-card transition-all"
         >
           Apply now
           <ArrowRight className="w-4 h-4 transition-transform group-hover:translate-x-1" />
-        </a>
+        </Link>
 
         <div className="mt-12 space-y-12">
           {job.sections.map((section) => (
@@ -77,13 +78,13 @@ const JobDetail = ({ job }: Props) => {
         </div>
 
         <div className="mt-14 border-t border-border pt-10">
-          <a
+          <Link
             href="/contact"
             className="group inline-flex items-center gap-2 bg-gradient-cta text-primary-foreground font-semibold px-7 py-3.5 rounded-full shadow-glow hover:shadow-card transition-all"
           >
             Apply now
             <ArrowRight className="w-4 h-4 transition-transform group-hover:translate-x-1" />
-          </a>
+          </Link>
         </div>
       </div>
     </article>
