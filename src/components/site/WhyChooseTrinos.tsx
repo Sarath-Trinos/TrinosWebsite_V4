@@ -42,6 +42,7 @@ const WhyChooseTrinos = () => {
       <div className="container-px max-w-[1200px] mx-auto">
         <SectionHeader
           headlineWeight="normal"
+          titleExtraClassName="font-manrope"
           title={
             <>
               Why Enterprises Choose{" "}
@@ -106,7 +107,7 @@ const WhyChooseTrinos = () => {
                       >
                         <it.icon className="w-5 h-5 md:w-4 md:h-4 lg:w-5 lg:h-5" />
                       </div>
-                      <h3 className={cn(t.cardHeadline, "min-w-0")}>{it.title}</h3>
+                      <h3 className={cn(t.cardHeadline, "font-manrope min-w-0")}>{it.title}</h3>
                     </div>
                     <ChevronDown
                       className={cn(

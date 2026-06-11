@@ -143,6 +143,7 @@ const AgentPlatform = () => {
         <SectionHeader
           headlineWeight="normal"
           contentClassName="max-w-none"
+          titleExtraClassName="font-manrope"
           title={
             <>
               Agentic{" "}
@@ -199,7 +200,7 @@ const AgentPlatform = () => {
                         />
                       )}
                       <div className="absolute inset-x-0 bottom-0 z-10 bg-gradient-to-t from-black/85 via-black/55 to-transparent p-5 md:p-6">
-                        <h3 className={`${t.cardHeadline} text-white`}>
+                        <h3 className={`${t.cardHeadline} font-manrope text-white`}>
                           {tile.headline}
                         </h3>
                         <p className={`mt-2 ${t.bodyCaption} text-white/85`}>

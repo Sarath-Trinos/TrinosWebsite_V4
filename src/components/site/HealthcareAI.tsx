@@ -33,6 +33,7 @@ const HealthcareAI = () => {
         <SectionHeader
           headlineWeight="normal"
           contentClassName="max-w-none"
+          titleExtraClassName="font-manrope"
           descriptionClassName="text-wrap"
           title={
             <>
@@ -54,7 +55,7 @@ const HealthcareAI = () => {
                 <it.icon className="w-6 h-6" />
               </div>
               <div className="flex-1">
-                <h3 className={t.cardHeadline}>{it.title}</h3>
+                <h3 className={`${t.cardHeadline} font-manrope`}>{it.title}</h3>
                 <p className={`mt-3 ${t.bodySm} text-muted-foreground`}>
                   {it.description}
                 </p>

@@ -78,7 +78,7 @@ const ErpCrmModernization = () => (
         <h2
           className={cn(
             t.sectionHeadlineLg,
-            "font-normal text-foreground",
+            "font-manrope font-normal text-foreground",
           )}
         >
           AI Intelligence{" "}
@@ -110,7 +110,7 @@ const ErpCrmModernization = () => (
                 />
               )}
             </div>
-            <h3 className={`${t.cardHeadlineMd} mb-3`}>
+            <h3 className={`${t.cardHeadlineMd} font-manrope mb-3`}>
               {it.title}
             </h3>
             <p className="text-muted-foreground mb-6 flex-1">{it.desc}</p>

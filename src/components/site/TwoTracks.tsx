@@ -32,7 +32,7 @@ const TwoTracks = () => (
       <SectionHeader
         headlineWeight="normal"
         contentClassName="max-w-none"
-        titleClassName="font-display text-3xl md:text-4xl lg:text-[44px] leading-tight font-normal text-foreground lg:whitespace-nowrap"
+        titleClassName="font-manrope text-3xl md:text-4xl lg:text-[44px] leading-tight font-normal text-foreground lg:whitespace-nowrap"
         title={
           <>
             We Build AI. We{" "}
@@ -50,7 +50,7 @@ const TwoTracks = () => (
             <h3
               className="mb-5"
               style={{
-                fontFamily: "Poppins, sans-serif",
+                fontFamily: "var(--font-manrope), Manrope, sans-serif",
                 fontSize: "28px",
                 lineHeight: "32px",
                 fontWeight: 600,

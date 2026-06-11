@@ -48,18 +48,18 @@ const Hero = () => {
       <div className="pointer-events-none absolute inset-0 bg-gradient-to-r from-black/85 from-10% via-black/55 via-35% to-transparent to-55%" />
 
       <div className="container-px max-w-[1200px] mx-auto relative z-10 w-full">
-        <div className="max-w-4xl animate-fade-up text-white font-inter-tight">
+        <div className="max-w-4xl animate-fade-up text-white font-inter">
           <p className="text-xs sm:text-sm font-semibold uppercase tracking-[0.2em] text-white/80 mb-4">
             AI-First Enterprise Technology
           </p>
-          <h1 className={`${t.heroHeadlineHome} font-inter-tight`}>
+          <h1 className={`${t.heroHeadlineHome} font-manrope`}>
             We Build AI Products.{" "}
             <span className="hidden sm:inline">
               <br />
             </span>
             We Power AI Enterprises.
           </h1>
-          <p className={`mt-6 ${t.subheadline} font-inter-tight text-white/85 max-w-none`}>
+          <p className={`mt-6 ${t.subheadline} font-inter text-white/85 max-w-none`}>
           We deliver production-ready AI platforms and engineering systems that bring intelligence into real enterprise operations without disrupting what already works.</p>
           <div className="mt-8 flex flex-wrap items-center gap-4">
             <a href="/services" className="group inline-flex items-center gap-2 bg-gradient-cta text-primary-foreground font-semibold px-7 py-3.5 rounded-full shadow-glow hover:shadow-card transition-all">

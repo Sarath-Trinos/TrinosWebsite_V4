@@ -52,7 +52,7 @@ const ProductsHero = () => {
               <span className="block whitespace-nowrap text-white">Live in Production.</span>
             </h1>
             <p className={`mt-6 ${t.subheadline} text-white/80 max-w-2xl`}>
-              Trinos Technologies is the parent company engineering dedicated AI platforms for specific industry challenges. We build, launch and scale products under the Trinos umbrella to prove our AI-first engineering in real production environments.
+              Trinos engineers dedicated AI platforms for hard, real-world problems — decision intelligence, travel operations, industrial traceability and election technology. Each one proves our AI-first engineering under production conditions, with capability that transfers to your industry.
             </p>
 
             <div className="mt-9 flex flex-wrap items-center gap-4">
@@ -60,7 +60,7 @@ const ProductsHero = () => {
                 href="#products"
                 className="group inline-flex items-center gap-2 bg-gradient-cta text-primary-foreground font-semibold px-7 py-3.5 rounded-full shadow-glow hover:shadow-card transition-all"
               >
-                Explore Our Platforms
+                Explore the Platforms
                 <ArrowRight className="w-4 h-4 transition-transform group-hover:translate-x-1" />
               </a>
               <a

@@ -6,6 +6,7 @@ type DeliverCard = {
   title: string;
   body: string;
   image: string;
+  objectPosition?: string;
 };
 
 const cards: DeliverCard[] = [
@@ -25,7 +26,8 @@ const cards: DeliverCard[] = [
     label: "HUMAN-IN-THE-LOOP",
     title: "Human-in-the-Loop Control",
     body: "Every approval, correction, and override is captured as signal, making agents safer, more aligned and measurably better over time.",
-    image: "/trinos/results.jpg",
+    image: "/trinos/Human_loop.png",
+    objectPosition: "center top",
   },
   {
     label: "RAPID APP DEV",
@@ -54,7 +56,7 @@ const WhatWeDeliver = () => (
       </div>
 
       <div className="grid grid-cols-1 gap-6 md:grid-cols-2 lg:grid-cols-4 lg:gap-8">
-        {cards.map(({ label, title, body, image }) => (
+        {cards.map(({ label, title, body, image, objectPosition }) => (
           <div
             key={label}
             className="group flex flex-col overflow-hidden rounded-2xl bg-card shadow-soft transition-all duration-300 hover:-translate-y-1 hover:shadow-card"
@@ -66,6 +68,7 @@ const WhatWeDeliver = () => (
                 fill
                 sizes="(max-width: 768px) 100vw, (max-width: 1024px) 50vw, 25vw"
                 quality={80}
+                style={objectPosition ? { objectPosition } : undefined}
                 className="object-cover transition-transform duration-500 ease-out group-hover:scale-105"
               />
             </div>

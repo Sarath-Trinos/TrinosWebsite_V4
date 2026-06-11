@@ -28,11 +28,11 @@ const footerCols = [
   {
     title: "Services",
     links: [
-      { label: "Generative AI and Analytics", href: "/services" },
-      { label: "Cyber Security", href: "/services" },
-      { label: "Cloud Solutions", href: "/services" },
-      { label: "ERP & CRM", href: "/services" },
-      { label: "Modernization", href: "/services" },
+      { label: "Agentic AI", href: "/services/agentic-ai" },
+      { label: "AI Workflow Automation", href: "/services/ai-workflow-automation" },
+      { label: "Generative AI and Analytics", href: "/services/generative-ai-analytics" },
+      { label: "Enterprise Resource Planning", href: "/services/enterprise-resource-planning" },
+      { label: "View all services →", href: "/services" },
     ],
   },
   {
@@ -48,8 +48,10 @@ const footerCols = [
   {
     title: "Products",
     links: [
-      { label: "Moltter", href: "/products" },
-      { label: "TraceFlow", href: "/products" },
+      { label: "Moltter Studio", href: "/products/moltter-studio" },
+      { label: "Trip11", href: "/products/trip11" },
+      { label: "TraceFlow", href: "/products/traceflow" },
+      { label: "VoteSense", href: "/products/votesense" },
     ],
   },
   {
@@ -69,7 +71,7 @@ const Footer = () => (
         <div className="sm:col-span-2 md:col-span-3 lg:col-span-2">
           <Logo />
           <p className="mt-5 text-white/70 max-w-sm">
-            Trinos transforms enterprises with intelligent, secure and scalable technology across AI, cloud, cybersecurity and enterprise software engineering.
+            Trinos engineers AI-first platforms and enterprise systems — agentic AI, workflow automation, analytics, computer vision, ERP, web and mobile — built to be secure, integrated and production-ready.
           </p>
           <div className="mt-6 flex items-center gap-3">
             {socials.map(({ icon: Icon, label, href }) => (

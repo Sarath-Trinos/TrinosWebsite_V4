@@ -103,12 +103,12 @@ const ServiceDetail = ({ service, heroImage }: Props) => {
         </div>
       </section>
 
-      {/* USE CASES & RESULTS */}
+      {/* CASE STUDY & RESULTS */}
       <section className="py-20 bg-background">
         <div className="container-px max-w-[1200px] mx-auto">
           <div className="max-w-3xl mb-12">
             <h2 className={t.sectionHeadlineLg}>
-              <span className="text-black">Use cases &</span>{" "}
+              <span className="text-black">Case Study &</span>{" "}
               <span className="text-brand-gradient-reverse">results</span>
             </h2>
           </div>
@@ -149,7 +149,7 @@ const ServiceDetail = ({ service, heroImage }: Props) => {
                   className="rounded-2xl border border-border bg-surface-soft p-8 shadow-soft"
                 >
                   <div className="text-xs font-semibold uppercase tracking-[0.16em] text-primary mb-3">
-                    Use case 0{i + 1}
+                    Case study 0{i + 1}
                   </div>
                   <h3 className={`${t.cardHeadlineMedium} text-foreground`}>
                     {uc.title}

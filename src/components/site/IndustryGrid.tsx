@@ -70,8 +70,7 @@ const INDUSTRIES: Industry[] = [
     taglines: ["Personalized at every touchpoint", "Operations that scale with demand"],
     description:
       "Trinos helps retail and ecommerce businesses improve speed, personalization and operational efficiency. Our AI first systems support customer journeys, inventory visibility, order workflows and business insights across online and offline channels.",
-    image:
-      "/industry/shopping-mens-blazers-online-exploring-various-colors-using-laptop-ecommerce-platform-seamless-experience.jpg",
+    image: "/industry/retail and ecommerce.jpg",
     helpsWith: [
       "Customer support automation",
       "Product search and recommendations",
@@ -199,8 +198,7 @@ const INDUSTRIES: Industry[] = [
     taglines: ["Every mile, every minute counts", "End-to-end shipment visibility"],
     description:
       "Trinos helps logistics and supply chain teams move goods faster with better visibility and fewer delays. Our AI first systems support shipment tracking, warehouse workflows, demand planning and operational reporting across complex, multi-party networks.",
-    image:
-      "/industry/smart-warehouse-management-system-with-innovative-internet-things-technology (1).jpg",
+    image: "/industry/Industries  - logistics.png",
     helpsWith: [
       "Shipment tracking automation",
       "Warehouse workflow support",

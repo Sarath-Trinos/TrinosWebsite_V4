@@ -19,6 +19,8 @@ interface Props {
   tone?: "default" | "dark";
   /** When set, replaces the default heading typography entirely */
   titleClassName?: string;
+  /** Merged onto the default heading classes (use to tweak e.g. font without replacing the token) */
+  titleExtraClassName?: string;
   /** Main h2 weight - default bold for legacy pages; use `normal` for lighter section titles */
   headlineWeight?: "bold" | "semibold" | "medium" | "normal";
   /** Stacks and centers heading + description (use with `titleClassName` for bespoke headlines) */
@@ -38,6 +40,7 @@ const SectionHeader = ({
   exploreLabel = "Explore all",
   tone = "default",
   titleClassName,
+  titleExtraClassName,
   headlineWeight = "bold",
   headingLayout = "default",
   contentClassName,
@@ -72,6 +75,7 @@ const SectionHeader = ({
                 tone === "default" && "text-foreground",
                 tone === "dark" && "text-on-surface-dark",
               ),
+            titleExtraClassName,
           )}
         >
           {title}
