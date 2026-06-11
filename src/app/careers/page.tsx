@@ -19,8 +19,8 @@ export default function CareersPage() {
       <Header />
       <CareersHero />
       <WhyJoinTrinos />
-      <OpenPositions />
       <OurCulture />
+      <OpenPositions />
       <CTASection variant="gradient" />
       <Footer />
     </main>

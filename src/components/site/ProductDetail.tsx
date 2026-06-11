@@ -3,6 +3,7 @@ import { type as t } from "@/lib/typography";
 import type { ProductContent } from "@/lib/products-content";
 import { productCTA } from "@/lib/products-content";
 import ProductMedia from "@/components/site/ProductMedia";
+import ProductMobileMedia from "@/components/site/ProductMobileMedia";
 
 type Props = { product: ProductContent; heroImage?: string };
 
@@ -102,7 +103,14 @@ const ProductDetail = ({ product, heroImage }: Props) => {
             </div>
 
             {/* Right: sticky Key Capabilities stat panel (stacks below on mobile) */}
-            <aside className="lg:sticky lg:top-24">
+            <aside className="lg:sticky lg:top-24 space-y-6">
+              {product.mobileImages && product.mobileImages.length > 0 && (
+                <ProductMobileMedia
+                  images={product.mobileImages}
+                  alt={product.mobileImageAlt ?? product.imageAlt}
+                />
+              )}
+
               <div className="tile bg-surface-dark text-on-surface-dark p-7 relative overflow-hidden">
                 <div className="absolute -top-24 -right-24 w-72 h-72 rounded-full bg-primary/20 blur-3xl" />
                 <div className="relative">

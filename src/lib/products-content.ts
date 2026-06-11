@@ -70,6 +70,10 @@ export type ProductContent = {
   images: string[];
   imageAlt: string;
 
+  /** Optional mobile-app screenshots, shown one-by-one inside a phone frame. */
+  mobileImages?: string[];
+  mobileImageAlt?: string;
+
   related: ProductRelatedLink[];
 };
 
@@ -95,7 +99,7 @@ export const productsContent: Record<string, ProductContent> = {
     },
     name: "Moltter Studio",
     h1: "Moltter Studio",
-    pageTitle: "Moltter Studio — Decision Intelligence AI | Trinos",
+    pageTitle: "Moltter Studio: Decision Intelligence AI | Trinos",
     metaDescription:
       "Moltter Studio is a decision-intelligence platform that makes high-stakes deliberation bias-aware, evidence-grounded and calibrated over time.",
     cardSummary:
@@ -112,7 +116,7 @@ export const productsContent: Record<string, ProductContent> = {
     summary:
       "A decision-intelligence platform that makes every high-stakes deliberation bias-aware, evidence-grounded and calibrated over time.",
     whatItDoes:
-      "Pressure-tests important decisions through a structured, evidence-grounded deliberation process — surfacing hidden biases, mapping where experts agree and disagree, and tracking decision quality over time.",
+      "Pressure-tests important decisions through a structured, evidence-grounded deliberation process, surfacing hidden biases, mapping where experts agree and disagree, and tracking decision quality over time.",
     whoItsFor:
       "Investors, operators and strategists making high-stakes investment, M&A and strategic decisions.",
     keyFeatures: [
@@ -128,7 +132,7 @@ export const productsContent: Record<string, ProductContent> = {
     solution:
       "Moltter Studio pressure-tests your thinking through a structured, evidence-grounded deliberation process: it surfaces hidden biases, maps where experts agree and disagree, and tracks the quality of your decisions over time.",
     impact:
-      "Instead of a single confident answer, decision-makers get a deliberation pressure-tested from multiple angles, grounded in evidence and stripped of hidden bias — fewer blind spots, more confidence at the moment of commitment, and a defensible record of why a decision was made. Because outcomes are tracked, judgment improves over time.",
+      "Instead of a single confident answer, decision-makers get a deliberation pressure-tested from multiple angles, grounded in evidence and stripped of hidden bias: fewer blind spots, more confidence at the moment of commitment, and a defensible record of why a decision was made. Because outcomes are tracked, judgment improves over time.",
     capabilities: [
       { label: "Pipeline Stages", value: "6" },
       { label: "Biases Surfaced per Decision", value: "2 to 4" },
@@ -164,11 +168,11 @@ export const productsContent: Record<string, ProductContent> = {
     },
     name: "Trip11",
     h1: "Trip11",
-    pageTitle: "Trip11 — Vertical SaaS for Travel Businesses | Trinos",
+    pageTitle: "Trip11: Vertical SaaS for Travel Businesses | Trinos",
     metaDescription:
-      "Trip11 is an integrated operating system that consolidates seven or more travel-business tools — itineraries, clients, payments, proposals and analytics — into one platform.",
+      "Trip11 is an integrated operating system that consolidates seven or more travel-business tools (itineraries, clients, payments, proposals and analytics) into one platform.",
     cardSummary:
-      "One operating system that consolidates seven or more travel-business tools — itineraries, clients, payments, proposals and analytics.",
+      "One operating system that consolidates seven or more travel-business tools: itineraries, clients, payments, proposals and analytics.",
     cardStats: [
       { label: "Faster Itineraries", value: "3×" },
       { label: "Avg Monthly Revenue Uplift", value: "₹4L+" },
@@ -180,7 +184,7 @@ export const productsContent: Record<string, ProductContent> = {
       "Role-Based Access",
     ],
     summary:
-      "An integrated operating system that consolidates seven or more travel-business tools into one platform — itineraries, clients, payments, proposals and analytics.",
+      "An integrated operating system that consolidates seven or more travel-business tools into one platform: itineraries, clients, payments, proposals and analytics.",
     whatItDoes:
       "Replaces a fragmented stack of spreadsheets, messaging apps and disconnected booking systems with one interoperable platform covering the full travel-business workflow.",
     whoItsFor: "Tour operators, travel agencies and DMCs.",
@@ -196,7 +200,7 @@ export const productsContent: Record<string, ProductContent> = {
     challenge:
       "Tour operators, agencies and DMCs still run on spreadsheets, messaging apps, email and disconnected booking systems. The cost is real: double bookings, manual errors, weak visibility into profitability and fragmented client communication. Bookings are lost, revenue leaks and client trust is put at risk.",
     solution:
-      "Trip11 unifies the core modules in a single platform, from itinerary building through CRM, analytics, task management, finance and branded proposals — all under role-based access.",
+      "Trip11 unifies the core modules in a single platform, from itinerary building through CRM, analytics, task management, finance and branded proposals, all under role-based access.",
     impact:
       "Travel teams build itineraries 3× faster, cut no-shows by 40% and see an average monthly revenue uplift of ₹4L or more, replacing a seven-tool stack with one platform.",
     capabilities: [
@@ -215,8 +219,22 @@ export const productsContent: Record<string, ProductContent> = {
       "Role-Based Access",
       "Supplier Integration",
     ],
-    images: [],
+    images: [
+      "/products/Trip11_1.png",
+      "/products/Trip11_2.png",
+      "/products/Trip11_3.png",
+      "/products/Trip11_4.png",
+    ],
     imageAlt: "Trip11 travel-business operating system screenshot",
+    mobileImages: [
+      "/products/trip11_M.jpeg",
+      "/products/trip11_M2.jpeg",
+      "/products/trip11_M3.jpeg",
+      "/products/trip11_M4.jpeg",
+      "/products/trip11_M5.jpeg",
+      "/products/trip11_M6.jpeg",
+    ],
+    mobileImageAlt: "Trip11 mobile app screenshot",
     related: [
       { label: "Moltter Studio", href: "/products/moltter-studio" },
       { label: "TraceFlow", href: "/products/traceflow" },
@@ -236,7 +254,7 @@ export const productsContent: Record<string, ProductContent> = {
     },
     name: "TraceFlow",
     h1: "TraceFlow",
-    pageTitle: "TraceFlow — Industrial AI for Manufacturing | Trinos",
+    pageTitle: "TraceFlow: Industrial AI for Manufacturing | Trinos",
     metaDescription:
       "TraceFlow delivers end-to-end material tracking and inventory management for manufacturing, with complete supply-chain visibility from supplier to customer.",
     cardSummary:
@@ -254,7 +272,7 @@ export const productsContent: Record<string, ProductContent> = {
     summary:
       "End-to-end material tracking and inventory management for manufacturing, delivering complete supply-chain visibility from supplier to customer.",
     whatItDoes:
-      "Tracks every material movement from receiving through production to dispatch, with automated compliance and integrated quality control — creating a complete audit trail.",
+      "Tracks every material movement from receiving through production to dispatch, with automated compliance and integrated quality control, creating a complete audit trail.",
     whoItsFor: "Manufacturers and supply-chain operations teams.",
     keyFeatures: [
       "LOT-level traceability",
@@ -269,7 +287,7 @@ export const productsContent: Record<string, ProductContent> = {
     solution:
       "TraceFlow provides automated LOT-level traceability, real-time FIFO compliance enforcement and integrated quality-control workflows, tracking every movement from receiving to dispatch.",
     impact:
-      "Manufacturers gain real-time stock visibility with automated alerts, quality-inspection integration and production-order coordination that eliminates manual tracking — turning raw operational data into actionable decisions through reporting dashboards.",
+      "Manufacturers gain real-time stock visibility with automated alerts, quality-inspection integration and production-order coordination that eliminates manual tracking, turning raw operational data into actionable decisions through reporting dashboards.",
     capabilities: [
       { label: "Material Traceability", value: "LOT-Level" },
       { label: "FIFO Compliance", value: "Automated" },
@@ -310,7 +328,7 @@ export const productsContent: Record<string, ProductContent> = {
     },
     name: "VoteSense",
     h1: "VoteSense Platform",
-    pageTitle: "VoteSense — Election Tech AI Platform | Trinos",
+    pageTitle: "VoteSense: Election Tech AI Platform | Trinos",
     metaDescription:
       "VoteSense is a multi-tenant election-management platform with ML analytics, hierarchical access control, 6.5 crore voter records and offline-first field operations.",
     cardSummary:
@@ -328,7 +346,7 @@ export const productsContent: Record<string, ProductContent> = {
     summary:
       "An AI-powered, multi-tenant election-management platform with ML analytics, hierarchical geographic access control, 6.5 crore voter records and offline-first field operations.",
     whatItDoes:
-      "Runs large-scale election operations from a single platform — isolated per party — combining voter-roll analytics, geographic access control and AI-driven predictive intelligence.",
+      "Runs large-scale election operations from a single platform, isolated per party, combining voter-roll analytics, geographic access control and AI-driven predictive intelligence.",
     whoItsFor:
       "Political parties managing large-scale election campaigns and field operations.",
     keyFeatures: [
@@ -342,7 +360,7 @@ export const productsContent: Record<string, ProductContent> = {
       "White-label apps",
     ],
     challenge:
-      "Parties managing elections across tens of thousands of booths rely on fragmented spreadsheets, manual field reporting and zero predictive intelligence — under extreme time pressure and strict data-confidentiality requirements. No existing platform combined multi-party data isolation, geographic access control and AI analytics in one system.",
+      "Parties managing elections across tens of thousands of booths rely on fragmented spreadsheets, manual field reporting and zero predictive intelligence, under extreme time pressure and strict data-confidentiality requirements. No existing platform combined multi-party data isolation, geographic access control and AI analytics in one system.",
     solution:
       "VoteSense is a cloud-native, multi-tenant platform where each party operates in a fully isolated environment, with five-level hierarchical RBAC enforcing geographic boundaries, a voters module integrating 6.5 crore ECI records, and an AI engine delivering swing-booth prediction, anomaly detection and NLP sentiment analysis.",
     impact:

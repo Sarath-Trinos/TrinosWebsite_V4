@@ -125,7 +125,7 @@ const OurCulture = () => (
           {/* Landscape illustration */}
           <div className="relative mt-10 min-h-[14rem] flex-1 overflow-hidden rounded-3xl border border-white/70 bg-white shadow-[0_18px_50px_-22px_hsl(210_60%_25%/0.28)]">
             <Image
-              src="/career/Gemini_Generated_Image_of5pdof5pdof5pdo.jpg"
+              src="/career/Our culture.png"
               alt="Trinos team culture"
               fill
               sizes="(min-width: 1024px) 50vw, 100vw"

@@ -2,7 +2,7 @@
 
 import { useState } from "react";
 import { type as t } from "@/lib/typography";
-import { Loader2, Mail, MapPin, Phone, Send } from "lucide-react";
+import { Loader2, Mail, Phone, Send } from "lucide-react";
 import { toast } from "sonner";
 
 const services = [
@@ -85,7 +85,7 @@ const ContactSection = () => {
           </h2>
 
           <form className="mt-8 space-y-5" onSubmit={handleSubmit} noValidate>
-            <div className="grid sm:grid-cols-2 gap-5">
+            <div className="grid gap-5">
               <div>
                 <label htmlFor="name" className="block text-sm font-medium text-foreground mb-2">
                   Name <span className="text-primary">*</span>
@@ -118,7 +118,7 @@ const ContactSection = () => {
               </div>
             </div>
 
-            <div className="grid sm:grid-cols-2 gap-5">
+            <div className="grid gap-5">
               <div>
                 <label htmlFor="company" className="block text-sm font-medium text-foreground mb-2">
                   Company
@@ -232,78 +232,95 @@ const ContactSection = () => {
                 </a>
               </div>
             </li>
-
-            <li className="flex items-start gap-4">
-              <span className="shrink-0 w-12 h-12 rounded-full bg-surface-soft grid place-items-center">
-                <Phone className="w-5 h-5 text-primary" strokeWidth={1.75} />
-              </span>
-              <div>
-                <div className="text-sm text-muted-foreground">Phone (India) 🇮🇳</div>
-                <a
-                  href="tel:+919884919111"
-                  className="font-semibold text-foreground hover:text-primary transition-colors"
-                >
-                  +91 98849 19111
-                </a>
-              </div>
-            </li>
-
-            <li className="flex items-start gap-4">
-              <span className="shrink-0 w-12 h-12 rounded-full bg-surface-soft grid place-items-center">
-                <MapPin className="w-5 h-5 text-primary" strokeWidth={1.75} />
-              </span>
-              <div>
-                <div className="text-sm text-muted-foreground">Office (India) 🇮🇳</div>
-                <div className="font-semibold text-foreground">Trinos Technologies</div>
-                <p className="text-sm text-muted-foreground mt-1 max-w-sm">
-                  Inwrks Spaces, C' wing, 1st floor, 29 Sree Narayana Complex, Sarathy Nagar,
-                  Velachery, Chennai, Tamil Nadu 600042
-                </p>
-              </div>
-            </li>
-
-            <li className="flex items-start gap-4">
-              <span className="shrink-0 w-12 h-12 rounded-full bg-surface-soft grid place-items-center">
-                <Phone className="w-5 h-5 text-primary" strokeWidth={1.75} />
-              </span>
-              <div>
-                <div className="text-sm text-muted-foreground">Phone (USA) 🇺🇸</div>
-                <a
-                  href="tel:+17327341160"
-                  className="font-semibold text-foreground hover:text-primary transition-colors"
-                >
-                  +1 732 734 1160
-                </a>
-              </div>
-            </li>
-
-            <li className="flex items-start gap-4">
-              <span className="shrink-0 w-12 h-12 rounded-full bg-surface-soft grid place-items-center">
-                <MapPin className="w-5 h-5 text-primary" strokeWidth={1.75} />
-              </span>
-              <div>
-                <div className="text-sm text-muted-foreground">Office (USA) 🇺🇸</div>
-                <p className="font-semibold text-foreground mt-1">
-                  1104 Maple Hill Drive, Woodbridge, New Jersey 07095
-                </p>
-              </div>
-            </li>
-
-            <li className="flex items-start gap-4">
-              <span className="shrink-0 w-12 h-12 rounded-full bg-surface-soft grid place-items-center">
-                <MapPin className="w-5 h-5 text-primary" strokeWidth={1.75} />
-              </span>
-              <div>
-                <div className="text-sm text-muted-foreground">Office (Canada) 🇨🇦</div>
-                <p className="font-semibold text-foreground mt-1">
-                  214 - 6502 60 Ave, Beaumont, Alberta T4X 2A7
-                </p>
-              </div>
-            </li>
           </ul>
         </div>
       </div>
+
+      <GlobalPresence />
     </section>
+  );
+};
+
+const offices = [
+  {
+    country: "India",
+    flag: "🇮🇳",
+    city: "Chennai",
+    address:
+      "Inwrks Spaces, C' wing, 1st floor, 29 Sree Narayana Complex, Sarathy Nagar, Velachery, Chennai, Tamil Nadu 600042",
+    phone: "+91 98849 19111",
+    phoneHref: "tel:+919884919111",
+    email: "info@trinos.ai",
+  },
+  {
+    country: "USA",
+    flag: "🇺🇸",
+    city: "New Jersey",
+    address: "1104 Maple Hill Drive, Woodbridge, New Jersey 07095",
+    phone: "+1 732 734 1160",
+    phoneHref: "tel:+17327341160",
+    email: "info@trinos.ai",
+  },
+  {
+    country: "Canada",
+    flag: "🇨🇦",
+    city: "Beaumont",
+    address: "214 - 6502 60 Ave, Beaumont, Alberta T4X 2A7",
+    phone: "+1 825 733 6948",
+    phoneHref: "tel:+18257336948",
+    email: "info@trinos.ai",
+  },
+];
+
+const GlobalPresence = () => {
+  return (
+    <div className="container-px max-w-[1200px] mx-auto mt-20 md:mt-24">
+      <h2 className={`${t.sectionHeadline} text-foreground text-center`}>
+        Our global presence
+      </h2>
+
+      <div className="mt-10">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5">
+          {offices.map((office) => (
+            <div
+              key={office.country}
+              className="flex flex-col rounded-2xl border border-white/10 bg-surface-dark text-on-surface-dark p-6 shadow-card"
+            >
+              <div className="text-base font-semibold text-primary">
+                {office.country} {office.flag}
+              </div>
+              <div className="mt-3 text-lg font-display font-semibold text-on-surface-dark">
+                {office.city}
+              </div>
+              <p className="mt-2 text-base text-on-surface-dark/70 leading-relaxed">
+                {office.address}
+              </p>
+
+              <div className="mt-auto pt-5 border-t border-white/10 space-y-3">
+                <div className="flex items-start gap-3">
+                  <Phone className="w-5 h-5 text-primary shrink-0 mt-0.5" strokeWidth={1.75} />
+                  <a
+                    href={office.phoneHref}
+                    className="text-base font-medium text-on-surface-dark hover:text-primary transition-colors"
+                  >
+                    {office.phone}
+                  </a>
+                </div>
+                <div className="flex items-start gap-3">
+                  <Mail className="w-5 h-5 text-primary shrink-0 mt-0.5" strokeWidth={1.75} />
+                  <a
+                    href={`mailto:${office.email}`}
+                    className="text-base font-medium text-on-surface-dark hover:text-primary transition-colors break-all"
+                  >
+                    {office.email}
+                  </a>
+                </div>
+              </div>
+            </div>
+          ))}
+        </div>
+      </div>
+    </div>
   );
 };
 

@@ -17,6 +17,8 @@ type Service = {
   title: string;
   description: string;
   href: string;
+  /** Optional cover image shown in the card media area instead of the icon. */
+  image?: string;
 };
 
 type ServiceGroup = {
@@ -55,6 +57,7 @@ const serviceGroups: ServiceGroup[] = [
         description:
           "Workflow systems that connect tasks, approvals, business rules and applications into one coordinated process layer.",
         href: "/services/ai-workflow-automation",
+        image: "/service/AI Workflow automation.png",
       },
       {
         icon: Mic,
@@ -62,6 +65,7 @@ const serviceGroups: ServiceGroup[] = [
         description:
           "Voice AI for support, sales and internal operations that answers questions, captures information and triggers approved workflows.",
         href: "/services/ai-voice-assistants",
+        image: "/service/AI Voice assistant.png",
       },
       {
         icon: Share2,
@@ -69,6 +73,7 @@ const serviceGroups: ServiceGroup[] = [
         description:
           "AI-supported content operations for research, drafting, approval, scheduling and reporting, with brand tone and review control kept in place.",
         href: "/services/social-media-automation",
+        image: "/service/Social media automation.png",
       },
     ],
   },
@@ -182,7 +187,7 @@ const OurServices = () => {
                     : "gap-8 lg:grid-cols-3"
                 }`}
               >
-                {services.map(({ icon: Icon, title, description, href }, idx) => (
+                {services.map(({ icon: Icon, title, description, href, image }, idx) => (
                   <a
                     key={title}
                     href={href}
@@ -190,12 +195,26 @@ const OurServices = () => {
                     style={{ animationDelay: `${idx * 80}ms` }}
                   >
                     <div className={`relative h-44 overflow-hidden bg-gradient-to-br ${accent.tile}`}>
-                      <div className="absolute inset-0 bg-[radial-gradient(circle_at_30%_20%,rgba(255,255,255,0.18),transparent_60%)]" />
-                      <div className="absolute inset-0 grid place-items-center">
-                        <div className="w-24 h-24 rounded-3xl bg-white/10 backdrop-blur-sm border border-white/15 grid place-items-center shadow-soft transition-transform duration-300 group-hover:scale-110">
-                          <Icon className="w-10 h-10 text-white" strokeWidth={1.5} />
-                        </div>
-                      </div>
+                      {image ? (
+                        <>
+                          <img
+                            src={image}
+                            alt={title}
+                            loading="lazy"
+                            className="absolute inset-0 h-full w-full object-cover transition-transform duration-300 group-hover:scale-105"
+                          />
+                          <div className="absolute inset-0 bg-gradient-to-t from-[#0f1115]/70 via-transparent to-transparent" />
+                        </>
+                      ) : (
+                        <>
+                          <div className="absolute inset-0 bg-[radial-gradient(circle_at_30%_20%,rgba(255,255,255,0.18),transparent_60%)]" />
+                          <div className="absolute inset-0 grid place-items-center">
+                            <div className="w-24 h-24 rounded-3xl bg-white/10 backdrop-blur-sm border border-white/15 grid place-items-center shadow-soft transition-transform duration-300 group-hover:scale-110">
+                              <Icon className="w-10 h-10 text-white" strokeWidth={1.5} />
+                            </div>
+                          </div>
+                        </>
+                      )}
                     </div>
 
                     <div className="p-6">

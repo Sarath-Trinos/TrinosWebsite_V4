@@ -109,14 +109,12 @@ export const servicesContent: Record<string, ServiceContent> = {
         title: "Enterprise Operations",
         description:
           "Agents monitor incoming tasks, gather data, prepare recommendations and route decisions to the right team, cutting coordination effort on repeatable but context-heavy work.",
-        image: "/service/each%20service%20page/enterprise-operations.jpg",
         badge: "Operations",
       },
       {
         title: "Decision Intelligence",
         description:
           "Multiple agents analyze a problem from different angles and return a structured brief with risks, assumptions and confidence levels, instead of scattered inputs.",
-        image: "/service/each%20service%20page/decision-intelligence.jpg",
         badge: "Strategy",
       },
     ],
@@ -213,14 +211,12 @@ export const servicesContent: Record<string, ServiceContent> = {
         title: "Insurance & Document Operations",
         description:
           "Route policy documents, claims and supporting records through extraction, validation, quality checks, anomaly detection, review and approval, cutting repeated manual checking while keeping the full document lifecycle visible.",
-        image: "/service/each%20service%20page/Insurance-and-Document-Operations.png",
         badge: "Documents",
       },
       {
         title: "HR & Finance Operations",
         description:
           "Coordinate onboarding, procurement, invoice review and approvals across HR, finance and management, with every task and exception traceable instead of buried in email.",
-        image: "/service/each%20service%20page/HR-and-Finance-Operations.png",
         badge: "Operations",
       },
     ],
@@ -898,7 +894,7 @@ export const servicesContent: Record<string, ServiceContent> = {
       "Trinos builds enterprise websites, portals, dashboards and web applications with secure architecture, strong UX and AI-ready features.",
     primaryCTA: { label: "Scope Your Web Platform", href: "/contact" },
     secondaryCTA: {
-      label: "Explore Mobile App Development",
+      label: "Explore Web Development",
       href: "/services/mobile-app-development",
     },
     credibility:
@@ -1001,7 +997,7 @@ export const servicesContent: Record<string, ServiceContent> = {
     subHeadline:
       "Trinos develops apps for customers, employees and field teams, with secure integrations, workflow access and embedded AI built in.",
     primaryCTA: { label: "Scope Your Mobile App", href: "/contact" },
-    secondaryCTA: { label: "Explore Web Development", href: "/services/web-development" },
+    secondaryCTA: { label: "Explore Mobile App Development", href: "/services/web-development" },
     credibility:
       "Trinos product engineering includes multi application mobile ecosystems connected to back office platforms, customer experiences and operational workflows.",
     answerHeading: "What does Trinos provide in Mobile App Development?",

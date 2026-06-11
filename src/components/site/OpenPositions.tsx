@@ -1,82 +1,40 @@
-import { ArrowRight, MapPin } from "lucide-react";
+import { ArrowRight } from "lucide-react";
 import { type as t } from "@/lib/typography";
+import { careersContent } from "@/lib/careers-content";
 
-type Position = {
-  title: string;
-  location: string;
-  type: string;
-  cardBg: string;
-  accentText: string;
-};
-
-const positions: Position[] = [
-  {
-    title: "Senior AI Engineer",
-    location: "Remote / Hybrid",
-    type: "Full-time",
-    cardBg: "bg-[#FFE3EC]",
-    accentText: "text-[#BE185D]",
-  },
-  {
-    title: "Product Manager",
-    location: "Remote / Hybrid",
-    type: "Full-time",
-    cardBg: "bg-[#FFF4C7]",
-    accentText: "text-[#92660A]",
-  },
-  {
-    title: "UX/UI Designer",
-    location: "Remote / Hybrid",
-    type: "Full-time",
-    cardBg: "bg-[#E0F2FF]",
-    accentText: "text-[#0369A1]",
-  },
-];
+const positions = Object.values(careersContent);
 
 const OpenPositions = () => (
   <section id="open-positions" className="py-24">
     <div className="container-px max-w-[1200px] mx-auto">
-      <div className="grid lg:grid-cols-3 gap-12 lg:gap-16">
-        <div className="lg:col-span-1">
-          <h2 className={`${t.sectionHeadlineLg} text-foreground`}>
-            Open <span className="text-brand-gradient">positions</span>
-          </h2>
-          <p className={`mt-3 max-w-xl ${t.subheadlineSemibold} text-foreground`}>
-            Find your next role
-          </p>
-          <p className={`mt-6 ${t.bodyLg} text-muted-foreground`}>
-            Explore exciting opportunities to join our team and help shape the future of
-            enterprise AI.
-          </p>
-          <a
-            href="#demo"
-            className="link-arrow mt-8 inline-flex"
-          >
-            Explore more vacancies <ArrowRight className="w-4 h-4" />
-          </a>
-        </div>
+      <div>
+        <h2 className={`${t.sectionHeadlineLg} text-foreground`}>
+          Open <span className="text-brand-gradient">positions</span>
+        </h2>
+        <p className={`mt-3 max-w-xl ${t.subheadlineSemibold} text-foreground`}>
+          Find your next role
+        </p>
+        <p className={`mt-6 max-w-4xl ${t.bodyLg} text-muted-foreground`}>
+          Explore exciting opportunities to join our team and help shape the future of
+          enterprise AI.
+        </p>
+        <a href="#demo" className="link-arrow mt-8 inline-flex">
+          Explore more vacancies <ArrowRight className="w-4 h-4" />
+        </a>
 
-        <div className="lg:col-span-2 grid sm:grid-cols-2 gap-5">
-          {positions.map(({ title, location, type, cardBg, accentText }) => (
-            <div
-              key={title}
-              className={`tile ${cardBg} text-foreground p-7 flex flex-col justify-between min-h-[220px]`}
-            >
-              <div>
-                <span className={`inline-flex items-center gap-2 text-xs font-semibold uppercase tracking-wider ${accentText}`}>
-                  <MapPin className="w-3.5 h-3.5" />
-                  {location}
-                </span>
-                <h3 className={`mt-4 ${t.cardHeadlineMd}`}>
-                  {title}
-                </h3>
-                <p className="mt-1 text-sm text-foreground/70">{type}</p>
-              </div>
+        <div className="mt-14 grid sm:grid-cols-2 gap-x-12 gap-y-12">
+          {positions.map(({ slug, title, department, location, type }) => (
+            <div key={slug} className="flex flex-col">
+              <h3 className={`${t.sectionHeadlineMd} text-foreground`}>{title}</h3>
+              <p className="mt-3 text-sm text-muted-foreground">
+                {department} <span className="mx-1.5 text-muted-foreground/50">|</span> {location}{" "}
+                <span className="mx-1.5 text-muted-foreground/50">|</span> {type}
+              </p>
               <a
-                href="#demo"
-                className="mt-6 inline-flex items-center gap-2 self-start bg-foreground text-background font-semibold px-5 py-2.5 rounded-full shadow-soft hover:shadow-card transition-all"
+                href={`/careers/${slug}`}
+                className="mt-6 inline-flex self-start rounded-md border border-primary/60 px-4 py-2 text-sm font-semibold text-primary transition-colors hover:bg-primary hover:text-background"
               >
-                More details <ArrowRight className="w-4 h-4" />
+                Learn more
               </a>
             </div>
           ))}

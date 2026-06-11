@@ -85,7 +85,7 @@ const ServiceDetail = ({ service, heroImage }: Props) => {
               <span className="text-brand-gradient-reverse">deliver</span>
             </h2>
           </div>
-          <div className="grid sm:grid-cols-2 gap-5">
+          <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-5">
             {service.deliverables.map((item) => (
               <div
                 key={item.title}
@@ -180,6 +180,25 @@ const ServiceDetail = ({ service, heroImage }: Props) => {
 
       {/* FAQ */}
       <section className="py-20 bg-background">
+        {service.faqs.length > 0 && (
+          <script
+            type="application/ld+json"
+            dangerouslySetInnerHTML={{
+              __html: JSON.stringify({
+                "@context": "https://schema.org",
+                "@type": "FAQPage",
+                mainEntity: service.faqs.map((faq) => ({
+                  "@type": "Question",
+                  name: faq.question,
+                  acceptedAnswer: {
+                    "@type": "Answer",
+                    text: faq.answer,
+                  },
+                })),
+              }),
+            }}
+          />
+        )}
         <div className="container-px max-w-[1200px] mx-auto">
           <div className="max-w-3xl mb-12">
             <h2 className={t.sectionHeadlineLg}>
