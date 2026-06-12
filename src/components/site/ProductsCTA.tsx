@@ -22,9 +22,9 @@ const steps = [
 const ProductsCTA = () => (
   <section id="build-with-us" className="py-10">
     <div className="container-px max-w-[1200px] mx-auto">
-      <div className="tile bg-gradient-cta px-8 py-12 md:px-12 md:py-14 lg:px-16 lg:py-16 relative overflow-hidden">
-        <div className="absolute -top-32 -left-32 w-[25rem] h-[25rem] rounded-full bg-white/40 blur-3xl" />
-        <div className="absolute -bottom-32 -right-32 w-[25rem] h-[25rem] rounded-full bg-white/40 blur-3xl" />
+      <div className="tile bg-surface-dark text-on-surface-dark border border-white/10 px-8 py-12 md:px-12 md:py-14 lg:px-16 lg:py-16 relative overflow-hidden">
+        <div className="absolute -top-32 -left-32 w-[25rem] h-[25rem] rounded-full bg-white/10 blur-3xl" />
+        <div className="absolute -bottom-32 -right-32 w-[25rem] h-[25rem] rounded-full bg-white/10 blur-3xl" />
         <div className="relative">
           <div className="text-center max-w-3xl mx-auto">
             <h2 className={`${t.sectionHeadline} text-white`}>Let's build together.</h2>
@@ -38,9 +38,9 @@ const ProductsCTA = () => (
             {steps.map((step) => (
               <div
                 key={step.num}
-                className="rounded-2xl bg-white/15 backdrop-blur-sm border border-white/25 p-7"
+                className="rounded-2xl bg-white/5 backdrop-blur-sm border border-white/10 p-7"
               >
-                <span className="inline-grid place-items-center w-10 h-10 rounded-full bg-white text-primary font-bold mb-4">
+                <span className="inline-grid place-items-center w-10 h-10 rounded-full bg-primary-glow text-surface-dark font-bold mb-4">
                   {step.num}
                 </span>
                 <h3 className={`${t.cardHeadlineSemibold} text-white`}>{step.title}</h3>

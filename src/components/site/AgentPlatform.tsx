@@ -29,7 +29,7 @@ const tiles: Tile[] = [
     description:
       "Agents that reason, call tools and execute multi-step work. Bounded by your permissions, your approvals, your audit trail. The autonomy is real. The guardrails are too.",
     image: grace,
-    video: "/videos/don_t_need_the_right_side_card.mp4",
+    video: "/videos/Agentic AI.mp4",
     href: "/services/agentic-ai",
   },
   {
@@ -39,7 +39,7 @@ const tiles: Tile[] = [
     description:
       "Intelligent automation that streamlines business processes end to end removing manual handoffs, eliminating bottlenecks and keeping humans in control where it matters.",
     image: daphne,
-    video: "/videos/I_need_the_reference_video_in.mp4",
+    video: "/home/AI_Voice_Assistants_Real_time_.mp4",
     href: "/services/ai-workflow-automation",
   },
   {
@@ -49,7 +49,7 @@ const tiles: Tile[] = [
     description:
       "Real-time, domain-aware voice agents for support, sales and internal operations natural conversations with speech-to-text, TTS and grounded responses.",
     image: johnny,
-    video: "/videos/AI_Voice_Assistants_Real_time_.mp4",
+    video: "/home/AI_Voice_Assistants_Real_time_.mp4",
     href: "/services/ai-voice-assistants",
   },
   {
@@ -215,7 +215,7 @@ const AgentPlatform = () => {
           </div>
 
           {/* Right: Platform overview - vertical stack of service tabs */}
-          <div className="md:col-span-5 lg:col-span-4 tile py-6 md:py-8 px-5 md:px-5 lg:px-8 relative overflow-hidden bg-[radial-gradient(ellipse_at_top_right,_#1a3556_0%,_#0f1e35_45%,_#0a1628_100%)] flex items-center justify-center">
+          <div className="md:col-span-5 lg:col-span-4 tile py-6 md:py-8 px-5 md:px-5 lg:px-8 relative overflow-hidden bg-surface-dark flex items-center justify-center">
             <div className="w-full grid grid-cols-1 gap-3 md:gap-4">
               {tiles.map(({ icon: Icon, title, href }, i) => {
                 const isActive = i === activeIndex;

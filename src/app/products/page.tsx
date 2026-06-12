@@ -10,7 +10,7 @@ import { productsContent, productOrder } from "@/lib/products-content";
 export const metadata: Metadata = {
   title: "AI Products | Trinos Technologies",
   description:
-    "Trinos builds, launches and scales its own AI platforms across decision intelligence (Moltter Studio), travel operations (Trip11), industrial traceability (TraceFlow) and election technology (VoteSense) — proven under production conditions.",
+    "Trinos builds, launches and scales its own AI platforms across decision intelligence (Moltter Studio), travel operations (Trip11) and industrial traceability (TraceFlow), proven under production conditions.",
   alternates: { canonical: "/products" },
   openGraph: { url: "/products" },
 };

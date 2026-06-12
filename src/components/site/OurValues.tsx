@@ -10,8 +10,8 @@ const values = [
       "We explore emerging technologies and turn ambitious ideas into practical systems that create measurable business value.",
     image:
       "/about-us/Gemini_Generated_Image_7f0jcg7f0jcg7f0j.jpg",
-    cardBg: "bg-white",
-    linkText: "text-[#6D28D9]",
+    cardBg: "bg-surface-dark text-on-surface-dark",
+    linkText: "text-primary-glow",
   },
   {
     title: "Build With Trust",
@@ -19,8 +19,8 @@ const values = [
       "Security, transparency and trust guide every engagement and every technical decision.",
     image:
       "/about-us/Gemini_Generated_Image_vwxiflvwxiflvwxi.jpg",
-    cardBg: "bg-white",
-    linkText: "text-[#9A4B00]",
+    cardBg: "bg-surface-dark text-on-surface-dark",
+    linkText: "text-primary-glow",
   },
   {
     title: "Improve Every Cycle",
@@ -28,8 +28,8 @@ const values = [
       "We deliver reliable engineering, thoughtful execution and high-quality outcomes.",
     image:
       "/about-us/Gemini_Generated_Image_1v2fy61v2fy61v2f.jpg",
-    cardBg: "bg-white",
-    linkText: "text-[#0F7A41]",
+    cardBg: "bg-surface-dark text-on-surface-dark",
+    linkText: "text-primary-glow",
   },
 ];
 
@@ -54,14 +54,14 @@ const OurValues = () => (
           ({ title, description, image, cardBg, linkText }) => (
             <div
               key={title}
-              className={`${cardBg} group relative rounded-3xl border border-border pt-8 md:pt-10 pb-6 px-6 flex flex-col transition-shadow hover:shadow-card`}
+              className={`${cardBg} group relative rounded-3xl border border-white/10 pt-8 md:pt-10 pb-6 px-6 flex flex-col transition-shadow hover:shadow-glow`}
             >
               <div className="flex-1 flex flex-col">
-                <h3 className={`${t.cardHeadlineMd} text-foreground`}>
+                <h3 className={`${t.cardHeadlineMd} text-on-surface-dark`}>
                   {title}
                 </h3>
 
-                <p className={`mt-5 ${t.bodyResponsive} text-foreground/70`}>
+                <p className={`mt-5 ${t.bodyResponsive} text-white/70`}>
                   {description}
                 </p>
 

@@ -1,11 +1,11 @@
 import { ArrowRight } from "lucide-react";
 import { type as t } from "@/lib/typography";
 
-type Variant = "purple" | "green" | "orange" | "pink" | "blue" | "gradient";
+type Variant = "purple" | "green" | "orange" | "pink" | "blue" | "gradient" | "dark";
 
 const variants: Record<
   Variant,
-  { bg: string; accent: string; title: string; subtitle: string; button: string }
+  { bg: string; accent: string; title: string; subtitle: string; button: string; blob: string }
 > = {
   purple: {
     bg: "bg-[#EFE6FF]",
@@ -13,6 +13,7 @@ const variants: Record<
     title: "text-[#3B1E7E]",
     subtitle: "text-[#3B1E7E]/80",
     button: "bg-[#6D28D9] text-white hover:bg-[#5B1FB8]",
+    blob: "bg-white/40",
   },
   green: {
     bg: "bg-[#D6F4E4]",
@@ -20,6 +21,7 @@ const variants: Record<
     title: "text-[#0B5C31]",
     subtitle: "text-[#0B5C31]/80",
     button: "bg-[#0F7A41] text-white hover:bg-[#0B5C31]",
+    blob: "bg-white/40",
   },
   orange: {
     bg: "bg-[#FFE9CC]",
@@ -27,6 +29,7 @@ const variants: Record<
     title: "text-[#6B3300]",
     subtitle: "text-[#6B3300]/80",
     button: "bg-[#9A4B00] text-white hover:bg-[#6B3300]",
+    blob: "bg-white/40",
   },
   pink: {
     bg: "bg-[#FFE3EC]",
@@ -34,6 +37,7 @@ const variants: Record<
     title: "text-[#831843]",
     subtitle: "text-[#831843]/80",
     button: "bg-[#BE185D] text-white hover:bg-[#9D1457]",
+    blob: "bg-white/40",
   },
   blue: {
     bg: "bg-[#DCEBFF]",
@@ -41,6 +45,7 @@ const variants: Record<
     title: "text-[#1E3A8A]",
     subtitle: "text-[#1E3A8A]/80",
     button: "bg-[#1D4ED8] text-white hover:bg-[#1E3A8A]",
+    blob: "bg-white/40",
   },
   gradient: {
     bg: "bg-gradient-cta",
@@ -48,6 +53,15 @@ const variants: Record<
     title: "text-white",
     subtitle: "text-white/85",
     button: "bg-white text-primary hover:bg-white/90",
+    blob: "bg-white/40",
+  },
+  dark: {
+    bg: "bg-surface-dark",
+    accent: "#ffffff",
+    title: "text-white",
+    subtitle: "text-white/85",
+    button: "bg-white text-surface-dark hover:bg-white/90",
+    blob: "bg-white/10",
   },
 };
 
@@ -75,8 +89,8 @@ const CTASection = ({
     <section id="demo" className={className}>
       <div className="container-px max-w-fit mx-auto">
         <div className={`tile ${v.bg} w-full max-w-full lg:min-w-[82rem] px-8 py-12 md:px-12 md:py-14 lg:px-20 lg:py-16 text-center relative overflow-hidden`}>
-          <div className="absolute -top-32 -left-32 w-[25rem] h-[25rem] rounded-full bg-white/40 blur-3xl" />
-          <div className="absolute -bottom-32 -right-32 w-[25rem] h-[25rem] rounded-full bg-white/40 blur-3xl" />
+          <div className={`absolute -top-32 -left-32 w-[25rem] h-[25rem] rounded-full ${v.blob} blur-3xl`} />
+          <div className={`absolute -bottom-32 -right-32 w-[25rem] h-[25rem] rounded-full ${v.blob} blur-3xl`} />
           <div className="relative">
             {title && (
               <h2 className={`${t.sectionHeadline} ${v.title}`}>

@@ -29,7 +29,7 @@ export default function AboutPage() {
       <OurValues />
       <MissionVision />
       <Leadership />
-      <CTASection variant="gradient" />
+      <CTASection variant="dark" />
       <Footer />
     </main>
   );

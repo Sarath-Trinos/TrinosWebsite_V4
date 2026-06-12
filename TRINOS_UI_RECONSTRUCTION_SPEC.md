@@ -1131,7 +1131,7 @@ Each card is a wrapper div with scroll-driven animation:
 ### Card 3: Product-Proven Engineering
 - Icon: Package (lucide-react)
 - Title: "Product-Proven Engineering"
-- Description: "We run our architecture in production before we sell it. Moltter Studio. TraceFlow. VoteSense. Travel One. Four live platforms. Four proof points. Zero theoretical models."
+- Description: "We run our architecture in production before we sell it. Moltter Studio. TraceFlow. Trip11. Three live platforms. Three proof points. Zero theoretical models."
 
 ## Bottom CTA Link
 - Container: `mt-12 flex justify-center`

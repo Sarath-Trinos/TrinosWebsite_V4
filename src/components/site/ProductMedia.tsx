@@ -51,10 +51,10 @@ const ProductMedia = ({ images, alt, iconSlot, tile, intervalMs = 3500 }: Props)
   }
 
   return (
-    <div className="relative tile bg-card pt-0 px-0 pb-3 md:pb-4">
+    <div className="relative tile !rounded-none bg-card pt-0 px-0 pb-3 md:pb-4">
       <div
         data-product-media-frame
-        className="relative w-full aspect-[3582/1832] overflow-hidden rounded-[22px] bg-surface-soft"
+        className="relative w-full aspect-[3582/1832] overflow-hidden bg-surface-soft"
       >
         {images.map((src, i) => (
           <Image

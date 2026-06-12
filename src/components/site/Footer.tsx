@@ -67,7 +67,6 @@ const footerCols = [
       { label: "Moltter Studio", href: "/products/moltter-studio" },
       { label: "Trip11", href: "/products/trip11" },
       { label: "TraceFlow", href: "/products/traceflow" },
-      { label: "VoteSense", href: "/products/votesense" },
     ],
   },
   {

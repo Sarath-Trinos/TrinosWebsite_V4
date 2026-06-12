@@ -20,7 +20,7 @@ const tracks: Track[] = [
   {
     title: "We Power AI Enterprises",
     body:
-      "From Agentic AI, fine-tuned models, voice, vision, ERP, web and mobile systems, we deploy intelligence where your business actually operatesconnected to your data, permissions, workflows and approval chains.",
+      "From Agentic AI, fine-tuned models, voice, vision, ERP, web and mobile systems, we deploy intelligence where your business actually operates, connected to your data, permissions, workflows and approval chains.",
     cta: "Explore Our Services",
     href: "/services",
   },
@@ -45,7 +45,7 @@ const TwoTracks = () => (
         {tracks.map((track) => (
           <article
             key={track.title}
-            className="tile bg-card border border-sky-200 p-8 md:p-10 lg:p-12 flex flex-col h-full hover:shadow-card transition-shadow"
+            className="tile bg-surface-dark text-on-surface-dark border border-white/10 p-8 md:p-10 lg:p-12 flex flex-col h-full hover:shadow-glow transition-shadow"
           >
             <h3
               className="mb-5"
@@ -54,17 +54,17 @@ const TwoTracks = () => (
                 fontSize: "28px",
                 lineHeight: "32px",
                 fontWeight: 600,
-                color: "#252525",
+                color: "#ffffff",
               }}
             >
               {track.title}
             </h3>
-            <p className={`${t.bodyLg} text-muted-foreground flex-1`}>
+            <p className={`${t.bodyLg} text-white/85 flex-1`}>
               {track.body}
             </p>
             <a
               href={track.href}
-              className="group inline-flex items-center gap-1 mt-8 font-semibold text-primary hover:text-primary-deep transition-colors"
+              className="group inline-flex items-center gap-1 mt-8 font-semibold text-primary-glow hover:text-white transition-colors"
             >
               {track.cta}
               <ArrowRight className="w-4 h-4 transition-transform group-hover:translate-x-1" />

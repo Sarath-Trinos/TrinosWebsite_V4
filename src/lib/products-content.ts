@@ -1,5 +1,5 @@
 import type { LucideIcon } from "lucide-react";
-import { Brain, Plane, Factory, Vote } from "lucide-react";
+import { Brain, Plane, Factory } from "lucide-react";
 
 export type ProductStat = {
   label: string;
@@ -32,7 +32,7 @@ export type ProductContent = {
   category: string;
   accent: ProductAccent;
 
-  /** Hub card name (may differ from detail H1, e.g. "VoteSense" vs "VoteSense Platform"). */
+  /** Hub card name (may differ from detail H1, e.g. "Moltter Studio" vs "Moltter Studio Platform"). */
   name: string;
   /** Detail-page H1. */
   h1: string;
@@ -60,7 +60,7 @@ export type ProductContent = {
   solution: string;
   impact: string;
 
-  /** Sticky stat panel — Key Capabilities. */
+  /** Sticky stat panel: Key Capabilities. */
   capabilities: ProductStat[];
 
   /** Domain Addressed tag chips. */
@@ -83,7 +83,6 @@ export const productOrder = [
   "moltter-studio",
   "trip11",
   "traceflow",
-  "votesense",
 ] as const;
 
 export const productsContent: Record<string, ProductContent> = {
@@ -147,12 +146,15 @@ export const productsContent: Record<string, ProductContent> = {
       "Decision Reports",
       "Calibration Tracking",
     ],
-    images: [],
+    images: [
+      "/products/Molter_studio.png",
+      "/products/Molter_studio2.png",
+      "/products/Molter_studio3.png",
+    ],
     imageAlt: "Moltter Studio decision-intelligence platform screenshot",
     related: [
       { label: "Trip11", href: "/products/trip11" },
       { label: "TraceFlow", href: "/products/traceflow" },
-      { label: "VoteSense", href: "/products/votesense" },
     ],
   },
 
@@ -238,7 +240,6 @@ export const productsContent: Record<string, ProductContent> = {
     related: [
       { label: "Moltter Studio", href: "/products/moltter-studio" },
       { label: "TraceFlow", href: "/products/traceflow" },
-      { label: "VoteSense", href: "/products/votesense" },
     ],
   },
 
@@ -312,80 +313,6 @@ export const productsContent: Record<string, ProductContent> = {
     related: [
       { label: "Moltter Studio", href: "/products/moltter-studio" },
       { label: "Trip11", href: "/products/trip11" },
-      { label: "VoteSense", href: "/products/votesense" },
-    ],
-  },
-
-  votesense: {
-    slug: "votesense",
-    icon: Vote,
-    caseNumber: "Case Study 04",
-    category: "Election Tech AI",
-    accent: {
-      bar: "bg-amber-400",
-      tile: "from-amber-400/40 via-amber-400/15 to-[#0f1115]",
-      text: "text-amber-500",
-    },
-    name: "VoteSense",
-    h1: "VoteSense Platform",
-    pageTitle: "VoteSense: Election Tech AI Platform | Trinos",
-    metaDescription:
-      "VoteSense is a multi-tenant election-management platform with ML analytics, hierarchical access control, 6.5 crore voter records and offline-first field operations.",
-    cardSummary:
-      "A multi-tenant election-management platform with ML analytics, hierarchical access control and offline-first field operations.",
-    cardStats: [
-      { label: "Voter Records", value: "6.5 crore" },
-      { label: "Polling Booths", value: "75,000+" },
-    ],
-    cardTags: [
-      "Multi-Tenant AI",
-      "Hierarchical RBAC",
-      "ML Swing Prediction",
-      "NLP Sentiment",
-    ],
-    summary:
-      "An AI-powered, multi-tenant election-management platform with ML analytics, hierarchical geographic access control, 6.5 crore voter records and offline-first field operations.",
-    whatItDoes:
-      "Runs large-scale election operations from a single platform, isolated per party, combining voter-roll analytics, geographic access control and AI-driven predictive intelligence.",
-    whoItsFor:
-      "Political parties managing large-scale election campaigns and field operations.",
-    keyFeatures: [
-      "Per-party fully isolated database (multi-tenant)",
-      "Five-level hierarchical RBAC (State → District → Constituency → Zone → Booth)",
-      "6.5 crore ECI electoral-roll records with booth-wise analytics",
-      "ML swing-booth prediction",
-      "Anomaly detection",
-      "NLP sentiment analysis",
-      "Offline-first, GPS-verified field operations",
-      "White-label apps",
-    ],
-    challenge:
-      "Parties managing elections across tens of thousands of booths rely on fragmented spreadsheets, manual field reporting and zero predictive intelligence, under extreme time pressure and strict data-confidentiality requirements. No existing platform combined multi-party data isolation, geographic access control and AI analytics in one system.",
-    solution:
-      "VoteSense is a cloud-native, multi-tenant platform where each party operates in a fully isolated environment, with five-level hierarchical RBAC enforcing geographic boundaries, a voters module integrating 6.5 crore ECI records, and an AI engine delivering swing-booth prediction, anomaly detection and NLP sentiment analysis.",
-    impact:
-      "15+ political parties across 234 constituencies and 75,000+ polling booths operate from a single platform with zero data leakage between competitors. Field operations once run on WhatsApp and spreadsheets are now GPS-verified and centrally tracked, and booth-level predictive intelligence replaces intuition-based strategy.",
-    capabilities: [
-      { label: "Constituencies", value: "234" },
-      { label: "Polling Booths", value: "75,000+" },
-      { label: "Political Parties", value: "15+" },
-      { label: "Voter Records", value: "6.5 crore" },
-      { label: "AI/ML Models", value: "5" },
-    ],
-    domains: [
-      "Multi-Tenant AI",
-      "Hierarchical RBAC",
-      "ML Swing Prediction",
-      "NLP Sentiment",
-      "Offline-First Mobile",
-      "White-Label Apps",
-    ],
-    images: [],
-    imageAlt: "VoteSense election-management platform screenshot",
-    related: [
-      { label: "Moltter Studio", href: "/products/moltter-studio" },
-      { label: "Trip11", href: "/products/trip11" },
-      { label: "TraceFlow", href: "/products/traceflow" },
     ],
   },
 };

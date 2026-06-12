@@ -39,7 +39,7 @@ export default async function JobPage({
     <main className="landing-wide min-h-screen bg-background">
       <Header />
       <JobDetail job={job} />
-      <CTASection variant="gradient" />
+      <CTASection variant="dark" />
       <Footer />
     </main>
   );

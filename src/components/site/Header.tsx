@@ -100,7 +100,7 @@ const Header = () => {
         scrolled ? "bg-white shadow-soft" : "bg-white/95"
       }`}
     >
-      <div className="container-px max-w-[1200px] mx-auto flex items-center justify-between min-h-[4rem] py-2.5 md:min-h-[4.5rem] md:py-3">
+      <div className="container-px max-w-[1200px] mx-auto flex items-center justify-between min-h-[3.5rem] py-1.5 md:min-h-[4rem] md:py-2">
         <div className="[&_.logo-wordmark]:text-[#0c3470] [&_.logo-wordmark]:font-normal">
           <Logo variant="header" />
         </div>
@@ -227,7 +227,7 @@ const Header = () => {
         <div className="hidden lg:flex items-center gap-3">
           <a
             href="/contact"
-            className="text-base font-semibold bg-gradient-cta text-primary-foreground px-5 py-2.5 rounded-full shadow-soft hover:shadow-glow transition-all"
+            className="text-base font-semibold bg-gradient-cta text-primary-foreground px-4 py-2 rounded-full shadow-soft hover:shadow-glow transition-all"
           >
             Contact Us
           </a>

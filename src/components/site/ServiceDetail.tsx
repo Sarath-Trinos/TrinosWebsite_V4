@@ -235,7 +235,7 @@ const ServiceDetail = ({ service, heroImage }: Props) => {
               <div className="mt-10 flex flex-wrap items-center justify-center gap-4">
                 <a
                   href={service.finalCTA.href}
-                  className="inline-flex items-center gap-2 bg-gradient-cta text-primary-foreground font-semibold px-7 py-3.5 rounded-full shadow-glow hover:shadow-card transition-all"
+                  className="inline-flex items-center gap-2 bg-white text-primary hover:bg-white/90 font-semibold px-7 py-3.5 rounded-full shadow-glow hover:shadow-card transition-all"
                 >
                   {service.finalCTA.label} <ArrowRight className="w-4 h-4" />
                 </a>

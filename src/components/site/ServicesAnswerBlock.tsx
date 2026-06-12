@@ -20,12 +20,6 @@ const ServicesAnswerBlock = () => (
             engagement connects AI to real workflows, trusted data and clear operational control,
             with human oversight built in rather than bolted on.
           </p>
-
-          <div className="mt-7 flex flex-wrap gap-3">
-            <span className="chip">Agentic Automation</span>
-            <span className="chip">AI Intelligence Systems</span>
-            <span className="chip">Enterprise Platforms</span>
-          </div>
         </div>
       </div>
     </div>

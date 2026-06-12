@@ -77,6 +77,7 @@ const WhyChooseTrinos = () => {
           <div className="md:col-span-2 flex flex-col justify-center gap-8 md:gap-8 lg:gap-10 md:h-[26rem] lg:h-[30rem]">
             {cards.map((it, i) => {
               const isActive = i === activeIndex;
+              const isDark = true;
               return (
                 <a
                   key={it.title}
@@ -89,10 +90,14 @@ const WhyChooseTrinos = () => {
                   aria-expanded={isActive}
                   aria-current={isActive ? "true" : undefined}
                   className={cn(
-                    "tile bg-card border border-l-[3px] p-5 md:p-4 lg:p-6 text-left w-full h-auto transition-all duration-300 ease-out md:min-h-0 md:flex-none hover:!translate-y-0",
-                    isActive
-                      ? "border-primary border-l-primary shadow-glow"
-                      : "border-border border-l-transparent hover:border-primary/40 hover:bg-slate-50/50 hover:shadow-soft"
+                    "tile border border-l-[3px] p-5 md:p-4 lg:p-6 text-left w-full h-auto transition-all duration-300 ease-out md:min-h-0 md:flex-none hover:!translate-y-0",
+                    isDark
+                      ? "bg-surface-dark text-on-surface-dark border-white/10 border-l-transparent hover:shadow-glow"
+                      : "bg-card",
+                    !isDark &&
+                      (isActive
+                        ? "border-primary border-l-primary shadow-glow"
+                        : "border-border border-l-transparent hover:border-primary/40 hover:bg-slate-50/50 hover:shadow-soft")
                   )}
                 >
                   <div className="flex items-center justify-between gap-4">
@@ -100,19 +105,31 @@ const WhyChooseTrinos = () => {
                       <div
                         className={cn(
                           "w-11 h-11 md:w-9 md:h-9 lg:w-11 lg:h-11 shrink-0 rounded-2xl grid place-items-center transition-colors duration-300",
-                          isActive
+                          isDark
+                            ? "bg-white/10 text-primary-glow"
+                            : isActive
                             ? "bg-gradient-primary text-white"
                             : "bg-gradient-tile text-primary"
                         )}
                       >
                         <it.icon className="w-5 h-5 md:w-4 md:h-4 lg:w-5 lg:h-5" />
                       </div>
-                      <h3 className={cn(t.cardHeadline, "font-manrope min-w-0")}>{it.title}</h3>
+                      <h3
+                        className={cn(
+                          t.cardHeadline,
+                          "font-manrope min-w-0",
+                          isDark && "text-white"
+                        )}
+                      >
+                        {it.title}
+                      </h3>
                     </div>
                     <ChevronDown
                       className={cn(
-                        "w-5 h-5 shrink-0 text-muted-foreground transition-transform duration-300 ease-out",
-                        isActive && "rotate-180 text-primary"
+                        "w-5 h-5 shrink-0 transition-transform duration-300 ease-out",
+                        isDark ? "text-white/70" : "text-muted-foreground",
+                        isActive && "rotate-180",
+                        isActive && !isDark && "text-primary"
                       )}
                     />
                   </div>
@@ -127,7 +144,8 @@ const WhyChooseTrinos = () => {
                     <p
                       className={cn(
                         t.bodySm,
-                        "overflow-hidden text-muted-foreground"
+                        "overflow-hidden",
+                        isDark ? "text-white/85" : "text-muted-foreground"
                       )}
                     >
                       {it.description}

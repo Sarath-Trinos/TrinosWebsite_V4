@@ -21,7 +21,7 @@ export default function Home() {
       <WhyChooseTrinos />
       <HealthcareAI />
       <CTASection
-        variant="gradient"
+        variant="dark"
         title=""
         className="pt-0 pb-10"
         subtitle="Start with a Discovery Workshop. Trinos will review your workflows, data systems and operational bottlenecks before recommending the right AI first solution for your environment."

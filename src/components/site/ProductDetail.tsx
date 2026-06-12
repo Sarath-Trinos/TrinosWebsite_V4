@@ -112,7 +112,6 @@ const ProductDetail = ({ product, heroImage }: Props) => {
               )}
 
               <div className="tile bg-surface-dark text-on-surface-dark p-7 relative overflow-hidden">
-                <div className="absolute -top-24 -right-24 w-72 h-72 rounded-full bg-primary/20 blur-3xl" />
                 <div className="relative">
                   <div className="flex items-center gap-3 mb-6">
                     <span className={`w-1 h-6 rounded-full ${product.accent.bar}`} aria-hidden="true" />
@@ -152,13 +151,13 @@ const ProductDetail = ({ product, heroImage }: Props) => {
             ].map((block, i) => (
               <div
                 key={block.label}
-                className="rounded-2xl border border-border bg-card p-8 shadow-soft hover:shadow-card transition-shadow flex flex-col"
+                className="tile bg-surface-dark text-on-surface-dark border border-white/10 p-8 hover:shadow-glow transition-shadow flex flex-col"
               >
-                <div className="text-xs font-semibold uppercase tracking-[0.16em] text-primary mb-3">
+                <div className="text-xs font-semibold uppercase tracking-[0.16em] text-primary-glow mb-3">
                   Step 0{i + 1}
                 </div>
-                <h3 className={`${t.cardHeadlineMedium} text-foreground`}>{block.label}</h3>
-                <p className={`mt-3 ${t.body} text-muted-foreground`}>{block.body}</p>
+                <h3 className={`${t.cardHeadlineMedium} text-white`}>{block.label}</h3>
+                <p className={`mt-3 ${t.body} text-white/80`}>{block.body}</p>
               </div>
             ))}
           </div>
@@ -202,7 +201,7 @@ const ProductDetail = ({ product, heroImage }: Props) => {
               <div className="mt-10 flex flex-wrap items-center justify-center gap-4">
                 <a
                   href={productCTA.href}
-                  className="inline-flex items-center gap-2 bg-gradient-cta text-primary-foreground font-semibold px-7 py-3.5 rounded-full shadow-glow hover:shadow-card transition-all"
+                  className="inline-flex items-center gap-2 bg-white text-primary hover:bg-white/90 font-semibold px-7 py-3.5 rounded-full shadow-glow hover:shadow-card transition-all"
                 >
                   {productCTA.label} <ArrowRight className="w-4 h-4" />
                 </a>

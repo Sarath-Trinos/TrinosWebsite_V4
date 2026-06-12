@@ -52,7 +52,7 @@ const ProductsHero = () => {
               <span className="block whitespace-nowrap text-white">Live in Production.</span>
             </h1>
             <p className={`mt-6 ${t.subheadline} text-white/80 max-w-2xl`}>
-              Trinos engineers dedicated AI platforms for hard, real-world problems — decision intelligence, travel operations, industrial traceability and election technology. Each one proves our AI-first engineering under production conditions, with capability that transfers to your industry.
+              Trinos engineers dedicated AI platforms for hard, real-world problems: decision intelligence, travel operations and industrial traceability. Each one proves our AI-first engineering under production conditions, with capability that transfers to your industry.
             </p>
 
             <div className="mt-9 flex flex-wrap items-center gap-4">

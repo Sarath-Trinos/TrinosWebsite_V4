@@ -12,7 +12,7 @@ import erpWorkflow from "@/assets/erp-workflow.jpg";
 const items = [
   {
     image: erpAnalytics,
-    video: "/videos/ab_cdef_abcdefmp_.mp4",
+    video: "/videos/LLM fine tuning.mp4",
     title: "LLM Fine-Tuning",
     desc: "Enterprise language models tailored to your documents, policies, terminology and workflows-delivering more accurate responses, stronger governance and higher user trust.",
     cta: "Explore Fine-Tuning",
@@ -20,7 +20,7 @@ const items = [
   },
   {
     image: erpUx,
-    video: "/videos/Can_you_animate_this_into_a_.mp4",
+    video: "/videos/Generative AI.mp4",
     title: "Generative AI and Analytics",
     desc: "Conversational dashboards, intelligent reports and executive briefings generated from your enterprise data and grounded in approved sources reducing hallucination risk and improving decision confidence.",
     cta: "Explore Analytics",
@@ -28,7 +28,7 @@ const items = [
   },
   {
     image: erpWorkflow,
-    video: "/videos/f_mp_.mp4",
+    video: "/videos/Computer Vision.mp4",
     title: "Computer Vision",
     desc: "Defect detection on the line. OCR on the floor. Object tracking at the edge. Vision systems for the places where a missed call costs real money.",
     cta: "Explore Computer Vision",

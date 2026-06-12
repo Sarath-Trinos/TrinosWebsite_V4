@@ -21,7 +21,7 @@ export default function CareersPage() {
       <WhyJoinTrinos />
       <OurCulture />
       <OpenPositions />
-      <CTASection variant="gradient" />
+      <CTASection variant="dark" />
       <Footer />
     </main>
   );

@@ -95,6 +95,7 @@ const serviceGroups: ServiceGroup[] = [
         description:
           "Domain-tuned language models trained on your data, terminology and task patterns to improve reliability for defined enterprise use cases.",
         href: "/services/llm-fine-tuning",
+        image: "/service/LLM-fine-tuning.png",
       },
       {
         icon: BarChart3,
@@ -102,6 +103,7 @@ const serviceGroups: ServiceGroup[] = [
         description:
           "Conversational dashboards and intelligent reporting that turn approved enterprise data into sourced, decision-ready insight.",
         href: "/services/generative-ai-analytics",
+        image: "/service/Gen AI.png",
       },
       {
         icon: Eye,
@@ -109,6 +111,7 @@ const serviceGroups: ServiceGroup[] = [
         description:
           "Image, video and document intelligence for defect detection, OCR, quality control, asset tracking and physical workflow automation.",
         href: "/services/computer-vision",
+        image: "/service/computer vision.png",
       },
     ],
   },
@@ -197,7 +200,7 @@ const OurServices = () => {
                     className="group rounded-2xl overflow-hidden bg-surface-dark text-on-surface-dark shadow-card hover:shadow-glow transition-shadow duration-300 hover:-translate-y-1 animate-zoom-in-br origin-bottom-right block focus:outline-none focus-visible:ring-2 focus-visible:ring-primary-glow"
                     style={{ animationDelay: `${idx * 80}ms` }}
                   >
-                    <div className={`relative h-44 overflow-hidden bg-gradient-to-br ${accent.tile}`}>
+                    <div className="relative h-44 overflow-hidden bg-surface-dark">
                       {image ? (
                         <>
                           <img
@@ -206,11 +209,11 @@ const OurServices = () => {
                             loading="lazy"
                             className={`absolute inset-0 h-full w-full object-cover ${imagePosition ?? ""} transition-transform duration-300 group-hover:scale-105`}
                           />
-                          <div className="absolute inset-0 bg-gradient-to-t from-[#0f1115]/70 via-transparent to-transparent" />
+                          <div className="absolute inset-0 bg-gradient-to-t from-surface-dark/80 via-transparent to-transparent" />
                         </>
                       ) : (
                         <>
-                          <div className="absolute inset-0 bg-[radial-gradient(circle_at_30%_20%,rgba(255,255,255,0.18),transparent_60%)]" />
+                          <div className="absolute inset-0 bg-[radial-gradient(circle_at_30%_20%,rgba(255,255,255,0.06),transparent_60%)]" />
                           <div className="absolute inset-0 grid place-items-center">
                             <div className="w-24 h-24 rounded-3xl bg-white/10 backdrop-blur-sm border border-white/15 grid place-items-center shadow-soft transition-transform duration-300 group-hover:scale-110">
                               <Icon className="w-10 h-10 text-white" strokeWidth={1.5} />
@@ -224,7 +227,7 @@ const OurServices = () => {
                       <h4 className={t.cardHeadlineSemibold}>
                         {title}
                       </h4>
-                      <p className="mt-3 text-sm text-white/70 leading-relaxed line-clamp-3">
+                      <p className="mt-3 text-sm text-white/85 leading-relaxed line-clamp-3">
                         {description}
                       </p>
                       <p className="mt-4 text-xs font-medium text-primary-glow">Learn More</p>
