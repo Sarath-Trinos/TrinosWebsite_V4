@@ -2,7 +2,7 @@ import { ArrowRight } from "lucide-react";
 import { type as t } from "@/lib/typography";
 
 const ServicesCTA = () => (
-  <section id="services-cta" className="py-16 md:py-20">
+  <section id="services-cta" className="py-10">
     <div className="container-px max-w-[1200px] mx-auto mb-12">
       <a
         href="/trinos-edge"

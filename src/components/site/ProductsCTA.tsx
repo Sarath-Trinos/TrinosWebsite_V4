@@ -20,7 +20,7 @@ const steps = [
 ];
 
 const ProductsCTA = () => (
-  <section id="build-with-us" className="py-16 md:py-20">
+  <section id="build-with-us" className="py-10">
     <div className="container-px max-w-[1200px] mx-auto">
       <div className="tile bg-gradient-cta px-8 py-12 md:px-12 md:py-14 lg:px-16 lg:py-16 relative overflow-hidden">
         <div className="absolute -top-32 -left-32 w-[25rem] h-[25rem] rounded-full bg-white/40 blur-3xl" />

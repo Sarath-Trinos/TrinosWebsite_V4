@@ -168,7 +168,7 @@ const resolveIcon = (label: string, fallback: LucideIcon): LucideIcon => {
 
 const TechStackIndustries = ({ techStack, industries }: Props) => {
   return (
-    <section className="relative overflow-hidden bg-[#F9F9F7] py-20 lg:py-28">
+    <section className="relative overflow-hidden bg-[#F9F9F7] py-10">
       {/* ── Ambient background: grid + soft brand glows ── */}
       <div className="pointer-events-none absolute inset-0 -z-10" aria-hidden="true">
         {/* Decorative grid pattern */}

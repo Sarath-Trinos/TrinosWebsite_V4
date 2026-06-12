@@ -2,7 +2,7 @@ import { type as t } from "@/lib/typography";
 import { cn } from "@/lib/utils";
 
 const EnterpriseProblem = () => (
-  <section className="py-24">
+  <section className="py-10">
     <div className="container-px max-w-[1200px] mx-auto">
       <div className="max-w-none">
         <h2

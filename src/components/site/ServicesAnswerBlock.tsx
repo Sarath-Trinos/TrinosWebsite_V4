@@ -1,7 +1,7 @@
 import { type as t } from "@/lib/typography";
 
 const ServicesAnswerBlock = () => (
-  <section id="services-answer" className="py-20 bg-background">
+  <section id="services-answer" className="py-10 bg-background">
     <div className="container-px max-w-[1200px] mx-auto">
       <div className="tile bg-surface-soft p-8 md:p-12 lg:p-16 relative overflow-hidden">
         <div className="absolute -top-32 -left-32 w-[25rem] h-[25rem] rounded-full bg-primary/10 blur-3xl" />

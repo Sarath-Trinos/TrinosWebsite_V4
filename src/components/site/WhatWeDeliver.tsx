@@ -38,7 +38,7 @@ const cards: DeliverCard[] = [
 ];
 
 const WhatWeDeliver = () => (
-  <section id="what-we-deliver" className="bg-[#F9F9F7] pt-24 pb-12">
+  <section id="what-we-deliver" className="bg-[#F9F9F7] py-10">
     <div className="container-px mx-auto max-w-[1200px]">
       <div className="mb-14 max-w-6xl md:mb-16">
         <h2 className={t.sectionHeadlineLg}>

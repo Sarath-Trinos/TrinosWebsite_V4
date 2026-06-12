@@ -27,7 +27,7 @@ const tracks: Track[] = [
 ];
 
 const TwoTracks = () => (
-  <section className="py-24 bg-surface-tint">
+  <section className="py-10 bg-surface-tint">
     <div className="container-px max-w-[1200px] mx-auto">
       <SectionHeader
         headlineWeight="normal"

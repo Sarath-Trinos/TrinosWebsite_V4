@@ -45,7 +45,7 @@ const Leadership = () => {
   }, [selected]);
 
   return (
-    <section id="leadership" className="pt-24 pb-0 bg-white">
+    <section id="leadership" className="py-10 bg-white">
       <div className="container-px max-w-[1200px] mx-auto">
         <div className="max-w-3xl">
           <span className="chip mb-5">Leadership</span>

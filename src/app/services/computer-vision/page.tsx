@@ -15,7 +15,7 @@ export default function ComputerVisionPage() {
   return (
     <main className="landing-wide min-h-screen bg-background">
       <Header />
-      <ServiceDetail service={service} />
+      <ServiceDetail service={service} heroImage="/service/computer_vision.png" />
       <Footer />
     </main>
   );

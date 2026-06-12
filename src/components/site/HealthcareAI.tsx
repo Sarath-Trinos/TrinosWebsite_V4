@@ -28,7 +28,7 @@ const cards = [
 
 const HealthcareAI = () => {
   return (
-    <section className="py-24 bg-white">
+    <section className="py-10 bg-white">
       <div className="container-px max-w-[1200px] mx-auto">
         <SectionHeader
           headlineWeight="normal"

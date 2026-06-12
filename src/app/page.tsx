@@ -23,7 +23,7 @@ export default function Home() {
       <CTASection
         variant="gradient"
         title=""
-        className="pt-0 pb-24"
+        className="pt-0 pb-10"
         subtitle="Start with a Discovery Workshop. Trinos will review your workflows, data systems and operational bottlenecks before recommending the right AI first solution for your environment."
         subtitleClassName="max-w-6xl text-balance"
         buttonLabel="Book a Discovery Workshop"

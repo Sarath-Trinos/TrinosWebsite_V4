@@ -13,7 +13,7 @@ const cards: Card[] = [
     title: "Career growth",
     description:
       "Continuous learning opportunities and clear career progression paths.",
-    image: "/career/growth-strategy-team-collaboration-grow-business-success-teamwork-partnership-develop.jpg",
+    image: "/career/career_growth.jpg",
   },
   {
     title: "Work-life balance",
@@ -36,7 +36,7 @@ const cards: Card[] = [
 
 const WhyJoinTrinos = () => {
   return (
-    <section id="why-join" className="py-24 bg-surface-soft">
+    <section id="why-join" className="py-10 bg-surface-soft">
       <div className="container-px max-w-[1200px] mx-auto">
         <SectionHeader
           headlineWeight="normal"

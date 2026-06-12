@@ -59,7 +59,7 @@ const ServiceDetail = ({ service, heroImage }: Props) => {
       </section>
 
       {/* ANSWER BLOCK */}
-      <section className="py-20 bg-background">
+      <section className="py-10 bg-background">
         <div className="container-px max-w-[1200px] mx-auto">
           <div className="tile bg-surface-soft p-8 md:p-12 lg:p-16 relative overflow-hidden">
             <div className="absolute -top-32 -left-32 w-[25rem] h-[25rem] rounded-full bg-primary/10 blur-3xl" />
@@ -77,7 +77,7 @@ const ServiceDetail = ({ service, heroImage }: Props) => {
       </section>
 
       {/* WHAT WE DELIVER */}
-      <section className="py-20 bg-[#F9F9F7]">
+      <section className="py-10 bg-[#F9F9F7]">
         <div className="container-px max-w-[1200px] mx-auto">
           <div className="max-w-6xl mb-12">
             <h2 className={t.sectionHeadlineLg}>
@@ -104,7 +104,7 @@ const ServiceDetail = ({ service, heroImage }: Props) => {
       </section>
 
       {/* CASE STUDY & RESULTS */}
-      <section className="py-20 bg-background">
+      <section className="py-10 bg-background">
         <div className="container-px max-w-[1200px] mx-auto">
           <div className="max-w-3xl mb-12">
             <h2 className={t.sectionHeadlineLg}>
@@ -179,7 +179,7 @@ const ServiceDetail = ({ service, heroImage }: Props) => {
       />
 
       {/* FAQ */}
-      <section className="py-20 bg-background">
+      <section className="py-10 bg-background">
         {service.faqs.length > 0 && (
           <script
             type="application/ld+json"
@@ -211,7 +211,7 @@ const ServiceDetail = ({ service, heroImage }: Props) => {
       </section>
 
       {/* FINAL CTA & RELATED - fixed parallax image spanning the full viewport width */}
-      <section className="bg-background pt-20">
+      <section className="bg-background pt-10 pb-0">
         <div className="w-full">
           <div className="relative overflow-hidden bg-surface-dark text-on-surface-dark shadow-card flex items-center justify-center">
             {/* Fixed background image, clipped to this card (stays pinned while content scrolls over it) */}

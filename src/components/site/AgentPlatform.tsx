@@ -138,7 +138,7 @@ const AgentPlatform = () => {
   );
 
   return (
-    <section id="agents" className="py-24">
+    <section id="agents" className="py-10">
       <div className="container-px max-w-[1200px] mx-auto">
         <SectionHeader
           headlineWeight="normal"

@@ -19,15 +19,15 @@ const Logo = ({ className = "", variant = "default" }: LogoProps) => {
       <Image
         src="/Logo.png"
         alt=""
-        width={isHeader ? 200 : 150}
-        height={isHeader ? 50 : 40}
-        className={`w-auto object-contain ${isHeader ? "h-10 md:h-12" : "h-9"}`}
+        width={455}
+        height={549}
+        className={`w-auto object-contain translate-y-[2px] ${isHeader ? "h-9 md:h-10" : "h-8"}`}
         priority={isHeader}
-        sizes={isHeader ? "(min-width: 768px) 12rem, 10rem" : "9rem"}
+        sizes={isHeader ? "(min-width: 768px) 2.5rem, 2.25rem" : "2rem"}
       />
       <span
         className={`logo-wordmark font-display font-semibold tracking-tight text-inherit lowercase leading-none ${
-          isHeader ? "text-[2rem] md:text-[2.25rem]" : "text-[1.5rem]"
+          isHeader ? "text-[2rem] md:text-[2.25rem]" : "text-[1.6rem]"
         }`}
       >
         trinos

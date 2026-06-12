@@ -19,7 +19,7 @@ const proofPoints = [
 ];
 
 const ProductsProof = () => (
-  <section className="py-16 lg:py-20 bg-background">
+  <section className="py-10 bg-background">
     <div className="container-px max-w-[1200px] mx-auto">
       <div className="max-w-3xl mb-12">
         <span className="chip mb-5">Across all products</span>

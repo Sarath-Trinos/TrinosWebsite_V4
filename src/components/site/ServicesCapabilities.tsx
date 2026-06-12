@@ -57,7 +57,7 @@ const pillars: Pillar[] = [
 ];
 
 const ServicesCapabilities = () => (
-  <section id="capabilities" className="bg-[#F9F9F7] py-24">
+  <section id="capabilities" className="bg-[#F9F9F7] py-10">
     <div className="container-px mx-auto max-w-[1200px]">
       <div className="mb-14 max-w-6xl md:mb-16">
         <h2 className={t.sectionHeadlineLg}>

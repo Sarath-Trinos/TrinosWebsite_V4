@@ -68,7 +68,7 @@ const CTASection = ({
   subtitleClassName = "max-w-2xl",
   buttonLabel = "Get In Touch",
   buttonHref = "#",
-  className = "py-16 md:py-20",
+  className = "py-10",
 }: CTASectionProps) => {
   const v = variants[variant];
   return (

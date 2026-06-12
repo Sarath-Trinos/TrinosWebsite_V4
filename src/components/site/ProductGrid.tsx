@@ -3,7 +3,7 @@ import { type as t } from "@/lib/typography";
 import { productsContent, productOrder } from "@/lib/products-content";
 
 const ProductGrid = () => (
-  <section id="products" className="scroll-mt-24 py-16 lg:py-20 bg-surface-soft">
+  <section id="products" className="scroll-mt-24 py-10 bg-surface-soft">
     <div className="container-px max-w-[1200px] mx-auto">
       <div className="max-w-3xl mb-12">
         <span className="chip mb-5">Why we build our own products</span>

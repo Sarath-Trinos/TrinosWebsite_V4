@@ -19,6 +19,8 @@ type Service = {
   href: string;
   /** Optional cover image shown in the card media area instead of the icon. */
   image?: string;
+  /** Optional object-position for the cover image crop (Tailwind class). Defaults to centered. */
+  imagePosition?: string;
 };
 
 type ServiceGroup = {
@@ -58,6 +60,7 @@ const serviceGroups: ServiceGroup[] = [
           "Workflow systems that connect tasks, approvals, business rules and applications into one coordinated process layer.",
         href: "/services/ai-workflow-automation",
         image: "/service/AI Workflow automation.png",
+        imagePosition: "object-top",
       },
       {
         icon: Mic,
@@ -147,7 +150,7 @@ const OurServices = () => {
   return (
     <section id="our-services" className="scroll-mt-24 py-10 bg-background">
       <div className="container-px max-w-[1200px] mx-auto">
-        <div className="max-w-6xl mb-12">
+        <div className="max-w-6xl mb-6">
           <span className="chip mb-5">Our Services</span>
           <h2 className={t.sectionHeadlineLg}>
             <span className="text-black">Our</span>{" "}
@@ -162,7 +165,7 @@ const OurServices = () => {
           </p>
         </div>
 
-        <div className="space-y-14">
+        <div className="space-y-8">
           {serviceGroups.map(({ category, intro, accent, services }) => (
             <div key={category}>
               <div className="mb-6 flex gap-4">
@@ -187,7 +190,7 @@ const OurServices = () => {
                     : "gap-8 lg:grid-cols-3"
                 }`}
               >
-                {services.map(({ icon: Icon, title, description, href, image }, idx) => (
+                {services.map(({ icon: Icon, title, description, href, image, imagePosition }, idx) => (
                   <a
                     key={title}
                     href={href}
@@ -201,7 +204,7 @@ const OurServices = () => {
                             src={image}
                             alt={title}
                             loading="lazy"
-                            className="absolute inset-0 h-full w-full object-cover transition-transform duration-300 group-hover:scale-105"
+                            className={`absolute inset-0 h-full w-full object-cover ${imagePosition ?? ""} transition-transform duration-300 group-hover:scale-105`}
                           />
                           <div className="absolute inset-0 bg-gradient-to-t from-[#0f1115]/70 via-transparent to-transparent" />
                         </>

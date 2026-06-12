@@ -87,7 +87,7 @@ const Footer = () => (
         <div className="sm:col-span-2 md:col-span-3 lg:col-span-2">
           <Logo />
           <p className="mt-5 text-white/70 max-w-sm">
-            Trinos engineers AI-first platforms and enterprise systems — agentic AI, workflow automation, analytics, computer vision, ERP, web and mobile — built to be secure, integrated and production-ready.
+            Trinos engineers AI-first platforms and enterprise systems including agentic AI, workflow automation, analytics, computer vision, ERP, web and mobile, built to be secure, integrated and production-ready.
           </p>
           <div className="mt-6 flex items-center gap-3">
             {socials.map(({ icon: Icon, label, href }) => (

@@ -5,7 +5,7 @@ import { careersContent } from "@/lib/careers-content";
 const positions = Object.values(careersContent);
 
 const OpenPositions = () => (
-  <section id="open-positions" className="pt-8 pb-24">
+  <section id="open-positions" className="py-10">
     <div className="container-px max-w-[1200px] mx-auto">
       <div>
         <h2 className={`${t.sectionHeadlineLg} text-foreground`}>

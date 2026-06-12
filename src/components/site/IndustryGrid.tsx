@@ -69,7 +69,7 @@ const INDUSTRIES: Industry[] = [
     taglines: ["Personalized at every touchpoint", "Operations that scale with demand"],
     description:
       "Trinos helps retail and ecommerce businesses improve speed, personalization and operational efficiency. Our AI first systems support customer journeys, inventory visibility, order workflows and business insights across online and offline channels.",
-    image: "/industry/retail and ecommerce.jpg",
+    image: "/industry/Retail and ecommerce.png",
     helpsWith: [
       "Customer support automation",
       "Product search and recommendations",
@@ -94,7 +94,7 @@ const INDUSTRIES: Industry[] = [
     taglines: ["Connected shop floor to office", "Faster, data-driven decisions"],
     description:
       "Trinos helps manufacturers connect plant operations, production data and business systems for better visibility and faster decisions. Our AI first systems support quality checks, workflow automation and operational intelligence across the shop floor and office teams.",
-    image: "/industry/manufacturing (1).png",
+    image: "/industry/Construction .png",
     helpsWith: [
       "Production workflow automation",
       "Quality inspection support",
@@ -144,7 +144,7 @@ const INDUSTRIES: Industry[] = [
     taglines: ["Every mile, every minute counts", "End-to-end shipment visibility"],
     description:
       "Trinos helps logistics and supply chain teams move goods faster with better visibility and fewer delays. Our AI first systems support shipment tracking, warehouse workflows, demand planning and operational reporting across complex, multi-party networks.",
-    image: "/industry/Industries  - logistics.png",
+    image: "/industry/Logistics.png",
     helpsWith: [
       "Shipment tracking automation",
       "Warehouse workflow support",
@@ -193,7 +193,7 @@ const INDUSTRIES: Industry[] = [
     taglines: ["Reliable assets, fewer outages", "Field operations, fully connected"],
     description:
       "Trinos helps energy and utility companies improve asset visibility, field operations and service reliability. Our AI first systems support maintenance workflows, outage response, compliance tasks and operational dashboards across asset heavy environments.",
-    image: "/industry/Energy & utility.png",
+    image: "/industry/Energy.png",
     helpsWith: [
       "Asset monitoring and alerts",
       "Predictive maintenance support",
@@ -218,7 +218,7 @@ const INDUSTRIES: Industry[] = [
     taglines: ["Projects on time, on budget", "Site and office in sync"],
     description:
       "Trinos helps construction and engineering teams improve project visibility, document control and site coordination. Our AI first systems support planning, reporting and workflow automation from bidding to project completion.",
-    image: "/industry/Construction .png",
+    image: "/industry/construction.png",
     helpsWith: [
       "Project tracking and reporting",
       "Bid and proposal support",
@@ -338,7 +338,7 @@ const IndustryGrid = () => {
       : null;
 
   return (
-    <section id="industries-grid" className="py-16 lg:py-24 bg-background">
+    <section id="industries-grid" className="py-10 bg-background">
       <div className="container-px max-w-[1200px] mx-auto">
         <div className="max-w-7xl mb-12 lg:mb-16 animate-fade-up">
           <span className="chip mb-5">Industry-specific solutions</span>

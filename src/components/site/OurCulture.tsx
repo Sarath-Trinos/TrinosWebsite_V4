@@ -32,7 +32,7 @@ const pillars: Pillar[] = [
 const OurCulture = () => (
   <section
     id="culture"
-    className="relative overflow-hidden bg-gradient-to-b from-white via-surface-soft to-white py-24 sm:py-28 lg:py-32"
+    className="relative overflow-hidden bg-gradient-to-b from-white via-surface-soft to-white py-10"
   >
     {/* Ambient decorative background */}
     <div

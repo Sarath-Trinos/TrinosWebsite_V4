@@ -49,7 +49,7 @@ const floatingIcons = [
 ];
 
 const WhoWeAre = () => (
-  <section id="who-we-are" className="pt-24 pb-0 bg-white">
+  <section id="who-we-are" className="py-10 bg-white">
     <div className="container-px max-w-[1200px] mx-auto">
       <div className="grid lg:grid-cols-2 gap-10 md:gap-12 lg:gap-14 items-start">
         <div className="relative order-2 lg:order-1">

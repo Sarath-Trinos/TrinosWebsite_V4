@@ -60,7 +60,7 @@ const ProductDetail = ({ product, heroImage }: Props) => {
       </section>
 
       {/* PRODUCT-LED BLOCK + STICKY STAT RAIL */}
-      <section className="py-16 lg:py-20 bg-background">
+      <section className="py-10 bg-background">
         <div className="container-px max-w-[1200px] mx-auto">
           <div className="grid lg:grid-cols-[1fr_22rem] gap-8 lg:gap-12 items-start">
             {/* Left: media + what/who/features */}
@@ -136,7 +136,7 @@ const ProductDetail = ({ product, heroImage }: Props) => {
       </section>
 
       {/* CHALLENGE → SOLUTION → IMPACT */}
-      <section className="py-16 lg:py-20 bg-[#F9F9F7]">
+      <section className="py-10 bg-[#F9F9F7]">
         <div className="container-px max-w-[1200px] mx-auto">
           <div className="max-w-3xl mb-12">
             <h2 className={t.sectionHeadlineLg}>
@@ -166,7 +166,7 @@ const ProductDetail = ({ product, heroImage }: Props) => {
       </section>
 
       {/* DOMAIN ADDRESSED */}
-      <section className="py-16 lg:py-20 bg-background">
+      <section className="py-10 bg-background">
         <div className="container-px max-w-[1200px] mx-auto">
           <div className="max-w-3xl mb-8">
             <h2 className={t.sectionHeadlineMd}>
@@ -188,7 +188,7 @@ const ProductDetail = ({ product, heroImage }: Props) => {
       </section>
 
       {/* FINAL CTA & RELATED */}
-      <section className="bg-background pt-8 lg:pt-12 pb-20">
+      <section className="bg-background py-10">
         <div className="container-px max-w-[1200px] mx-auto">
           <div className="relative overflow-hidden tile bg-surface-dark text-on-surface-dark p-8 md:p-12 lg:p-14">
             <div className="absolute -top-32 -left-32 w-[25rem] h-[25rem] rounded-full bg-primary/20 blur-3xl" />

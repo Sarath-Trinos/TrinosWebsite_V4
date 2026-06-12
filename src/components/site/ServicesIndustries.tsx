@@ -19,7 +19,7 @@ const industries: Industry[] = [
 ];
 
 const ServicesIndustries = () => (
-  <section id="who-we-help" className="bg-[#F9F9F7] py-12 lg:min-h-screen lg:flex lg:items-center">
+  <section id="who-we-help" className="bg-[#F9F9F7] py-10 lg:min-h-screen lg:flex lg:items-center">
     <div className="container-px max-w-[1200px] mx-auto w-full">
       <div className="mb-8 max-w-6xl">
         <span className="chip mb-5">Who we help</span>
