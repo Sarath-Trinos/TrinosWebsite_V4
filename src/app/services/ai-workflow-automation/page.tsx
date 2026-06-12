@@ -15,7 +15,10 @@ export default function AIWorkflowAutomationPage() {
   return (
     <main className="landing-wide min-h-screen bg-background">
       <Header />
-      <ServiceDetail service={service} />
+      <ServiceDetail
+        service={service}
+        heroImage="/service/ai-workflow-automation.png"
+      />
       <Footer />
     </main>
   );

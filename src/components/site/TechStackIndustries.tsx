@@ -204,7 +204,7 @@ const TechStackIndustries = ({ techStack, industries }: Props) => {
           <div
             className={cn(
               "group/panel relative overflow-hidden rounded-3xl",
-              "border border-white/60 bg-white/70 backdrop-blur-xl",
+              "border border-white/10 bg-surface-dark text-on-surface-dark backdrop-blur-xl",
               "p-8 sm:p-10",
               "shadow-[0_24px_70px_-30px_hsl(210_60%_25%/0.35)]"
             )}
@@ -217,10 +217,10 @@ const TechStackIndustries = ({ techStack, industries }: Props) => {
                 <Cpu className="h-5 w-5" strokeWidth={1.8} />
               </span>
               <div>
-                <div className="text-[11px] font-semibold uppercase tracking-[0.18em] text-primary">
+                <div className="text-[11px] font-semibold uppercase tracking-[0.18em] text-primary-glow">
                   Tech stack &amp; tools
                 </div>
-                <h3 className={`${t.cardHeadlineSemibold} text-foreground`}>
+                <h3 className={`${t.cardHeadlineSemibold} text-on-surface-dark`}>
                   The toolchain we work with
                 </h3>
               </div>
@@ -239,8 +239,8 @@ const TechStackIndustries = ({ techStack, industries }: Props) => {
                     <span
                       className={cn(
                         "group/chip relative inline-flex items-center gap-2 rounded-2xl",
-                        "border border-border bg-white px-3.5 py-2.5",
-                        "text-sm font-medium text-foreground",
+                        "border border-white/10 bg-white/5 px-3.5 py-2.5",
+                        "text-sm font-medium text-white/80",
                         "shadow-[0_2px_8px_-4px_hsl(210_60%_25%/0.18)]",
                         "transition-all duration-300 ease-out",
                         "hover:-translate-y-0.5 hover:border-primary/40 hover:shadow-[0_14px_28px_-14px_hsl(var(--primary)/0.55)]"
@@ -261,7 +261,7 @@ const TechStackIndustries = ({ techStack, industries }: Props) => {
           <div
             className={cn(
               "group/panel relative overflow-hidden rounded-3xl",
-              "border border-white/60 bg-white/70 backdrop-blur-xl",
+              "border border-white/10 bg-surface-dark text-on-surface-dark backdrop-blur-xl",
               "p-8 sm:p-10",
               "shadow-[0_24px_70px_-30px_hsl(210_60%_25%/0.35)]"
             )}
@@ -274,10 +274,10 @@ const TechStackIndustries = ({ techStack, industries }: Props) => {
                 <Building2 className="h-5 w-5" strokeWidth={1.8} />
               </span>
               <div>
-                <div className="text-[11px] font-semibold uppercase tracking-[0.18em] text-primary">
+                <div className="text-[11px] font-semibold uppercase tracking-[0.18em] text-primary-glow">
                   Industries
                 </div>
-                <h3 className={`${t.cardHeadlineSemibold} text-foreground`}>
+                <h3 className={`${t.cardHeadlineSemibold} text-on-surface-dark`}>
                   Where this service is applied
                 </h3>
               </div>
@@ -296,8 +296,8 @@ const TechStackIndustries = ({ techStack, industries }: Props) => {
                     <span
                       className={cn(
                         "group/chip relative inline-flex items-center gap-2 rounded-2xl",
-                        "border border-border bg-white px-3.5 py-2.5",
-                        "text-sm font-medium text-foreground",
+                        "border border-white/10 bg-white/5 px-3.5 py-2.5",
+                        "text-sm font-medium text-white/80",
                         "shadow-[0_2px_8px_-4px_hsl(210_60%_25%/0.18)]",
                         "transition-all duration-300 ease-out",
                         "hover:-translate-y-0.5 hover:border-primary/40 hover:shadow-[0_14px_28px_-14px_hsl(var(--primary)/0.55)]"

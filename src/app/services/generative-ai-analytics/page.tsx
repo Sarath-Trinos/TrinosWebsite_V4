@@ -15,7 +15,7 @@ export default function GenerativeAIAnalyticsPage() {
   return (
     <main className="landing-wide min-h-screen bg-background">
       <Header />
-      <ServiceDetail service={service} />
+      <ServiceDetail service={service} heroImage="/service/generative-ai-analytics.png" />
       <Footer />
     </main>
   );

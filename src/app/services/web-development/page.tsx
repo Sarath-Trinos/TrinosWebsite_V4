@@ -15,7 +15,7 @@ export default function WebDevelopmentPage() {
   return (
     <main className="landing-wide min-h-screen bg-background">
       <Header />
-      <ServiceDetail service={service} />
+      <ServiceDetail service={service} heroImage="/service/web-development.png" />
       <Footer />
     </main>
   );

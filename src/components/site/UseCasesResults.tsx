@@ -53,7 +53,7 @@ const UseCasesResults = () => (
           <a
             key={title}
             href={href}
-            className="group flex flex-col bg-card rounded-2xl overflow-hidden shadow-soft hover:shadow-card transition-all duration-300 hover:-translate-y-1"
+            className="group flex flex-col bg-surface-dark text-on-surface-dark border border-white/10 rounded-2xl overflow-hidden shadow-soft hover:shadow-glow transition-all duration-300 hover:-translate-y-1"
           >
             <div className="relative w-full aspect-[16/10] overflow-hidden">
               <Image
@@ -66,13 +66,13 @@ const UseCasesResults = () => (
               />
             </div>
             <div className="p-7 flex flex-col gap-4 flex-1">
-              <h3 className={`${t.cardHeadline} text-foreground`}>
+              <h3 className={`${t.cardHeadline} text-on-surface-dark`}>
                 {title}
               </h3>
-              <p className="text-sm text-muted-foreground leading-relaxed text-balance">
+              <p className="text-sm text-white/70 leading-relaxed text-balance">
                 {description}
               </p>
-              <span className="mt-auto text-sm font-semibold uppercase tracking-wider text-primary group-hover:underline">
+              <span className="mt-auto text-sm font-semibold uppercase tracking-wider text-primary-glow group-hover:underline">
                 Learn More
               </span>
             </div>

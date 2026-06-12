@@ -15,7 +15,7 @@ export default function EnterpriseResourcePlanningPage() {
   return (
     <main className="landing-wide min-h-screen bg-background">
       <Header />
-      <ServiceDetail service={service} />
+      <ServiceDetail service={service} heroImage="/service/enterprise-resource-planning.png" />
       <Footer />
     </main>
   );

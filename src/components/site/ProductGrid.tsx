@@ -20,14 +20,20 @@ const ProductGrid = () => (
       </div>
 
       <div className="grid sm:grid-cols-2 gap-5 lg:gap-6">
-        {productOrder.map((slug) => {
+        {productOrder.map((slug, i) => {
           const p = productsContent[slug];
           const Icon = p.icon;
+          // If there's a lone card on the last row (odd count), span it
+          // across both columns and center it between the two.
+          const isLoneLast =
+            productOrder.length % 2 === 1 && i === productOrder.length - 1;
           return (
             <a
               key={slug}
               href={`/products/${p.slug}`}
-              className="group relative flex flex-col rounded-2xl border border-white/10 bg-surface-dark text-on-surface-dark p-7 lg:p-8 shadow-card hover:shadow-glow transition-all hover:-translate-y-1 focus:outline-none focus-visible:ring-2 focus-visible:ring-primary-glow"
+              className={`group relative flex flex-col rounded-2xl border border-white/10 bg-surface-dark text-on-surface-dark p-7 lg:p-8 shadow-card hover:shadow-glow transition-all hover:-translate-y-1 focus:outline-none focus-visible:ring-2 focus-visible:ring-primary-glow${
+                isLoneLast ? " sm:col-span-2 sm:mx-auto sm:w-1/2" : ""
+              }`}
             >
               <div className="flex items-center justify-between gap-4">
                 <span className={`text-xs font-semibold uppercase tracking-[0.16em] ${p.accent.text}`}>

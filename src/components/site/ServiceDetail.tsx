@@ -89,12 +89,12 @@ const ServiceDetail = ({ service, heroImage }: Props) => {
             {service.deliverables.map((item) => (
               <div
                 key={item.title}
-                className="group relative overflow-hidden rounded-2xl border border-border bg-card p-7 shadow-card hover:shadow-glow transition-all hover:-translate-y-0.5 flex flex-col"
+                className="group relative overflow-hidden rounded-2xl border border-white/10 bg-surface-dark text-on-surface-dark p-7 shadow-card hover:shadow-glow transition-all hover:-translate-y-0.5 flex flex-col"
               >
-                <h3 className={`${t.cardHeadlineSemibold} text-foreground`}>
+                <h3 className={`${t.cardHeadlineSemibold} text-on-surface-dark`}>
                   {item.title}
                 </h3>
-                <p className={`mt-3 ${t.body} text-muted-foreground`}>
+                <p className={`mt-3 ${t.body} text-white/70`}>
                   {item.description}
                 </p>
               </div>
@@ -117,7 +117,7 @@ const ServiceDetail = ({ service, heroImage }: Props) => {
               uc.image ? (
                 <div
                   key={uc.title}
-                  className="group flex flex-col rounded-2xl border border-border bg-card overflow-hidden shadow-soft hover:shadow-card transition-all duration-300 hover:-translate-y-1"
+                  className="group flex flex-col rounded-2xl border border-white/10 bg-surface-dark text-on-surface-dark overflow-hidden shadow-soft hover:shadow-glow transition-all duration-300 hover:-translate-y-1"
                 >
                   <div className="relative w-full aspect-[16/9] overflow-hidden">
                     <Image
@@ -135,10 +135,10 @@ const ServiceDetail = ({ service, heroImage }: Props) => {
                     )}
                   </div>
                   <div className="p-8 flex flex-col flex-1">
-                    <h3 className={`${t.cardHeadlineMedium} text-foreground`}>
+                    <h3 className={`${t.cardHeadlineMedium} text-on-surface-dark`}>
                       {uc.title}
                     </h3>
-                    <p className={`mt-3 ${t.body} text-muted-foreground`}>
+                    <p className={`mt-3 ${t.body} text-white/70`}>
                       {uc.description}
                     </p>
                   </div>
@@ -146,15 +146,15 @@ const ServiceDetail = ({ service, heroImage }: Props) => {
               ) : (
                 <div
                   key={uc.title}
-                  className="rounded-2xl border border-border bg-surface-soft p-8 shadow-soft"
+                  className="rounded-2xl border border-white/10 bg-surface-dark text-on-surface-dark p-8 shadow-soft"
                 >
-                  <div className="text-xs font-semibold uppercase tracking-[0.16em] text-primary mb-3">
+                  <div className="text-xs font-semibold uppercase tracking-[0.16em] text-primary-glow mb-3">
                     Case study 0{i + 1}
                   </div>
-                  <h3 className={`${t.cardHeadlineMedium} text-foreground`}>
+                  <h3 className={`${t.cardHeadlineMedium} text-on-surface-dark`}>
                     {uc.title}
                   </h3>
-                  <p className={`mt-3 ${t.body} text-muted-foreground`}>
+                  <p className={`mt-3 ${t.body} text-white/70`}>
                     {uc.description}
                   </p>
                 </div>

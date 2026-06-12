@@ -21,8 +21,8 @@ const ServiceFAQ = ({ faqs }: Props) => {
             key={faq.question}
             className={`group rounded-2xl border transition-all ${
               isOpen
-                ? "border-primary/30 bg-card shadow-glow"
-                : "border-transparent bg-transparent hover:border-primary/30 hover:bg-card hover:shadow-glow"
+                ? "border-white/10 bg-surface-dark text-on-surface-dark shadow-glow"
+                : "border-transparent bg-transparent hover:border-white/10 hover:bg-surface-dark hover:text-on-surface-dark hover:shadow-glow"
             }`}
           >
             <button
@@ -31,15 +31,27 @@ const ServiceFAQ = ({ faqs }: Props) => {
               aria-expanded={isOpen}
               className="flex w-full items-start gap-4 cursor-pointer list-none p-6 text-left"
             >
-              <span className="shrink-0 w-8 h-8 rounded-full bg-surface-soft text-primary font-bold grid place-items-center text-sm">
+              <span
+                className={`shrink-0 w-8 h-8 rounded-full font-bold grid place-items-center text-sm transition-colors ${
+                  isOpen
+                    ? "bg-white/10 text-primary-glow"
+                    : "bg-surface-soft text-primary group-hover:bg-white/10 group-hover:text-primary-glow"
+                }`}
+              >
                 Q
               </span>
-              <h3 className={`${t.cardHeadlineSm} text-foreground flex-1`}>
+              <h3
+                className={`${t.cardHeadlineSm} flex-1 transition-colors ${
+                  isOpen
+                    ? "text-on-surface-dark"
+                    : "text-foreground group-hover:text-on-surface-dark"
+                }`}
+              >
                 {faq.question}
               </h3>
               <span
-                className={`shrink-0 text-primary text-2xl leading-none transition-transform ${
-                  isOpen ? "rotate-45" : ""
+                className={`shrink-0 text-2xl leading-none transition-transform ${
+                  isOpen ? "rotate-45 text-primary-glow" : "text-primary group-hover:text-primary-glow"
                 }`}
               >
                 +
@@ -52,7 +64,7 @@ const ServiceFAQ = ({ faqs }: Props) => {
             >
               <div className="overflow-hidden">
                 <div className="px-6 pb-6 pl-[4.5rem]">
-                  <p className={`${t.body} text-muted-foreground`}>{faq.answer}</p>
+                  <p className={`${t.body} text-white/70`}>{faq.answer}</p>
                 </div>
               </div>
             </div>

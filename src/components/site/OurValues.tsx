@@ -8,8 +8,7 @@ const values = [
     title: "Think Ahead",
     description:
       "We explore emerging technologies and turn ambitious ideas into practical systems that create measurable business value.",
-    image:
-      "/about-us/Gemini_Generated_Image_7f0jcg7f0jcg7f0j.jpg",
+    image: "/about-us/Think ahead.png",
     cardBg: "bg-surface-dark text-on-surface-dark",
     linkText: "text-primary-glow",
   },
@@ -17,8 +16,7 @@ const values = [
     title: "Build With Trust",
     description:
       "Security, transparency and trust guide every engagement and every technical decision.",
-    image:
-      "/about-us/Gemini_Generated_Image_vwxiflvwxiflvwxi.jpg",
+    image: "/about-us/build with trust.png",
     cardBg: "bg-surface-dark text-on-surface-dark",
     linkText: "text-primary-glow",
   },
@@ -26,8 +24,7 @@ const values = [
     title: "Improve Every Cycle",
     description:
       "We deliver reliable engineering, thoughtful execution and high-quality outcomes.",
-    image:
-      "/about-us/Gemini_Generated_Image_1v2fy61v2fy61v2f.jpg",
+    image: "/about-us/Improve every cycle.png",
     cardBg: "bg-surface-dark text-on-surface-dark",
     linkText: "text-primary-glow",
   },

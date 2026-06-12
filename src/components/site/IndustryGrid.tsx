@@ -353,7 +353,15 @@ const IndustryGrid = () => {
         </div>
 
         <div className="flex flex-col gap-8 md:gap-10">
-          {Array.from({ length: rowCount }).map((_, rowIndex) => (
+          {Array.from({ length: rowCount }).map((_, rowIndex) => {
+            const rowCards = visibleIndustries.slice(
+              rowIndex * CARDS_PER_ROW,
+              rowIndex * CARDS_PER_ROW + CARDS_PER_ROW
+            );
+            // A row that isn't full (e.g. the last row with 2 of 4 cards)
+            // gets centered instead of left-aligned.
+            const isPartialRow = rowCards.length < CARDS_PER_ROW;
+            return (
             <div key={rowIndex} className="flex flex-col gap-8 md:gap-10">
               {activeRow === rowIndex && activeIndustry && (
                 <div
@@ -475,21 +483,24 @@ const IndustryGrid = () => {
                 ref={(el) => {
                   rowRefs.current[rowIndex] = el;
                 }}
-                className="grid sm:grid-cols-2 lg:grid-cols-4 gap-6 md:gap-8"
+                className={
+                  isPartialRow
+                    ? "flex flex-col sm:flex-row sm:flex-wrap sm:justify-center gap-6 md:gap-8"
+                    : "grid sm:grid-cols-2 lg:grid-cols-4 gap-6 md:gap-8"
+                }
               >
-                {visibleIndustries
-                  .slice(
-                    rowIndex * CARDS_PER_ROW,
-                    rowIndex * CARDS_PER_ROW + CARDS_PER_ROW
-                  )
-                  .map(({ industry, originalIndex }) => {
+                {rowCards.map(({ industry, originalIndex }) => {
                     const isVisible = visibleCards.includes(originalIndex);
                     return (
                     <button
                       type="button"
                       key={industry.title}
                       onClick={() => handleCardClick(originalIndex)}
-                      className="group flex flex-col text-left rounded-2xl overflow-hidden bg-surface-dark text-on-surface-dark shadow-card hover:shadow-glow transition-shadow duration-300 hover:-translate-y-1 focus:outline-none focus-visible:ring-2 focus-visible:ring-primary-glow"
+                      className={`group flex flex-col text-left rounded-2xl overflow-hidden bg-surface-dark text-on-surface-dark shadow-card hover:shadow-glow transition-shadow duration-300 hover:-translate-y-1 focus:outline-none focus-visible:ring-2 focus-visible:ring-primary-glow${
+                        isPartialRow
+                          ? " sm:w-[calc(50%-1rem)] lg:w-[calc(25%-1.5rem)]"
+                          : ""
+                      }`}
                       style={{
                         opacity: isVisible ? 1 : 0,
                         transform: isVisible
@@ -525,7 +536,8 @@ const IndustryGrid = () => {
                 })}
               </div>
             </div>
-          ))}
+            );
+          })}
         </div>
       </div>
     </section>

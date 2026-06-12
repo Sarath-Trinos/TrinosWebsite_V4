@@ -59,7 +59,7 @@ const WhatWeDeliver = () => (
         {cards.map(({ label, title, body, image, objectPosition }) => (
           <div
             key={label}
-            className="group flex flex-col overflow-hidden rounded-2xl bg-card shadow-soft transition-all duration-300 hover:-translate-y-1 hover:shadow-card"
+            className="group flex flex-col overflow-hidden rounded-2xl bg-surface-dark text-on-surface-dark border border-white/10 shadow-soft transition-all duration-300 hover:-translate-y-1 hover:shadow-glow"
           >
             <div className="relative aspect-[16/10] w-full overflow-hidden">
               <Image
@@ -73,8 +73,8 @@ const WhatWeDeliver = () => (
               />
             </div>
             <div className="flex flex-1 flex-col gap-3 p-6">
-              <h3 className={`${t.cardHeadline} text-foreground`}>{title}</h3>
-              <p className="text-sm leading-relaxed text-muted-foreground text-balance">
+              <h3 className={`${t.cardHeadline} text-on-surface-dark`}>{title}</h3>
+              <p className="text-sm leading-relaxed text-white/70 text-balance">
                 {body}
               </p>
               <span className="sr-only">{label}</span>
