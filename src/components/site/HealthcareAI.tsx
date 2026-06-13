@@ -34,7 +34,7 @@ const HealthcareAI = () => {
           headlineWeight="normal"
           contentClassName="max-w-none"
           titleExtraClassName="font-manrope"
-          descriptionClassName="text-wrap"
+          descriptionClassName="font-inter text-wrap"
           title={
             <>
               Enterprise <span className="text-brand-gradient">Platforms</span>
@@ -49,14 +49,14 @@ const HealthcareAI = () => {
             <a
               key={it.title}
               href={it.href}
-              className="tile bg-card border border-border p-7 lg:p-8 flex flex-col gap-5 text-left h-full transition-[border-color,box-shadow] duration-300 ease-out hover:border-primary/40 hover:shadow-soft"
+              className="tile bg-surface-dark text-on-surface-dark border border-white/10 p-7 lg:p-8 flex flex-col gap-5 text-left h-full transition-[border-color,box-shadow] duration-300 ease-out hover:border-transparent hover:shadow-glow"
             >
-              <div className="w-12 h-12 shrink-0 rounded-2xl grid place-items-center bg-gradient-tile text-primary">
+              <div className="w-12 h-12 shrink-0 rounded-2xl grid place-items-center bg-white/10 text-primary-glow">
                 <it.icon className="w-6 h-6" />
               </div>
               <div className="flex-1">
-                <h3 className={`${t.cardHeadline} font-manrope`}>{it.title}</h3>
-                <p className={`mt-3 ${t.bodySm} text-muted-foreground`}>
+                <h3 className={`${t.cardHeadline} font-manrope text-white`}>{it.title}</h3>
+                <p className={`mt-3 ${t.bodySm} font-inter text-white/85`}>
                   {it.description}
                 </p>
               </div>

@@ -21,13 +21,13 @@ const proofPoints = [
 const ProductsProof = () => (
   <section className="py-10 bg-background">
     <div className="container-px max-w-[1200px] mx-auto">
-      <div className="max-w-3xl mb-12">
+      <div className="max-w-4xl mb-12">
         <span className="chip mb-5">Across all products</span>
         <h2 className={t.sectionHeadlineLg}>
           <span className="text-black">What we've</span>{" "}
           <span className="text-brand-gradient-reverse">proven.</span>
         </h2>
-        <p className={`mt-4 ${t.bodyLg} text-muted-foreground`}>
+        <p className={`mt-4 ${t.bodyLg} text-muted-foreground [text-wrap:initial]`}>
           Every Trinos product demonstrates battle-tested AI capability that transfers to your
           industry, from regulated compliance to large-scale data operations.
         </p>

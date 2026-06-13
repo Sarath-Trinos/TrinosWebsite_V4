@@ -29,7 +29,6 @@ const ProductDetail = ({ product, heroImage }: Props) => {
 
       {/* HERO */}
       <section className="relative overflow-hidden bg-surface-dark text-on-surface-dark">
-        <div className="h-[5rem]" aria-hidden="true" />
         {heroImage && (
           <div
             className="absolute inset-0 bg-cover bg-center bg-fixed"
@@ -39,7 +38,7 @@ const ProductDetail = ({ product, heroImage }: Props) => {
         )}
         <div className="absolute inset-0 bg-[radial-gradient(circle_at_20%_10%,rgba(99,102,241,0.18),transparent_55%),radial-gradient(circle_at_80%_30%,rgba(56,189,248,0.12),transparent_55%)]" />
         <div className={`absolute inset-0 ${heroImage ? "bg-black/60" : "bg-black/30"}`} />
-        <div className="container-px max-w-[1200px] mx-auto relative z-10 pt-12 lg:pt-16 pb-16 lg:pb-20">
+        <div className="container-px max-w-[1200px] mx-auto relative z-10 pt-24 lg:pt-32 pb-16 lg:pb-20">
           <a
             href="/products"
             className="inline-flex items-center gap-1.5 text-sm font-medium text-white/70 hover:text-white transition-colors mb-6"

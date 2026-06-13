@@ -21,7 +21,7 @@ const Logo = ({ className = "", variant = "default" }: LogoProps) => {
         alt=""
         width={455}
         height={549}
-        className={`w-auto object-contain ${isHeader ? "h-9 md:h-10" : "h-8"}`}
+        className={`w-auto object-contain ${isHeader ? "h-9 md:h-10 mt-1 md:mt-1.5" : "h-8 mt-0.5"}`}
         priority={isHeader}
         sizes={isHeader ? "(min-width: 768px) 2.5rem, 2.25rem" : "2rem"}
       />

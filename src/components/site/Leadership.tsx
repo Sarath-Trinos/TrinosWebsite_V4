@@ -10,19 +10,19 @@ const leaders = [
     name: "Rajeshkumar Ganesan",
     role: "Co-Founder & CEO",
     image: "/team/Rajesh.webp",
-    bio: "18+ years across IT, ITES and semiconductor industries. Drives global business development, strategy and partnerships across the USA, Europe, India, the Middle East and Southeast Asia. He turns enterprise relationships into long-term partnerships, aligning what Trinos builds with where the market is heading.",
+    bio: "Rajeshkumar Ganesan is a Goal-Driven, Business Leader with over 18 years of experience driving business growth and operational excellence across the IT, ITES and Semiconductor industries. He provides strategic leadership, guiding the organization's direction to ensure sustainable growth and long-term value in the global AI market.\n\nA Startup & Scale-up Specialist, he has a proven track record of building organizations from the ground up and leading key functions including Sales, Business Development, and Strategic Partnerships across the USA, Europe, India, the Middle East and Southeast Asia. He focuses on client success, with strengths in market analysis, account planning and relationship building.\n\nWith a strong people management foundation, he fosters people-centric cultures, strengthens leadership pipelines and enhances workforce productivity.",
   },
   {
     name: "Mukesh Vaidyanathan",
     role: "Co-Founder & Chief Strategy Officer",
     image: "/team/Mukesh.webp",
-    bio: "25+ years in enterprise systems and ERP. Brings cross-industry implementation experience that helps AI systems connect with the legacy enterprise tools organizations already depend on. He bridges the gap between ambitious AI and the operational reality of the businesses that adopt it.",
+    bio: "Mukesh Vaidyanathan is the Co-Founder and Chief Strategy Officer at Trinos, bringing over 25 years of hands-on experience in enterprise systems, ERP and IT Services. He is the strategic force behind Trinos's vision - connecting business goals with technology execution to drive growth and ensure the company delivers on its promises.\n\nHaving spent his entire career at the intersection of ERP and enterprise IT, Mukesh has delivered transformative solutions for clients across Manufacturing, Healthcare, Automobile and Engineering industries in India, the USA, Europe, the Middle East and APAC. He leads strategic partnerships and alliances, building the relationships that open new markets and deepen client trust.\n\nMukesh brings a rare combination of deep domain knowledge and commercial acumen - making him the bridge between what technology can do and what businesses actually need.",
   },
   {
     name: "Rajkumar Gangadharan",
     role: "Co-Founder & CTO",
     image: "/team/Raj.webp",
-    bio: "17+ years in software development, system architecture and AI. Chief architect behind multi-agent orchestration, workflow automation and the AI infrastructure that supports Trinos platforms. He sets the technical direction and is hands-on in the work, designing the systems the rest of the team builds on.",
+    bio: "Rajkumar Gangadharan is the Co-Founder and Chief Technology Officer at Trinos, with over 17 years of experience in software development, system architecture and technology leadership. He is the technical mind behind Trinos - architecting the AI-powered platforms that define what the company builds and how it delivers.\n\nAn Expert Architect in the AI space, he designs and delivers intelligent, scalable systems across artificial intelligence, multi-agent orchestration and workflow automation. He is known for setting high engineering standards, building resilient platforms and leading teams that consistently deliver under complexity.\n\nWith cross-sector experience serving Healthcare, Finance, Legal and Manufacturing clients across the USA and Canada, Rajkumar brings both the technical depth and the practical mindset to turn ambitious ideas into production-ready, future-proof solutions.",
   },
 ];
 
@@ -135,7 +135,7 @@ const Leadership = () => {
                 <div>
                   <h3 className={`${t.sectionHeadlineMd} text-foreground`}>{selected.name}</h3>
                   <p className={`mt-2 ${t.role} text-brand-gradient-reverse`}>{selected.role}</p>
-                  <p className={`mt-6 ${t.bodyLg} text-muted-foreground`}>{selected.bio}</p>
+                  <p className={`mt-6 whitespace-pre-line ${t.bodyLg} text-muted-foreground`}>{selected.bio}</p>
                 </div>
               </div>
             </div>

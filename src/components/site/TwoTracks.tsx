@@ -59,7 +59,7 @@ const TwoTracks = () => (
             >
               {track.title}
             </h3>
-            <p className={`${t.bodyLg} text-white/85 flex-1`}>
+            <p className={`${t.bodyLg} font-inter text-white/85 flex-1`}>
               {track.body}
             </p>
             <a

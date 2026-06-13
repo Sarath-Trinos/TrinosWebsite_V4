@@ -178,17 +178,19 @@
     @apply font-display font-bold text-5xl;
   }
 
-  /* Hero & section subheadline — 18 → 20px */
+  /* Hero & section subheadline — 18 → 20px.
+     Subtitles/supporting text use Inter (font-sans) to match the landing-page
+     convention; headings get Manrope via font-display/font-manrope explicitly. */
   .type-subheadline {
-    @apply font-display text-lg md:text-xl leading-snug text-balance;
+    @apply font-sans text-lg md:text-xl leading-snug text-balance;
   }
 
   .type-subheadline-semibold {
-    @apply font-display text-lg md:text-xl leading-snug text-balance font-semibold;
+    @apply font-sans text-lg md:text-xl leading-snug text-balance font-semibold;
   }
 
   .type-subheadline-normal {
-    @apply font-display text-lg md:text-xl leading-snug text-balance font-normal;
+    @apply font-sans text-lg md:text-xl leading-snug text-balance font-normal;
   }
 
   /* Emphasized subheadline — 20 → 24px */

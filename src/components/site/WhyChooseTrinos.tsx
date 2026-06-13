@@ -11,7 +11,7 @@ const cards = [
   {
     icon: Cpu,
     title: "AI-First Engineering",
-    image: "/home/AI-First Engineering.png",
+    image: "/home/AI-First_Engineering.png",
     description:
       "Built from the ground up utilizing advanced neural architectures to automate workflows and optimize enterprise data pipelines seamlessly.",
     href: "/trinos-edge",
@@ -36,6 +36,9 @@ const cards = [
 
 const WhyChooseTrinos = () => {
   const [activeIndex, setActiveIndex] = useState<number | null>(null);
+  // The image stays on the last-clicked card even after its description is
+  // collapsed, so it never reverts to the first image.
+  const [imageIndex, setImageIndex] = useState(0);
 
   return (
     <section id="why-choose-trinos" className="py-10 bg-surface-tint">
@@ -65,7 +68,7 @@ const WhyChooseTrinos = () => {
                 sizes="(min-width: 1024px) 60vw, 100vw"
                 className={cn(
                   "object-cover transition-opacity duration-500 ease-out",
-                  i === (activeIndex ?? 0) ? "opacity-100" : "opacity-0"
+                  i === imageIndex ? "opacity-100" : "opacity-0"
                 )}
                 priority={i === 0}
                 fetchPriority={i === 0 ? "high" : "auto"}
@@ -83,9 +86,11 @@ const WhyChooseTrinos = () => {
                   key={it.title}
                   href={it.href}
                   onClick={(e) => {
-                    // Toggle: first click opens the card, clicking it again closes it.
+                    // Toggle: first click opens the card, clicking it again closes
+                    // the description. The image stays on this card either way.
                     e.preventDefault();
                     setActiveIndex(isActive ? null : i);
+                    setImageIndex(i);
                   }}
                   aria-expanded={isActive}
                   aria-current={isActive ? "true" : undefined}
@@ -144,7 +149,7 @@ const WhyChooseTrinos = () => {
                     <p
                       className={cn(
                         t.bodySm,
-                        "overflow-hidden",
+                        "font-inter overflow-hidden",
                         isDark ? "text-white/85" : "text-muted-foreground"
                       )}
                     >

@@ -181,7 +181,7 @@ const OurServices = () => {
                   aria-hidden="true"
                 />
                 <div>
-                  <h3 className={`${t.subheadlineSemibold} text-foreground`}>
+                  <h3 className={`${t.subheadlineSemibold} font-manrope text-foreground`}>
                     {category}
                   </h3>
                   <p className={`mt-1 ${t.body} text-muted-foreground max-w-2xl`}>

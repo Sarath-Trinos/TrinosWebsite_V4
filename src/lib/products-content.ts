@@ -305,9 +305,10 @@ export const productsContent: Record<string, ProductContent> = {
       "Analytics",
     ],
     images: [
-      "/products/traceflow-6.jpg",
-      "/products/traceflow-7.jpg",
-      "/products/traceflow-8.jpg",
+      "/products/Traceflo.png",
+      "/products/Tracflo2.png",
+      "/products/Tracflo3.png",
+      "/products/Tracflo4.png",
     ],
     imageAlt: "TraceFlow material tracking and inventory management screenshot",
     related: [

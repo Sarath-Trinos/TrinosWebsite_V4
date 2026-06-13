@@ -85,7 +85,7 @@ const Footer = () => (
       <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-8 md:gap-10 pb-14 border-b border-white/10">
         <div className="sm:col-span-2 md:col-span-3 lg:col-span-2">
           <Logo />
-          <p className="mt-5 text-white/70 max-w-sm">
+          <p className="mt-5 font-inter text-white/70 max-w-sm">
             Trinos engineers AI-first platforms and enterprise systems including agentic AI, workflow automation, analytics, computer vision, ERP, web and mobile, built to be secure, integrated and production-ready.
           </p>
           <div className="mt-6 flex items-center gap-3">
@@ -125,13 +125,13 @@ const Footer = () => (
             <h4 className="font-display font-bold text-sm uppercase tracking-wider text-white/90 mb-4">{c.title}</h4>
             <ul className="space-y-3">
               {c.links.map((l) => (
-                <li key={l.label}><a href={l.href} className="footer-link text-sm">{l.label}</a></li>
+                <li key={l.label}><a href={l.href} className="footer-link font-inter text-sm">{l.label}</a></li>
               ))}
             </ul>
           </div>
         ))}
       </div>
-      <div className="pt-8 flex flex-col md:flex-row items-center justify-between gap-4 text-sm text-white/50">
+      <div className="pt-8 flex flex-col md:flex-row items-center justify-between gap-4 font-inter text-sm text-white/50">
         <p>© {new Date().getFullYear()} Trinos Technologies. All rights reserved.</p>
         <div className="flex gap-6">
           <a href="#" className="hover:text-white">Privacy</a>

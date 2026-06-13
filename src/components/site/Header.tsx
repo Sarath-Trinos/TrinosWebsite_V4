@@ -134,7 +134,7 @@ const Header = () => {
                     </button>
                   )}
                   <div className="absolute top-full left-1/2 -translate-x-1/2 pt-2 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200">
-                    <div className="bg-card rounded-2xl shadow-card border border-border p-6 grid grid-cols-3 gap-8 w-[min(780px,calc(100vw-2rem))]">
+                    <div className="bg-surface-dark text-on-surface-dark rounded-2xl shadow-card border border-white/10 p-6 grid grid-cols-3 gap-8 w-[min(780px,calc(100vw-2rem))]">
                       {item.pillars.map((pillar) => (
                         <div key={pillar.label}>
                           <div className="text-xs font-semibold uppercase tracking-wider text-primary mb-3">
@@ -145,10 +145,10 @@ const Header = () => {
                               <a
                                 key={c.label}
                                 href={c.href}
-                                className={`block px-3 py-2 text-sm rounded-lg hover:bg-surface-soft transition-colors ${
+                                className={`block px-3 py-2 text-sm rounded-lg hover:bg-white/10 transition-colors ${
                                   isActive(c.href)
-                                    ? "text-primary bg-surface-soft"
-                                    : "text-foreground/80 hover:text-primary"
+                                    ? "text-white bg-white/10"
+                                    : "text-on-surface-dark/80 hover:text-white"
                                 }`}
                               >
                                 {c.label}
@@ -189,15 +189,15 @@ const Header = () => {
                     </button>
                   )}
                   <div className="absolute top-full left-0 pt-2 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200">
-                    <div className="bg-card rounded-2xl shadow-card border border-border p-2 min-w-[200px]">
+                    <div className="bg-surface-dark text-on-surface-dark rounded-2xl shadow-card border border-white/10 p-2 min-w-[200px]">
                       {item.children.map((c) => (
                         <a
                           key={c.label}
                           href={c.href}
-                          className={`block px-4 py-2.5 text-sm rounded-xl hover:bg-surface-soft transition-colors ${
+                          className={`block px-4 py-2.5 text-sm rounded-xl hover:bg-white/10 transition-colors ${
                             isActive(c.href)
-                              ? "text-primary bg-surface-soft"
-                              : "text-foreground/80 hover:text-primary"
+                              ? "text-white bg-white/10"
+                              : "text-on-surface-dark/80 hover:text-white"
                           }`}
                         >
                           {c.label}
@@ -227,7 +227,7 @@ const Header = () => {
         <div className="hidden lg:flex items-center gap-3">
           <a
             href="/contact"
-            className="text-base font-semibold bg-gradient-cta text-primary-foreground px-4 py-2 rounded-full shadow-soft hover:shadow-glow transition-all"
+            className="text-base font-semibold bg-surface-dark text-on-surface-dark px-4 py-2 rounded-full shadow-soft hover:shadow-glow transition-all"
           >
             Contact Us
           </a>
@@ -357,7 +357,7 @@ const Header = () => {
             })}
             <a
               href="/contact"
-              className="block mt-4 text-center bg-gradient-cta text-primary-foreground py-3 rounded-full font-semibold"
+              className="block mt-4 text-center bg-surface-dark text-on-surface-dark py-3 rounded-full font-semibold"
             >
               Contact Us
             </a>

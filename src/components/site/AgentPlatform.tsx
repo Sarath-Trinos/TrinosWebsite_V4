@@ -151,7 +151,7 @@ const AgentPlatform = () => {
             </>
           }
           description="Production-ready AI agents and workflow systems designed to operate inside real enterprise environments beyond chatbots, pilots and disconnected automation tools."
-          descriptionClassName="text-wrap"
+          descriptionClassName="font-inter text-wrap"
         />
         <div className="flex flex-col gap-6 md:grid md:grid-cols-12 md:gap-4 xl:gap-5">
           {/* Left: media + overlay - slow horizontal slide into view */}
@@ -203,7 +203,7 @@ const AgentPlatform = () => {
                         <h3 className={`${t.cardHeadline} font-manrope text-white`}>
                           {tile.headline}
                         </h3>
-                        <p className={`mt-2 ${t.bodyCaption} text-white/85`}>
+                        <p className={`mt-2 ${t.bodyCaption} font-inter text-white/85`}>
                           {tile.description}
                         </p>
                       </div>
@@ -230,10 +230,10 @@ const AgentPlatform = () => {
                       isActive ? "ring-2 ring-primary/40" : ""
                     }`}
                   >
-                    <div className="w-8 h-8 shrink-0 rounded-full bg-gradient-primary grid place-items-center">
+                    <div className="w-8 h-8 shrink-0 rounded-full bg-primary-glow grid place-items-center">
                       <Icon className="w-3.5 h-3.5 text-white" />
                     </div>
-                    <div className="flex-1 min-w-0 font-semibold text-[13px] md:text-sm text-white/95 leading-snug group-hover:text-foreground group-focus-visible:text-foreground">
+                    <div className="flex-1 min-w-0 font-manrope font-semibold text-[13px] md:text-sm text-white/95 leading-snug group-hover:text-foreground group-focus-visible:text-foreground">
                       {title}
                     </div>
                   </a>

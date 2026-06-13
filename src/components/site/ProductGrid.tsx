@@ -5,13 +5,13 @@ import { productsContent, productOrder } from "@/lib/products-content";
 const ProductGrid = () => (
   <section id="products" className="scroll-mt-24 py-10 bg-surface-soft">
     <div className="container-px max-w-[1200px] mx-auto">
-      <div className="max-w-3xl mb-12">
+      <div className="max-w-4xl mb-12">
         <span className="chip mb-5">Why we build our own products</span>
         <h2 className={t.sectionHeadlineLg}>
           <span className="text-black">Proof, not</span>{" "}
           <span className="text-brand-gradient-reverse">promises.</span>
         </h2>
-        <p className={`mt-4 ${t.bodyLg} text-muted-foreground`}>
+        <p className={`mt-4 ${t.bodyLg} text-muted-foreground [text-wrap:initial]`}>
           We don't only build for clients; we build, launch and scale our own AI platforms.
           Each solves a hard problem under production conditions: regulated compliance, large-scale
           data, multi-tenant isolation and high-stakes decisions. The result is battle-tested AI

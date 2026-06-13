@@ -12,7 +12,6 @@ const ServiceDetail = ({ service, heroImage }: Props) => {
     <>
       {/* HERO */}
       <section className="relative overflow-hidden bg-surface-dark text-on-surface-dark">
-        <div className="h-[5rem]" aria-hidden="true" />
         {heroImage && (
           <div
             className="absolute inset-0 bg-cover bg-center bg-fixed"
@@ -22,7 +21,7 @@ const ServiceDetail = ({ service, heroImage }: Props) => {
         )}
         <div className="absolute inset-0 bg-[radial-gradient(circle_at_20%_10%,rgba(99,102,241,0.18),transparent_55%),radial-gradient(circle_at_80%_30%,rgba(56,189,248,0.12),transparent_55%)]" />
         <div className={`absolute inset-0 ${heroImage ? "bg-black/60" : "bg-black/30"}`} />
-        <div className="container-px max-w-[1200px] mx-auto relative z-10 pt-16 lg:pt-24 pb-20 lg:pb-28">
+        <div className="container-px max-w-[1200px] mx-auto relative z-10 pt-28 lg:pt-40 pb-20 lg:pb-28">
           <div className="items-center">
             <div className="max-w-3xl animate-fade-up">
               <span className="chip mb-5 bg-white/10 text-white border-white/20">

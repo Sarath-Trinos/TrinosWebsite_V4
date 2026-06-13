@@ -129,7 +129,7 @@ const OurCulture = () => (
               alt="Trinos team culture"
               fill
               sizes="(min-width: 1024px) 50vw, 100vw"
-              className="object-cover"
+              className="object-cover [object-position:50%_20%]"
               priority={false}
             />
           </div>
@@ -140,7 +140,7 @@ const OurCulture = () => (
           {pillars.map(({ Icon, title, description }, i) => (
             <div
               key={title}
-              className="group relative overflow-hidden rounded-3xl border border-sky-200 bg-white p-6 shadow-[0_10px_40px_-18px_hsl(210_60%_25%/0.22)] transition-all duration-500 hover:-translate-y-1 hover:border-sky-300 hover:shadow-[0_20px_60px_-20px_hsl(var(--primary)/0.35)] sm:p-7"
+              className="group relative overflow-hidden rounded-3xl border border-white/10 bg-surface-dark p-6 shadow-[0_10px_40px_-18px_hsl(210_60%_25%/0.22)] transition-all duration-500 hover:-translate-y-1 hover:border-white/20 hover:shadow-[0_20px_60px_-20px_hsl(var(--primary)/0.35)] sm:p-7"
               style={{ animation: `fade-up 0.7s var(--ease-out) ${i * 120}ms both` }}
             >
               {/* Glow border on hover */}
@@ -158,8 +158,8 @@ const OurCulture = () => (
                   {/* Icon tile */}
                   <div className="relative h-16 w-16 sm:h-[72px] sm:w-[72px]">
                     {/* Outer glow ring */}
-                    <div className="absolute -inset-1 rounded-full bg-primary/15 blur-md transition-opacity duration-500 group-hover:opacity-100" />
-                    <div className="relative flex h-full w-full items-center justify-center rounded-full bg-gradient-to-br from-primary-glow via-primary to-primary-deep shadow-[0_10px_28px_-8px_hsl(var(--primary)/0.55),inset_0_1px_0_0_rgba(255,255,255,0.35)] ring-1 ring-white/40">
+                    <div className="absolute -inset-1 rounded-full bg-white/10 blur-md transition-opacity duration-500 group-hover:opacity-100" />
+                    <div className="relative flex h-full w-full items-center justify-center rounded-full bg-white/5 shadow-[inset_0_1px_0_0_rgba(255,255,255,0.15)] ring-1 ring-white/15">
                       <Icon
                         className="h-7 w-7 text-white sm:h-8 sm:w-8"
                         strokeWidth={1.7}
@@ -173,10 +173,10 @@ const OurCulture = () => (
 
                 {/* Text */}
                 <div className="min-w-0 flex-1 pt-1">
-                  <h3 className={`${t.cardHeadline} text-foreground`}>
+                  <h3 className={`${t.cardHeadline} text-white`}>
                     {title}
                   </h3>
-                  <p className={`mt-3 ${t.bodyCaption} text-muted-foreground`}>
+                  <p className={`mt-3 ${t.bodyCaption} text-white/70`}>
                     {description}
                   </p>
                 </div>
