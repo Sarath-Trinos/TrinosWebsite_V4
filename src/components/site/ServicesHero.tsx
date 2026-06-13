@@ -31,9 +31,9 @@ const ServicesHero = () => {
       <div className="relative pt-28 lg:pt-40 pb-24">
         <video
           ref={videoRef}
-          className="absolute inset-0 w-full h-full object-cover"
-          src={encodeURI("/videos/services-hero.mp4")}
-          poster="/videos/services-hero-poster.jpg"
+          className="absolute inset-0 w-full h-full object-cover object-bottom"
+          src={encodeURI("/service/Service-Hub-hero.mp4")}
+          poster={encodeURI("/service/Service-hub-hero.jpg")}
           autoPlay
           muted
           loop

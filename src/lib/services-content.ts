@@ -110,12 +110,14 @@ export const servicesContent: Record<string, ServiceContent> = {
         description:
           "Agents monitor incoming tasks, gather data, prepare recommendations and route decisions to the right team, cutting coordination effort on repeatable but context-heavy work.",
         badge: "Operations",
+        image: "/service/each%20service%20page/Enterprise%20Operations.png",
       },
       {
         title: "Decision Intelligence",
         description:
           "Multiple agents analyze a problem from different angles and return a structured brief with risks, assumptions and confidence levels, instead of scattered inputs.",
         badge: "Strategy",
+        image: "/service/each%20service%20page/DecisionIntelligence.png",
       },
     ],
     result:

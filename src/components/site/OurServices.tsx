@@ -52,7 +52,7 @@ const serviceGroups: ServiceGroup[] = [
         description:
           "AI agents that plan tasks, connect to approved systems and coordinate work across enterprise workflows, with human oversight, scoped permissions and audit controls.",
         href: "/services/agentic-ai",
-        image: "/service/business-people-stacking-their-hands.jpg",
+        image: "/service/agentic-ai.png",
       },
       {
         icon: Workflow,
@@ -131,7 +131,8 @@ const serviceGroups: ServiceGroup[] = [
         description:
           "ERP architecture, implementation and integration across leading platforms, with clean data and an AI-ready operating foundation.",
         href: "/services/enterprise-resource-planning",
-        image: "/service/ERP.png",
+        image: "/service/ERPP.png",
+        imagePosition: "object-center",
       },
       {
         icon: Globe,
@@ -139,7 +140,8 @@ const serviceGroups: ServiceGroup[] = [
         description:
           "Enterprise websites, portals and web applications with secure architecture, strong UX, system integration and AI-ready features.",
         href: "/services/web-development",
-        image: "/service/Web.png",
+        image: "/service/Web app.png",
+        imagePosition: "object-center",
       },
       {
         icon: Smartphone,
@@ -147,7 +149,8 @@ const serviceGroups: ServiceGroup[] = [
         description:
           "Cross-platform mobile apps with secure data connections, workflow access and embedded AI for field teams, customers and employees.",
         href: "/services/mobile-app-development",
-        image: "/service/Mobile.png",
+        image: "/service/Mobile app.png",
+        imagePosition: "object-center",
       },
     ],
   },
@@ -204,7 +207,7 @@ const OurServices = () => {
                     className="group rounded-2xl overflow-hidden bg-surface-dark text-on-surface-dark shadow-card hover:shadow-glow transition-shadow duration-300 hover:-translate-y-1 animate-zoom-in-br origin-bottom-right block focus:outline-none focus-visible:ring-2 focus-visible:ring-primary-glow"
                     style={{ animationDelay: `${idx * 80}ms` }}
                   >
-                    <div className="relative h-44 overflow-hidden bg-surface-dark">
+                    <div className="relative h-52 overflow-hidden bg-surface-dark">
                       {image ? (
                         <>
                           <img

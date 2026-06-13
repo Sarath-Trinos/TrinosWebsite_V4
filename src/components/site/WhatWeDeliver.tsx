@@ -14,13 +14,13 @@ const cards: DeliverCard[] = [
     label: "AGENTIC REASONING",
     title: "Agentic Reasoning Models",
     body: "Purpose-built small and mid-scale models that plan, decide and act across multi-step enterprise workflows, so high accuracy at a fraction of frontier-model cost.",
-    image: "/trinos/high-accurancy.jpg",
+    image: "/trinos/Agentic Reasoning.png",
   },
   {
     label: "MEMORY-DRIVEN",
     title: "Memory-Driven Agents with MCP",
     body: "Agents equipped with enterprise tools, long-term memory and contextual recall, turning one-shot AI into compounding intelligence.",
-    image: "/trinos/performance-optimization-with-data-analytics.jpg",
+    image: "/trinos/MCP.png",
   },
   {
     label: "HUMAN-IN-THE-LOOP",
@@ -33,7 +33,7 @@ const cards: DeliverCard[] = [
     label: "RAPID APP DEV",
     title: "Rapid application dev",
     body: "Production-grade AI systems designed, built and deployed in weeks not months.",
-    image: "/home/Gemini_Generated_Image_6q24666q24666q24.jpg",
+    image: "/trinos/Rapid application.png",
   },
 ];
 

@@ -7,29 +7,33 @@ type UseCase = {
   title: string;
   description: string;
   href: string;
+  /** Optional CSS object-position for the cover image crop. Defaults to centered. */
+  objectPosition?: string;
 };
 
 const useCases: UseCase[] = [
   {
-    image: "/trinos/high-accurancy.jpg",
+    image: "/trinos/High Accuracy.png",
     title: "High Accuracy Operations",
     description:
       "Targeted models can improve accuracy on complex domain language and repeatable workflows. This is valuable when teams need consistent outputs across documents, reports or operational decisions.",
     href: "/contact",
   },
   {
-    image: "/trinos/performance-optimization-with-data-analytics.jpg",
+    image: "/trinos/Continuous.png",
     title: "Continuous Optimization",
     description:
       "Approved corrections and production signals can reduce repeated errors and improve system behavior over time. The improvement comes from structured feedback and controlled updates, not from unmanaged model changes.",
     href: "/contact",
+    objectPosition: "center 25%",
   },
   {
-    image: "/trinos/results.jpg",
+    image: "/trinos/results.png",
     title: "The Result",
     description:
       "Your AI investment can become more valuable as it captures proprietary workflows, business logic and operational patterns. Over time, this creates a stronger foundation for automation, analytics and AI enabled decision support.",
     href: "/contact",
+    objectPosition: "center 25%",
   },
 ];
 
@@ -49,7 +53,7 @@ const UseCasesResults = () => (
       />
 
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 lg:gap-8">
-        {useCases.map(({ image, title, description, href }) => (
+        {useCases.map(({ image, title, description, href, objectPosition }) => (
           <a
             key={title}
             href={href}
@@ -62,6 +66,7 @@ const UseCasesResults = () => (
                 fill
                 sizes="(max-width: 768px) 100vw, (max-width: 1024px) 50vw, 33vw"
                 quality={80}
+                style={objectPosition ? { objectPosition } : undefined}
                 className="object-cover transition-transform duration-500 ease-out group-hover:scale-105"
               />
             </div>
