@@ -28,7 +28,7 @@ const ContactHero = () => {
 
   return (
     <section className="relative overflow-hidden">
-      <div className="h-[5rem]" aria-hidden="true" />
+      <div className="h-[3.5rem]" aria-hidden="true" />
       <div className="relative pt-16 lg:pt-24 pb-24">
         <video
           ref={videoRef}

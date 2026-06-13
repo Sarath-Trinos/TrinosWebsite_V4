@@ -11,7 +11,7 @@ const cards = [
   {
     icon: Cpu,
     title: "AI-First Engineering",
-    image: "/home/magnific__talk__91259.jpeg",
+    image: "/home/AI-First Engineering.png",
     description:
       "Built from the ground up utilizing advanced neural architectures to automate workflows and optimize enterprise data pipelines seamlessly.",
     href: "/trinos-edge",
@@ -19,7 +19,7 @@ const cards = [
   {
     icon: Repeat,
     title: "Self Improving Systems",
-    image: "/home/magnific__talk__31260.jpeg",
+    image: "/home/Sefl improving.png",
     description:
       "Continuous learning feedback loops ensure that the system adapts to your enterprise data patterns and grows smarter with every interaction.",
     href: "/trinos-edge",
@@ -27,7 +27,7 @@ const cards = [
   {
     icon: Package,
     title: "Proven Through Products",
-    image: "/home/magnific_3007480450.jpeg",
+    image: "/home/Proven through.png",
     description:
       "Battle-tested across production environments, delivering measurable efficiency gains and robust security standards for scaling enterprises.",
     href: "/trinos-edge",

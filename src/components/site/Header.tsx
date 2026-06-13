@@ -100,7 +100,7 @@ const Header = () => {
         scrolled ? "bg-white shadow-soft" : "bg-white/95"
       }`}
     >
-      <div className="container-px max-w-[1200px] mx-auto flex items-center justify-between min-h-[3.5rem] py-1.5 md:min-h-[4rem] md:py-2">
+      <div className="container-px max-w-[1200px] mx-auto flex items-center justify-between min-h-[3rem] py-1.5 md:min-h-[3.5rem] md:py-1.5">
         <div className="[&_.logo-wordmark]:text-[#0c3470] [&_.logo-wordmark]:font-normal">
           <Logo variant="header" />
         </div>

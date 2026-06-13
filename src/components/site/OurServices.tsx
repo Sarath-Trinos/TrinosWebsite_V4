@@ -131,7 +131,7 @@ const serviceGroups: ServiceGroup[] = [
         description:
           "ERP architecture, implementation and integration across leading platforms, with clean data and an AI-ready operating foundation.",
         href: "/services/enterprise-resource-planning",
-        image: "/service/enterprise-resource-planning.png",
+        image: "/service/ERP.png",
       },
       {
         icon: Globe,
@@ -139,7 +139,7 @@ const serviceGroups: ServiceGroup[] = [
         description:
           "Enterprise websites, portals and web applications with secure architecture, strong UX, system integration and AI-ready features.",
         href: "/services/web-development",
-        image: "/service/web-development.png",
+        image: "/service/Web.png",
       },
       {
         icon: Smartphone,
@@ -147,7 +147,7 @@ const serviceGroups: ServiceGroup[] = [
         description:
           "Cross-platform mobile apps with secure data connections, workflow access and embedded AI for field teams, customers and employees.",
         href: "/services/mobile-app-development",
-        image: "/service/mobile-app-development.png",
+        image: "/service/Mobile.png",
       },
     ],
   },
