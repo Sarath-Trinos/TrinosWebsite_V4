@@ -1,17 +1,12 @@
 "use client";
 
-import Image from "next/image";
 import { useEffect, useRef } from "react";
 import { ChevronRight } from "lucide-react";
 import { type as t } from "@/lib/typography";
 import { cn } from "@/lib/utils";
-import erpAnalytics from "@/assets/erp-analytics.jpg";
-import erpUx from "@/assets/erp-ux.jpg";
-import erpWorkflow from "@/assets/erp-workflow.jpg";
 
 const items = [
   {
-    image: erpAnalytics,
     video: "/videos/LLM fine tuning.mp4",
     title: "LLM Fine-Tuning",
     desc: "Enterprise language models tailored to your documents, policies, terminology and workflows-delivering more accurate responses, stronger governance and higher user trust.",
@@ -19,7 +14,6 @@ const items = [
     href: "/services/llm-fine-tuning",
   },
   {
-    image: erpUx,
     video: "/videos/Generative AI.mp4",
     title: "Generative AI and Analytics",
     desc: "Conversational dashboards, intelligent reports and executive briefings generated from your enterprise data and grounded in approved sources reducing hallucination risk and improving decision confidence.",
@@ -27,7 +21,6 @@ const items = [
     href: "/services/generative-ai-analytics",
   },
   {
-    image: erpWorkflow,
     video: "/videos/Computer Vision.mp4",
     title: "Computer Vision",
     desc: "Defect detection on the line. OCR on the floor. Object tracking at the edge. Vision systems for the places where a missed call costs real money.",
@@ -98,17 +91,7 @@ const ErpCrmModernization = () => (
         {items.map((it) => (
           <article key={it.title} className="flex flex-col">
             <div className="relative aspect-[5/4] rounded-3xl overflow-hidden bg-surface-soft mb-6">
-              {it.video ? (
-                <CardVideo src={it.video} />
-              ) : (
-                <Image
-                  src={it.image}
-                  alt={it.title}
-                  fill
-                  className="object-cover"
-                  sizes="(max-width: 768px) 100vw, (max-width: 1024px) 50vw, 33vw"
-                />
-              )}
+              <CardVideo src={it.video} />
             </div>
             <h3 className={`${t.cardHeadlineMd} font-manrope mb-3`}>
               {it.title}

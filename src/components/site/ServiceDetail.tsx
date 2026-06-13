@@ -14,7 +14,7 @@ const ServiceDetail = ({ service, heroImage }: Props) => {
       <section className="relative overflow-hidden bg-surface-dark text-on-surface-dark">
         {heroImage && (
           <div
-            className="absolute inset-0 bg-cover bg-center bg-fixed"
+            className="absolute inset-0 bg-cover bg-bottom bg-fixed"
             style={{ backgroundImage: `url(${heroImage})` }}
             aria-hidden="true"
           />
@@ -118,7 +118,7 @@ const ServiceDetail = ({ service, heroImage }: Props) => {
                   key={uc.title}
                   className="group flex flex-col rounded-2xl border border-white/10 bg-surface-dark text-on-surface-dark overflow-hidden shadow-soft hover:shadow-glow transition-all duration-300 hover:-translate-y-1"
                 >
-                  <div className="relative w-full aspect-[16/9] overflow-hidden">
+                  <div className="relative w-full aspect-[5/2] overflow-hidden">
                     <Image
                       src={uc.image}
                       alt={uc.title}
@@ -127,11 +127,6 @@ const ServiceDetail = ({ service, heroImage }: Props) => {
                       quality={85}
                       className="object-cover transition-transform duration-500 ease-out group-hover:scale-105"
                     />
-                    {uc.badge && (
-                      <span className="absolute top-4 right-4 inline-flex items-center px-3.5 py-1.5 rounded-full text-xs font-semibold bg-gradient-cta text-primary-foreground shadow-soft">
-                        {uc.badge}
-                      </span>
-                    )}
                   </div>
                   <div className="p-8 flex flex-col flex-1">
                     <h3 className={`${t.cardHeadlineMedium} text-on-surface-dark`}>

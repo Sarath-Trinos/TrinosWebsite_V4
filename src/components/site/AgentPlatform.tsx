@@ -2,21 +2,14 @@
 
 import { useCallback, useEffect, useRef, useState } from "react";
 import { Bot, Workflow, Mic, Share2 } from "lucide-react";
-import Image from "next/image";
 import { type as t } from "@/lib/typography";
-import type { StaticImageData } from "next/image";
 import SectionHeader from "./SectionHeader";
-import grace from "@/assets/agent-grace.jpg";
-import daphne from "@/assets/agent-daphne.jpg";
-import johnny from "@/assets/agent-johnny.jpg";
-import manish from "@/assets/agent-manish.jpg";
 
 type Tile = {
   icon: typeof Bot;
   title: string;
   headline: string;
   description: string;
-  image: StaticImageData;
   video?: string;
   href: string;
 };
@@ -28,7 +21,6 @@ const tiles: Tile[] = [
     headline: "Agentic AI",
     description:
       "Agents that reason, call tools and execute multi-step work. Bounded by your permissions, your approvals, your audit trail. The autonomy is real. The guardrails are too.",
-    image: grace,
     video: "/videos/Agentic AI.mp4",
     href: "/services/agentic-ai",
   },
@@ -38,8 +30,7 @@ const tiles: Tile[] = [
     headline: "AI Workflow Automation",
     description:
       "Intelligent automation that streamlines business processes end to end removing manual handoffs, eliminating bottlenecks and keeping humans in control where it matters.",
-    image: daphne,
-    video: "/home/AI_Voice_Assistants_Real_time_.mp4",
+    video: "/home/ai_workflow_automation.mp4",
     href: "/services/ai-workflow-automation",
   },
   {
@@ -48,7 +39,6 @@ const tiles: Tile[] = [
     headline: "AI Voice Assistants",
     description:
       "Real-time, domain-aware voice agents for support, sales and internal operations natural conversations with speech-to-text, TTS and grounded responses.",
-    image: johnny,
     video: "/home/AI_Voice_Assistants_Real_time_.mp4",
     href: "/services/ai-voice-assistants",
   },
@@ -58,7 +48,6 @@ const tiles: Tile[] = [
     headline: "Social Media Automation",
     description:
       "AI-driven content, scheduling and engagement workflows that keep your brand active across channels with editorial guardrails and approval flows built in.",
-    image: manish,
     video: "/videos/mp_ (1).mp4",
     href: "/services/social-media-automation",
   },
@@ -177,7 +166,7 @@ const AgentPlatform = () => {
                         imageVisible ? "translate-x-0" : "translate-x-full"
                       }`}
                     >
-                      {isActive && tile.video ? (
+                      {isActive && tile.video && (
                         <video
                           src={tile.video}
                           autoPlay
@@ -186,17 +175,6 @@ const AgentPlatform = () => {
                           playsInline
                           preload="auto"
                           className="absolute inset-0 w-full h-full object-cover object-center"
-                        />
-                      ) : (
-                        <Image
-                          src={tile.image}
-                          alt={tile.headline}
-                          fill
-                          placeholder="blur"
-                          sizes="(min-width: 1024px) 26vw, 90vw"
-                          className="object-cover"
-                          priority={i === 0}
-                          fetchPriority={i === 0 ? "high" : "auto"}
                         />
                       )}
                       <div className="absolute inset-x-0 bottom-0 z-10 bg-gradient-to-t from-black/85 via-black/55 to-transparent p-5 md:p-6">

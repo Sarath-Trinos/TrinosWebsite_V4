@@ -31,7 +31,7 @@ const ServicesHero = () => {
       <div className="relative pt-28 lg:pt-40 pb-24">
         <video
           ref={videoRef}
-          className="absolute inset-0 w-full h-full object-cover object-bottom"
+          className="absolute inset-0 w-full h-full object-cover object-[center_30%]"
           src={encodeURI("/service/Service-Hub-hero.mp4")}
           poster={encodeURI("/service/Service-hub-hero.jpg")}
           autoPlay

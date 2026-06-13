@@ -15,7 +15,7 @@ export default function MobileAppDevelopmentPage() {
   return (
     <main className="landing-wide min-h-screen bg-background">
       <Header />
-      <ServiceDetail service={service} heroImage="/service/mobile-app-development.png" />
+      <ServiceDetail service={service} heroImage="/service/Mobile%20app.png" />
       <Footer />
     </main>
   );

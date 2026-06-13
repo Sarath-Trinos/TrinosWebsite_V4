@@ -122,7 +122,7 @@ const WhyChooseTrinos = () => {
                       <h3
                         className={cn(
                           t.cardHeadline,
-                          "font-manrope min-w-0",
+                          "font-manrope font-normal min-w-0",
                           isDark && "text-white"
                         )}
                       >
