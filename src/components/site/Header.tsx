@@ -145,7 +145,7 @@ const Header = () => {
                               <a
                                 key={c.label}
                                 href={c.href}
-                                className={`block px-3 py-2 text-sm rounded-lg hover:bg-white/10 transition-colors ${
+                                className={`block px-3 py-1 text-sm rounded-lg hover:bg-white/10 transition-colors ${
                                   isActive(c.href)
                                     ? "text-white bg-white/10"
                                     : "text-on-surface-dark/80 hover:text-white"

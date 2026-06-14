@@ -34,6 +34,8 @@ export type ProductContent = {
 
   /** Hub card name (may differ from detail H1, e.g. "Moltter Studio" vs "Moltter Studio Platform"). */
   name: string;
+  /** Optional brand logo shown before the name on the hub card (public-relative path). */
+  logo?: string;
   /** Detail-page H1. */
   h1: string;
 
@@ -97,6 +99,7 @@ export const productsContent: Record<string, ProductContent> = {
       text: "text-primary",
     },
     name: "Moltter Studio",
+    logo: "/products/moltter-logo-3-blue.png",
     h1: "Moltter Studio",
     pageTitle: "Moltter Studio: Decision Intelligence AI | Trinos",
     metaDescription:
@@ -169,6 +172,7 @@ export const productsContent: Record<string, ProductContent> = {
       text: "text-cyan-500",
     },
     name: "Trip11",
+    logo: "/products/trip11-app-logo.png",
     h1: "Trip11",
     pageTitle: "Trip11: Vertical SaaS for Travel Businesses | Trinos",
     metaDescription:

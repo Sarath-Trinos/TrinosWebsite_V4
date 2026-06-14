@@ -35,7 +35,7 @@ const Hero = () => {
     >
       <video
         ref={videoRef}
-        className="absolute inset-0 w-full h-full object-cover"
+        className="absolute inset-0 w-full h-full object-cover scale-[1.12] origin-top-left"
         poster="/home/hero-poster.jpg"
         autoPlay
         loop
@@ -44,7 +44,7 @@ const Hero = () => {
         preload="auto"
         aria-hidden="true"
       >
-        <source src="/home/May_05_0114_pm_31s_202605061102_hnu9v.mp4" type="video/mp4" />
+        <source src="/home/landing_page_hero_sectio.mp4" type="video/mp4" />
       </video>
       <div className="pointer-events-none absolute inset-0 bg-gradient-to-r from-black/85 from-10% via-black/55 via-35% to-transparent to-55%" />
 

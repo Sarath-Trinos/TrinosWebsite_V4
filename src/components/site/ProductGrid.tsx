@@ -44,7 +44,16 @@ const ProductGrid = () => (
                 </span>
               </div>
 
-              <h3 className={`mt-4 ${t.cardHeadlineMedium} text-on-surface-dark`}>{p.name}</h3>
+              <div className="mt-4 flex items-center gap-3">
+                {p.logo && (
+                  <img
+                    src={p.logo}
+                    alt={`${p.name} logo`}
+                    className="h-8 w-auto shrink-0 object-contain"
+                  />
+                )}
+                <h3 className={`${t.cardHeadlineMedium} text-on-surface-dark`}>{p.name}</h3>
+              </div>
               <p className={`mt-2 ${t.body} text-white/70`}>{p.cardSummary}</p>
 
               {/* Headline stats: large number, small label */}

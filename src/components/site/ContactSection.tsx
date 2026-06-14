@@ -217,26 +217,47 @@ const ContactSection = () => {
             any of these channels, and we'll respond within 24 hours.
           </p>
 
-          <ul className="mt-10 space-y-7">
-            <li className="flex items-start gap-4">
-              <span className="shrink-0 w-12 h-12 rounded-full bg-surface-soft grid place-items-center">
-                <Mail className="w-5 h-5 text-primary" strokeWidth={1.75} />
-              </span>
-              <div>
-                <div className="text-sm text-muted-foreground">Email</div>
-                <a
-                  href="mailto:info@trinos.ai"
-                  className="font-semibold text-foreground hover:text-primary transition-colors"
-                >
-                  info@trinos.ai
-                </a>
+          <div className="mt-5 grid gap-5">
+            {offices.map((office) => (
+              <div
+                key={office.country}
+                className="flex flex-col rounded-2xl border border-white/10 bg-surface-dark text-on-surface-dark p-6 shadow-card"
+              >
+                <div className="text-base font-semibold text-primary">
+                  {office.country} {office.flag}
+                </div>
+                <div className="mt-3 text-lg font-display font-semibold text-on-surface-dark">
+                  {office.city}
+                </div>
+                <p className="mt-2 text-base text-on-surface-dark/70 leading-relaxed">
+                  {office.address}
+                </p>
+
+                <div className="mt-auto pt-5 border-t border-white/10 space-y-3">
+                  <div className="flex items-start gap-3">
+                    <Phone className="w-5 h-5 text-primary shrink-0 mt-0.5" strokeWidth={1.75} />
+                    <a
+                      href={office.phoneHref}
+                      className="text-base font-medium text-on-surface-dark hover:text-primary transition-colors"
+                    >
+                      {office.phone}
+                    </a>
+                  </div>
+                  <div className="flex items-start gap-3">
+                    <Mail className="w-5 h-5 text-primary shrink-0 mt-0.5" strokeWidth={1.75} />
+                    <a
+                      href={`mailto:${office.email}`}
+                      className="text-base font-medium text-on-surface-dark hover:text-primary transition-colors break-all"
+                    >
+                      {office.email}
+                    </a>
+                  </div>
+                </div>
               </div>
-            </li>
-          </ul>
+            ))}
+          </div>
         </div>
       </div>
-
-      <GlobalPresence />
     </section>
   );
 };
@@ -271,57 +292,5 @@ const offices = [
     email: "info@trinos.ai",
   },
 ];
-
-const GlobalPresence = () => {
-  return (
-    <div className="container-px max-w-[1200px] mx-auto mt-20 md:mt-24">
-      <h2 className={`${t.sectionHeadline} text-foreground text-center`}>
-        Our global presence
-      </h2>
-
-      <div className="mt-10">
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5">
-          {offices.map((office) => (
-            <div
-              key={office.country}
-              className="flex flex-col rounded-2xl border border-white/10 bg-surface-dark text-on-surface-dark p-6 shadow-card"
-            >
-              <div className="text-base font-semibold text-primary">
-                {office.country} {office.flag}
-              </div>
-              <div className="mt-3 text-lg font-display font-semibold text-on-surface-dark">
-                {office.city}
-              </div>
-              <p className="mt-2 text-base text-on-surface-dark/70 leading-relaxed">
-                {office.address}
-              </p>
-
-              <div className="mt-auto pt-5 border-t border-white/10 space-y-3">
-                <div className="flex items-start gap-3">
-                  <Phone className="w-5 h-5 text-primary shrink-0 mt-0.5" strokeWidth={1.75} />
-                  <a
-                    href={office.phoneHref}
-                    className="text-base font-medium text-on-surface-dark hover:text-primary transition-colors"
-                  >
-                    {office.phone}
-                  </a>
-                </div>
-                <div className="flex items-start gap-3">
-                  <Mail className="w-5 h-5 text-primary shrink-0 mt-0.5" strokeWidth={1.75} />
-                  <a
-                    href={`mailto:${office.email}`}
-                    className="text-base font-medium text-on-surface-dark hover:text-primary transition-colors break-all"
-                  >
-                    {office.email}
-                  </a>
-                </div>
-              </div>
-            </div>
-          ))}
-        </div>
-      </div>
-    </div>
-  );
-};
 
 export default ContactSection;
