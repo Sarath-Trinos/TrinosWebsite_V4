@@ -15,7 +15,7 @@ export default function SocialMediaAutomationPage() {
   return (
     <main className="landing-wide min-h-screen bg-background">
       <Header />
-      <ServiceDetail service={service} heroImage="/service/social-media-automation.png" />
+      <ServiceDetail service={service} heroImage="/service/social-media-automation.webp" />
       <Footer />
     </main>
   );

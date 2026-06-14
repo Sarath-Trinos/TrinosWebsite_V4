@@ -33,6 +33,7 @@ const TrinosEdgeHero = () => {
           ref={videoRef}
           className="absolute inset-0 w-full h-full object-cover"
           src="/team/mp_.mp4"
+          poster="/team/trinos-edge-hero-poster.jpg"
           autoPlay
           muted
           loop

@@ -13,14 +13,14 @@ type UseCase = {
 
 const useCases: UseCase[] = [
   {
-    image: "/trinos/High Accuracy.png",
+    image: "/trinos/High Accuracy.webp",
     title: "High Accuracy Operations",
     description:
       "Targeted models can improve accuracy on complex domain language and repeatable workflows. This is valuable when teams need consistent outputs across documents, reports or operational decisions.",
     href: "/contact",
   },
   {
-    image: "/trinos/Continuous.png",
+    image: "/trinos/Continuous.webp",
     title: "Continuous Optimization",
     description:
       "Approved corrections and production signals can reduce repeated errors and improve system behavior over time. The improvement comes from structured feedback and controlled updates, not from unmanaged model changes.",
@@ -28,7 +28,7 @@ const useCases: UseCase[] = [
     objectPosition: "center 25%",
   },
   {
-    image: "/trinos/results.png",
+    image: "/trinos/results.webp",
     title: "The Result",
     description:
       "Your AI investment can become more valuable as it captures proprietary workflows, business logic and operational patterns. Over time, this creates a stronger foundation for automation, analytics and AI enabled decision support.",

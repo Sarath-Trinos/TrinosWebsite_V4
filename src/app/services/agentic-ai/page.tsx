@@ -17,7 +17,7 @@ export default function AgenticAIPage() {
       <Header />
       <ServiceDetail
         service={service}
-        heroImage="/service/agentic-ai.png"
+        heroImage="/service/agentic-ai.webp"
       />
       <Footer />
     </main>

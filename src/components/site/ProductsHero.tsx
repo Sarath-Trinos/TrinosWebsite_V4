@@ -33,6 +33,7 @@ const ProductsHero = () => {
           ref={videoRef}
           className="absolute inset-0 w-full h-full object-cover object-[center_32%]"
           src="/videos/product_hero.mp4"
+          poster="/videos/product-hero-poster.jpg"
           autoPlay
           muted
           loop

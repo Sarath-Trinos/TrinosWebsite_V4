@@ -35,6 +35,7 @@ const ContactHero = () => {
           className="absolute inset-0 w-full h-full object-cover"
           style={{ objectPosition: "center 60%" }}
           src="/videos/mp4.mp4"
+          poster="/videos/contact-hero-poster.jpg"
           autoPlay
           muted
           loop

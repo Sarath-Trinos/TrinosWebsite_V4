@@ -34,6 +34,7 @@ const CareersHero = () => {
           className="absolute inset-0 w-full h-full object-cover"
           style={{ objectPosition: "center 30%" }}
           src="/videos/0_Interview_Team_3840x2160.mp4"
+          poster="/career/hero-poster.jpg"
           autoPlay
           muted
           loop

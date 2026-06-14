@@ -19,7 +19,7 @@ const cards: Card[] = [
     title: "Work-life balance",
     description:
       "Flexible schedules and remote work options to support your lifestyle.",
-    image: "/career/Worklife_Balance.png",
+    image: "/career/Worklife_Balance.webp",
   },
   {
     title: "Innovation",

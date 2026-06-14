@@ -110,14 +110,14 @@ export const servicesContent: Record<string, ServiceContent> = {
         description:
           "Agents monitor incoming tasks, gather data, prepare recommendations and route decisions to the right team, cutting coordination effort on repeatable but context-heavy work.",
         badge: "Operations",
-        image: "/service/each%20service%20page/Enterprise%20Operations.png",
+        image: "/service/each%20service%20page/Enterprise%20Operations.webp",
       },
       {
         title: "Decision Intelligence",
         description:
           "Multiple agents analyze a problem from different angles and return a structured brief with risks, assumptions and confidence levels, instead of scattered inputs.",
         badge: "Strategy",
-        image: "/service/each%20service%20page/DecisionIntelligence.png",
+        image: "/service/each%20service%20page/DecisionIntelligence.webp",
       },
     ],
     result:
@@ -214,14 +214,14 @@ export const servicesContent: Record<string, ServiceContent> = {
         description:
           "Route policy documents, claims and supporting records through extraction, validation, quality checks, anomaly detection, review and approval, cutting repeated manual checking while keeping the full document lifecycle visible.",
         badge: "Documents",
-        image: "/service/each%20service%20page/Insurance%20&%20document%20operation.png",
+        image: "/service/each%20service%20page/Insurance%20&%20document%20operation.webp",
       },
       {
         title: "HR & Finance Operations",
         description:
           "Coordinate onboarding, procurement, invoice review and approvals across HR, finance and management, with every task and exception traceable instead of buried in email.",
         badge: "Operations",
-        image: "/service/each%20service%20page/HR%20&%20finance%20operation.png",
+        image: "/service/each%20service%20page/HR%20&%20finance%20operation.webp",
       },
     ],
     result:
@@ -320,14 +320,14 @@ export const servicesContent: Record<string, ServiceContent> = {
         description:
           "Better classification, summarization and document analysis from models trained on domain terminology, supporting review of policies, contracts and claims.",
         badge: "Legal",
-        image: "/service/each%20service%20page/Insurance%20&%20Regal%20review.png",
+        image: "/service/each%20service%20page/Insurance%20&%20Regal%20review.webp",
       },
       {
         title: "Internal Knowledge & Support",
         description:
           "Models that follow company style and approved formats, giving HR, IT and operations teams consistent answers from internal information.",
         badge: "Knowledge",
-        image: "/service/each%20service%20page/Internal%20knowledge%20&%20support.png",
+        image: "/service/each%20service%20page/Internal%20knowledge%20&%20support.webp",
       },
     ],
     result:
@@ -426,14 +426,14 @@ export const servicesContent: Record<string, ServiceContent> = {
         description:
           "Raw data, research and trends turned into structured reports and presentations, so teams spend less time on first drafts and more on the thinking.",
         badge: "Strategy",
-        image: "/service/each%20service%20page/consulting%20%20&%20strategy.png",
+        image: "/service/each%20service%20page/consulting%20%20&%20strategy.webp",
       },
       {
         title: "Government & Enterprise Reporting",
         description:
           "Concise leadership briefings drawn from large policy, operations or performance datasets, with the source kept traceable.",
         badge: "Government",
-        image: "/service/each%20service%20page/Government%20&%20enterprise%20planning.png",
+        image: "/service/each%20service%20page/Government%20&%20enterprise%20planning.webp",
       },
     ],
     result:
@@ -533,14 +533,14 @@ export const servicesContent: Record<string, ServiceContent> = {
         description:
           "Assistants answer common questions, collect details, create tickets and escalate complex cases, passing the transcript and context to a human so customers never repeat themselves.",
         badge: "Support",
-        image: "/service/each%20service%20page/Customer%20support.png",
+        image: "/service/each%20service%20page/Customer%20support.webp",
       },
       {
         title: "Field & Internal Operations",
         description:
           "Staff use voice to check status, update tasks, capture notes or trigger workflows without navigating screens, ideal for field and frontline teams.",
         badge: "Operations",
-        image: "/service/each%20service%20page/Field%20&%20Internal%20operations.png",
+        image: "/service/each%20service%20page/Field%20&%20Internal%20operations.webp",
       },
     ],
     result:
@@ -638,14 +638,14 @@ export const servicesContent: Record<string, ServiceContent> = {
         description:
           "Consistent content calendars with far less manual effort in ideation, drafting and reporting, giving a small team the structure of a larger content function.",
         badge: "Marketing",
-        image: "/service/each%20service%20page/Marketing%20teams.png",
+        image: "/service/each%20service%20page/Marketing%20teams.webp",
       },
       {
         title: "Leadership & Brand Communications",
         description:
           "Insights, announcements and reports turned into audience-ready posts with review controls, so leadership content stays consistent and on-brand.",
         badge: "Brand",
-        image: "/service/each%20service%20page/Leadership&brand%20communications.png",
+        image: "/service/each%20service%20page/Leadership&brand%20communications.webp",
       },
     ],
     result:
@@ -743,14 +743,14 @@ export const servicesContent: Record<string, ServiceContent> = {
         description:
           "Cameras catch defects, surface issues and missing parts on the line, giving quality teams faster alerts and better evidence than manual records.",
         badge: "Manufacturing",
-        image: "/service/each%20service%20page/Manufacturing%20control.png",
+        image: "/service/each%20service%20page/Manufacturing%20control.webp",
       },
       {
         title: "Logistics & Document Operations",
         description:
           "OCR and image recognition digitize labels, packages, documents and IDs across receiving, dispatch and compliance.",
         badge: "Logistics",
-        image: "/service/each%20service%20page/logistics%20&%20Document%20operations.png",
+        image: "/service/each%20service%20page/logistics%20&%20Document%20operations.webp",
       },
     ],
     result:
@@ -850,14 +850,14 @@ export const servicesContent: Record<string, ServiceContent> = {
         description:
           "Production, inventory, procurement, finance and supply-chain visibility unified into one operating view instead of disconnected spreadsheets.",
         badge: "Supply Chain",
-        image: "/service/each%20service%20page/Manufacturing%20&%20supply%20chain.png",
+        image: "/service/each%20service%20page/Manufacturing%20&%20supply%20chain.webp",
       },
       {
         title: "Healthcare & Multi-Location Operations",
         description:
           "Procurement, HR, finance, reporting and approvals centralized across facilities, with common standards and cleaner data.",
         badge: "Healthcare",
-        image: "/service/each%20service%20page/healthcare%20&%20multi%20location%20operation.png",
+        image: "/service/each%20service%20page/healthcare%20&%20multi%20location%20operation.webp",
       },
     ],
     result:
@@ -958,14 +958,14 @@ export const servicesContent: Record<string, ServiceContent> = {
         description:
           "Spreadsheet-heavy operations replaced with a secure portal connected to enterprise data and workflows, one place to access, update and track work.",
         badge: "Portal",
-        image: "/service/each%20service%20page/Enterprise%20Operations%20Portal.png",
+        image: "/service/each%20service%20page/Enterprise%20Operations%20Portal.webp",
       },
       {
         title: "AI-Enabled Customer Platform",
         description:
           "A customer-facing platform using AI search, recommendations and automated support to improve adoption and service speed.",
         badge: "Platform",
-        image: "/service/each%20service%20page/AI-Enabled%20Customer%20Platform.png",
+        image: "/service/each%20service%20page/AI-Enabled%20Customer%20Platform.webp",
       },
     ],
     result:
@@ -1063,14 +1063,14 @@ export const servicesContent: Record<string, ServiceContent> = {
         description:
           "Agents, customers and field staff use connected apps for itineraries, updates, service requests and coordination across locations.",
         badge: "Travel",
-        image: "/service/each%20service%20page/Travel%20&%20field%20operation.png",
+        image: "/service/each%20service%20page/Travel%20&%20field%20operation.webp",
       },
       {
         title: "Enterprise Approvals & Reporting",
         description:
           "Managers approve workflows, review AI summaries and act on alerts from mobile, so decisions don't wait for a desk.",
         badge: "Approvals",
-        image: "/service/each%20service%20page/Enterprise%20approval%20&%20reporting.png",
+        image: "/service/each%20service%20page/Enterprise%20approval%20&%20reporting.webp",
       },
     ],
     result:

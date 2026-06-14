@@ -36,6 +36,7 @@ const Hero = () => {
       <video
         ref={videoRef}
         className="absolute inset-0 w-full h-full object-cover"
+        poster="/home/hero-poster.jpg"
         autoPlay
         loop
         muted

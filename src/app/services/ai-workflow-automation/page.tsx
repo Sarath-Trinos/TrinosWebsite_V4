@@ -17,7 +17,7 @@ export default function AIWorkflowAutomationPage() {
       <Header />
       <ServiceDetail
         service={service}
-        heroImage="/service/ai-workflow-automation.png"
+        heroImage="/service/ai-workflow-automation.webp"
       />
       <Footer />
     </main>

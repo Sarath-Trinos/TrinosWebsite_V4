@@ -8,7 +8,7 @@ const values = [
     title: "Think Ahead",
     description:
       "We explore emerging technologies and turn ambitious ideas into practical systems that create measurable business value.",
-    image: "/about-us/think_Ahead.png",
+    image: "/about-us/think_Ahead.webp",
     cardBg: "bg-surface-dark text-on-surface-dark",
     linkText: "text-primary-glow",
   },
@@ -16,7 +16,7 @@ const values = [
     title: "Build With Trust",
     description:
       "Security, transparency and trust guide every engagement and every technical decision.",
-    image: "/about-us/Build with trust (1).png",
+    image: "/about-us/Build with trust (1).webp",
     cardBg: "bg-surface-dark text-on-surface-dark",
     linkText: "text-primary-glow",
   },
@@ -24,7 +24,7 @@ const values = [
     title: "Improve Every Cycle",
     description:
       "We deliver reliable engineering, thoughtful execution and high-quality outcomes.",
-    image: "/about-us/Improve (1).png",
+    image: "/about-us/Improve (1).webp",
     cardBg: "bg-surface-dark text-on-surface-dark",
     linkText: "text-primary-glow",
   },

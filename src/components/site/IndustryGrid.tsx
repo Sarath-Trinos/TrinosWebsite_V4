@@ -21,7 +21,7 @@ const INDUSTRIES: Industry[] = [
     taglines: ["Smarter care, less paperwork", "Secure, AI-first operations"],
     description:
       "Trinos helps healthcare and life science organizations reduce manual work, improve patient support and make better use of clinical and operational data. Our AI first systems support secure workflows, faster decisions and smoother day to day operations.",
-    image: "/industry/Healthcare (1).png",
+    image: "/industry/Healthcare (1).webp",
     helpsWith: [
       "Patient support automation",
       "Appointment and follow up workflows",
@@ -44,7 +44,7 @@ const INDUSTRIES: Industry[] = [
     taglines: ["Faster service, stronger trust", "Compliance-ready automation"],
     description:
       "Trinos helps banks, insurers and fintech companies move faster while maintaining trust, compliance and data security. Our AI first systems improve customer service, document processing, risk checks and internal workflows without disrupting core operations.",
-    image: "/industry/Finance.png",
+    image: "/industry/Finance.webp",
     helpsWith: [
       "Customer support automation",
       "Claims processing support",
@@ -69,7 +69,7 @@ const INDUSTRIES: Industry[] = [
     taglines: ["Personalized at every touchpoint", "Operations that scale with demand"],
     description:
       "Trinos helps retail and ecommerce businesses improve speed, personalization and operational efficiency. Our AI first systems support customer journeys, inventory visibility, order workflows and business insights across online and offline channels.",
-    image: "/industry/Retail and ecommerce.png",
+    image: "/industry/Retail and ecommerce.webp",
     helpsWith: [
       "Customer support automation",
       "Product search and recommendations",
@@ -94,7 +94,7 @@ const INDUSTRIES: Industry[] = [
     taglines: ["Connected shop floor to office", "Faster, data-driven decisions"],
     description:
       "Trinos helps manufacturers connect plant operations, production data and business systems for better visibility and faster decisions. Our AI first systems support quality checks, workflow automation and operational intelligence across the shop floor and office teams.",
-    image: "/industry/Construction .png",
+    image: "/industry/Construction .webp",
     helpsWith: [
       "Production workflow automation",
       "Quality inspection support",
@@ -119,7 +119,7 @@ const INDUSTRIES: Industry[] = [
     taglines: ["Less paperwork, more strategy", "Knowledge at your fingertips"],
     description:
       "Trinos helps legal firms, consulting teams and professional service companies reduce paperwork and improve service speed. Our AI first systems support document review, client workflows and internal knowledge access so experts can focus more on strategy and client outcomes.",
-    image: "/industry/Legal & professional services.png",
+    image: "/industry/Legal & professional services.webp",
     helpsWith: [
       "Contract and document review",
       "Legal research support",
@@ -144,7 +144,7 @@ const INDUSTRIES: Industry[] = [
     taglines: ["Every mile, every minute counts", "End-to-end shipment visibility"],
     description:
       "Trinos helps logistics and supply chain teams move goods faster with better visibility and fewer delays. Our AI first systems support shipment tracking, warehouse workflows, demand planning and operational reporting across complex, multi-party networks.",
-    image: "/industry/Logistics.png",
+    image: "/industry/Logistics.webp",
     helpsWith: [
       "Shipment tracking automation",
       "Warehouse workflow support",
@@ -168,7 +168,7 @@ const INDUSTRIES: Industry[] = [
     taglines: ["Personalized learning at scale", "Less admin, more teaching"],
     description:
       "Trinos helps schools, universities and EdTech companies improve learning support, student engagement and administrative efficiency. Our AI first systems support personalized learning, student services, content workflows and data driven decisions across education teams.",
-    image: "/industry/Edtech.png",
+    image: "/industry/Edtech.webp",
     helpsWith: [
       "Student support automation",
       "Personalized learning assistance",
@@ -193,7 +193,7 @@ const INDUSTRIES: Industry[] = [
     taglines: ["Reliable assets, fewer outages", "Field operations, fully connected"],
     description:
       "Trinos helps energy and utility companies improve asset visibility, field operations and service reliability. Our AI first systems support maintenance workflows, outage response, compliance tasks and operational dashboards across asset heavy environments.",
-    image: "/industry/Energy.png",
+    image: "/industry/Energy.webp",
     helpsWith: [
       "Asset monitoring and alerts",
       "Predictive maintenance support",
@@ -218,7 +218,7 @@ const INDUSTRIES: Industry[] = [
     taglines: ["Projects on time, on budget", "Site and office in sync"],
     description:
       "Trinos helps construction and engineering teams improve project visibility, document control and site coordination. Our AI first systems support planning, reporting and workflow automation from bidding to project completion.",
-    image: "/industry/construction.png",
+    image: "/industry/construction.webp",
     helpsWith: [
       "Project tracking and reporting",
       "Bid and proposal support",
@@ -243,7 +243,7 @@ const INDUSTRIES: Industry[] = [
     taglines: ["Guest experiences that delight", "Operations that run smoother"],
     description:
       "Trinos helps hotels, resorts and travel companies improve guest service, booking workflows and daily operations. Our AI first systems support faster responses, smoother coordination and more personalized experiences across guest facing and internal teams.",
-    image: "/industry/Hospitality and tourism.png",
+    image: "/industry/Hospitality and tourism.webp",
     helpsWith: [
       "Guest support automation",
       "Booking and enquiry management",

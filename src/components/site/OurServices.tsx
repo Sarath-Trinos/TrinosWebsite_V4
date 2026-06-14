@@ -52,7 +52,7 @@ const serviceGroups: ServiceGroup[] = [
         description:
           "AI agents that plan tasks, connect to approved systems and coordinate work across enterprise workflows, with human oversight, scoped permissions and audit controls.",
         href: "/services/agentic-ai",
-        image: "/service/agentic-ai.png",
+        image: "/service/agentic-ai.webp",
       },
       {
         icon: Workflow,
@@ -60,7 +60,7 @@ const serviceGroups: ServiceGroup[] = [
         description:
           "Workflow systems that connect tasks, approvals, business rules and applications into one coordinated process layer.",
         href: "/services/ai-workflow-automation",
-        image: "/service/ai-workflow-automation.png",
+        image: "/service/ai-workflow-automation.webp",
         imagePosition: "object-top",
       },
       {
@@ -69,7 +69,7 @@ const serviceGroups: ServiceGroup[] = [
         description:
           "Voice AI for support, sales and internal operations that answers questions, captures information and triggers approved workflows.",
         href: "/services/ai-voice-assistants",
-        image: "/service/ai-voice-assistants.png",
+        image: "/service/ai-voice-assistants.webp",
       },
       {
         icon: Share2,
@@ -77,7 +77,7 @@ const serviceGroups: ServiceGroup[] = [
         description:
           "AI-supported content operations for research, drafting, approval, scheduling and reporting, with brand tone and review control kept in place.",
         href: "/services/social-media-automation",
-        image: "/service/social-media-automation.png",
+        image: "/service/social-media-automation.webp",
       },
     ],
   },
@@ -96,7 +96,7 @@ const serviceGroups: ServiceGroup[] = [
         description:
           "Domain-tuned language models trained on your data, terminology and task patterns to improve reliability for defined enterprise use cases.",
         href: "/services/llm-fine-tuning",
-        image: "/service/llm-fine-tuning.png",
+        image: "/service/llm-fine-tuning.webp",
       },
       {
         icon: BarChart3,
@@ -104,7 +104,7 @@ const serviceGroups: ServiceGroup[] = [
         description:
           "Conversational dashboards and intelligent reporting that turn approved enterprise data into sourced, decision-ready insight.",
         href: "/services/generative-ai-analytics",
-        image: "/service/generative-ai-analytics.png",
+        image: "/service/generative-ai-analytics.webp",
       },
       {
         icon: Eye,
@@ -112,7 +112,7 @@ const serviceGroups: ServiceGroup[] = [
         description:
           "Image, video and document intelligence for defect detection, OCR, quality control, asset tracking and physical workflow automation.",
         href: "/services/computer-vision",
-        image: "/service/computer-vision.png",
+        image: "/service/computer-vision.webp",
       },
     ],
   },
@@ -131,7 +131,7 @@ const serviceGroups: ServiceGroup[] = [
         description:
           "ERP architecture, implementation and integration across leading platforms, with clean data and an AI-ready operating foundation.",
         href: "/services/enterprise-resource-planning",
-        image: "/service/ERPP.png",
+        image: "/service/ERPP.webp",
         imagePosition: "object-[center_30%]",
       },
       {
@@ -140,7 +140,7 @@ const serviceGroups: ServiceGroup[] = [
         description:
           "Enterprise websites, portals and web applications with secure architecture, strong UX, system integration and AI-ready features.",
         href: "/services/web-development",
-        image: "/service/Web app.png",
+        image: "/service/Web app.webp",
         imagePosition: "object-[center_55%]",
       },
       {
@@ -149,7 +149,7 @@ const serviceGroups: ServiceGroup[] = [
         description:
           "Cross-platform mobile apps with secure data connections, workflow access and embedded AI for field teams, customers and employees.",
         href: "/services/mobile-app-development",
-        image: "/service/Mobile app.png",
+        image: "/service/Mobile app.webp",
         imagePosition: "object-center",
       },
     ],

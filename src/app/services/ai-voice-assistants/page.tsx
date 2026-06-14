@@ -15,7 +15,7 @@ export default function AIVoiceAssistantsPage() {
   return (
     <main className="landing-wide min-h-screen bg-background">
       <Header />
-      <ServiceDetail service={service} heroImage="/service/ai-voice-assistants.png" />
+      <ServiceDetail service={service} heroImage="/service/ai-voice-assistants.webp" />
       <Footer />
     </main>
   );

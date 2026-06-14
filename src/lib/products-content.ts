@@ -147,9 +147,9 @@ export const productsContent: Record<string, ProductContent> = {
       "Calibration Tracking",
     ],
     images: [
-      "/products/Molter_studio.png",
-      "/products/Molter_studio2.png",
-      "/products/Molter_studio3.png",
+      "/products/Molter_studio.webp",
+      "/products/Molter_studio2.webp",
+      "/products/Molter_studio3.webp",
     ],
     imageAlt: "Moltter Studio decision-intelligence platform screenshot",
     related: [
@@ -222,10 +222,10 @@ export const productsContent: Record<string, ProductContent> = {
       "Supplier Integration",
     ],
     images: [
-      "/products/Trip11_1.png",
-      "/products/Trip11_2.png",
-      "/products/Trip11_3.png",
-      "/products/Trip11_4.png",
+      "/products/Trip11_1.webp",
+      "/products/Trip11_2.webp",
+      "/products/Trip11_3.webp",
+      "/products/Trip11_4.webp",
     ],
     imageAlt: "Trip11 travel-business operating system screenshot",
     mobileImages: [
@@ -305,10 +305,10 @@ export const productsContent: Record<string, ProductContent> = {
       "Analytics",
     ],
     images: [
-      "/products/Traceflo.png",
-      "/products/Tracflo2.png",
-      "/products/Tracflo3.png",
-      "/products/Tracflo4.png",
+      "/products/Traceflo.webp",
+      "/products/Tracflo2.webp",
+      "/products/Tracflo3.webp",
+      "/products/Tracflo4.webp",
     ],
     imageAlt: "TraceFlow material tracking and inventory management screenshot",
     related: [

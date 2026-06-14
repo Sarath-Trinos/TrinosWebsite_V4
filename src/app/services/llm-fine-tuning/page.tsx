@@ -15,7 +15,7 @@ export default function LLMFineTuningPage() {
   return (
     <main className="landing-wide min-h-screen bg-background">
       <Header />
-      <ServiceDetail service={service} heroImage="/service/llm-fine-tuning.png" />
+      <ServiceDetail service={service} heroImage="/service/llm-fine-tuning.webp" />
       <Footer />
     </main>
   );
