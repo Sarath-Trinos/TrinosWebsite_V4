@@ -1,3 +1,3 @@
-# Welcome to your Lovable project
+# Trinos-Website-V2
 
-TODO: Document your project here
+Trinos Website V2.0
