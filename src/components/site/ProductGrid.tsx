@@ -51,7 +51,7 @@ const ProductGrid = () => (
               <div className="mt-6 grid grid-cols-2 gap-4">
                 {p.cardStats.map((stat) => (
                   <div key={stat.label} className="rounded-xl bg-white/5 border border-white/10 p-4">
-                    <div className={`${t.stat} text-on-surface-dark leading-none`}>{stat.value}</div>
+                    <div className={`${t.stat} font-normal text-on-surface-dark leading-none`}>{stat.value}</div>
                     <div className="mt-1.5 text-xs text-white/60">{stat.label}</div>
                   </div>
                 ))}

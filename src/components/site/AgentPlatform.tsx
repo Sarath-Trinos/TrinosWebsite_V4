@@ -48,7 +48,7 @@ const tiles: Tile[] = [
     headline: "Social Media Automation",
     description:
       "AI-driven content, scheduling and engagement workflows that keep your brand active across channels with editorial guardrails and approval flows built in.",
-    video: "/videos/mp_ (1).mp4",
+    video: "/home/social media automation.mp4",
     href: "/services/social-media-automation",
   },
 ];

@@ -52,7 +52,7 @@ const WhoWeAre = () => (
   <section id="who-we-are" className="py-10 bg-white">
     <div className="container-px max-w-[1200px] mx-auto">
       <div className="grid lg:grid-cols-2 gap-10 md:gap-12 lg:gap-14 items-start">
-        <div className="relative order-2 lg:order-1">
+        <div className="relative order-2 lg:order-1 lg:pt-16">
           <div className="relative rounded-3xl mx-auto max-w-[460px]">
             <Image
               src={aboutImg}
